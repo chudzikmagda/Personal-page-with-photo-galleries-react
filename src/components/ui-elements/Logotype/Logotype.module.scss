@@ -1,0 +1,14 @@
+@import './../../../assets/styles/colors.scss';
+@import './../../../assets/styles/variables.scss';
+@import './../../../assets/styles/mixins.scss';
+
+.link {
+	color: $text-dark;
+	font-weight: $font-bold;
+	text-decoration: none;
+	padding: 0 $padding-basic;
+
+	@include hover;
+
+	@include focus;
+}

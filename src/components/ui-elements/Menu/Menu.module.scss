@@ -1,0 +1,125 @@
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/variables.scss';
+@import '../../../assets/styles/mixins.scss';
+
+.menu {
+	display: none;
+
+	@include breakpoint(large) {
+		display: block;
+		padding: 0 $padding-basic;
+		overflow: hidden;
+	}
+
+	&__item {
+		position: relative;
+		color: $text-dark;
+		text-decoration: none;
+		padding: $padding-basic 0;
+
+		@include focus;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -4px;
+			left: 0;
+			right: 0;
+			height: 2px;
+			background-color: $primary-color;
+			@include transition($element: bottom);
+			z-index: -1;
+		}
+
+		&:hover {
+			&::after {
+				bottom: 8px;
+			}
+		}
+
+		&-wrapper {
+			padding: 0 $padding-basic;
+			overflow: hidden;
+		}
+	}
+}
+
+.hamburger {
+	@include flex($justify-content: space-between, $align-items: flex-end);
+	height: 40px;
+	width: 50px;
+	padding: $padding-basic;
+	background: none;
+	border: 0;
+	cursor: pointer;
+
+	@include breakpoint(large) {
+		display: none;
+	}
+
+	@include focus;
+
+	&:hover {
+		.hamburger__item {
+			background-color: $primary-color;
+			@include transition($element: background-color);
+		}
+	}
+
+	&__item {
+		height: 2px;
+		width: 100%;
+		background-color: $primary-dark;
+
+		&:nth-child(2) {
+			width: 70%;
+		}
+
+		&:focus,
+		&:focus-visible {
+			background-color: $primary-color;
+		}
+	}
+
+	&--isOpen {
+		justify-content: center;
+		align-items: center;
+
+		.hamburger__item {
+			z-index: 1;
+
+			&:nth-child(1) {
+				transform: rotate(45deg) translateY(3px);
+			}
+
+			&:nth-child(2) {
+				opacity: 0;
+			}
+
+			&:nth-child(3) {
+				transform: rotate(-45deg) translateY(-3px);
+			}
+		}
+
+		& ~ .menu {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			@include flex();
+			gap: 16px;
+			animation: menuAnimation 0.5s ease-in-out;
+		}
+	}
+}
+
+@keyframes menuAnimation {
+	0% {
+		left: -100%;
+	}
+
+	100% {
+		left: 0;
+	}
+}

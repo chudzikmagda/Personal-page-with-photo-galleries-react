@@ -1,6 +1,41 @@
+@import './variables.scss';
+
 @mixin flex($direction: column, $justify-content: center, $align-items: center) {
 	display: flex;
 	flex-direction: $direction;
 	justify-content: $justify-content;
 	align-items: $align-items;
+}
+
+@mixin transition($element: all, $time: $transition-time, $effect: $transition-effect) {
+	transition: $element $time $effect;
+}
+
+@mixin focus {
+	&:focus {
+		outline-color: $primary-color;
+		outline-width: 1px;
+	}
+
+	&:focus-visible {
+		border: 0;
+	}
+}
+
+@mixin hover {
+	&:hover {
+		color: $primary-color;
+		@include transition($element: color);
+	}
+}
+@mixin visited {
+	&:hover {
+		color: $text-dark;
+	}
+}
+
+@mixin breakpoint($deviceSize) {
+	@media screen and (min-width: map-get($breakpoints, $deviceSize)) {
+		@content;
+	}
 }

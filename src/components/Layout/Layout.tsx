@@ -1,7 +1,13 @@
 import React from 'react';
+import Header from '../ui-elements/Header/Header';
+import styles from './Layout.module.scss';
 
-const Layout = () => {
-	return <div className="wrapper">Layout</div>;
+const Layout = (): JSX.Element => {
+	return (
+		<div className={styles.wrapper}>
+			<Header />
+		</div>
+	);
 };
 
 export default Layout;

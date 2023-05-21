@@ -1,0 +1,11 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/mixins.scss';
+
+.wrapper {
+	@include flex;
+	padding: 0 $padding-wrapper-xs;
+
+	@include breakpoint(large) {
+		padding: 0 $padding-wrapper;
+	}
+}

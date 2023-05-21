@@ -1,0 +1,14 @@
+@import './../../../assets/styles/variables.scss';
+@import './../../../assets/styles/mixins.scss';
+
+.header {
+	@include flex($direction: row, $justify-content: space-between);
+	height: $header-height-xs;
+	width: 100%;
+	max-width: $container-max-width;
+
+	@include breakpoint(large) {
+		justify-content: flex-start;
+		height: $header-height;
+	}
+}

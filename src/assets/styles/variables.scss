@@ -1,7 +1,20 @@
 $font-normal: 400;
 $font-bold: 600;
 
-$transition-default: all 0.5s ease-in-out;
+$transition-effect: ease-in-out;
+$transition-time: 0.5s;
 
-$nav-height: 5.625rem;
-$nav-height-mobile: 4.375rem;
+$header-height: 5.625rem;
+$header-height-xs: 3rem;
+
+$container-max-width: 1600px;
+
+$padding-basic: 8px;
+$padding-wrapper: $padding-basic * 6;
+$padding-wrapper-xs: $padding-basic;
+
+$breakpoints: (
+	small: 480px,
+	medium: 768px,
+	large: 1024px
+);
