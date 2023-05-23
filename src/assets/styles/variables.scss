@@ -4,8 +4,10 @@ $font-bold: 600;
 $transition-effect: ease-in-out;
 $transition-time: 0.5s;
 
-$header-height: 5.625rem;
+$header-height: 5rem;
 $header-height-xs: 3rem;
+$footer-height: $header-height;
+$footer-height-xs: $header-height-xs;
 
 $container-max-width: 1600px;
 

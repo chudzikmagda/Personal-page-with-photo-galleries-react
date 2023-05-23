@@ -1,0 +1,37 @@
+@import './../../../assets/styles/colors.scss';
+@import './../../../assets/styles/variables.scss';
+@import './../../../assets/styles/mixins.scss';
+
+.footer {
+	@include flex($justify-content: space-between);
+	height: $header-height-xs;
+	width: 100%;
+	max-width: $container-max-width;
+
+	@include breakpoint(large) {
+		flex-direction: row;
+		height: $header-height;
+	}
+
+	&__link {
+		font-size: 0.875rem;
+		color: $text-dark;
+		text-decoration: none;
+		padding: 0 $padding-basic;
+
+		@include focus();
+		@include hover();
+
+		&--author {
+			font-size: 0.6875rem;
+
+			@include breakpoint(large) {
+				font-size: 0.75rem;
+			}
+		}
+	}
+
+	&__author {
+		font-weight: $font-bold;
+	}
+}
