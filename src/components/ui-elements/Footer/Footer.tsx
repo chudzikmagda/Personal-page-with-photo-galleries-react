@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import styles from './Footer.module.scss';
 import { SocialMediaPaths } from '../../../shared/models/models';
 import { SocialMedia } from '../../../shared/models/models';
 
-const Footer = (): JSX.Element => {
+const Footer = (): ReactElement => {
 	const footerSocialMediaPaths: SocialMedia[] = Object.entries(SocialMediaPaths).map(([name, path]) => ({ name, path } as SocialMedia));
 
 	return (

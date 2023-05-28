@@ -1,10 +1,10 @@
-import React, { Dispatch, SetStateAction, useState } from 'react';
+import React, { Dispatch, ReactElement, SetStateAction, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MenuItem, MenuItems } from './models/MenuModels';
 import { Paths } from '../../../routing/models/RoutingModels';
 import styles from './Menu.module.scss';
 
-const Menu = (): JSX.Element => {
+const Menu = (): ReactElement => {
 	const menuItems: MenuItem[] = [
 		{ menuTitle: MenuItems.ABOUT, path: Paths.ABOUT },
 		{ menuTitle: MenuItems.CITY, path: Paths.CITY },
