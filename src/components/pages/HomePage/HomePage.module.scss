@@ -1,0 +1,13 @@
+@import '../../../assets/styles/variables.scss';
+@import '../../../assets/styles/mixins.scss';
+
+.homepage {
+	flex-grow: 1;
+	@include flex($align-items: normal, $justify-content: normal);
+	width: 100%;
+	height: 100%;
+
+	@include breakpoint(large) {
+		flex-direction: row;
+	}
+}

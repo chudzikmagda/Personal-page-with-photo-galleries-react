@@ -39,3 +39,7 @@
 		@content;
 	}
 }
+
+@mixin cursor() {
+	cursor: url($cursor-on-hover-path), auto;
+}

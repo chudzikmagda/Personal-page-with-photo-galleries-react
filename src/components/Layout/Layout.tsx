@@ -5,12 +5,12 @@ import Footer from '../ui-elements/Footer/Footer';
 import Content from '../Content/Content';
 import { LayoutProps } from './models/LayoutModels';
 
-const Layout = ({ ContentComponent }: LayoutProps): ReactElement => {
+const Layout = (props: LayoutProps): ReactElement => {
 	return (
 		<>
 			<div className={styles.wrapper}>
 				<Header />
-				<Content ContentComponent={ContentComponent} />
+				<Content content={props.content} />
 				<Footer />
 			</div>
 		</>

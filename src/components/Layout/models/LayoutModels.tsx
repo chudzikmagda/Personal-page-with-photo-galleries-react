@@ -1,5 +1,5 @@
-import { ComponentType } from 'react';
+import { ReactNode } from 'react';
 
 export type LayoutProps = {
-	ContentComponent: ComponentType;
+	content: ReactNode;
 };
