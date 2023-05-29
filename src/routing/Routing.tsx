@@ -21,15 +21,15 @@ const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 		element: ''
 	},
 	{
-		path: Paths.LANDSCAPES,
+		path: Paths.LANDSCAPE,
 		element: '',
 		children: [
 			{
-				path: Paths.BW_LANDSCAPES,
+				path: Paths.BW_LANDSCAPE,
 				element: ''
 			},
 			{
-				path: Paths.COLOR_LANDSCAPES,
+				path: Paths.COLOR_LANDSCAPE,
 				element: ''
 			}
 		]

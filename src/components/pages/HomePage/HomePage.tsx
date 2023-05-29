@@ -13,7 +13,7 @@ const HomePage: React.FC = (): ReactElement => {
 			content={
 				<div className={styles.homepage}>
 					<Card bgImage={urbanPhoto} title="City" description="View the gallery" path={Paths.CITY} />
-					<Card bgImage={landscapePhoto} title="Landscape" description="View the gallery" path={Paths.LANDSCAPES} />
+					<Card bgImage={landscapePhoto} title="Landscape" description="View the gallery" path={Paths.LANDSCAPE} />
 				</div>
 			}
 		/>

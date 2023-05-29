@@ -8,7 +8,7 @@ const Menu = (): ReactElement => {
 	const menuItems: MenuItem[] = [
 		{ menuTitle: MenuItems.ABOUT, path: Paths.ABOUT },
 		{ menuTitle: MenuItems.CITY, path: Paths.CITY },
-		{ menuTitle: MenuItems.LANDSCAPES, path: Paths.LANDSCAPES },
+		{ menuTitle: MenuItems.LANDSCAPE, path: Paths.LANDSCAPE },
 		{ menuTitle: MenuItems.PRINTS, path: Paths.PRINTS },
 		{ menuTitle: MenuItems.CONTACT, path: Paths.CONTACT }
 	];

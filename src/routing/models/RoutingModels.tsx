@@ -1,9 +1,9 @@
 export enum Paths {
 	ABOUT = 'about',
 	CITY = 'city',
-	LANDSCAPES = 'landscapes',
-	BW_LANDSCAPES = 'black-and-white-landscapes',
-	COLOR_LANDSCAPES = 'color-landscapes',
+	LANDSCAPE = 'landscape',
+	BW_LANDSCAPE = 'black-and-white-landscape',
+	COLOR_LANDSCAPE = 'color-landscape',
 	PRINTS = 'prints',
 	CONTACT = 'contact'
 }
