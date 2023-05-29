@@ -2,6 +2,7 @@ import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import App from '../App';
 import { Paths } from './models/RoutingModels';
+import LandscapePage from '../components/pages/LandscapePage/LandscapePage';
 
 const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	{
@@ -22,7 +23,7 @@ const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	},
 	{
 		path: Paths.LANDSCAPE,
-		element: '',
+		element: <LandscapePage />,
 		children: [
 			{
 				path: Paths.BW_LANDSCAPE,
