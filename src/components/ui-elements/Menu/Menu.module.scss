@@ -15,14 +15,14 @@
 		position: relative;
 		color: $text-dark;
 		text-decoration: none;
-		padding: $padding-basic 0;
+		padding: 2px;
 
 		@include focus;
 
 		&::after {
 			content: '';
 			position: absolute;
-			bottom: -4px;
+			bottom: -8px;
 			left: 0;
 			right: 0;
 			height: 2px;
@@ -33,7 +33,7 @@
 
 		&:hover {
 			&::after {
-				bottom: 8px;
+				bottom: 2px;
 			}
 		}
 
@@ -52,6 +52,7 @@
 	background: none;
 	border: 0;
 	cursor: pointer;
+	z-index: 1001;
 
 	@include breakpoint(large) {
 		display: none;
@@ -61,7 +62,6 @@
 
 	&:hover {
 		.hamburger__item {
-			background-color: $primary-color;
 			@include transition($element: background-color);
 		}
 	}
@@ -86,8 +86,6 @@
 		align-items: center;
 
 		.hamburger__item {
-			z-index: 1;
-
 			&:nth-child(1) {
 				transform: rotate(45deg) translateY(3px);
 			}
@@ -109,7 +107,16 @@
 			bottom: 0;
 			@include flex();
 			gap: 16px;
+			background-color: $primary-light;
 			animation: menuAnimation 0.5s ease-in-out;
+			z-index: 1000;
+
+			& > .menu__item-wrapper {
+				& > .menu__item {
+					opacity: 0;
+					animation: menuItemAnimation 0.5s ease-in-out forwards;
+				}
+			}
 		}
 	}
 }
@@ -121,5 +128,15 @@
 
 	100% {
 		left: 0;
+	}
+}
+
+@keyframes menuItemAnimation {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
 	}
 }

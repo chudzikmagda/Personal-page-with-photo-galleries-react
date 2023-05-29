@@ -31,7 +31,7 @@ const Menu = (): ReactElement => {
 				{menuItems.map((menuItem: MenuItem, index: number) => {
 					return (
 						<span key={index} className={styles['menu__item-wrapper']}>
-							<Link to={menuItem.path} className={styles.menu__item}>
+							<Link to={menuItem.path} className={styles.menu__item} style={{ animationDelay: `${index / 3}s` }}>
 								{menuItem.menuTitle}
 							</Link>
 						</span>

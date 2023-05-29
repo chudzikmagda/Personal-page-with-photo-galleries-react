@@ -7,6 +7,7 @@
 	font-weight: $font-bold;
 	text-decoration: none;
 	padding: 0 $padding-basic;
+	z-index: 1001;
 
 	@include hover;
 
