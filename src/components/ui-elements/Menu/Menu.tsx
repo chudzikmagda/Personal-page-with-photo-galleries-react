@@ -1,5 +1,5 @@
 import React, { Dispatch, ReactElement, SetStateAction, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { MenuItem, MenuItems } from './models/MenuModels';
 import { Paths } from '../../../routing/models/RoutingModels';
 import styles from './Menu.module.scss';
@@ -31,9 +31,9 @@ const Menu = (): ReactElement => {
 				{menuItems.map((menuItem: MenuItem, index: number) => {
 					return (
 						<span key={index} className={styles['menu__item-wrapper']}>
-							<Link to={menuItem.path} className={styles.menu__item} style={{ animationDelay: `${index / 3}s` }}>
+							<NavLink to={`/${menuItem.path}`} className={styles.menu__item} style={{ animationDelay: `${index / 3}s` }}>
 								{menuItem.menuTitle}
-							</Link>
+							</NavLink>
 						</span>
 					);
 				})}
