@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+import './i18n';
 import './index.scss';
 import Router from './routing/Routing';
 

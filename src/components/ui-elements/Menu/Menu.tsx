@@ -1,16 +1,19 @@
 import React, { Dispatch, ReactElement, SetStateAction, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { MenuItem, MenuItems } from './models/MenuModels';
+import { MenuItem } from './models/MenuModels';
 import { Paths } from '../../../routing/models/RoutingModels';
 import styles from './Menu.module.scss';
+import { useTranslation } from 'react-i18next';
 
 const Menu = (): ReactElement => {
+	const { t } = useTranslation();
+
 	const menuItems: MenuItem[] = [
-		{ menuTitle: MenuItems.ABOUT, path: Paths.ABOUT },
-		{ menuTitle: MenuItems.CITY, path: Paths.CITY },
-		{ menuTitle: MenuItems.LANDSCAPE, path: Paths.LANDSCAPE },
-		{ menuTitle: MenuItems.PRINTS, path: Paths.PRINTS },
-		{ menuTitle: MenuItems.CONTACT, path: Paths.CONTACT }
+		{ menuTitle: t('Menu.about'), path: Paths.ABOUT },
+		{ menuTitle: t('Menu.city'), path: Paths.CITY },
+		{ menuTitle: t('Menu.landscape'), path: Paths.LANDSCAPE },
+		{ menuTitle: t('Menu.prints'), path: Paths.PRINTS },
+		{ menuTitle: t('Menu.contact'), path: Paths.CONTACT }
 	];
 
 	const [isOpen, setIsOpen]: [boolean, Dispatch<SetStateAction<boolean>>] = useState<boolean>(false);

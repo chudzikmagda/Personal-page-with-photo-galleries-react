@@ -2,8 +2,11 @@ import React, { ReactElement } from 'react';
 import styles from './Footer.module.scss';
 import { SocialMediaPaths } from '../../../shared/models/models';
 import { SocialMedia } from '../../../shared/models/models';
+import { useTranslation } from 'react-i18next';
 
 const Footer = (): ReactElement => {
+	const { t } = useTranslation();
+
 	const footerSocialMediaPaths: SocialMedia[] = Object.entries(SocialMediaPaths).map(([name, path]) => ({ name, path } as SocialMedia));
 
 	return (
@@ -25,7 +28,7 @@ const Footer = (): ReactElement => {
 					className={`${styles.footer__link} ${styles['footer__link--author']}`}
 					target="_blank"
 					rel="noreferrer">
-					Designed and developed by <span className={styles.footer__author}>{'{ MCH }'}</span>
+					{t('Footer.designAndDeveloped')} <span className={styles.footer__author}>{'{ MCH }'}</span>
 				</a>
 			}
 		</footer>
