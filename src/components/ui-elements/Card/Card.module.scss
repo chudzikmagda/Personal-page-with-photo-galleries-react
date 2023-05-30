@@ -47,14 +47,10 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
+		@include focus($width: 4px);
 
 		&:hover {
 			@include cursor();
-		}
-
-		&:focus,
-		&:focus-visible {
-			box-shadow: inset 0 0 0 4px $primary-color;
 		}
 	}
 }
