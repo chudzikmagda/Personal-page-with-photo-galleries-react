@@ -1,0 +1,39 @@
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/mixins.scss';
+
+.langSelect {
+	&__btn {
+		@include flex($direction: row);
+		background: none;
+		border: 0;
+		margin: 0;
+		padding: $padding-basic;
+		font-family: inherit;
+		font-size: inherit;
+		@include focus;
+		@include hover;
+	}
+
+	&__options {
+		@include flex($align-items: flex-start);
+		background-color: $grey-light;
+		padding: $padding-basic 0;
+		z-index: 2000;
+	}
+
+	&__option {
+		@include flex($direction: row);
+		text-decoration: none;
+		color: $text-dark;
+		padding: 0 $padding-basic;
+		@include focus;
+		@include hover;
+	}
+
+	&__icon {
+		height: 20px;
+		margin-right: 4px;
+		border: 1px solid $grey-light;
+		border-radius: 100%;
+	}
+}

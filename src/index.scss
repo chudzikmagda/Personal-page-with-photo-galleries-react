@@ -1,2 +1,8 @@
 @import 'reset-css';
 @import 'assets/styles/typography.scss';
+
+button {
+	&:hover {
+		cursor: pointer;
+	}
+}

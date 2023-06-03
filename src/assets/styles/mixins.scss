@@ -1,4 +1,5 @@
 @import './variables.scss';
+@import './colors.scss';
 
 @mixin flex($direction: column, $justify-content: center, $align-items: center) {
 	display: flex;

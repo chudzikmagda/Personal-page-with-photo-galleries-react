@@ -6,9 +6,16 @@
 	display: none;
 
 	@include breakpoint(large) {
-		display: block;
+		@include flex($direction: row, $justify-content: flex-start);
+		width: 100%;
 		padding: 0 $padding-basic;
 		overflow: hidden;
+	}
+
+	&__languageSwitcher {
+		@include breakpoint(large) {
+			margin-left: auto;
+		}
 	}
 
 	&__item {

@@ -4,6 +4,7 @@ import { MenuItem } from './models/MenuModels';
 import { Paths } from '../../../routing/models/RoutingModels';
 import styles from './Menu.module.scss';
 import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 
 const Menu = (): ReactElement => {
 	const { t } = useTranslation();
@@ -40,6 +41,9 @@ const Menu = (): ReactElement => {
 						</span>
 					);
 				})}
+				<div className={styles.menu__languageSwitcher}>
+					<LanguageSwitcher />
+				</div>
 			</nav>
 		</>
 	);
