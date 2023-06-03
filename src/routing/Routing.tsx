@@ -3,6 +3,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import App from '../App';
 import { Paths } from './models/RoutingModels';
 import LandscapePage from '../components/pages/LandscapePage/LandscapePage';
+import AboutMe from '../components/pages/AboutMe/AboutMe';
 
 const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	{
@@ -11,7 +12,7 @@ const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	},
 	{
 		path: Paths.ABOUT,
-		element: ''
+		element: <AboutMe />
 	},
 	{
 		path: Paths.CITY,

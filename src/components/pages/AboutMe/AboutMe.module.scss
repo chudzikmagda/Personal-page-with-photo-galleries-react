@@ -1,0 +1,9 @@
+@import '../../../assets/styles/mixins.scss';
+@import '../../../assets/styles/wrappers.scss';
+
+.about-me {
+	&__heroImage {
+		max-width: 100%;
+		height: auto;
+	}
+}

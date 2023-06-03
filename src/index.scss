@@ -1,6 +1,10 @@
 @import 'reset-css';
 @import 'assets/styles/typography.scss';
 
+strong {
+	font-weight: 600;
+}
+
 button {
 	&:hover {
 		cursor: pointer;
