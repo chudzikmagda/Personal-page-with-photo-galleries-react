@@ -25,7 +25,7 @@ const LanguageSwitcher = (): ReactElement => {
 
 	const availableLanguages: Language[] = [
 		{ prefix: 'en', displayValue: 'English', icon: enFlag },
-		{ prefix: 'pl', displayValue: 'Polish', icon: plFlag }
+		{ prefix: 'pl', displayValue: 'Polski', icon: plFlag }
 	];
 
 	const displayCurrentLanguage = (languagePrefix: string): Language | undefined =>
