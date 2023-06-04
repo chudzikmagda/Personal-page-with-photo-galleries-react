@@ -14,11 +14,14 @@ const Footer = (): ReactElement => {
 			<div className={styles['footer__social-media']}>
 				{footerSocialMediaPaths.map((footerSocialMediaPath: SocialMedia) => {
 					return (
-						<>
-							<a href={footerSocialMediaPath.path} className={styles.footer__link} target="_blank" rel="noopener noreferrer">
-								{footerSocialMediaPath.name}
-							</a>
-						</>
+						<a
+							key={footerSocialMediaPath.name}
+							href={footerSocialMediaPath.path}
+							className={styles.footer__link}
+							target="_blank"
+							rel="noopener noreferrer">
+							{footerSocialMediaPath.name}
+						</a>
 					);
 				})}
 			</div>
