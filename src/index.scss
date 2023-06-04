@@ -1,8 +1,62 @@
 @import 'reset-css';
+@import 'assets/styles/colors.scss';
+@import 'assets/styles/variables.scss';
 @import 'assets/styles/typography.scss';
 
+html,
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#root {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+p,
+h3,
+h4 {
+	a {
+		&:link,
+		&:visited {
+			text-decoration: none;
+			color: $text-dark;
+		}
+
+		&:link {
+			position: relative;
+			@include transition;
+
+			&::after {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				content: '';
+				height: 2px;
+				width: 100%;
+				background-color: $primary-color;
+				@include transition;
+			}
+		}
+
+		&:hover {
+			color: $primary-color;
+
+			&::after {
+				bottom: 100%;
+			}
+		}
+
+		@include focus;
+	}
+}
+
 strong {
-	font-weight: 600;
+	font-weight: $font-bold;
 }
 
 button {

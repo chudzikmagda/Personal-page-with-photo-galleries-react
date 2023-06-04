@@ -14,8 +14,5 @@
 	max-width: $container-s-max-width;
 	margin: 0 auto;
 	text-align: left;
-
-	@include breakpoint(large) {
-		padding: 0 $padding-basic;
-	}
+	padding: 0 $padding-basic;
 }

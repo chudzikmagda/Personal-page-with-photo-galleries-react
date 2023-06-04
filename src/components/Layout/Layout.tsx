@@ -7,13 +7,11 @@ import { LayoutProps } from './models/LayoutModels';
 
 const Layout = (props: LayoutProps): ReactElement => {
 	return (
-		<>
-			<div className={styles.wrapper}>
-				<Header />
-				<Content content={props.content} />
-				<Footer />
-			</div>
-		</>
+		<div className={styles.layout}>
+			<Header />
+			<Content content={props.content} />
+			<Footer />
+		</div>
 	);
 };
 

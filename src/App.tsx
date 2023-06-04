@@ -15,7 +15,7 @@ function App(): ReactElement {
 
 	return (
 		<LanguageContext.Provider value={{ language, onLanguageChange: handleLanguageChange }}>
-			<HomePage />;
+			<HomePage />
 		</LanguageContext.Provider>
 	);
 }
