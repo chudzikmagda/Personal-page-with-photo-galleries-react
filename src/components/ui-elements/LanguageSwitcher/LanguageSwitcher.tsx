@@ -29,7 +29,7 @@ const LanguageSwitcher = (): ReactElement => {
 	];
 
 	const displayCurrentLanguage = (languagePrefix: string): Language | undefined =>
-		availableLanguages.find((language) => language.prefix === languagePrefix);
+		availableLanguages.find((language: Language) => language.prefix === languagePrefix);
 
 	return (
 		<LanguageContext.Consumer>

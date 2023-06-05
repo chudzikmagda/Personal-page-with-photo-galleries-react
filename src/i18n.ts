@@ -11,7 +11,7 @@ i18n.use(detector)
 			en: { translation: enTranslations },
 			pl: { translation: plTranslations }
 		},
-		lng: navigator.language,
+		lng: navigator.language.substring(0, 2),
 		fallbackLng: 'en',
 		supportedLngs: ['en', 'pl'],
 		load: 'languageOnly',
