@@ -1,0 +1,34 @@
+@import '../../../assets/styles/mixins.scss';
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 8px;
+
+	@include breakpoint(large) {
+		grid-template-columns: repeat(4, 1fr);
+		gap: 16px;
+	}
+
+	&__item {
+		position: relative;
+		overflow: hidden;
+
+		&--double {
+			grid-column-end: span 2;
+		}
+	}
+
+	&__thumbnail {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		@include transition($element: transform);
+		@include focus;
+
+		&:hover {
+			transform: scale(1.1);
+			cursor: pointer;
+		}
+	}
+}

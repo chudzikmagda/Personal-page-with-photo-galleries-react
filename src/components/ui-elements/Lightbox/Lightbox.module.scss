@@ -1,0 +1,75 @@
+@import './../../../assets/styles/colors.scss';
+@import './../../../assets/styles/mixins.scss';
+
+body:has(.lightbox) {
+	overflow: hidden;
+}
+
+.lightbox {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas:
+		'. closeButton'
+		'photo photo'
+		'prevButton nextButton';
+	gap: 8px;
+	background-color: rgba($primary-dark, 0.9);
+	z-index: 10000;
+
+	@include breakpoint(large) {
+		grid-template-columns: auto 1fr auto;
+		grid-template-rows: auto 1fr;
+		grid-template-areas:
+			' . . closeButton'
+			'prevButton photo nextButton';
+	}
+
+	&__image {
+		grid-area: photo;
+		align-self: center;
+		justify-self: center;
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: contain;
+	}
+
+	&__closeButton {
+		grid-area: closeButton;
+		padding: 4px;
+		text-align: right;
+	}
+
+	&__prevButton {
+		grid-area: prevButton;
+		align-self: center;
+	}
+
+	&__nextButton {
+		grid-area: nextButton;
+		align-self: center;
+	}
+
+	&__closeButton,
+	&__prevButton,
+	&__nextButton {
+		align-self: center;
+		background: none;
+		outline: none;
+		border: none;
+		color: white;
+		opacity: 1;
+		@include transition($element: opacity);
+
+		&:hover {
+			opacity: 0.3;
+		}
+
+		@include focus;
+	}
+}
