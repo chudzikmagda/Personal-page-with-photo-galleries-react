@@ -6,17 +6,13 @@
 	gap: 8px;
 
 	@include breakpoint(large) {
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		gap: 16px;
 	}
 
 	&__item {
 		position: relative;
 		overflow: hidden;
-
-		&--double {
-			grid-column-end: span 2;
-		}
 	}
 
 	&__thumbnail {
