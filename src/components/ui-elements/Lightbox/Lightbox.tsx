@@ -11,16 +11,16 @@ const Lightbox = (props: LightboxProps): ReactElement => {
 	const images: Image[] = props.images;
 	const [index, setIndex] = useState(props.currentIndex);
 
-	const goToNextImage = () => {
+	const goToNextImage = (): void => {
 		setIndex((prevIndex) => (prevIndex + 1) % images.length);
 	};
 
-	const goToPreviousImage = () => {
+	const goToPreviousImage = (): void => {
 		setIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
 	};
 
-	useEffect(() => {
-		document.addEventListener('keydown', (event: KeyboardEvent) => {
+	useEffect((): (() => void) => {
+		const onKeyDownClick = (event: KeyboardEvent): void => {
 			switch (event.key) {
 				case 'Escape':
 					return props.closeImage(false);
@@ -29,7 +29,12 @@ const Lightbox = (props: LightboxProps): ReactElement => {
 				case 'ArrowRight':
 					return goToNextImage();
 			}
-		});
+		};
+		document.addEventListener('keydown', onKeyDownClick);
+
+		return () => {
+			document.removeEventListener('keydown', onKeyDownClick);
+		};
 	});
 
 	return (
