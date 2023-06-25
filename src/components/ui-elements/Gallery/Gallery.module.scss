@@ -10,6 +10,14 @@
 		gap: 16px;
 	}
 
+	&__heading {
+		padding: 0 $padding-basic;
+
+		@include breakpoint(large) {
+			padding: initial;
+		}
+	}
+
 	&__item {
 		position: relative;
 		overflow: hidden;

@@ -10,7 +10,7 @@ const CustomGallery = (props: CustomGalleryProps): ReactElement => {
 
 	return (
 		<>
-			<h3>{props.heading}</h3>
+			<h3 className={styles.gallery__heading}>{props.heading}</h3>
 			<div className={styles.gallery}>
 				{images.map((image: Image, index: number) => {
 					return (
