@@ -9,7 +9,7 @@ const City = (): ReactElement => {
 		<Layout
 			content={
 				<div className={styles.wrapper}>
-					<CustomGallery id="gallery-city" heading="City" images={images} />
+					<CustomGallery heading="City" images={images} />
 				</div>
 			}
 		/>

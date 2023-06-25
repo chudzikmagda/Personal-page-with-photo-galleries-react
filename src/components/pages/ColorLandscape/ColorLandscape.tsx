@@ -9,7 +9,7 @@ const ColorLandscape = (): ReactElement => {
 		<Layout
 			content={
 				<div className={styles.wrapper}>
-					<CustomGallery id="gallery-city" heading="Color Landscape" images={images} />
+					<CustomGallery heading="Color Landscape" images={images} />
 				</div>
 			}
 		/>
