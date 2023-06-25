@@ -5,6 +5,7 @@ import { Paths } from './models/RoutingModels';
 import LandscapePage from '../components/pages/LandscapePage/LandscapePage';
 import AboutMe from '../components/pages/AboutMe/AboutMe';
 import City from '../components/pages/City/City';
+import ColorLandscape from '../components/pages/ColorLandscape/ColorLandscape';
 
 const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	{
@@ -25,17 +26,15 @@ const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	},
 	{
 		path: Paths.LANDSCAPE,
-		element: <LandscapePage />,
-		children: [
-			{
-				path: Paths.BW_LANDSCAPE,
-				element: ''
-			},
-			{
-				path: Paths.COLOR_LANDSCAPE,
-				element: ''
-			}
-		]
+		element: <LandscapePage />
+	},
+	{
+		path: `${Paths.LANDSCAPE}/${Paths.BW_LANDSCAPE}`,
+		element: ''
+	},
+	{
+		path: `${Paths.LANDSCAPE}/${Paths.COLOR_LANDSCAPE}`,
+		element: <ColorLandscape />
 	},
 	{
 		path: Paths.PRINTS,
@@ -43,7 +42,7 @@ const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	},
 	{
 		path: '*',
-		element: ''
+		element: '404'
 	}
 ]);
 
