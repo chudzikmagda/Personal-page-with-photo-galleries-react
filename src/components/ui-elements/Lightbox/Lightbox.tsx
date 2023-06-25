@@ -42,7 +42,9 @@ const Lightbox = (props: LightboxProps): ReactElement => {
 			<button className={styles.lightbox__closeButton} onClick={() => props.closeImage(false)}>
 				<CloseIcon />
 			</button>
-			<img src={images[index].src} className={styles.lightbox__image} />
+			<div className={styles['lightbox__image-wrapper']}>
+				<img src={images[index].src} className={styles.lightbox__image} alt={images[index].alt} />
+			</div>
 			<button className={styles.lightbox__prevButton} onClick={goToPreviousImage}>
 				<PrevIcon />
 			</button>

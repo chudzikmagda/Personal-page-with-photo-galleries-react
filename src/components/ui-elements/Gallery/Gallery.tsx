@@ -22,12 +22,13 @@ const CustomGallery = (props: CustomGalleryProps): ReactElement => {
 									setIsImageOpen(true);
 									setCurrentIndex(index);
 								}}
+								alt={image.alt}
 							/>
 						</div>
 					);
 				})}
-				{isImageOpen && <Lightbox currentIndex={currentIndex} images={images} closeImage={(state: boolean) => setIsImageOpen(state)} />}
 			</div>
+			{isImageOpen && <Lightbox currentIndex={currentIndex} images={images} closeImage={(state: boolean) => setIsImageOpen(state)} />}
 		</>
 	);
 };

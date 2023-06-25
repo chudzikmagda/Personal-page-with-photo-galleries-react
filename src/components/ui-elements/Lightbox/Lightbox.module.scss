@@ -19,24 +19,37 @@ body:has(.lightbox) {
 		'photo photo'
 		'prevButton nextButton';
 	gap: 8px;
-	background-color: rgba($primary-dark, 0.9);
+	background-color: rgba($primary-dark, 0.95);
 	z-index: 10000;
 
 	@include breakpoint(large) {
 		grid-template-columns: auto 1fr auto;
-		grid-template-rows: auto 1fr;
+		grid-template-rows: auto 1fr 24px;
 		grid-template-areas:
 			' . . closeButton'
-			'prevButton photo nextButton';
+			'prevButton photo nextButton'
+			'. . .';
 	}
 
 	&__image {
-		grid-area: photo;
-		align-self: center;
-		justify-self: center;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
 		max-width: 100%;
 		max-height: 100%;
-		object-fit: contain;
+		width: auto;
+		height: auto;
+		margin: auto;
+
+		&-wrapper {
+			position: relative;
+			grid-area: photo;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 
 	&__closeButton {
