@@ -2,20 +2,16 @@ import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import App from '../App';
 import { Paths } from './models/RoutingModels';
-import LandscapePage from '../components/pages/LandscapePage/LandscapePage';
-import AboutMe from '../components/pages/AboutMe/AboutMe';
-import City from '../components/pages/City/City';
-import ColorLandscape from '../components/pages/ColorLandscape/ColorLandscape';
-import BwLandscape from '../components/pages/BwLandscape/BwLandscape';
+import useLazyLoadRoute from '../hooks/useLazyLoadRoute/useLazyLoadRoute';
 
 const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	{
 		path: Paths.ABOUT,
-		element: <AboutMe />
+		element: useLazyLoadRoute('AboutMe')
 	},
 	{
 		path: Paths.CITY,
-		element: <City />
+		element: useLazyLoadRoute('City')
 	},
 	{
 		path: Paths.CONTACT,
@@ -23,15 +19,15 @@ const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	},
 	{
 		path: Paths.LANDSCAPE,
-		element: <LandscapePage />
+		element: useLazyLoadRoute('LandscapePage')
 	},
 	{
 		path: `${Paths.LANDSCAPE}/${Paths.BW_LANDSCAPE}`,
-		element: <BwLandscape />
+		element: useLazyLoadRoute('BwLandscape')
 	},
 	{
 		path: `${Paths.LANDSCAPE}/${Paths.COLOR_LANDSCAPE}`,
-		element: <ColorLandscape />
+		element: useLazyLoadRoute('ColorLandscape')
 	},
 	{
 		path: Paths.PRINTS,
