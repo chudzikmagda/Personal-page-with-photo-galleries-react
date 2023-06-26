@@ -35,7 +35,12 @@ const Menu = (): ReactElement => {
 				{menuItems.map((menuItem: MenuItem, index: number) => {
 					return (
 						<span key={index} className={styles['menu__item-wrapper']}>
-							<NavLink to={`/${menuItem.path}`} className={styles.menu__item} style={{ animationDelay: `${index / 3}s` }}>
+							<NavLink
+								to={`/${menuItem.path}`}
+								className={({ isActive }) =>
+									isActive ? `${styles.menu__item} ${styles['menu__item--active']}` : `${styles.menu__item}`
+								}
+								style={{ animationDelay: `${index / 3}s` }}>
 								{menuItem.menuTitle}
 							</NavLink>
 						</span>

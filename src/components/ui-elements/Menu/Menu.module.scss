@@ -23,7 +23,6 @@
 		color: $text-dark;
 		text-decoration: none;
 		padding: 2px;
-
 		@include focus;
 
 		&::after {
@@ -41,6 +40,20 @@
 		&:hover {
 			&::after {
 				bottom: 2px;
+			}
+		}
+
+		&--active {
+			color: $grey-medium;
+
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 2px;
+				left: 0;
+				right: 0;
+				height: 2px;
+				background-color: $grey-medium;
 			}
 		}
 

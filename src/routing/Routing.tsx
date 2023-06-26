@@ -10,10 +10,6 @@ import BwLandscape from '../components/pages/BwLandscape/BwLandscape';
 
 const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	{
-		path: '/',
-		element: <App />
-	},
-	{
 		path: Paths.ABOUT,
 		element: <AboutMe />
 	},
@@ -40,6 +36,10 @@ const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	{
 		path: Paths.PRINTS,
 		element: ''
+	},
+	{
+		path: '/',
+		element: <App />
 	},
 	{
 		path: '*',
