@@ -4,5 +4,6 @@ import * as Galleries from './Galleries.json';
 import * as HomePage from './HomePage.json';
 import * as Landscape from './Landscape.json';
 import * as Menu from './Menu.json';
+import * as Spinner from './Spinner.json';
 
-export { AboutMe, Footer, Galleries, HomePage, Landscape, Menu };
+export { AboutMe, Footer, Galleries, HomePage, Landscape, Menu, Spinner };
