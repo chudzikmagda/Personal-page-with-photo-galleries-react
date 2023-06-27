@@ -1,11 +1,11 @@
 import React, { ReactElement } from 'react';
-import styles from './City.module.scss';
+import styles from './CityPage.module.scss';
 import Layout from '../../Layout/Layout';
 import CustomGallery from '../../ui-elements/Gallery/Gallery';
-import { images } from './models/CityModels';
+import { images } from './models/CityPageModels';
 import { t } from 'i18next';
 
-const City = (): ReactElement => {
+const CityPage = (): ReactElement => {
 	return (
 		<Layout
 			content={
@@ -17,4 +17,4 @@ const City = (): ReactElement => {
 	);
 };
 
-export default City;
+export default CityPage;

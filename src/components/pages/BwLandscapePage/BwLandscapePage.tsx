@@ -1,11 +1,11 @@
 import React, { ReactElement } from 'react';
-import styles from './BwLandscape.module.scss';
+import styles from './BwLandscapePage.module.scss';
 import Layout from '../../Layout/Layout';
 import CustomGallery from '../../ui-elements/Gallery/Gallery';
-import { images } from './models/BwLandscapeModels';
+import { images } from './models/BwLandscapePageModels';
 import { t } from 'i18next';
 
-const BwLandscape = (): ReactElement => {
+const BwLandscapePage = (): ReactElement => {
 	return (
 		<Layout
 			content={
@@ -17,4 +17,4 @@ const BwLandscape = (): ReactElement => {
 	);
 };
 
-export default BwLandscape;
+export default BwLandscapePage;

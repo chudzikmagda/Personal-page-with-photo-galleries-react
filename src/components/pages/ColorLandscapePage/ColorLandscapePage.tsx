@@ -1,11 +1,11 @@
 import React, { ReactElement } from 'react';
-import styles from './ColorLandscape.module.scss';
+import styles from './ColorLandscapePage.module.scss';
 import Layout from '../../Layout/Layout';
 import CustomGallery from '../../ui-elements/Gallery/Gallery';
-import { images } from './models/ColorLandscapeModels';
+import { images } from './models/ColorLandscapePageModels';
 import { t } from 'i18next';
 
-const ColorLandscape = (): ReactElement => {
+const ColorLandscapePage = (): ReactElement => {
 	return (
 		<Layout
 			content={
@@ -17,4 +17,4 @@ const ColorLandscape = (): ReactElement => {
 	);
 };
 
-export default ColorLandscape;
+export default ColorLandscapePage;

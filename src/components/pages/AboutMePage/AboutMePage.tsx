@@ -3,12 +3,12 @@ import { ReactElement } from 'react';
 import Layout from '../../Layout/Layout';
 import { useTranslation } from 'react-i18next';
 import heroImage from './../../../assets/images/template/photographer-magda-chudzik.jpg';
-import styles from './AboutMe.module.scss';
+import styles from './AboutMePage.module.scss';
 import { Trans } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { SocialMedia, SocialMediaPaths } from '../../../shared/models/models';
 
-const AboutMe: React.FC = (): ReactElement => {
+const AboutMePage: React.FC = (): ReactElement => {
 	const { t } = useTranslation();
 
 	const socialMediaPaths: SocialMedia[] = Object.entries(SocialMediaPaths).map(([name, path]) => ({ name, path } as SocialMedia));
@@ -106,4 +106,4 @@ const AboutMe: React.FC = (): ReactElement => {
 	);
 };
 
-export default AboutMe;
+export default AboutMePage;

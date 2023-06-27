@@ -7,11 +7,11 @@ import useLazyLoadRoute from '../hooks/useLazyLoadRoute/useLazyLoadRoute';
 const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	{
 		path: Paths.ABOUT,
-		element: useLazyLoadRoute('AboutMe')
+		element: useLazyLoadRoute('AboutMePage')
 	},
 	{
 		path: Paths.CITY,
-		element: useLazyLoadRoute('City')
+		element: useLazyLoadRoute('CityPage')
 	},
 	{
 		path: Paths.CONTACT,
@@ -23,11 +23,11 @@ const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	},
 	{
 		path: `${Paths.LANDSCAPE}/${Paths.BW_LANDSCAPE}`,
-		element: useLazyLoadRoute('BwLandscape')
+		element: useLazyLoadRoute('BwLandscapePage')
 	},
 	{
 		path: `${Paths.LANDSCAPE}/${Paths.COLOR_LANDSCAPE}`,
-		element: useLazyLoadRoute('ColorLandscape')
+		element: useLazyLoadRoute('ColorLandscapePage')
 	},
 	{
 		path: Paths.PRINTS,
