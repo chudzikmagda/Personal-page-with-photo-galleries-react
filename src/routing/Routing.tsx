@@ -31,7 +31,7 @@ const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	},
 	{
 		path: Paths.PRINTS,
-		element: ''
+		element: useLazyLoadRoute('PrintsPage')
 	},
 	{
 		path: '/',

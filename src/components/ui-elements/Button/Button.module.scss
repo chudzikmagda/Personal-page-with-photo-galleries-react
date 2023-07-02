@@ -1,0 +1,80 @@
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/variables.scss';
+@import '../../../assets/styles/mixins.scss';
+
+.btn {
+	outline: none;
+	background: none;
+	border: 2px solid;
+	border-radius: 4px;
+	padding: $padding-basic $padding-basic * 2;
+	@include transition;
+
+	&--primary-solid {
+		background: $primary-color;
+		border-color: $primary-color;
+		color: $text-light;
+
+		&:focus,
+		&:focus-visible,
+		&:hover {
+			color: $primary-color;
+		}
+	}
+
+	&--secondary-solid {
+		background: $secondary-color;
+		border-color: $secondary-color;
+		color: $text-light;
+
+		&:focus,
+		&:focus-visible,
+		&:hover {
+			color: $secondary-color;
+		}
+	}
+
+	&--primary-solid,
+	&--secondary-solid {
+		&:focus,
+		&:focus-visible,
+		&:hover {
+			outline: none;
+			background: none;
+		}
+	}
+
+	&--primary-outline {
+		background: none;
+		border-color: $primary-color;
+		color: $primary-color;
+
+		&:focus,
+		&:focus-visible,
+		&:hover {
+			background-color: $primary-color;
+		}
+	}
+
+	&--secondary-outline {
+		background: none;
+		border-color: $secondary-color;
+		color: $secondary-color;
+
+		&:focus,
+		&:focus-visible,
+		&:hover {
+			background-color: $secondary-color;
+		}
+	}
+
+	&--primary-outline,
+	&--secondary-outline {
+		&:focus,
+		&:focus-visible,
+		&:hover {
+			outline: none;
+			color: $text-light;
+		}
+	}
+}

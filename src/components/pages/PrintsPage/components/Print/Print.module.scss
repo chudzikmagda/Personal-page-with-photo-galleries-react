@@ -1,0 +1,39 @@
+@import '../../../../../assets/styles/colors.scss';
+@import '../../../../../assets/styles/variables.scss';
+@import '../../../../../assets/styles/mixins.scss';
+
+.print {
+	@include flex;
+
+	&__description {
+		@include flex($align-items: center);
+		gap: $padding-basic;
+		width: 70%;
+		padding: $padding-basic * 2 $padding-basic;
+		background-color: rgba($grey-medium, 0.2);
+		z-index: 1;
+
+		@include breakpoint(large) {
+			width: 50%;
+			padding: $padding-basic * 3 $padding-basic * 2;
+		}
+	}
+
+	&__title {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	&__image {
+		max-width: 100%;
+		height: auto;
+		border-radius: 4px;
+		@include transition;
+
+		&:hover {
+			opacity: 0.7;
+			cursor: pointer;
+		}
+	}
+}
