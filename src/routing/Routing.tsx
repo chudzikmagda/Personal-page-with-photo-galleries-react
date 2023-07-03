@@ -39,7 +39,7 @@ const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	},
 	{
 		path: '*',
-		element: '404'
+		element: useLazyLoadRoute('PageNotFound')
 	}
 ]);
 
