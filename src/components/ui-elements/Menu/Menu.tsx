@@ -1,4 +1,4 @@
-import React, { Dispatch, ReactElement, SetStateAction, useState } from 'react';
+import React, { Dispatch, SetStateAction, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { MenuItem } from './models/MenuModels';
 import { Paths } from '../../../routing/models/RoutingModels';
@@ -6,7 +6,7 @@ import styles from './Menu.module.scss';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 
-const Menu = (): ReactElement => {
+const Menu: React.FC = () => {
 	const { t } = useTranslation();
 
 	const menuItems: MenuItem[] = [

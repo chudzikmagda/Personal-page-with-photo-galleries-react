@@ -1,9 +1,9 @@
 /* eslint-disable indent */
-import React, { ReactElement, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import { ButtonProps } from './models/Button.model';
 import styles from './Button.module.scss';
 
-const Button = (props: ButtonProps): ReactElement => {
+const Button: React.FC<ButtonProps> = (props) => {
 	const classNames: string = useMemo(() => {
 		let classes = `${styles.btn} `;
 

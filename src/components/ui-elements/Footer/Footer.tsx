@@ -1,10 +1,10 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import styles from './Footer.module.scss';
 import { SocialMediaPaths } from '../../../shared/models/models';
 import { SocialMedia } from '../../../shared/models/models';
 import { useTranslation } from 'react-i18next';
 
-const Footer = (): ReactElement => {
+const Footer: React.FC = () => {
 	const { t } = useTranslation();
 
 	const footerSocialMediaPaths: SocialMedia[] = Object.entries(SocialMediaPaths).map(([name, path]) => ({ name, path } as SocialMedia));

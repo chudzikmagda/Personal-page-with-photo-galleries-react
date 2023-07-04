@@ -1,11 +1,11 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import styles from './CityPage.module.scss';
 import Layout from '../../Layout/Layout';
 import CustomGallery from '../../ui-elements/Gallery/Gallery';
 import { images } from './models/CityPageModels';
 import { t } from 'i18next';
 
-const CityPage = (): ReactElement => {
+const CityPage: React.FC = () => {
 	return (
 		<Layout
 			content={

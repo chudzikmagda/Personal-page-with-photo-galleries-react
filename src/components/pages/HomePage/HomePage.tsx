@@ -1,5 +1,4 @@
 import React from 'react';
-import { ReactElement } from 'react';
 import Layout from '../../Layout/Layout';
 import Card from '../../ui-elements/Card/Card';
 import styles from './HomePage.module.scss';
@@ -8,7 +7,7 @@ import landscapePhoto from './../../../assets/images/galleries/categories/magda-
 import { Paths } from '../../../routing/models/RoutingModels';
 import { useTranslation } from 'react-i18next';
 
-const HomePage: React.FC = (): ReactElement => {
+const HomePage: React.FC = () => {
 	const { t } = useTranslation();
 
 	return (

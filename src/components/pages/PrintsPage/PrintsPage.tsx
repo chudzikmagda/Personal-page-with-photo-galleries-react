@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import styles from './PrintsPage.module.scss';
 import Layout from '../../Layout/Layout';
 import PrintItem from './components/Print/Print';
@@ -6,7 +6,7 @@ import { printCollection } from './components/Print/models/PrintModels';
 import { Print } from './components/Print/models/PrintModels';
 import { t } from 'i18next';
 
-const PrintsPage = (): ReactElement => {
+const PrintsPage: React.FC = () => {
 	return (
 		<Layout
 			content={

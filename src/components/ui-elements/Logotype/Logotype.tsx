@@ -1,8 +1,8 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Logotype.module.scss';
 
-const Logotype = (): ReactElement => {
+const Logotype: React.FC = () => {
 	return (
 		<Link to="/" className={styles.link}>
 			{'Magda Chudzik'}

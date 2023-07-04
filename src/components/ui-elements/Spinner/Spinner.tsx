@@ -1,8 +1,8 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import styles from './Spinner.module.scss';
 import { t } from 'i18next';
 
-const Spinner = (): ReactElement => {
+const Spinner: React.FC = () => {
 	return (
 		<div className={styles.spinner}>
 			<div className={styles.spinner__icon}>

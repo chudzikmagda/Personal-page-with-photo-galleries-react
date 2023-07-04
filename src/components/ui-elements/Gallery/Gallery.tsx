@@ -1,9 +1,9 @@
-import React, { ReactElement, useState } from 'react';
+import React, { useState } from 'react';
 import styles from './Gallery.module.scss';
 import { CustomGalleryProps, Image } from './models/GalleryModels';
 import Lightbox from '../Lightbox/Lightbox';
 
-const CustomGallery = (props: CustomGalleryProps): ReactElement => {
+const CustomGallery: React.FC<CustomGalleryProps> = (props) => {
 	const images: Image[] = props.images;
 	const [isImageOpen, setIsImageOpen] = useState(false);
 	const [currentIndex, setCurrentIndex] = useState(0);

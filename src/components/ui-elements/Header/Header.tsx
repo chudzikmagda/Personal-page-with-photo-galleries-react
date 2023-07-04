@@ -1,9 +1,9 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import styles from './Header.module.scss';
 import Logotype from '../Logotype/Logotype';
 import Menu from '../Menu/Menu';
 
-const Header = (): ReactElement => {
+const Header: React.FC = () => {
 	return (
 		<header className={styles.header}>
 			<Logotype />

@@ -1,9 +1,9 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import styles from './Card.module.scss';
 import { CardProps } from './models/CardProps';
 import { Link } from 'react-router-dom';
 
-const Card = (props: CardProps): ReactElement => {
+const Card: React.FC<CardProps> = (props) => {
 	return (
 		<div className={styles.card}>
 			<Link to={props.path} className={styles.card__link}></Link>

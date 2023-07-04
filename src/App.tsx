@@ -1,10 +1,10 @@
-import React, { ReactElement, useState } from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 import HomePage from './components/pages/HomePage/HomePage';
 import LanguageContext from './contexts/LanguageContext';
 import { useTranslation } from 'react-i18next';
 
-function App(): ReactElement {
+const App: React.FC = () => {
 	const { i18n } = useTranslation();
 	const [language, setLanguage] = useState(i18n.language);
 
@@ -18,6 +18,6 @@ function App(): ReactElement {
 			<HomePage />
 		</LanguageContext.Provider>
 	);
-}
+};
 
 export default App;

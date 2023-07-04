@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from 'react';
+import React, { useState } from 'react';
 import { Language } from './models/LanguageSwitcherModels';
 import LanguageContext from '../../../contexts/LanguageContext';
 import styles from './LanguageSwitcher.module.scss';
@@ -6,7 +6,7 @@ import { ElementProps, useClick, useDismiss, useFloating, useInteractions, useFo
 import enFlag from './../../../assets/images/template/flags/en.jpg';
 import plFlag from './../../../assets/images/template/flags/pl.jpg';
 
-const LanguageSwitcher = (): ReactElement => {
+const LanguageSwitcher: React.FC = () => {
 	const [isOptionsOpen, setIsOptionsOpen] = useState(false);
 	const { refs, floatingStyles, context } = useFloating<HTMLButtonElement>({
 		placement: 'bottom',

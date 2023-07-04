@@ -1,5 +1,5 @@
 /* eslint-disable indent */
-import React, { ReactElement, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { LightboxProps } from './models/LightboxModels';
 import { Image } from '../Gallery/models/GalleryModels';
 import styles from './Lightbox.module.scss';
@@ -7,7 +7,7 @@ import { ReactComponent as CloseIcon } from './../../../assets/images/template/l
 import { ReactComponent as NextIcon } from './../../../assets/images/template/lightbox/arrow-right.svg';
 import { ReactComponent as PrevIcon } from './../../../assets/images/template/lightbox/arrow-left.svg';
 
-const Lightbox = (props: LightboxProps): ReactElement => {
+const Lightbox: React.FC<LightboxProps> = (props) => {
 	const images: Image[] = props.images;
 	const [index, setIndex] = useState(props.currentIndex);
 

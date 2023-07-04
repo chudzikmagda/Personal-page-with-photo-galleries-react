@@ -1,5 +1,4 @@
 import React from 'react';
-import { ReactElement } from 'react';
 import Layout from '../../Layout/Layout';
 import Card from '../../ui-elements/Card/Card';
 import styles from './LandscapePage.module.scss';
@@ -8,7 +7,7 @@ import colorLandscapePhoto from './../../../assets/images/galleries/categories/m
 import { Paths } from '../../../routing/models/RoutingModels';
 import { useTranslation } from 'react-i18next';
 
-const LandscapePage: React.FC = (): ReactElement => {
+const LandscapePage: React.FC = () => {
 	const { t } = useTranslation();
 
 	return (
