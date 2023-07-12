@@ -1,5 +1,7 @@
 export type ButtonProps = {
-	apperance: 'primary-solid' | 'secondary-solid' | 'primary-outline' | 'secondary-outline';
+	apperance?: 'primary-solid' | 'secondary-solid' | 'primary-outline' | 'secondary-outline' | 'text';
+	disabled?: boolean;
 	cta: string;
-	onClick: () => void;
+	type?: 'button' | 'reset' | 'submit';
+	onClick?: () => void;
 };

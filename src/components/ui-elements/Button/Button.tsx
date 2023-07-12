@@ -16,16 +16,24 @@ const Button: React.FC<ButtonProps> = (props) => {
 				return (classes += styles['btn--primary-outline']);
 			case 'secondary-outline':
 				return (classes += styles['btn--secondary-outline']);
+			case 'text':
+				return (classes += styles['btn--text']);
 		}
 
 		return classNames;
 	}, [props.apperance]);
 
 	return (
-		<button type="button" className={classNames} onClick={props.onClick}>
+		<button type="button" className={classNames} disabled={props.disabled} onClick={props.onClick}>
 			{props.cta}
 		</button>
 	);
+};
+
+Button.defaultProps = {
+	apperance: 'primary-solid',
+	disabled: false,
+	type: 'button'
 };
 
 export default Button;

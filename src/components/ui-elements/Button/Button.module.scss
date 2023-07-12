@@ -20,6 +20,16 @@
 		&:hover {
 			color: $primary-color;
 		}
+
+		&[disabled] {
+			&:focus,
+			&:focus-visible,
+			&:hover {
+				background: $primary-color;
+				border-color: $primary-color;
+				color: $text-light;
+			}
+		}
 	}
 
 	&--secondary-solid {
@@ -31,6 +41,16 @@
 		&:focus-visible,
 		&:hover {
 			color: $secondary-color;
+		}
+
+		&[disabled] {
+			&:focus,
+			&:focus-visible,
+			&:hover {
+				background: $secondary-color;
+				border-color: $secondary-color;
+				color: $text-light;
+			}
 		}
 	}
 
@@ -54,6 +74,16 @@
 		&:hover {
 			background-color: $primary-color;
 		}
+
+		&[disabled] {
+			&:focus,
+			&:focus-visible,
+			&:hover {
+				background: none;
+				border-color: $primary-color;
+				color: $primary-color;
+			}
+		}
 	}
 
 	&--secondary-outline {
@@ -66,6 +96,16 @@
 		&:hover {
 			background-color: $secondary-color;
 		}
+
+		&[disabled] {
+			&:focus,
+			&:focus-visible,
+			&:hover {
+				background: none;
+				border-color: $secondary-color;
+				color: $secondary-color;
+			}
+		}
 	}
 
 	&--primary-outline,
@@ -75,6 +115,34 @@
 		&:hover {
 			outline: none;
 			color: $text-light;
+		}
+	}
+
+	&--text {
+		border: 0;
+
+		&:focus,
+		&:focus-visible,
+		&:hover {
+			color: $primary-color;
+		}
+
+		&[disabled] {
+			&:focus,
+			&:focus-visible,
+			&:hover {
+				color: $text-dark;
+			}
+		}
+	}
+
+	&[disabled] {
+		opacity: 0.5;
+
+		&:focus,
+		&:focus-visible,
+		&:hover {
+			cursor: default;
 		}
 	}
 }
