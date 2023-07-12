@@ -1,0 +1,39 @@
+@import './../../../assets/styles/colors.scss';
+@import './../../../assets/styles/variables.scss';
+@import './../../../assets/styles/mixins.scss';
+
+.input {
+	@include flex($align-items: initial);
+	width: 100%;
+
+	&__wrapper {
+		@include flex($align-items: initial, $justify-content: flex-start);
+		width: 100%;
+		min-height: 72px;
+	}
+
+	&__element {
+		padding: $padding-basic * 2;
+		border: 2px solid $grey-medium;
+		border-radius: 4px;
+	}
+
+	&__label {
+		font-size: 14px;
+		font-weight: $font-bold;
+	}
+
+	&__asterix {
+		font-weight: normal;
+	}
+
+	&__error {
+		font-size: 11px;
+		font-weight: $font-bold;
+		color: $primary-color;
+	}
+}
+
+::placeholder {
+	font-family: $font-family;
+}
