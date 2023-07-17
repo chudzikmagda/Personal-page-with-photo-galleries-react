@@ -15,7 +15,7 @@ const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	},
 	{
 		path: Paths.CONTACT,
-		element: ''
+		element: useLazyLoadRoute('ContactPage')
 	},
 	{
 		path: Paths.LANDSCAPE,

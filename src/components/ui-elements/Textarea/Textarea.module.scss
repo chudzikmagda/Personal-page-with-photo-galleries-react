@@ -2,21 +2,31 @@
 @import './../../../assets/styles/variables.scss';
 @import './../../../assets/styles/mixins.scss';
 
-.input {
+.textarea {
 	@include flex($align-items: initial);
 	width: 100%;
 
 	&__wrapper {
 		@include flex($align-items: initial, $justify-content: flex-start);
 		width: 100%;
-		min-height: 72px;
+		min-height: 220px;
+
+		@include breakpoint(medium) {
+			min-height: 380px;
+		}
 	}
 
 	&__element {
+		min-height: 160px;
 		padding: $padding-basic * 2;
 		border: 2px solid $grey-medium;
 		border-radius: 4px;
 		font-family: $font-family;
+		resize: vertical;
+
+		@include breakpoint(medium) {
+			min-height: 320px;
+		}
 	}
 
 	&__label {

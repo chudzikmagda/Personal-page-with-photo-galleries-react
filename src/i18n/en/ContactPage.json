@@ -1,0 +1,24 @@
+{
+	"heading": "Contact",
+	"form": {
+		"info": "Fields marked with an * are required",
+		"nameInput": {
+			"label": "Name",
+			"placeholder": "Your first and second name"
+		},
+		"emailInput": {
+			"label": "E-mail",
+			"placeholder": "Your e-mail address"
+		},
+		"textarea": {
+			"label": "Message",
+			"placeholder": "Type your message..."
+		},
+		"resetButton": "Reset",
+		"submitButton": "Send a message",
+		"error": {
+			"required": "This is a required field.",
+			"minLength": "The minimum text length is 2 characters."
+		}
+	}
+}

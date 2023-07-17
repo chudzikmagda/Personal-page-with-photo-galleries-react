@@ -1,0 +1,24 @@
+{
+	"heading": "Kontakt",
+	"form": {
+		"info": "Pola oznaczone znakiem * są wymagane",
+		"nameInput": {
+			"label": "Imię i nazwisko",
+			"placeholder": "Twoje imię i nazwisko"
+		},
+		"emailInput": {
+			"label": "E-mail",
+			"placeholder": "Twój adres e-mail"
+		},
+		"textarea": {
+			"label": "Wiadomość",
+			"placeholder": "Tutaj wpisz swoją wiadomość..."
+		},
+		"resetButton": "Reset",
+		"submitButton": "Wyślij wiadomość",
+		"error": {
+			"required": "To pole jest wymagane.",
+			"minLength": "Minimalna długość tektu to 2 znaki."
+		}
+	}
+}
