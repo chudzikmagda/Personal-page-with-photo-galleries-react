@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './App.scss';
-import HomePage from './components/pages/HomePage/HomePage';
 import LanguageContext from './contexts/LanguageContext';
-import { useTranslation } from 'react-i18next';
+import { RouterProvider } from 'react-router-dom';
+import Router from './routing/Routing';
+import i18n from './i18n';
 
 const App: React.FC = () => {
-	const { i18n } = useTranslation();
 	const [language, setLanguage] = useState(i18n.language);
 
 	const handleLanguageChange = (lang: string): void => {
@@ -14,8 +14,8 @@ const App: React.FC = () => {
 	};
 
 	return (
-		<LanguageContext.Provider value={{ language, onLanguageChange: handleLanguageChange }}>
-			<HomePage />
+		<LanguageContext.Provider value={{ state: language, onChange: handleLanguageChange }}>
+			<RouterProvider router={Router} />
 		</LanguageContext.Provider>
 	);
 };

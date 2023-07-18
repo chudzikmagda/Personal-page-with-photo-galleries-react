@@ -1,6 +1,4 @@
-import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
-import App from '../App';
 import { Paths } from './models/RoutingModels';
 import useLazyLoadRoute from '../hooks/useLazyLoadRoute/useLazyLoadRoute';
 
@@ -35,7 +33,7 @@ const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	},
 	{
 		path: '/',
-		element: <App />
+		element: useLazyLoadRoute('HomePage')
 	},
 	{
 		path: '*',

@@ -3,11 +3,13 @@ import Input from '../../ui-elements/Input/Input';
 import Button from '../../ui-elements/Button/Button';
 import { ContactForm, ContactFormValue } from './models/ContactPage.model';
 import styles from './ContactPage.module.scss';
-import { t } from 'i18next';
 import Layout from '../../Layout/Layout';
 import Textarea from '../../ui-elements/Textarea/Textarea';
+import { useTranslation } from 'react-i18next';
 
 const ContactPage: React.FC = () => {
+	const { t } = useTranslation();
+
 	const initialContactFormValues: ContactForm = {
 		email: { value: '', error: '' },
 		name: { value: '', error: '' },
