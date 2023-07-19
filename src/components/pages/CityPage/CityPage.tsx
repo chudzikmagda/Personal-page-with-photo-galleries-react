@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './CityPage.module.scss';
-import Layout from '../../Layout/Layout';
 import CustomGallery from '../../ui-elements/Gallery/Gallery';
 import { images } from './models/CityPageModels';
 import { t } from 'i18next';
+import Layout from '../../layout-elements/Layout/Layout';
 
 const CityPage: React.FC = () => {
 	return (

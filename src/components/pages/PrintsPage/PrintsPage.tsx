@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './PrintsPage.module.scss';
-import Layout from '../../Layout/Layout';
 import PrintItem from './components/Print/Print';
 import { printCollection } from './components/Print/models/PrintModels';
 import { Print } from './components/Print/models/PrintModels';
 import { t } from 'i18next';
+import Layout from '../../layout-elements/Layout/Layout';
 
 const PrintsPage: React.FC = () => {
 	return (

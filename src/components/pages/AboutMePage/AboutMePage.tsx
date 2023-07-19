@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../../Layout/Layout';
+import Layout from '../../layout-elements/Layout/Layout';
 import { useTranslation } from 'react-i18next';
 import heroImage from './../../../assets/images/template/photographer-magda-chudzik.jpg';
 import styles from './AboutMePage.module.scss';

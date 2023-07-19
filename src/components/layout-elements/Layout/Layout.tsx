@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from '../ui-elements/Header/Header';
 import styles from './Layout.module.scss';
-import Footer from '../ui-elements/Footer/Footer';
 import Content from '../Content/Content';
 import { LayoutProps } from './models/LayoutModels';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 const Layout: React.FC<LayoutProps> = (props) => {
 	return (

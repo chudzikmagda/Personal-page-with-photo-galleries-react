@@ -1,10 +1,10 @@
 import React from 'react';
-import Layout from '../../Layout/Layout';
 import styles from './PageNotFound.module.scss';
 import { t } from 'i18next';
 import Button from '../../ui-elements/Button/Button';
 import { NavigateFunction, useNavigate } from 'react-router-dom';
 import heroImage from '../../../assets/images/template/page404-image-background.jpg';
+import Layout from '../../layout-elements/Layout/Layout';
 
 const PageNotFound: React.FunctionComponent = () => {
 	const navigate: NavigateFunction = useNavigate();

@@ -1,11 +1,11 @@
 import React from 'react';
-import Layout from '../../Layout/Layout';
 import Card from '../../ui-elements/Card/Card';
-import styles from './LandscapePage.module.scss';
+import Layout from '../../layout-elements/Layout/Layout';
 import bwLandscapePhoto from './../../../assets/images/galleries/categories/magda-chudzik-bw-landscape-photography.jpg';
 import colorLandscapePhoto from './../../../assets/images/galleries/categories/magda-chudzik-color-landscape-photography.jpg';
 import { Paths } from '../../../routing/models/RoutingModels';
 import { useTranslation } from 'react-i18next';
+import styles from './LandscapePage.module.scss';
 
 const LandscapePage: React.FC = () => {
 	const { t } = useTranslation();

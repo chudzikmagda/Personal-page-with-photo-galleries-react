@@ -1,0 +1,7 @@
+@import '../../../assets/styles/variables.scss';
+@import '../../../assets/styles/mixins.scss';
+
+.layout {
+	flex: 1;
+	@include flex($justify-content: space-between);
+}

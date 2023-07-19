@@ -1,6 +1,6 @@
-@import './../../../assets/styles/colors.scss';
-@import './../../../assets/styles/variables.scss';
-@import './../../../assets/styles/mixins.scss';
+@import './../../../../assets/styles/colors.scss';
+@import './../../../../assets/styles/variables.scss';
+@import './../../../../assets/styles/mixins.scss';
 
 .input {
 	@include flex($align-items: initial);

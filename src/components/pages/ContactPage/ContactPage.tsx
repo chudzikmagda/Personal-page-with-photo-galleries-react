@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Input from '../../ui-elements/Input/Input';
 import Button from '../../ui-elements/Button/Button';
+import Layout from '../../layout-elements/Layout/Layout';
+import Input from '../../ui-elements/form/Input/Input';
+import Textarea from '../../ui-elements/form/Textarea/Textarea';
 import { ContactForm, ContactFormValue } from './models/ContactPage.model';
-import styles from './ContactPage.module.scss';
-import Layout from '../../Layout/Layout';
-import Textarea from '../../ui-elements/Textarea/Textarea';
 import { useTranslation } from 'react-i18next';
+import styles from './ContactPage.module.scss';
 
 const ContactPage: React.FC = () => {
 	const { t } = useTranslation();
