@@ -25,20 +25,20 @@ export type Print = {
 export type PrintProps = Print;
 
 export const printCollection: Print[] = [
-	{ image: rowers, title: t('Prints.rowers'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Wioslarze-art11388' },
-	{ image: bridge, title: t('Prints.bridge'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/W-strone-nieznanego-art11386' },
-	{ image: slovenia, title: t('Prints.slovenia'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Wyspa-art11382' },
-	{ image: squareMarket, title: t('Prints.squareMarket'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Skala-art11387' },
-	{ image: mitoraj, title: t('Prints.mitoraj'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Please-dont-go-art7517' },
-	{ image: foggyForest, title: t('Prints.foggyForest'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Wynurzenie-art11377' },
-	{ image: baltic, title: t('Prints.baltic'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Cienie-art11380' },
-	{ image: moravia, title: t('Prints.moravia'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Dywan-art11385' },
-	{ image: solina, title: t('Prints.solina'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Nad-Solina-art4948' },
-	{ image: forest, title: t('Prints.forest'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Wybrane-art11378' },
-	{ image: observer, title: t('Prints.observer'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Nad-Adriatykiem-art4685' },
-	{ image: adriaticSea, title: t('Prints.adriaticSea'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Na-strazy-art4630' },
-	{ image: bieszczady, title: t('Prints.bieszczady'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Uklad-rownolegly-art4629' },
-	{ image: tatry, title: t('Prints.tatry'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Pierwszy-promien-art4736' },
-	{ image: fields, title: t('Prints.fields'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Dywan-art4624' },
-	{ image: pieniny, title: t('Prints.pieniny'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Swiatlocienie-art4627' }
+	{ image: rowers, title: t('PrintsPage.rowers'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Wioslarze-art11388' },
+	{ image: bridge, title: t('PrintsPage.bridge'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/W-strone-nieznanego-art11386' },
+	{ image: slovenia, title: t('PrintsPage.slovenia'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Wyspa-art11382' },
+	{ image: squareMarket, title: t('PrintsPage.squareMarket'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Skala-art11387' },
+	{ image: mitoraj, title: t('PrintsPage.mitoraj'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Please-dont-go-art7517' },
+	{ image: foggyForest, title: t('PrintsPage.foggyForest'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Wynurzenie-art11377' },
+	{ image: baltic, title: t('PrintsPage.baltic'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Cienie-art11380' },
+	{ image: moravia, title: t('PrintsPage.moravia'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Dywan-art11385' },
+	{ image: solina, title: t('PrintsPage.solina'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Nad-Solina-art4948' },
+	{ image: forest, title: t('PrintsPage.forest'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Wybrane-art11378' },
+	{ image: observer, title: t('PrintsPage.observer'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Nad-Adriatykiem-art4685' },
+	{ image: adriaticSea, title: t('PrintsPage.adriaticSea'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Na-strazy-art4630' },
+	{ image: bieszczady, title: t('PrintsPage.bieszczady'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Uklad-rownolegly-art4629' },
+	{ image: tatry, title: t('PrintsPage.tatry'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Pierwszy-promien-art4736' },
+	{ image: fields, title: t('PrintsPage.fields'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Dywan-art4624' },
+	{ image: pieniny, title: t('PrintsPage.pieniny'), ctaUrl: 'https://wydrukujfotografie.pl/Magda.Chudzik/Swiatlocienie-art4627' }
 ];

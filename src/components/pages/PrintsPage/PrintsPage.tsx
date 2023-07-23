@@ -16,9 +16,9 @@ const PrintsPage: React.FC = () => {
 				content={
 					<>
 						<div className={styles['wrapper-s']}>
-							<h1>{t('Prints.title')}</h1>
-							<p>{t('Prints.longDescription')}</p>
-							<h3>{t('Prints.shortDescription')}</h3>
+							<h1>{t('PrintsPage.title')}</h1>
+							<p>{t('PrintsPage.longDescription')}</p>
+							<h3>{t('PrintsPage.shortDescription')}</h3>
 						</div>
 						<div className={`${styles.wrapper} ${styles.prints}`}>
 							{printCollection.map((print: Print, index: number) => {

@@ -14,7 +14,7 @@ const PrintItem = (props: PrintProps): ReactElement => {
 			<img src={props.image} className={styles.print__image} alt={props.title} onClick={navigateToLink} />
 			<div className={styles.print__description}>
 				<h5 className={styles.print__title}>{props.title}</h5>
-				<Button cta={t('Prints.cta')} apperance="primary-solid" onClick={navigateToLink} />
+				<Button cta={t('PrintsPage.cta')} apperance="primary-solid" onClick={navigateToLink} />
 			</div>
 		</div>
 	);
