@@ -1,5 +1,10 @@
 {
 	"cityTitle": "Miasto",
 	"landscapeTitle": "Krajobraz",
-	"viewTheGallery": "Sprawdź galerię"
+	"viewTheGallery": "Sprawdź galerię",
+	"seo": {
+		"description": "Galeria wyjątkowych i nagradzanych fotografii miejskich i krajobrazowych. W swoich pracach operuję światłem i czystą formą, nadając fotografiom nostalgicznego wyrazu.",
+		"keywords": "fotografia, fotografia krajobrazowa, fotografia miejska, street photo, polska fotografia, fine art, fotografia czarno-biała",
+		"title": "Magda Chudzik | Fotografia"
+	}
 }

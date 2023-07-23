@@ -20,5 +20,10 @@
 			"required": "This is a required field.",
 			"minLength": "The minimum text length is 2 characters."
 		}
+	},
+	"seo": {
+		"description": "Gallery of unique and award-winning urban and landscape photographs. In my works, I operate with light and pure form, giving the photographs a nostalgic expression.",
+		"keywords": "photography, landscape photography, urban photography, street photography, Polish photography, fine art, black and white photography",
+		"title": "Magda Chudzik | Photography"
 	}
 }

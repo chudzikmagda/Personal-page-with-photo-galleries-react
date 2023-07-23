@@ -18,5 +18,10 @@
 	"cta": "Buy now!",
 	"title": "Prints",
 	"longDescription": "All photographs from my portfolio are available for purchase in various print formats, including photo enlargements, photo posters, and canvas prints. For more details, please feel free to contact me.",
-	"shortDescription": "Choose a photograph and order today"
+	"shortDescription": "Choose a photograph and order today",
+	"seo": {
+		"description": "Gallery of unique and award-winning urban and landscape photographs. In my works, I operate with light and pure form, giving the photographs a nostalgic expression.",
+		"keywords": "photography, landscape photography, urban photography, street photography, Polish photography, fine art, black and white photography",
+		"title": "Magda Chudzik | Photography - Fine arts, prints"
+	}
 }
