@@ -15,7 +15,7 @@ const AboutMePage: React.FC = () => {
 
 	return (
 		<>
-			<SEO description={t('AboutMe.seo.description')} keywords={t('AboutMe.seo.keywords')} title={t('AboutMe.seo.title')} />
+			<SEO description={t('AboutMePage.seo.description')} keywords={t('AboutMePage.seo.keywords')} title={t('AboutMePage.seo.title')} />
 
 			<Layout
 				content={
@@ -24,11 +24,11 @@ const AboutMePage: React.FC = () => {
 							<img src={heroImage} className={styles['about-me__heroImage']} alt="Magda Chudzik" />
 						</div>
 						<div className={styles['wrapper-s']}>
-							<h1>{t('AboutMe.title')}</h1>
+							<h1>{t('AboutMePage.title')}</h1>
 							<h4>
 								<Trans
 									t={t}
-									i18nKey="AboutMe.intro"
+									i18nKey="AboutMePage.intro"
 									components={{
 										strong: <strong />,
 										a: <a href="https://www.frontend.magdachudzik.pl/" target="_blank" rel="noopener noreferrer" />
@@ -38,7 +38,7 @@ const AboutMePage: React.FC = () => {
 							<p>
 								<Trans
 									t={t}
-									i18nKey="AboutMe.paragraph1"
+									i18nKey="AboutMePage.paragraph1"
 									components={{
 										strong: <strong />,
 										a: <Link to="/landscape" />,
@@ -49,7 +49,7 @@ const AboutMePage: React.FC = () => {
 							<p>
 								<Trans
 									t={t}
-									i18nKey="AboutMe.paragraph2"
+									i18nKey="AboutMePage.paragraph2"
 									components={{
 										strong: <strong />
 									}}
@@ -59,7 +59,7 @@ const AboutMePage: React.FC = () => {
 							<p>
 								<Trans
 									t={t}
-									i18nKey="AboutMe.paragraph3"
+									i18nKey="AboutMePage.paragraph3"
 									components={{
 										strong: <strong />,
 										italic: <i />
@@ -69,7 +69,7 @@ const AboutMePage: React.FC = () => {
 							<p>
 								<Trans
 									t={t}
-									i18nKey="AboutMe.paragraph4"
+									i18nKey="AboutMePage.paragraph4"
 									components={{
 										strong: <strong />
 									}}
@@ -78,14 +78,14 @@ const AboutMePage: React.FC = () => {
 							<p>
 								<Trans
 									t={t}
-									i18nKey="AboutMe.paragraph5"
+									i18nKey="AboutMePage.paragraph5"
 									components={{
 										strong: <strong />
 									}}
 								/>
 							</p>
 							<p>
-								{`${t('AboutMe.contact')} `}
+								{`${t('AboutMePage.contact')} `}
 								{socialMediaPaths.map((socialMediaPath: SocialMedia) => {
 									return (
 										<>
