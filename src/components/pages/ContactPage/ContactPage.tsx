@@ -17,7 +17,7 @@ const ContactPage: React.FC = () => {
 		message: { value: '', error: '' }
 	};
 
-	const [contactFormValues, setContactFormValues] = useState(initialContactFormValues);
+	const [contactFormValues, setContactFormValues] = useState<ContactForm>(initialContactFormValues);
 
 	const sendForm = (): void => {
 		console.log(contactFormValues);

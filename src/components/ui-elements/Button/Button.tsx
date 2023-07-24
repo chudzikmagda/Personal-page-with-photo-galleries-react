@@ -3,11 +3,11 @@ import React, { useMemo } from 'react';
 import { ButtonProps } from './models/Button.model';
 import styles from './Button.module.scss';
 
-const Button: React.FC<ButtonProps> = (props) => {
+const Button: React.FC<ButtonProps> = ({ apperance, cta, disabled, onClick }) => {
 	const classNames: string = useMemo(() => {
 		let classes = `${styles.btn} `;
 
-		switch (props.apperance) {
+		switch (apperance) {
 			case 'primary-solid':
 				return (classes += styles['btn--primary-solid']);
 			case 'secondary-solid':
@@ -21,11 +21,11 @@ const Button: React.FC<ButtonProps> = (props) => {
 		}
 
 		return classNames;
-	}, [props.apperance]);
+	}, [apperance]);
 
 	return (
-		<button type="button" className={classNames} disabled={props.disabled} onClick={props.onClick}>
-			{props.cta}
+		<button type="button" className={classNames} disabled={disabled} onClick={onClick}>
+			{cta}
 		</button>
 	);
 };

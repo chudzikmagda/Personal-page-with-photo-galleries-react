@@ -2,30 +2,24 @@ import React from 'react';
 import styles from './Textarea.module.scss';
 import { TextareaProps } from './models/TextareaModel';
 
-const Textarea: React.FC<TextareaProps> = (props) => {
-	const onValueChange = (event: React.ChangeEvent<HTMLTextAreaElement>): void => {
-		props.onValueChange(event.target.value);
+const Textarea: React.FC<TextareaProps> = ({ error, id, label, placeholder, required, value, onValueChange }) => {
+	const onTextareaValueChange = (event: React.ChangeEvent<HTMLTextAreaElement>): void => {
+		onValueChange(event.target.value);
 	};
 
 	return (
 		<div className={styles.textarea}>
-			<label className={styles.textarea__label} htmlFor={props.id}>
-				{props.label}
-				{props.required && (
+			<label className={styles.textarea__label} htmlFor={id}>
+				{label}
+				{required && (
 					<>
 						<span className={styles.textarea__asterix}>*</span>
 					</>
 				)}
 			</label>
 			<div className={styles.textarea__wrapper}>
-				<textarea
-					value={props.value}
-					className={styles.textarea__element}
-					placeholder={props.placeholder}
-					id={props.id}
-					onChange={onValueChange}
-				/>
-				<span className={styles.textarea__error}>{props.error}</span>
+				<textarea value={value} className={styles.textarea__element} placeholder={placeholder} id={id} onChange={onTextareaValueChange} />
+				<span className={styles.textarea__error}>{error}</span>
 			</div>
 		</div>
 	);

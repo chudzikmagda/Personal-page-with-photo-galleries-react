@@ -6,7 +6,7 @@ import Router from './routing/Routing';
 import i18n from './i18n';
 
 const App: React.FC = () => {
-	const [language, setLanguage] = useState(i18n.language);
+	const [language, setLanguage] = useState<string>(i18n.language);
 
 	const handleLanguageChange = (lang: string): void => {
 		setLanguage(lang);

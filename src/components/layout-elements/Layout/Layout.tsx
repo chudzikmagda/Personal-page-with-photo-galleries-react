@@ -5,11 +5,11 @@ import { LayoutProps } from './models/LayoutModels';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
-const Layout: React.FC<LayoutProps> = (props) => {
+const Layout: React.FC<LayoutProps> = ({ content }) => {
 	return (
 		<div className={styles.layout}>
 			<Header />
-			<Content content={props.content} />
+			<Content content={content} />
 			<Footer />
 		</div>
 	);

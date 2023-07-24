@@ -7,9 +7,9 @@ import { ReactComponent as CloseIcon } from './../../../assets/images/template/l
 import { ReactComponent as NextIcon } from './../../../assets/images/template/lightbox/arrow-right.svg';
 import { ReactComponent as PrevIcon } from './../../../assets/images/template/lightbox/arrow-left.svg';
 
-const Lightbox: React.FC<LightboxProps> = (props) => {
-	const images: Image[] = props.images;
-	const [index, setIndex] = useState(props.currentIndex);
+const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage }) => {
+	const imageCollection: Image[] = images;
+	const [index, setIndex] = useState<number>(currentIndex);
 
 	const goToNextImage = (): void => {
 		setIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -23,7 +23,7 @@ const Lightbox: React.FC<LightboxProps> = (props) => {
 		const onKeyDownClick = (event: KeyboardEvent): void => {
 			switch (event.key) {
 				case 'Escape':
-					return props.closeImage(false);
+					return closeImage(false);
 				case 'ArrowLeft':
 					return goToPreviousImage();
 				case 'ArrowRight':
@@ -39,11 +39,11 @@ const Lightbox: React.FC<LightboxProps> = (props) => {
 
 	return (
 		<div className={styles.lightbox}>
-			<button className={styles.lightbox__closeButton} onClick={() => props.closeImage(false)}>
+			<button className={styles.lightbox__closeButton} onClick={() => closeImage(false)}>
 				<CloseIcon />
 			</button>
 			<div className={styles['lightbox__image-wrapper']}>
-				<img src={images[index].src} className={styles.lightbox__image} alt={images[index].alt} />
+				<img src={imageCollection[index].src} className={styles.lightbox__image} alt={imageCollection[index].alt} />
 			</div>
 			<button className={styles.lightbox__prevButton} onClick={goToPreviousImage}>
 				<PrevIcon />
