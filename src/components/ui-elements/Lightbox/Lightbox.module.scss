@@ -32,23 +32,30 @@ body:has(.lightbox) {
 	}
 
 	&__image {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		max-width: 100%;
-		max-height: 100%;
-		width: auto;
-		height: auto;
-		margin: auto;
-
 		&-wrapper {
 			position: relative;
 			grid-area: photo;
 			display: flex;
 			align-items: center;
 			justify-content: center;
+		}
+
+		&-enter {
+			opacity: 0;
+
+			&--active {
+				opacity: 1;
+				transition: opacity 800ms ease-in;
+			}
+		}
+
+		&-exit {
+			opacity: 1;
+
+			&--active {
+				opacity: 0;
+				transition: opacity 400ms ease-out;
+			}
 		}
 	}
 
@@ -75,7 +82,7 @@ body:has(.lightbox) {
 		background: none;
 		outline: none;
 		border: none;
-		color: white;
+		color: #fff;
 		opacity: 1;
 		@include transition($element: opacity);
 

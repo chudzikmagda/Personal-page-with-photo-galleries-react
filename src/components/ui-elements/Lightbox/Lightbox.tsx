@@ -2,21 +2,39 @@
 import React, { useEffect, useState } from 'react';
 import { LightboxProps } from './models/LightboxModels';
 import { Image } from '../Gallery/models/GalleryModels';
-import styles from './Lightbox.module.scss';
 import { ReactComponent as CloseIcon } from './../../../assets/images/template/lightbox/close-icon.svg';
 import { ReactComponent as NextIcon } from './../../../assets/images/template/lightbox/arrow-right.svg';
 import { ReactComponent as PrevIcon } from './../../../assets/images/template/lightbox/arrow-left.svg';
+import { CSSTransition } from 'react-transition-group';
+import styles from './Lightbox.module.scss';
+import ImageComponent from './Image/Image';
 
 const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage }) => {
 	const imageCollection: Image[] = images;
 	const [index, setIndex] = useState<number>(currentIndex);
+	const [showImage, setShowImage] = useState<boolean>(true);
 
 	const goToNextImage = (): void => {
-		setIndex((prevIndex) => (prevIndex + 1) % images.length);
+		setShowImage(false);
+
+		setTimeout(() => {
+			setIndex((prevIndex) => (prevIndex + 1) % images.length);
+			setShowImage(true);
+		}, 200);
 	};
 
 	const goToPreviousImage = (): void => {
-		setIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+		setShowImage(false);
+
+		setTimeout(() => {
+			setIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+			setShowImage(true);
+		}, 200);
+	};
+
+	const onCloseLightbox = (): void => {
+		setShowImage(false);
+		closeImage(false);
 	};
 
 	useEffect((): (() => void) => {
@@ -39,11 +57,22 @@ const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage })
 
 	return (
 		<div className={styles.lightbox}>
-			<button className={styles.lightbox__closeButton} onClick={() => closeImage(false)}>
+			<button className={styles.lightbox__closeButton} onClick={onCloseLightbox}>
 				<CloseIcon />
 			</button>
 			<div className={styles['lightbox__image-wrapper']}>
-				<img src={imageCollection[index].src} className={styles.lightbox__image} alt={imageCollection[index].alt} />
+				<CSSTransition
+					in={showImage}
+					timeout={200}
+					classNames={{
+						enter: styles['lightbox__image-enter'],
+						enterActive: styles['lightbox__image-enter--active'],
+						exit: styles['lightbox__image-exit'],
+						exitActive: styles['lightbox__image-exit--active']
+					}}
+					unmountOnExit>
+					<ImageComponent src={imageCollection[index].src} alt={imageCollection[index].alt} />
+				</CSSTransition>
 			</div>
 			<button className={styles.lightbox__prevButton} onClick={goToPreviousImage}>
 				<PrevIcon />

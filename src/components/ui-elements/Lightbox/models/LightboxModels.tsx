@@ -5,3 +5,8 @@ export type LightboxProps = {
 	images: Image[];
 	closeImage: (state: boolean) => void;
 };
+
+export type ImageProps = {
+	alt?: string;
+	src: string;
+};
