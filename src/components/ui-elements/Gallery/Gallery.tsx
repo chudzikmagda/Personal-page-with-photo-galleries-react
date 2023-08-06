@@ -25,7 +25,13 @@ const CustomGallery: React.FC<CustomGalleryProps> = ({ heading, images }) => {
 				{imageCollection.map((image: Image, index: number) => {
 					return (
 						<div key={index} className={styles.gallery__item}>
-							<img src={image.src} className={styles.gallery__thumbnail} onClick={() => openGallery(index)} alt={image.alt} />
+							<img
+								src={image.src}
+								className={styles.gallery__thumbnail}
+								loading="lazy"
+								alt={image.alt}
+								onClick={() => openGallery(index)}
+							/>
 						</div>
 					);
 				})}

@@ -11,7 +11,7 @@ const PrintItem: React.FC<PrintProps> = ({ image, title, ctaUrl }): ReactElement
 
 	return (
 		<div className={styles.print}>
-			<img src={image} className={styles.print__image} alt={title} onClick={navigateToLink} />
+			<img src={image} className={styles.print__image} loading="lazy" alt={title} onClick={navigateToLink} />
 			<div className={styles.print__description}>
 				<h5 className={styles.print__title}>{title}</h5>
 				<Button cta={t('PrintsPage.cta')} apperance="primary-solid" onClick={navigateToLink} />
