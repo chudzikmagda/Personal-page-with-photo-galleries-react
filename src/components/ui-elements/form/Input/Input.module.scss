@@ -15,7 +15,7 @@
 	&__element {
 		padding: $padding-basic * 2;
 		border: 2px solid $grey-medium;
-		border-radius: 4px;
+		border-radius: $border-radius;
 		font-family: $font-family;
 	}
 

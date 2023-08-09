@@ -6,7 +6,7 @@
 	outline: none;
 	background: none;
 	border: 2px solid;
-	border-radius: 4px;
+	border-radius: $border-radius;
 	padding: $padding-basic $padding-basic * 2;
 	@include transition;
 
