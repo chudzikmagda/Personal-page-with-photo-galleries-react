@@ -3,3 +3,8 @@ export type Language = {
 	displayValue: string;
 	icon: string;
 };
+
+export type LanguageButtonPosition = {
+	top: string;
+	left: string;
+};
