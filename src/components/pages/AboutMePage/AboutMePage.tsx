@@ -5,13 +5,11 @@ import heroImage from './../../../assets/images/template/photographer-magda-chud
 import styles from './AboutMePage.module.scss';
 import { Trans } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { SocialMedia, SocialMediaPaths } from '../../../shared/models/models';
+import { SocialMedia, SOCIAL_MEDIA } from '../../../shared/models/models';
 import SEO from '../../SEO/SEO';
 
 const AboutMePage: React.FC = () => {
 	const { t } = useTranslation();
-
-	const socialMediaPaths: SocialMedia[] = Object.entries(SocialMediaPaths).map(([name, path]) => ({ name, path } as SocialMedia));
 
 	return (
 		<>
@@ -86,16 +84,16 @@ const AboutMePage: React.FC = () => {
 							</p>
 							<p>
 								{`${t('AboutMePage.contact')} `}
-								{socialMediaPaths.map((socialMediaPath: SocialMedia) => {
+								{SOCIAL_MEDIA.map((socialMedia: SocialMedia) => {
 									return (
 										<>
 											<a
-												key={socialMediaPath.name}
-												href={socialMediaPath.path}
+												key={socialMedia.name}
+												href={socialMedia.path}
 												className={styles.footer__link}
 												target="_blank"
 												rel="noopener noreferrer">
-												{socialMediaPath.name}
+												{socialMedia.name}
 											</a>
 											{', '}
 										</>

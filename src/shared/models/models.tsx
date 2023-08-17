@@ -1,3 +1,9 @@
+import { ReactComponent as InstagramLogo } from './../../assets/images/template/social-media/instagram.svg';
+import { ReactComponent as FacebookIcon } from './../../assets/images/template/social-media/facebook.svg';
+import { ReactComponent as BehanceIcon } from './../../assets/images/template/social-media/behance.svg';
+import { ReactComponent as LinkedinIcon } from './../../assets/images/template/social-media/linkedin.svg';
+import React, { ReactElement } from 'react';
+
 export enum SocialMediaNames {
 	BEHANCE = 'Behance',
 	INSTAGRAM = 'Instagram',
@@ -5,18 +11,15 @@ export enum SocialMediaNames {
 	LINKEDIN = 'Linkedin'
 }
 
-type SocialMediaPath = {
-	[key in SocialMediaNames]: string;
-};
-
 export type SocialMedia = {
+	icon: ReactElement;
 	name: SocialMediaNames;
 	path: string;
 };
 
-export const SocialMediaPaths: SocialMediaPath = {
-	[SocialMediaNames.INSTAGRAM]: 'https://www.instagram.com/chudzikmagda',
-	[SocialMediaNames.FACEBOOK]: 'https://www.facebook.com/chudzikmagda',
-	[SocialMediaNames.BEHANCE]: 'https://www.behance.net/magdachudzik',
-	[SocialMediaNames.LINKEDIN]: 'https://www.linkedin.com/in/chudzikmagda'
-};
+export const SOCIAL_MEDIA: SocialMedia[] = [
+	{ icon: <InstagramLogo />, name: SocialMediaNames.INSTAGRAM, path: 'https://www.instagram.com/chudzikmagda' },
+	{ icon: <FacebookIcon />, name: SocialMediaNames.FACEBOOK, path: 'https://www.facebook.com/chudzikmagda' },
+	{ icon: <BehanceIcon />, name: SocialMediaNames.BEHANCE, path: 'https://www.behance.net/magdachudzik' },
+	{ icon: <LinkedinIcon />, name: SocialMediaNames.LINKEDIN, path: 'https://www.linkedin.com/in/chudzikmagda' }
+];

@@ -13,7 +13,9 @@ $footer-height-xs: $header-height-xs;
 $container-max-width: 1600px;
 $container-s-max-width: 768px;
 
-$padding-basic: 8px;
+$spacing-basic: 8px;
+
+$padding-basic: $spacing-basic;
 $padding-wrapper: $padding-basic * 6;
 $padding-wrapper-xs: $padding-basic;
 

@@ -3,30 +3,55 @@
 @import './../../../assets/styles/mixins.scss';
 
 .footer {
-	@include flex($justify-content: space-between);
-	height: $header-height-xs;
+	@include flex($justify-content: center);
 	width: 100%;
 	max-width: $container-max-width;
+	padding: $spacing-basic;
+	box-sizing: border-box;
 
 	@include breakpoint(large) {
 		flex-direction: row;
+		justify-content: space-between;
 		height: $header-height;
+		padding: 0 $spacing-basic;
+	}
+
+	&__social-media {
+		@include flex($direction: row);
+		gap: 32px;
 	}
 
 	&__link {
+		@include flex($direction: row);
 		font-size: 0.875rem;
 		color: $text-dark;
 		text-decoration: none;
-		padding: 0 $padding-basic;
+		gap: $spacing-basic;
 
-		@include focus();
-		@include hover();
+		@include focus;
+		@include hover;
 
 		&--author {
 			font-size: 0.6875rem;
 
 			@include breakpoint(large) {
 				font-size: 0.75rem;
+			}
+		}
+
+		&-name {
+			display: none;
+
+			@include breakpoint(large) {
+				display: block;
+			}
+		}
+
+		&-icon {
+			@include flex;
+
+			@include breakpoint(large) {
+				display: none;
 			}
 		}
 	}
