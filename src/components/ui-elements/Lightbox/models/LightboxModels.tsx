@@ -1,4 +1,4 @@
-import { Image } from '../../Gallery/models/GalleryModels';
+import { Image, SrcSet } from '../../Gallery/models/GalleryModels';
 
 export type LightboxProps = {
 	currentIndex: number;
@@ -8,5 +8,5 @@ export type LightboxProps = {
 
 export type ImageProps = {
 	alt?: string;
-	src: string;
+	src: SrcSet;
 };

@@ -23,3 +23,9 @@ export const SOCIAL_MEDIA: SocialMedia[] = [
 	{ icon: <BehanceIcon />, name: SocialMediaNames.BEHANCE, path: 'https://www.behance.net/magdachudzik' },
 	{ icon: <LinkedinIcon />, name: SocialMediaNames.LINKEDIN, path: 'https://www.linkedin.com/in/chudzikmagda' }
 ];
+
+export enum Breakpoints {
+	SMALL = '480px',
+	MEDIUM = '768px',
+	LARGE = '1024px'
+}
