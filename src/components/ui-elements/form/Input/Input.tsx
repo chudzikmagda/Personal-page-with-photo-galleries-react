@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Input.module.scss';
 import { InputProps } from './models/InputModel';
 
-const Input: React.FC<InputProps> = ({ error, id, label, placeholder, required, value, onValueChange }) => {
+const Input: React.FC<InputProps> = ({ error, id, label, name, placeholder, required, value, onValueChange }) => {
 	const onInputValueChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
 		onValueChange(event.target.value);
 	};
@@ -18,7 +18,15 @@ const Input: React.FC<InputProps> = ({ error, id, label, placeholder, required, 
 				)}
 			</label>
 			<div className={styles.input__wrapper}>
-				<input type="text" value={value} className={styles.input__element} placeholder={placeholder} id={id} onChange={onInputValueChange} />
+				<input
+					type="text"
+					id={id}
+					name={name}
+					value={value}
+					className={styles.input__element}
+					placeholder={placeholder}
+					onChange={onInputValueChange}
+				/>
 				<span className={styles.input__error}>{error}</span>
 			</div>
 		</div>

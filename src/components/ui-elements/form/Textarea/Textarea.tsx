@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Textarea.module.scss';
 import { TextareaProps } from './models/TextareaModel';
 
-const Textarea: React.FC<TextareaProps> = ({ error, id, label, placeholder, required, value, onValueChange }) => {
+const Textarea: React.FC<TextareaProps> = ({ error, id, label, name, placeholder, required, value, onValueChange }) => {
 	const onTextareaValueChange = (event: React.ChangeEvent<HTMLTextAreaElement>): void => {
 		onValueChange(event.target.value);
 	};
@@ -18,7 +18,14 @@ const Textarea: React.FC<TextareaProps> = ({ error, id, label, placeholder, requ
 				)}
 			</label>
 			<div className={styles.textarea__wrapper}>
-				<textarea value={value} className={styles.textarea__element} placeholder={placeholder} id={id} onChange={onTextareaValueChange} />
+				<textarea
+					id={id}
+					name={name}
+					value={value}
+					className={styles.textarea__element}
+					placeholder={placeholder}
+					onChange={onTextareaValueChange}
+				/>
 				<span className={styles.textarea__error}>{error}</span>
 			</div>
 		</div>
