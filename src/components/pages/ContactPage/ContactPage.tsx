@@ -19,8 +19,28 @@ const ContactPage: React.FC = () => {
 
 	const [contactFormValues, setContactFormValues] = useState<ContactForm>(initialContactFormValues);
 
-	const sendForm = (): void => {
-		console.log(contactFormValues);
+	const sendMessage = (event: React.FormEvent<HTMLFormElement>): void => {
+		event.preventDefault();
+
+		fetch('./php/mail.php', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/x-www-form-urlencoded'
+			},
+			body: new URLSearchParams(
+				Object.fromEntries(Object.entries(contactFormValues).map(([key, valueObj]) => [key, valueObj.value]))
+			).toString()
+		})
+			.then((response) => {
+				if (response.status === 200) {
+					//open modal
+				} else {
+					//open modal with error
+				}
+			})
+			.catch((error) => {
+				//open modal with error
+			});
 	};
 
 	const resetForm = (): void => {
@@ -57,10 +77,11 @@ const ContactPage: React.FC = () => {
 				content={
 					<div className={styles['wrapper-s']}>
 						<h1>{t('ContactPage.heading')}</h1>
-						<form className={styles['contact-form']}>
+						<form onSubmit={sendMessage} className={styles['contact-form']}>
 							<span className={styles['contact-form__info']}>{t('ContactPage.form.info')}</span>
 							<Input
 								id="name"
+								name="name"
 								label={t('ContactPage.form.nameInput.label')}
 								placeholder={t('ContactPage.form.nameInput.placeholder')}
 								value={contactFormValues.name.value}
@@ -70,6 +91,7 @@ const ContactPage: React.FC = () => {
 							/>
 							<Input
 								id="email"
+								name="email"
 								value={contactFormValues.email.value}
 								label={t('ContactPage.form.emailInput.label')}
 								placeholder={t('ContactPage.form.emailInput.placeholder')}
@@ -79,6 +101,7 @@ const ContactPage: React.FC = () => {
 							/>
 							<Textarea
 								id="message"
+								name="message"
 								label={t('ContactPage.form.textarea.label')}
 								placeholder={t('ContactPage.form.textarea.placeholder')}
 								value={contactFormValues.message.value}
@@ -88,7 +111,7 @@ const ContactPage: React.FC = () => {
 							/>
 							<div className={styles['contact-form__buttons']}>
 								<Button type="reset" apperance="text" cta={t('ContactPage.form.resetButton')} onClick={resetForm} />
-								<Button type="submit" cta={t('ContactPage.form.submitButton')} disabled={isButtonDisabled()} onClick={sendForm} />
+								<Button type="submit" cta={t('ContactPage.form.submitButton')} disabled={isButtonDisabled()} />
 							</div>
 						</form>
 					</div>
