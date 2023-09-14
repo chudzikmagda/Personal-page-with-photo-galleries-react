@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './PageNotFound.module.scss';
 import { t } from 'i18next';
 import Button from '../../ui-elements/Button/Button';
+import { ButtonApperance } from '../../ui-elements/Button/models/Button.model';
 import { NavigateFunction, useNavigate } from 'react-router-dom';
 import heroImage from '../../../assets/images/template/page404-image-background.jpg';
 import Layout from '../../layout-elements/Layout/Layout';
@@ -20,7 +21,7 @@ const PageNotFound: React.FunctionComponent = () => {
 						<div className={styles.pageNotFound__description}>
 							<h1 className={styles.pageNotFound__code}>{t('PageNotFound.code')}</h1>
 							<h2>{t('PageNotFound.description')}</h2>
-							<Button apperance="primary-solid" cta={t('PageNotFound.cta')} onClick={() => navigate('/')} />
+							<Button apperance={ButtonApperance.PRIMARY_SOLID} cta={t('PageNotFound.cta')} onClick={() => navigate('/')} />
 						</div>
 						<div className={styles['pageNotFound__hero']}>
 							<img src={heroImage} className={styles['pageNotFound__hero-image']} />

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Button from '../../ui-elements/Button/Button';
+import { ButtonApperance, ButtonType } from '../../ui-elements/Button/models/Button.model';
 import Layout from '../../layout-elements/Layout/Layout';
 import Input from '../../ui-elements/form/Input/Input';
 import Textarea from '../../ui-elements/form/Textarea/Textarea';
@@ -110,8 +111,13 @@ const ContactPage: React.FC = () => {
 								onValueChange={(value: string) => onInputValueChange(value, 'message')}
 							/>
 							<div className={styles['contact-form__buttons']}>
-								<Button type="reset" apperance="text" cta={t('ContactPage.form.resetButton')} onClick={resetForm} />
-								<Button type="submit" cta={t('ContactPage.form.submitButton')} disabled={isButtonDisabled()} />
+								<Button
+									type={ButtonType.RESET}
+									apperance={ButtonApperance.TEXT}
+									cta={t('ContactPage.form.resetButton')}
+									onClick={resetForm}
+								/>
+								<Button type={ButtonType.SUBMIT} cta={t('ContactPage.form.submitButton')} disabled={isButtonDisabled()} />
 							</div>
 						</form>
 					</div>

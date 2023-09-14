@@ -1,6 +1,6 @@
 /* eslint-disable indent */
 import React, { useMemo } from 'react';
-import { ButtonProps } from './models/Button.model';
+import { ButtonApperance, ButtonProps, ButtonType } from './models/Button.model';
 import styles from './Button.module.scss';
 
 const Button: React.FC<ButtonProps> = ({ apperance, cta, disabled, type, onClick }) => {
@@ -8,19 +8,19 @@ const Button: React.FC<ButtonProps> = ({ apperance, cta, disabled, type, onClick
 		let classes = `${styles.btn} `;
 
 		switch (apperance) {
-			case 'primary-solid':
+			case ButtonApperance.PRIMARY_SOLID:
 				return (classes += styles['btn--primary-solid']);
-			case 'secondary-solid':
+			case ButtonApperance.SECONDARY_SOLID:
 				return (classes += styles['btn--secondary-solid']);
-			case 'primary-outline':
+			case ButtonApperance.PRIMARY_OUTLINE:
 				return (classes += styles['btn--primary-outline']);
-			case 'secondary-outline':
+			case ButtonApperance.SECONDARY_OUTLINE:
 				return (classes += styles['btn--secondary-outline']);
-			case 'text':
+			case ButtonApperance.TEXT:
 				return (classes += styles['btn--text']);
 		}
 
-		return classNames;
+		return classes;
 	}, [apperance]);
 
 	return (
@@ -31,9 +31,9 @@ const Button: React.FC<ButtonProps> = ({ apperance, cta, disabled, type, onClick
 };
 
 Button.defaultProps = {
-	apperance: 'primary-solid',
+	apperance: ButtonApperance.PRIMARY_SOLID,
 	disabled: false,
-	type: 'button'
+	type: ButtonType.BUTTON
 };
 
 export default Button;
