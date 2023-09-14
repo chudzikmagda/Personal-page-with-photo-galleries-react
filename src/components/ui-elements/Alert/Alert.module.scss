@@ -1,0 +1,58 @@
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/variables.scss';
+@import '../../../assets/styles/mixins.scss';
+
+.alert {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	@include flex;
+	background-color: rgba($grey-light, 0.7);
+	backdrop-filter: blur(4px);
+	z-index: 10000;
+
+	&__header {
+		flex-grow: 1;
+		width: 100%;
+		padding: $padding-basic * 2;
+		box-sizing: border-box;
+		font-weight: $font-bold;
+		border-top-right-radius: 16px;
+		border-top-left-radius: 16px;
+
+		&--success {
+			background-color: $success;
+		}
+
+		&--error {
+			background-color: $danger;
+		}
+	}
+
+	&__container {
+		@include flex($justify-content: flex-start, $align-items: flex-start);
+		gap: $padding-basic * 2;
+		max-width: 600px;
+		margin: $padding-basic;
+		background-color: $primary-light;
+		border-radius: 16px;
+		box-shadow: 0 0 16px rgba($primary-dark, 0.15);
+	}
+
+	&__content,
+	&__buttons {
+		flex-grow: 1;
+		width: 100%;
+		padding-left: $padding-basic * 2;
+		padding-right: $padding-basic * 2;
+		box-sizing: border-box;
+	}
+
+	&__buttons {
+		@include flex;
+		width: 100%;
+		padding-bottom: $padding-basic * 2;
+	}
+}

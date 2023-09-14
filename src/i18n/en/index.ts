@@ -1,4 +1,5 @@
 import * as AboutMePage from './AboutMePage.json';
+import * as Alert from './Alert.json';
 import * as BwLandscapePage from './BwLandscapePage.json';
 import * as CityPage from './CityPage.json';
 import * as ColorLandscapePage from './ColorLandscapePage.json';
@@ -13,6 +14,7 @@ import * as Spinner from './Spinner.json';
 
 export {
 	AboutMePage,
+	Alert,
 	BwLandscapePage,
 	CityPage,
 	ColorLandscapePage,
