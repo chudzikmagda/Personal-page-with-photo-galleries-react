@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { SEOProps } from './models/SEOModels';
 
 const SEO: React.FC<SEOProps> = ({ description, keywords, type, title }) => {
