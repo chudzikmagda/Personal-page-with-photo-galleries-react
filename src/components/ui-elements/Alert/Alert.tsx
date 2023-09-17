@@ -1,18 +1,12 @@
 /* eslint-disable indent */
-import React, { useMemo, useState } from 'react';
+import React, { useMemo } from 'react';
 import styles from './Alert.module.scss';
 import Button from '../Button/Button';
 import { AlertProps, AlertType } from './models/Alert.model';
 import { useTranslation } from 'react-i18next';
 
-const Alert: React.FC<AlertProps> = ({ content, header, type }) => {
+const Alert: React.FC<AlertProps> = ({ content, header, type, closeAlert }) => {
 	const { t } = useTranslation();
-
-	const [isAlertVisible, setIsAlertVisible] = useState(true);
-
-	const closeAlert = (): void => {
-		setIsAlertVisible(false);
-	};
 
 	const headerClassNames: string = useMemo(() => {
 		let classes = `${styles.alert__header} `;
@@ -24,10 +18,6 @@ const Alert: React.FC<AlertProps> = ({ content, header, type }) => {
 				return (classes += styles['alert__header--error']);
 		}
 	}, [type]);
-
-	if (!isAlertVisible) {
-		return null;
-	}
 
 	return (
 		<>

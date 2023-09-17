@@ -138,7 +138,7 @@ const ContactPage: React.FC = () => {
 					</div>
 				}
 			/>
-			{isAlertVisible && <Alert type={alertType} content={alertContent} header={alertHeader} />}
+			{isAlertVisible && <Alert type={alertType} content={alertContent} header={alertHeader} closeAlert={() => setIsAlertVisible(false)} />}
 		</>
 	);
 };
