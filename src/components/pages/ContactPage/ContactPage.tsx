@@ -5,6 +5,8 @@ import Layout from '../../layout-elements/Layout/Layout';
 import Input from '../../ui-elements/form/Input/Input';
 import Textarea from '../../ui-elements/form/Textarea/Textarea';
 import { ContactForm, ContactFormValue } from './models/ContactPage.model';
+import Alert from '../../ui-elements/Alert/Alert';
+import { AlertType } from '../../ui-elements/Alert/models/Alert.model';
 import { useTranslation } from 'react-i18next';
 import styles from './ContactPage.module.scss';
 import SEO from '../../SEO/SEO';
@@ -17,31 +19,18 @@ const ContactPage: React.FC = () => {
 		name: { value: '', error: '' },
 		message: { value: '', error: '' }
 	};
-
 	const [contactFormValues, setContactFormValues] = useState<ContactForm>(initialContactFormValues);
 
-	const sendMessage = (event: React.FormEvent<HTMLFormElement>): void => {
-		event.preventDefault();
+	const [isAlertVisible, setIsAlertVisible] = useState<boolean>(false);
+	const [alertType, setAlertType] = useState<AlertType>(AlertType.SUCCESS);
+	const [alertContent, setAlertContent] = useState<string>('');
+	const [alertHeader, setAlertHeader] = useState<string>('');
 
-		fetch('./php/mail.php', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/x-www-form-urlencoded'
-			},
-			body: new URLSearchParams(
-				Object.fromEntries(Object.entries(contactFormValues).map(([key, valueObj]) => [key, valueObj.value]))
-			).toString()
-		})
-			.then((response) => {
-				if (response.status === 200) {
-					//open modal
-				} else {
-					//open modal with error
-				}
-			})
-			.catch((error) => {
-				//open modal with error
-			});
+	const showAlert = (alertType: AlertType, alertContent: string, alertHeader: string): void => {
+		setAlertType(alertType);
+		setAlertHeader(alertHeader);
+		setAlertContent(alertContent);
+		setIsAlertVisible(true);
 	};
 
 	const resetForm = (): void => {
@@ -71,9 +60,35 @@ const ContactPage: React.FC = () => {
 		return errorMsg;
 	};
 
+	const sendMessage = (event: React.FormEvent<HTMLFormElement>): void => {
+		event.preventDefault();
+
+		fetch('./php/mail.php', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/x-www-form-urlencoded'
+			},
+			body: new URLSearchParams(
+				Object.fromEntries(Object.entries(contactFormValues).map(([key, valueObj]) => [key, valueObj.value]))
+			).toString()
+		})
+			.then((response) => {
+				if (response.status === 200) {
+					showAlert(AlertType.SUCCESS, t('ContactPage.alert.success.content'), t('ContactPage.alert.success.header'));
+					resetForm();
+				} else {
+					showAlert(AlertType.ERROR, t('ContactPage.alert.error.content'), t('ContactPage.alert.error.header'));
+				}
+			})
+			.catch(() => {
+				showAlert(AlertType.ERROR, t('ContactPage.alert.error.content'), t('ContactPage.alert.error.header'));
+			});
+	};
+
 	return (
 		<>
 			<SEO title={t('ContactPage.seo.title')} description={t('ContactPage.seo.description')} keywords={t('ContactPage.seo.keywords')} />
+
 			<Layout
 				content={
 					<div className={styles['wrapper-s']}>
@@ -123,6 +138,7 @@ const ContactPage: React.FC = () => {
 					</div>
 				}
 			/>
+			{isAlertVisible && <Alert type={alertType} content={alertContent} header={alertHeader} />}
 		</>
 	);
 };

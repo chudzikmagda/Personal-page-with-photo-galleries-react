@@ -25,5 +25,15 @@
 		"description": "Gallery of unique and award-winning urban and landscape photographs. In my works, I operate with light and pure form, giving the photographs a nostalgic expression.",
 		"keywords": "photography, landscape photography, urban photography, street photography, Polish photography, fine art, black and white photography",
 		"title": "Magda Chudzik | Photography"
+	},
+	"alert": {
+		"success": {
+			"header": "Success...",
+			"content": "Your message has been sent to me. I will try to respond as soon as possible."
+		},
+		"error": {
+			"header": "Something went wrong...",
+			"content": "Your message was not sent to me. Close this window, check the correctness of your message, and try sending it again."
+		}
 	}
 }
