@@ -86,17 +86,12 @@ const AboutMePage: React.FC = () => {
 								{`${t('AboutMePage.contact')} `}
 								{SOCIAL_MEDIA.map((socialMedia: SocialMedia) => {
 									return (
-										<>
-											<a
-												key={socialMedia.name}
-												href={socialMedia.path}
-												className={styles.footer__link}
-												target="_blank"
-												rel="noopener noreferrer">
+										<span key={socialMedia.name}>
+											<a href={socialMedia.path} className={styles.footer__link} target="_blank" rel="noopener noreferrer">
 												{socialMedia.name}
 											</a>
 											{', '}
-										</>
+										</span>
 									);
 								})}
 							</p>
