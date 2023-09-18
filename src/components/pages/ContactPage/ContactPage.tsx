@@ -7,6 +7,7 @@ import Textarea from '../../ui-elements/form/Textarea/Textarea';
 import { ContactForm, ContactFormValue } from './models/ContactPage.model';
 import Alert from '../../ui-elements/Alert/Alert';
 import { AlertType } from '../../ui-elements/Alert/models/Alert.model';
+import { CSSTransition } from 'react-transition-group';
 import { useTranslation } from 'react-i18next';
 import styles from './ContactPage.module.scss';
 import SEO from '../../SEO/SEO';
@@ -138,7 +139,18 @@ const ContactPage: React.FC = () => {
 					</div>
 				}
 			/>
-			{isAlertVisible && <Alert type={alertType} content={alertContent} header={alertHeader} closeAlert={() => setIsAlertVisible(false)} />}
+			<CSSTransition
+				in={isAlertVisible}
+				timeout={600}
+				classNames={{
+					enter: styles['contact-form__enter'],
+					enterActive: styles['contact-form__enter--active'],
+					exit: styles['contact-form__exit'],
+					exitActive: styles['contact-form__exit--active']
+				}}
+				unmountOnExit>
+				<Alert type={alertType} content={alertContent} header={alertHeader} closeAlert={() => setIsAlertVisible(false)} />
+			</CSSTransition>
 		</>
 	);
 };
