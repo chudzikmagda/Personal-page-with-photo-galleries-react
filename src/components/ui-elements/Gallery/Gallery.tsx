@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import Lightbox from '../Lightbox/Lightbox';
 import { CustomGalleryProps, Image } from './models/GalleryModels';
 import { CSSTransition } from 'react-transition-group';
@@ -7,6 +7,7 @@ import { Breakpoints } from '../../../shared/models/models';
 
 const CustomGallery: React.FC<CustomGalleryProps> = ({ heading, images }) => {
 	const imageCollection: Image[] = images;
+	const lightboxRef = useRef<HTMLDivElement | null>(null);
 	const [isImageOpen, setIsImageOpen] = useState<boolean>(false);
 	const [currentIndex, setCurrentIndex] = useState<number>(0);
 
@@ -52,8 +53,11 @@ const CustomGallery: React.FC<CustomGalleryProps> = ({ heading, images }) => {
 					exit: styles['gallery__exit'],
 					exitActive: styles['gallery__exit--active']
 				}}
+				nodeRef={lightboxRef}
 				unmountOnExit>
-				<Lightbox currentIndex={currentIndex} images={images} closeImage={closeGallery} />
+				<div ref={lightboxRef}>
+					<Lightbox currentIndex={currentIndex} images={images} closeImage={closeGallery} />
+				</div>
 			</CSSTransition>
 		</>
 	);

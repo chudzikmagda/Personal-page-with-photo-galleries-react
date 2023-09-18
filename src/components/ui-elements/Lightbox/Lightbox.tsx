@@ -1,5 +1,5 @@
 /* eslint-disable indent */
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { LightboxProps } from './models/LightboxModels';
 import { Image } from '../Gallery/models/GalleryModels';
 import { ReactComponent as CloseIcon } from './../../../assets/images/template/lightbox/close-icon.svg';
@@ -11,6 +11,7 @@ import ImageComponent from './Image/Image';
 
 const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage }) => {
 	const imageCollection: Image[] = images;
+	const imageRef = useRef<HTMLDivElement | null>(null);
 	const [index, setIndex] = useState<number>(currentIndex);
 	const [showImage, setShowImage] = useState<boolean>(true);
 
@@ -70,8 +71,11 @@ const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage })
 						exit: styles['lightbox__image-exit'],
 						exitActive: styles['lightbox__image-exit--active']
 					}}
+					nodeRef={imageRef}
 					unmountOnExit>
-					<ImageComponent src={imageCollection[index].src} alt={imageCollection[index].alt} />
+					<div ref={imageRef}>
+						<ImageComponent src={imageCollection[index].src} alt={imageCollection[index].alt} />
+					</div>
 				</CSSTransition>
 			</div>
 			<button className={styles.lightbox__prevButton} onClick={goToPreviousImage}>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import Button from '../../ui-elements/Button/Button';
 import { ButtonApperance, ButtonType } from '../../ui-elements/Button/models/Button.model';
 import Layout from '../../layout-elements/Layout/Layout';
@@ -14,6 +14,7 @@ import SEO from '../../SEO/SEO';
 
 const ContactPage: React.FC = () => {
 	const { t } = useTranslation();
+	const alertRef = useRef<HTMLDivElement | null>(null);
 
 	const initialContactFormValues: ContactForm = {
 		email: { value: '', error: '' },
@@ -148,8 +149,11 @@ const ContactPage: React.FC = () => {
 					exit: styles['contact-form__exit'],
 					exitActive: styles['contact-form__exit--active']
 				}}
+				nodeRef={alertRef}
 				unmountOnExit>
-				<Alert type={alertType} content={alertContent} header={alertHeader} closeAlert={() => setIsAlertVisible(false)} />
+				<div ref={alertRef}>
+					<Alert type={alertType} content={alertContent} header={alertHeader} closeAlert={() => setIsAlertVisible(false)} />
+				</div>
 			</CSSTransition>
 		</>
 	);
