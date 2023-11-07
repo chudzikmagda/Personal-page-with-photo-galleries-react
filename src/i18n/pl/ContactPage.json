@@ -17,8 +17,9 @@
 		"resetButton": "Reset",
 		"submitButton": "Wyślij wiadomość",
 		"error": {
-			"required": "To pole jest wymagane.",
-			"minLength": "Minimalna długość tektu to 2 znaki."
+			"email": "Wpisany email nie jest poprawny.",
+			"minLength": "Minimalna długość tektu to 2 znaki.",
+			"required": "To pole jest wymagane."
 		}
 	},
 	"seo": {

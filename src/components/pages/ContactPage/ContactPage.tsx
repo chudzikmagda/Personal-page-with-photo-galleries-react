@@ -1,10 +1,11 @@
+/* eslint-disable indent */
 import React, { useRef, useState } from 'react';
 import Button from '../../ui-elements/Button/Button';
 import { ButtonApperance, ButtonType } from '../../ui-elements/Button/models/Button.model';
 import Layout from '../../layout-elements/Layout/Layout';
 import Input from '../../ui-elements/form/Input/Input';
 import Textarea from '../../ui-elements/form/Textarea/Textarea';
-import { ContactForm, ContactFormValue } from './models/ContactPage.model';
+import { ContactForm, ContactFormFieldNames, ContactFormValidators, ContactFormValue } from './models/ContactPage.model';
 import Alert from '../../ui-elements/Alert/Alert';
 import { AlertType } from '../../ui-elements/Alert/models/Alert.model';
 import { CSSTransition } from 'react-transition-group';
@@ -17,9 +18,9 @@ const ContactPage: React.FC = () => {
 	const alertRef = useRef<HTMLDivElement | null>(null);
 
 	const initialContactFormValues: ContactForm = {
-		email: { value: '', error: '' },
-		name: { value: '', error: '' },
-		message: { value: '', error: '' }
+		email: { value: '', error: '', validators: [ContactFormValidators.REQUIRED, ContactFormValidators.EMAIL] },
+		name: { value: '', error: '', validators: [ContactFormValidators.REQUIRED, ContactFormValidators.MIN_LENGTH] },
+		message: { value: '', error: '', validators: [ContactFormValidators.REQUIRED, ContactFormValidators.MIN_LENGTH] }
 	};
 	const [contactFormValues, setContactFormValues] = useState<ContactForm>(initialContactFormValues);
 
@@ -45,20 +46,40 @@ const ContactPage: React.FC = () => {
 		});
 	};
 
-	const onInputValueChange = (value: string, inputName: string): void => {
-		setContactFormValues({ ...contactFormValues, [inputName]: { value: value, error: setValidation(value) } });
+	const onInputValueChange = (fieldValue: string, fieldName: ContactFormFieldNames): void => {
+		setContactFormValues({
+			...contactFormValues,
+			[fieldName]: {
+				value: fieldValue,
+				error: setErrorMessage(fieldValue, contactFormValues[fieldName].validators),
+				validators: contactFormValues[fieldName].validators
+			}
+		});
 	};
 
-	const setValidation = (value: string): string => {
+	const emailValidator = (value: string): boolean => {
+		const emailRegexMatcher = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)+$/;
+		return value.match(emailRegexMatcher) ? false : true;
+	};
+
+	const validateValue = (value: string, validator: ContactFormValidators): string => {
+		switch (validator) {
+			case ContactFormValidators.EMAIL:
+				return emailValidator(value) ? `${t('ContactPage.form.error.email')} ` : '';
+			case ContactFormValidators.MIN_LENGTH:
+				return value.length < 2 ? `${t('ContactPage.form.error.minLength')} ` : '';
+			case ContactFormValidators.REQUIRED:
+				return !value ? `${t('ContactPage.form.error.required')} ` : '';
+		}
+	};
+
+	const setErrorMessage = (value: string, validators: ContactFormValidators[] | undefined): string => {
 		let errorMsg = '';
 
-		if (!value) {
-			errorMsg += `${t('ContactPage.form.error.required')} `;
-		}
+		validators?.map((validator: ContactFormValidators) => {
+			errorMsg += validateValue(value, validator);
+		});
 
-		if (value.length < 2) {
-			errorMsg += `${t('ContactPage.form.error.minLength')} `;
-		}
 		return errorMsg;
 	};
 
@@ -105,7 +126,7 @@ const ContactPage: React.FC = () => {
 								value={contactFormValues.name.value}
 								error={contactFormValues.name.error}
 								required={true}
-								onValueChange={(value: string) => onInputValueChange(value, 'name')}
+								onValueChange={(value: string) => onInputValueChange(value, ContactFormFieldNames.NAME)}
 							/>
 							<Input
 								id="email"
@@ -115,7 +136,7 @@ const ContactPage: React.FC = () => {
 								placeholder={t('ContactPage.form.emailInput.placeholder')}
 								error={contactFormValues.email.error}
 								required={true}
-								onValueChange={(value: string) => onInputValueChange(value, 'email')}
+								onValueChange={(value: string) => onInputValueChange(value, ContactFormFieldNames.EMAIL)}
 							/>
 							<Textarea
 								id="message"
@@ -125,7 +146,7 @@ const ContactPage: React.FC = () => {
 								value={contactFormValues.message.value}
 								error={contactFormValues.message.error}
 								required={true}
-								onValueChange={(value: string) => onInputValueChange(value, 'message')}
+								onValueChange={(value: string) => onInputValueChange(value, ContactFormFieldNames.MESSAGE)}
 							/>
 							<div className={styles['contact-form__buttons']}>
 								<Button

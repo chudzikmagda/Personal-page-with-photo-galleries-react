@@ -17,8 +17,9 @@
 		"resetButton": "Reset",
 		"submitButton": "Send a message",
 		"error": {
-			"required": "This is a required field.",
-			"minLength": "The minimum text length is 2 characters."
+			"email": "The entered email address is not correct",
+			"minLength": "The minimum text length is 2 characters.",
+			"required": "This is a required field."
 		}
 	},
 	"seo": {
