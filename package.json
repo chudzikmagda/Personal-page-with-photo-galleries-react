@@ -20,7 +20,7 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
-		"build": "react-scripts build && cp -r php ./build/php",
+		"build": "react-scripts build && cp -r ./src/php ./build/php",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"lint": "eslint .",
