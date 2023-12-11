@@ -7,6 +7,7 @@ export type LightboxProps = {
 };
 
 export type ImageProps = {
-	alt?: string;
 	src: SrcSet;
+	alt?: string;
+	onClick?: () => void;
 };

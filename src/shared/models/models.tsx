@@ -25,7 +25,7 @@ export const SOCIAL_MEDIA: SocialMedia[] = [
 ];
 
 export enum Breakpoints {
-	SMALL = '480px',
-	MEDIUM = '768px',
-	LARGE = '1024px'
+	SMALL = 480,
+	MEDIUM = 768,
+	LARGE = 1024
 }

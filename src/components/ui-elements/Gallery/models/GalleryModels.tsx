@@ -3,6 +3,7 @@ export type SrcSet = {
 	w480: string;
 	w768: string;
 	w1024: string;
+	lowQuality?: string;
 };
 
 export type Image = { src: SrcSet; alt?: string };
