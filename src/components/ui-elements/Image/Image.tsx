@@ -1,12 +1,12 @@
 /* eslint-disable indent */
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './Image.module.scss';
 
 import { Breakpoints } from '../../../shared/models/models';
 import { ImageProps } from '../Lightbox/models/LightboxModels';
 
 const ImageComponent: React.FC<ImageProps> = ({ src, alt, onClick }) => {
-	const [imageSrc, setImageSrc] = React.useState(src.lowQuality);
+	const [imageSrc, setImageSrc] = useState(src.lowQuality);
 
 	const setImageSrcBasedOnWindowSize = (): void => {
 		const windowWidth: number = window.innerWidth;
@@ -23,15 +23,26 @@ const ImageComponent: React.FC<ImageProps> = ({ src, alt, onClick }) => {
 		}
 	};
 
+	const handleWindowResize = (): void => {
+		setImageSrcBasedOnWindowSize();
+	};
+
 	useEffect(() => {
 		setImageSrcBasedOnWindowSize();
+		window.addEventListener('resize', handleWindowResize);
 
-		const img = new Image();
+		return () => {
+			window.removeEventListener('resize', handleWindowResize);
+		};
+	}, [src]);
+
+	useEffect(() => {
+		const img: HTMLImageElement = new Image();
 		img.src = imageSrc ?? src.fullsize;
 		img.onload = () => {
 			setImageSrc(imageSrc);
 		};
-	}, [imageSrc]);
+	}, [imageSrc, src]);
 
 	return (
 		<img
