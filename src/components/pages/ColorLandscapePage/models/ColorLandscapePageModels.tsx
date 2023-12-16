@@ -230,6 +230,64 @@ import image55w1024 from './../../../../assets/images/galleries/landscapes/color
 import image56w1024 from './../../../../assets/images/galleries/landscapes/color/1024/magda-chudzik-color-landscape-photography-56-1024w.jpg';
 import image57w1024 from './../../../../assets/images/galleries/landscapes/color/1024/magda-chudzik-color-landscape-photography-57-1024w.jpg';
 
+import image1lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-01-lowQuality.jpg';
+import image2lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-02-lowQuality.jpg';
+import image3lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-03-lowQuality.jpg';
+import image4lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-04-lowQuality.jpg';
+import image5lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-05-lowQuality.jpg';
+import image6lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-06-lowQuality.jpg';
+import image7lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-07-lowQuality.jpg';
+import image8lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-08-lowQuality.jpg';
+import image9lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-09-lowQuality.jpg';
+import image10lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-10-lowQuality.jpg';
+import image11lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-11-lowQuality.jpg';
+import image12lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-12-lowQuality.jpg';
+import image13lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-13-lowQuality.jpg';
+import image14lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-14-lowQuality.jpg';
+import image15lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-15-lowQuality.jpg';
+import image16lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-16-lowQuality.jpg';
+import image17lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-17-lowQuality.jpg';
+import image18lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-18-lowQuality.jpg';
+import image19lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-19-lowQuality.jpg';
+import image20lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-20-lowQuality.jpg';
+import image21lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-21-lowQuality.jpg';
+import image22lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-22-lowQuality.jpg';
+import image23lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-23-lowQuality.jpg';
+import image24lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-24-lowQuality.jpg';
+import image25lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-25-lowQuality.jpg';
+import image26lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-26-lowQuality.jpg';
+import image27lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-27-lowQuality.jpg';
+import image28lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-28-lowQuality.jpg';
+import image29lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-29-lowQuality.jpg';
+import image30lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-30-lowQuality.jpg';
+import image31lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-31-lowQuality.jpg';
+import image32lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-32-lowQuality.jpg';
+import image33lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-33-lowQuality.jpg';
+import image34lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-34-lowQuality.jpg';
+import image35lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-35-lowQuality.jpg';
+import image36lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-36-lowQuality.jpg';
+import image37lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-37-lowQuality.jpg';
+import image38lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-38-lowQuality.jpg';
+import image39lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-39-lowQuality.jpg';
+import image40lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-40-lowQuality.jpg';
+import image41lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-41-lowQuality.jpg';
+import image42lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-42-lowQuality.jpg';
+import image43lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-43-lowQuality.jpg';
+import image44lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-44-lowQuality.jpg';
+import image45lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-45-lowQuality.jpg';
+import image46lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-46-lowQuality.jpg';
+import image47lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-47-lowQuality.jpg';
+import image48lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-48-lowQuality.jpg';
+import image49lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-49-lowQuality.jpg';
+import image50lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-50-lowQuality.jpg';
+import image51lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-51-lowQuality.jpg';
+import image52lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-52-lowQuality.jpg';
+import image53lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-53-lowQuality.jpg';
+import image54lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-54-lowQuality.jpg';
+import image55lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-55-lowQuality.jpg';
+import image56lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-56-lowQuality.jpg';
+import image57lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-57-lowQuality.jpg';
+
 import { Image } from '../../../ui-elements/Gallery/models/GalleryModels';
 
 export const images: Image[] = [
@@ -238,7 +296,8 @@ export const images: Image[] = [
 			w480: image1w480,
 			w768: image1w768,
 			w1024: image1w1024,
-			fullsize: image1
+			fullsize: image1,
+			lowQuality: image1lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -247,7 +306,8 @@ export const images: Image[] = [
 			w480: image2w480,
 			w768: image2w768,
 			w1024: image2w1024,
-			fullsize: image2
+			fullsize: image2,
+			lowQuality: image2lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -256,7 +316,8 @@ export const images: Image[] = [
 			w480: image3w480,
 			w768: image3w768,
 			w1024: image3w1024,
-			fullsize: image3
+			fullsize: image3,
+			lowQuality: image3lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -265,7 +326,8 @@ export const images: Image[] = [
 			w480: image4w480,
 			w768: image4w768,
 			w1024: image4w1024,
-			fullsize: image4
+			fullsize: image4,
+			lowQuality: image4lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -274,7 +336,8 @@ export const images: Image[] = [
 			w480: image5w480,
 			w768: image5w768,
 			w1024: image5w1024,
-			fullsize: image5
+			fullsize: image5,
+			lowQuality: image5lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -283,7 +346,8 @@ export const images: Image[] = [
 			w480: image6w480,
 			w768: image6w768,
 			w1024: image6w1024,
-			fullsize: image6
+			fullsize: image6,
+			lowQuality: image6lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -292,7 +356,8 @@ export const images: Image[] = [
 			w480: image7w480,
 			w768: image7w768,
 			w1024: image7w1024,
-			fullsize: image7
+			fullsize: image7,
+			lowQuality: image7lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -301,7 +366,8 @@ export const images: Image[] = [
 			w480: image8w480,
 			w768: image8w768,
 			w1024: image8w1024,
-			fullsize: image8
+			fullsize: image8,
+			lowQuality: image8lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -310,7 +376,8 @@ export const images: Image[] = [
 			w480: image9w480,
 			w768: image9w768,
 			w1024: image9w1024,
-			fullsize: image9
+			fullsize: image9,
+			lowQuality: image9lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -319,7 +386,8 @@ export const images: Image[] = [
 			w480: image10w480,
 			w768: image10w768,
 			w1024: image10w1024,
-			fullsize: image10
+			fullsize: image10,
+			lowQuality: image10lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -328,7 +396,8 @@ export const images: Image[] = [
 			w480: image11w480,
 			w768: image11w768,
 			w1024: image11w1024,
-			fullsize: image11
+			fullsize: image11,
+			lowQuality: image11lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -337,7 +406,8 @@ export const images: Image[] = [
 			w480: image12w480,
 			w768: image12w768,
 			w1024: image12w1024,
-			fullsize: image12
+			fullsize: image12,
+			lowQuality: image12lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -346,7 +416,8 @@ export const images: Image[] = [
 			w480: image13w480,
 			w768: image13w768,
 			w1024: image13w1024,
-			fullsize: image13
+			fullsize: image13,
+			lowQuality: image13lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -355,7 +426,8 @@ export const images: Image[] = [
 			w480: image14w480,
 			w768: image14w768,
 			w1024: image14w1024,
-			fullsize: image14
+			fullsize: image14,
+			lowQuality: image14lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -364,7 +436,8 @@ export const images: Image[] = [
 			w480: image15w480,
 			w768: image15w768,
 			w1024: image15w1024,
-			fullsize: image15
+			fullsize: image15,
+			lowQuality: image15lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -373,7 +446,8 @@ export const images: Image[] = [
 			w480: image16w480,
 			w768: image16w768,
 			w1024: image16w1024,
-			fullsize: image16
+			fullsize: image16,
+			lowQuality: image16lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -382,7 +456,8 @@ export const images: Image[] = [
 			w480: image17w480,
 			w768: image17w768,
 			w1024: image17w1024,
-			fullsize: image17
+			fullsize: image17,
+			lowQuality: image17lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -391,7 +466,8 @@ export const images: Image[] = [
 			w480: image18w480,
 			w768: image18w768,
 			w1024: image18w1024,
-			fullsize: image18
+			fullsize: image18,
+			lowQuality: image18lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -400,7 +476,8 @@ export const images: Image[] = [
 			w480: image19w480,
 			w768: image19w768,
 			w1024: image19w1024,
-			fullsize: image19
+			fullsize: image19,
+			lowQuality: image19lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -409,7 +486,8 @@ export const images: Image[] = [
 			w480: image20w480,
 			w768: image20w768,
 			w1024: image20w1024,
-			fullsize: image20
+			fullsize: image20,
+			lowQuality: image20lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -418,7 +496,8 @@ export const images: Image[] = [
 			w480: image21w480,
 			w768: image21w768,
 			w1024: image21w1024,
-			fullsize: image21
+			fullsize: image21,
+			lowQuality: image21lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -427,7 +506,8 @@ export const images: Image[] = [
 			w480: image22w480,
 			w768: image22w768,
 			w1024: image22w1024,
-			fullsize: image22
+			fullsize: image22,
+			lowQuality: image22lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -436,7 +516,8 @@ export const images: Image[] = [
 			w480: image23w480,
 			w768: image23w768,
 			w1024: image23w1024,
-			fullsize: image23
+			fullsize: image23,
+			lowQuality: image23lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -445,7 +526,8 @@ export const images: Image[] = [
 			w480: image24w480,
 			w768: image24w768,
 			w1024: image24w1024,
-			fullsize: image24
+			fullsize: image24,
+			lowQuality: image24lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -454,7 +536,8 @@ export const images: Image[] = [
 			w480: image25w480,
 			w768: image25w768,
 			w1024: image25w1024,
-			fullsize: image25
+			fullsize: image25,
+			lowQuality: image25lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -463,7 +546,8 @@ export const images: Image[] = [
 			w480: image26w480,
 			w768: image26w768,
 			w1024: image26w1024,
-			fullsize: image26
+			fullsize: image26,
+			lowQuality: image26lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -472,7 +556,8 @@ export const images: Image[] = [
 			w480: image27w480,
 			w768: image27w768,
 			w1024: image27w1024,
-			fullsize: image27
+			fullsize: image27,
+			lowQuality: image27lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -481,7 +566,8 @@ export const images: Image[] = [
 			w480: image28w480,
 			w768: image28w768,
 			w1024: image28w1024,
-			fullsize: image28
+			fullsize: image28,
+			lowQuality: image28lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -490,7 +576,8 @@ export const images: Image[] = [
 			w480: image29w480,
 			w768: image29w768,
 			w1024: image29w1024,
-			fullsize: image29
+			fullsize: image29,
+			lowQuality: image29lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -499,7 +586,8 @@ export const images: Image[] = [
 			w480: image30w480,
 			w768: image30w768,
 			w1024: image30w1024,
-			fullsize: image30
+			fullsize: image30,
+			lowQuality: image30lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -508,7 +596,8 @@ export const images: Image[] = [
 			w480: image31w480,
 			w768: image31w768,
 			w1024: image31w1024,
-			fullsize: image31
+			fullsize: image31,
+			lowQuality: image31lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -517,7 +606,8 @@ export const images: Image[] = [
 			w480: image32w480,
 			w768: image32w768,
 			w1024: image32w1024,
-			fullsize: image32
+			fullsize: image32,
+			lowQuality: image32lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -526,7 +616,8 @@ export const images: Image[] = [
 			w480: image33w480,
 			w768: image33w768,
 			w1024: image33w1024,
-			fullsize: image33
+			fullsize: image33,
+			lowQuality: image33lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -535,7 +626,8 @@ export const images: Image[] = [
 			w480: image34w480,
 			w768: image34w768,
 			w1024: image34w1024,
-			fullsize: image34
+			fullsize: image34,
+			lowQuality: image34lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -544,7 +636,8 @@ export const images: Image[] = [
 			w480: image35w480,
 			w768: image35w768,
 			w1024: image35w1024,
-			fullsize: image35
+			fullsize: image35,
+			lowQuality: image35lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -553,7 +646,8 @@ export const images: Image[] = [
 			w480: image36w480,
 			w768: image36w768,
 			w1024: image36w1024,
-			fullsize: image36
+			fullsize: image36,
+			lowQuality: image36lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -562,7 +656,8 @@ export const images: Image[] = [
 			w480: image37w480,
 			w768: image37w768,
 			w1024: image37w1024,
-			fullsize: image37
+			fullsize: image37,
+			lowQuality: image37lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -571,7 +666,8 @@ export const images: Image[] = [
 			w480: image38w480,
 			w768: image38w768,
 			w1024: image38w1024,
-			fullsize: image38
+			fullsize: image38,
+			lowQuality: image38lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -580,7 +676,8 @@ export const images: Image[] = [
 			w480: image39w480,
 			w768: image39w768,
 			w1024: image39w1024,
-			fullsize: image39
+			fullsize: image39,
+			lowQuality: image39lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -589,7 +686,8 @@ export const images: Image[] = [
 			w480: image40w480,
 			w768: image40w768,
 			w1024: image40w1024,
-			fullsize: image40
+			fullsize: image40,
+			lowQuality: image40lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -598,7 +696,8 @@ export const images: Image[] = [
 			w480: image41w480,
 			w768: image41w768,
 			w1024: image41w1024,
-			fullsize: image41
+			fullsize: image41,
+			lowQuality: image41lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -607,7 +706,8 @@ export const images: Image[] = [
 			w480: image42w480,
 			w768: image42w768,
 			w1024: image42w1024,
-			fullsize: image42
+			fullsize: image42,
+			lowQuality: image42lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -616,7 +716,8 @@ export const images: Image[] = [
 			w480: image43w480,
 			w768: image43w768,
 			w1024: image43w1024,
-			fullsize: image43
+			fullsize: image43,
+			lowQuality: image43lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -625,7 +726,8 @@ export const images: Image[] = [
 			w480: image44w480,
 			w768: image44w768,
 			w1024: image44w1024,
-			fullsize: image44
+			fullsize: image44,
+			lowQuality: image44lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -634,7 +736,8 @@ export const images: Image[] = [
 			w480: image45w480,
 			w768: image45w768,
 			w1024: image45w1024,
-			fullsize: image45
+			fullsize: image45,
+			lowQuality: image45lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -643,7 +746,8 @@ export const images: Image[] = [
 			w480: image46w480,
 			w768: image46w768,
 			w1024: image46w1024,
-			fullsize: image46
+			fullsize: image46,
+			lowQuality: image46lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -652,7 +756,8 @@ export const images: Image[] = [
 			w480: image47w480,
 			w768: image47w768,
 			w1024: image47w1024,
-			fullsize: image47
+			fullsize: image47,
+			lowQuality: image47lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -661,7 +766,8 @@ export const images: Image[] = [
 			w480: image48w480,
 			w768: image48w768,
 			w1024: image48w1024,
-			fullsize: image48
+			fullsize: image48,
+			lowQuality: image48lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -670,7 +776,8 @@ export const images: Image[] = [
 			w480: image49w480,
 			w768: image49w768,
 			w1024: image49w1024,
-			fullsize: image49
+			fullsize: image49,
+			lowQuality: image49lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -679,7 +786,8 @@ export const images: Image[] = [
 			w480: image50w480,
 			w768: image50w768,
 			w1024: image50w1024,
-			fullsize: image50
+			fullsize: image50,
+			lowQuality: image50lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -688,7 +796,8 @@ export const images: Image[] = [
 			w480: image51w480,
 			w768: image51w768,
 			w1024: image51w1024,
-			fullsize: image51
+			fullsize: image51,
+			lowQuality: image51lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -697,7 +806,8 @@ export const images: Image[] = [
 			w480: image52w480,
 			w768: image52w768,
 			w1024: image52w1024,
-			fullsize: image52
+			fullsize: image52,
+			lowQuality: image52lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -706,7 +816,8 @@ export const images: Image[] = [
 			w480: image53w480,
 			w768: image53w768,
 			w1024: image53w1024,
-			fullsize: image53
+			fullsize: image53,
+			lowQuality: image53lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -715,7 +826,8 @@ export const images: Image[] = [
 			w480: image54w480,
 			w768: image54w768,
 			w1024: image54w1024,
-			fullsize: image54
+			fullsize: image54,
+			lowQuality: image54lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -724,7 +836,8 @@ export const images: Image[] = [
 			w480: image55w480,
 			w768: image55w768,
 			w1024: image55w1024,
-			fullsize: image55
+			fullsize: image55,
+			lowQuality: image55lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -733,7 +846,8 @@ export const images: Image[] = [
 			w480: image56w480,
 			w768: image56w768,
 			w1024: image56w1024,
-			fullsize: image56
+			fullsize: image56,
+			lowQuality: image56lowQuality
 		},
 		alt: 'Landscape photography'
 	},
@@ -742,7 +856,8 @@ export const images: Image[] = [
 			w480: image57w480,
 			w768: image57w768,
 			w1024: image57w1024,
-			fullsize: image57
+			fullsize: image57,
+			lowQuality: image57lowQuality
 		},
 		alt: 'Landscape photography'
 	}

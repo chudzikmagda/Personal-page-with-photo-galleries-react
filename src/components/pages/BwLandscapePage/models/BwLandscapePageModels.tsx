@@ -206,6 +206,58 @@ import image49w1024 from './../../../../assets/images/galleries/landscapes/black
 import image50w1024 from './../../../../assets/images/galleries/landscapes/black-and-white/1024/magda-chudzik-black-and-white-landscape-photography-50-1024w.jpg';
 import image51w1024 from './../../../../assets/images/galleries/landscapes/black-and-white/1024/magda-chudzik-black-and-white-landscape-photography-51-1024w.jpg';
 
+import image1lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-01-lowQuality.jpg';
+import image2lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-02-lowQuality.jpg';
+import image3lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-03-lowQuality.jpg';
+import image4lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-04-lowQuality.jpg';
+import image5lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-05-lowQuality.jpg';
+import image6lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-06-lowQuality.jpg';
+import image7lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-07-lowQuality.jpg';
+import image8lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-08-lowQuality.jpg';
+import image9lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-09-lowQuality.jpg';
+import image10lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-10-lowQuality.jpg';
+import image11lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-11-lowQuality.jpg';
+import image12lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-12-lowQuality.jpg';
+import image13lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-13-lowQuality.jpg';
+import image14lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-14-lowQuality.jpg';
+import image15lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-15-lowQuality.jpg';
+import image16lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-16-lowQuality.jpg';
+import image17lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-17-lowQuality.jpg';
+import image18lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-18-lowQuality.jpg';
+import image19lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-19-lowQuality.jpg';
+import image20lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-20-lowQuality.jpg';
+import image21lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-21-lowQuality.jpg';
+import image22lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-22-lowQuality.jpg';
+import image23lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-23-lowQuality.jpg';
+import image24lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-24-lowQuality.jpg';
+import image25lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-25-lowQuality.jpg';
+import image26lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-26-lowQuality.jpg';
+import image27lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-27-lowQuality.jpg';
+import image28lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-28-lowQuality.jpg';
+import image29lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-29-lowQuality.jpg';
+import image30lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-30-lowQuality.jpg';
+import image31lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-31-lowQuality.jpg';
+import image32lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-32-lowQuality.jpg';
+import image33lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-33-lowQuality.jpg';
+import image34lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-34-lowQuality.jpg';
+import image35lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-35-lowQuality.jpg';
+import image36lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-36-lowQuality.jpg';
+import image37lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-37-lowQuality.jpg';
+import image38lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-38-lowQuality.jpg';
+import image39lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-39-lowQuality.jpg';
+import image40lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-40-lowQuality.jpg';
+import image41lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-41-lowQuality.jpg';
+import image42lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-42-lowQuality.jpg';
+import image43lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-43-lowQuality.jpg';
+import image44lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-44-lowQuality.jpg';
+import image45lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-45-lowQuality.jpg';
+import image46lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-46-lowQuality.jpg';
+import image47lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-47-lowQuality.jpg';
+import image48lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-48-lowQuality.jpg';
+import image49lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-49-lowQuality.jpg';
+import image50lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-50-lowQuality.jpg';
+import image51lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-51-lowQuality.jpg';
+
 import { Image } from '../../../ui-elements/Gallery/models/GalleryModels';
 
 export const images: Image[] = [
@@ -214,7 +266,8 @@ export const images: Image[] = [
 			fullsize: image1,
 			w480: image1w480,
 			w768: image1w768,
-			w1024: image1w1024
+			w1024: image1w1024,
+			lowQuality: image1lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -223,7 +276,8 @@ export const images: Image[] = [
 			fullsize: image2,
 			w480: image2w480,
 			w768: image2w768,
-			w1024: image2w1024
+			w1024: image2w1024,
+			lowQuality: image2lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -232,7 +286,8 @@ export const images: Image[] = [
 			fullsize: image3,
 			w480: image3w480,
 			w768: image3w768,
-			w1024: image3w1024
+			w1024: image3w1024,
+			lowQuality: image3lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -241,7 +296,8 @@ export const images: Image[] = [
 			fullsize: image4,
 			w480: image4w480,
 			w768: image4w768,
-			w1024: image4w1024
+			w1024: image4w1024,
+			lowQuality: image4lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -250,7 +306,8 @@ export const images: Image[] = [
 			fullsize: image5,
 			w480: image5w480,
 			w768: image5w768,
-			w1024: image5w1024
+			w1024: image5w1024,
+			lowQuality: image5lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -259,7 +316,8 @@ export const images: Image[] = [
 			fullsize: image6,
 			w480: image6w480,
 			w768: image6w768,
-			w1024: image6w1024
+			w1024: image6w1024,
+			lowQuality: image6lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -268,7 +326,8 @@ export const images: Image[] = [
 			fullsize: image7,
 			w480: image7w480,
 			w768: image7w768,
-			w1024: image7w1024
+			w1024: image7w1024,
+			lowQuality: image7lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -277,7 +336,8 @@ export const images: Image[] = [
 			fullsize: image8,
 			w480: image8w480,
 			w768: image8w768,
-			w1024: image8w1024
+			w1024: image8w1024,
+			lowQuality: image8lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -286,7 +346,8 @@ export const images: Image[] = [
 			fullsize: image9,
 			w480: image9w480,
 			w768: image9w768,
-			w1024: image9w1024
+			w1024: image9w1024,
+			lowQuality: image9lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -295,7 +356,8 @@ export const images: Image[] = [
 			fullsize: image10,
 			w480: image10w480,
 			w768: image10w768,
-			w1024: image10w1024
+			w1024: image10w1024,
+			lowQuality: image10lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -304,7 +366,8 @@ export const images: Image[] = [
 			fullsize: image11,
 			w480: image11w480,
 			w768: image11w768,
-			w1024: image11w1024
+			w1024: image11w1024,
+			lowQuality: image11lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -313,7 +376,8 @@ export const images: Image[] = [
 			fullsize: image12,
 			w480: image12w480,
 			w768: image12w768,
-			w1024: image12w1024
+			w1024: image12w1024,
+			lowQuality: image12lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -322,7 +386,8 @@ export const images: Image[] = [
 			fullsize: image13,
 			w480: image13w480,
 			w768: image13w768,
-			w1024: image13w1024
+			w1024: image13w1024,
+			lowQuality: image13lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -331,7 +396,8 @@ export const images: Image[] = [
 			fullsize: image14,
 			w480: image14w480,
 			w768: image14w768,
-			w1024: image14w1024
+			w1024: image14w1024,
+			lowQuality: image14lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -340,7 +406,8 @@ export const images: Image[] = [
 			fullsize: image15,
 			w480: image15w480,
 			w768: image15w768,
-			w1024: image15w1024
+			w1024: image15w1024,
+			lowQuality: image15lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -349,7 +416,8 @@ export const images: Image[] = [
 			fullsize: image16,
 			w480: image16w480,
 			w768: image16w768,
-			w1024: image16w1024
+			w1024: image16w1024,
+			lowQuality: image16lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -358,7 +426,8 @@ export const images: Image[] = [
 			fullsize: image17,
 			w480: image17w480,
 			w768: image17w768,
-			w1024: image17w1024
+			w1024: image17w1024,
+			lowQuality: image17lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -367,7 +436,8 @@ export const images: Image[] = [
 			fullsize: image18,
 			w480: image18w480,
 			w768: image18w768,
-			w1024: image18w1024
+			w1024: image18w1024,
+			lowQuality: image18lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -376,7 +446,8 @@ export const images: Image[] = [
 			fullsize: image19,
 			w480: image19w480,
 			w768: image19w768,
-			w1024: image19w1024
+			w1024: image19w1024,
+			lowQuality: image19lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -385,7 +456,8 @@ export const images: Image[] = [
 			fullsize: image20,
 			w480: image20w480,
 			w768: image20w768,
-			w1024: image20w1024
+			w1024: image20w1024,
+			lowQuality: image20lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -394,7 +466,8 @@ export const images: Image[] = [
 			fullsize: image21,
 			w480: image21w480,
 			w768: image21w768,
-			w1024: image21w1024
+			w1024: image21w1024,
+			lowQuality: image21lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -403,7 +476,8 @@ export const images: Image[] = [
 			fullsize: image22,
 			w480: image22w480,
 			w768: image22w768,
-			w1024: image22w1024
+			w1024: image22w1024,
+			lowQuality: image22lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -412,7 +486,8 @@ export const images: Image[] = [
 			fullsize: image23,
 			w480: image23w480,
 			w768: image23w768,
-			w1024: image23w1024
+			w1024: image23w1024,
+			lowQuality: image23lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -421,7 +496,8 @@ export const images: Image[] = [
 			fullsize: image24,
 			w480: image24w480,
 			w768: image24w768,
-			w1024: image24w1024
+			w1024: image24w1024,
+			lowQuality: image24lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -430,7 +506,8 @@ export const images: Image[] = [
 			fullsize: image25,
 			w480: image25w480,
 			w768: image25w768,
-			w1024: image25w1024
+			w1024: image25w1024,
+			lowQuality: image25lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -439,7 +516,8 @@ export const images: Image[] = [
 			fullsize: image26,
 			w480: image26w480,
 			w768: image26w768,
-			w1024: image26w1024
+			w1024: image26w1024,
+			lowQuality: image26lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -448,7 +526,8 @@ export const images: Image[] = [
 			fullsize: image27,
 			w480: image27w480,
 			w768: image27w768,
-			w1024: image27w1024
+			w1024: image27w1024,
+			lowQuality: image27lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -457,7 +536,8 @@ export const images: Image[] = [
 			fullsize: image28,
 			w480: image28w480,
 			w768: image28w768,
-			w1024: image28w1024
+			w1024: image28w1024,
+			lowQuality: image28lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -466,7 +546,8 @@ export const images: Image[] = [
 			fullsize: image29,
 			w480: image29w480,
 			w768: image29w768,
-			w1024: image29w1024
+			w1024: image29w1024,
+			lowQuality: image29lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -475,7 +556,8 @@ export const images: Image[] = [
 			fullsize: image30,
 			w480: image30w480,
 			w768: image30w768,
-			w1024: image30w1024
+			w1024: image30w1024,
+			lowQuality: image30lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -484,7 +566,8 @@ export const images: Image[] = [
 			fullsize: image31,
 			w480: image31w480,
 			w768: image31w768,
-			w1024: image31w1024
+			w1024: image31w1024,
+			lowQuality: image31lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -493,7 +576,8 @@ export const images: Image[] = [
 			fullsize: image32,
 			w480: image32w480,
 			w768: image32w768,
-			w1024: image32w1024
+			w1024: image32w1024,
+			lowQuality: image32lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -502,7 +586,8 @@ export const images: Image[] = [
 			fullsize: image33,
 			w480: image33w480,
 			w768: image33w768,
-			w1024: image33w1024
+			w1024: image33w1024,
+			lowQuality: image33lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -511,7 +596,8 @@ export const images: Image[] = [
 			fullsize: image34,
 			w480: image34w480,
 			w768: image34w768,
-			w1024: image34w1024
+			w1024: image34w1024,
+			lowQuality: image34lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -520,7 +606,8 @@ export const images: Image[] = [
 			fullsize: image35,
 			w480: image35w480,
 			w768: image35w768,
-			w1024: image35w1024
+			w1024: image35w1024,
+			lowQuality: image35lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -529,7 +616,8 @@ export const images: Image[] = [
 			fullsize: image36,
 			w480: image36w480,
 			w768: image36w768,
-			w1024: image36w1024
+			w1024: image36w1024,
+			lowQuality: image36lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -538,7 +626,8 @@ export const images: Image[] = [
 			fullsize: image37,
 			w480: image37w480,
 			w768: image37w768,
-			w1024: image37w1024
+			w1024: image37w1024,
+			lowQuality: image37lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -547,7 +636,8 @@ export const images: Image[] = [
 			fullsize: image38,
 			w480: image38w480,
 			w768: image38w768,
-			w1024: image38w1024
+			w1024: image38w1024,
+			lowQuality: image38lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -556,7 +646,8 @@ export const images: Image[] = [
 			fullsize: image39,
 			w480: image39w480,
 			w768: image39w768,
-			w1024: image39w1024
+			w1024: image39w1024,
+			lowQuality: image39lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -565,7 +656,8 @@ export const images: Image[] = [
 			fullsize: image40,
 			w480: image40w480,
 			w768: image40w768,
-			w1024: image40w1024
+			w1024: image40w1024,
+			lowQuality: image40lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -574,7 +666,8 @@ export const images: Image[] = [
 			fullsize: image41,
 			w480: image41w480,
 			w768: image41w768,
-			w1024: image41w1024
+			w1024: image41w1024,
+			lowQuality: image41lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -583,7 +676,8 @@ export const images: Image[] = [
 			fullsize: image42,
 			w480: image42w480,
 			w768: image42w768,
-			w1024: image42w1024
+			w1024: image42w1024,
+			lowQuality: image42lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -592,7 +686,8 @@ export const images: Image[] = [
 			fullsize: image43,
 			w480: image43w480,
 			w768: image43w768,
-			w1024: image43w1024
+			w1024: image43w1024,
+			lowQuality: image43lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -601,7 +696,8 @@ export const images: Image[] = [
 			fullsize: image44,
 			w480: image44w480,
 			w768: image44w768,
-			w1024: image44w1024
+			w1024: image44w1024,
+			lowQuality: image44lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -610,7 +706,8 @@ export const images: Image[] = [
 			fullsize: image45,
 			w480: image45w480,
 			w768: image45w768,
-			w1024: image45w1024
+			w1024: image45w1024,
+			lowQuality: image45lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -619,7 +716,8 @@ export const images: Image[] = [
 			fullsize: image46,
 			w480: image46w480,
 			w768: image46w768,
-			w1024: image46w1024
+			w1024: image46w1024,
+			lowQuality: image46lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -628,7 +726,8 @@ export const images: Image[] = [
 			fullsize: image47,
 			w480: image47w480,
 			w768: image47w768,
-			w1024: image47w1024
+			w1024: image47w1024,
+			lowQuality: image47lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -637,7 +736,8 @@ export const images: Image[] = [
 			fullsize: image48,
 			w480: image48w480,
 			w768: image48w768,
-			w1024: image48w1024
+			w1024: image48w1024,
+			lowQuality: image48lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -646,7 +746,8 @@ export const images: Image[] = [
 			fullsize: image49,
 			w480: image49w480,
 			w768: image49w768,
-			w1024: image49w1024
+			w1024: image49w1024,
+			lowQuality: image49lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -655,7 +756,8 @@ export const images: Image[] = [
 			fullsize: image50,
 			w480: image50w480,
 			w768: image50w768,
-			w1024: image50w1024
+			w1024: image50w1024,
+			lowQuality: image50lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	},
@@ -664,7 +766,8 @@ export const images: Image[] = [
 			fullsize: image51,
 			w480: image51w480,
 			w768: image51w768,
-			w1024: image51w1024
+			w1024: image51w1024,
+			lowQuality: image51lowQuality
 		},
 		alt: 'Black and white landscape photography'
 	}
