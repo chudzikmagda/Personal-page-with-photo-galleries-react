@@ -1,19 +1,19 @@
-import rowers from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-21.jpg';
-import bridge from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-25.jpg';
-import slovenia from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-23.jpg';
-import squareMarket from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-27.jpg';
-import mitoraj from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-29.jpg';
-import foggyForest from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-28.jpg';
-import baltic from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-24.jpg';
-import moravia from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-22.jpg';
-import solina from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-20.jpg';
-import forest from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-26.jpg';
-import adriaticSea from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-12.jpg';
-import observer from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-5.jpg';
-import bieszczady from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-6.jpg';
-import tatry from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-1.jpg';
-import fields from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-8.jpg';
-import pieniny from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-3.jpg';
+import rowers from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-21.webp';
+import bridge from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-25.webp';
+import slovenia from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-23.webp';
+import squareMarket from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-27.webp';
+import mitoraj from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-29.webp';
+import foggyForest from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-28.webp';
+import baltic from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-24.webp';
+import moravia from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-22.webp';
+import solina from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-20.webp';
+import forest from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-26.webp';
+import adriaticSea from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-12.webp';
+import observer from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-5.webp';
+import bieszczady from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-6.webp';
+import tatry from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-1.webp';
+import fields from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-8.webp';
+import pieniny from './../../../../../../assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-3.webp';
 import { t } from 'i18next';
 
 export type Print = {

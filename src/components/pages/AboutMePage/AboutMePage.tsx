@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../../layout-elements/Layout/Layout';
 import { useTranslation } from 'react-i18next';
-import heroImage from './../../../assets/images/template/photographer-magda-chudzik.jpg';
+import heroImage from './../../../assets/images/template/photographer-magda-chudzik.webp';
 import styles from './AboutMePage.module.scss';
 import { Trans } from 'react-i18next';
 import { Link } from 'react-router-dom';

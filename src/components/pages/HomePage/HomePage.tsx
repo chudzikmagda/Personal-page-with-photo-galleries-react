@@ -1,8 +1,8 @@
 import React from 'react';
 import Card from '../../ui-elements/Card/Card';
 import styles from './HomePage.module.scss';
-import urbanPhoto from './../../../assets/images/galleries/categories/magda-chudzik-urban-photography.jpg';
-import landscapePhoto from './../../../assets/images/galleries/categories/magda-chudzik-landscape-photography.jpg';
+import urbanPhoto from './../../../assets/images/galleries/categories/magda-chudzik-urban-photography.webp';
+import landscapePhoto from './../../../assets/images/galleries/categories/magda-chudzik-landscape-photography.webp';
 import { Paths } from '../../../routing/models/RoutingModels';
 import { useTranslation } from 'react-i18next';
 import Layout from '../../layout-elements/Layout/Layout';
