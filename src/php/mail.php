@@ -3,7 +3,7 @@ if (isset($_POST['name']) && isset($_POST['message']) && isset($_POST['email']))
     $name = htmlspecialchars($_POST['name']);
     $message = htmlspecialchars($_POST['message']);
     $email = $_POST['email'];
-    $recipient = "hi@magdachudzik.pl";
+    $recipient = "kontakt@magdachudzik.pl";
     $subject = "Wiadomość z portfolio fotograficznego";
     $formcontent = "From: $name\n\nEmail: $email\n\nMessage: $message\n\n";
     
