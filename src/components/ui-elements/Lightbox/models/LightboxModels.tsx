@@ -10,4 +10,10 @@ export type ImageProps = {
 	src: SrcSet;
 	alt?: string;
 	onClick?: () => void;
+	onSwipe?: (direction: SWIPE_DIRECTION) => void;
 };
+
+export enum SWIPE_DIRECTION {
+	'LEFT' = 'left',
+	'RIGHT' = 'right'
+}

@@ -1,6 +1,6 @@
 /* eslint-disable indent */
 import React, { useEffect, useRef, useState } from 'react';
-import { LightboxProps } from './models/LightboxModels';
+import { LightboxProps, SWIPE_DIRECTION } from './models/LightboxModels';
 import { Image } from '../Gallery/models/GalleryModels';
 import { ReactComponent as CloseIcon } from './../../../assets/images/template/lightbox/close-icon.svg';
 import { ReactComponent as NextIcon } from './../../../assets/images/template/lightbox/arrow-right.svg';
@@ -36,6 +36,15 @@ const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage })
 	const onCloseLightbox = (): void => {
 		setShowImage(false);
 		closeImage(false);
+	};
+
+	const handleSwipeEvent = (direction: SWIPE_DIRECTION) => {
+		switch (direction) {
+			case SWIPE_DIRECTION.RIGHT:
+				return goToPreviousImage();
+			case SWIPE_DIRECTION.LEFT:
+				return goToNextImage();
+		}
 	};
 
 	useEffect((): (() => void) => {
@@ -74,7 +83,7 @@ const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage })
 					nodeRef={imageRef}
 					unmountOnExit>
 					<div ref={imageRef}>
-						<ImageComponent src={imageCollection[index].src} alt={imageCollection[index].alt} />
+						<ImageComponent src={imageCollection[index].src} alt={imageCollection[index].alt} onSwipe={(e) => handleSwipeEvent(e)} />
 					</div>
 				</CSSTransition>
 			</div>
