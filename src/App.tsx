@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './App.scss';
 import LanguageContext from './contexts/LanguageContext';
 import { RouterProvider } from 'react-router-dom';
 import Router from './routing/Routing';
