@@ -1,13 +1,13 @@
 /* eslint-disable indent */
 import React, { useEffect, useRef, useState } from 'react';
-import { LightboxProps, SWIPE_DIRECTION } from './models/LightboxModels';
+import LightboxImageComponent from './LightboxImage/LightboxImage';
 import { Image } from '../Gallery/models/GalleryModels';
+import { LightboxProps, SWIPE_DIRECTION } from './models/LightboxModels';
 import { ReactComponent as CloseIcon } from './../../../assets/images/template/lightbox/close-icon.svg';
 import { ReactComponent as NextIcon } from './../../../assets/images/template/lightbox/arrow-right.svg';
 import { ReactComponent as PrevIcon } from './../../../assets/images/template/lightbox/arrow-left.svg';
 import { CSSTransition } from 'react-transition-group';
 import styles from './Lightbox.module.scss';
-import ImageComponent from './Image/Image';
 
 const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage }) => {
 	const imageCollection: Image[] = images;
@@ -83,7 +83,11 @@ const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage })
 					nodeRef={imageRef}
 					unmountOnExit>
 					<div ref={imageRef}>
-						<ImageComponent src={imageCollection[index].src} alt={imageCollection[index].alt} onSwipe={(e) => handleSwipeEvent(e)} />
+						<LightboxImageComponent
+							src={imageCollection[index].src}
+							alt={imageCollection[index].alt}
+							onSwipe={(e) => handleSwipeEvent(e)}
+						/>
 					</div>
 				</CSSTransition>
 			</div>
