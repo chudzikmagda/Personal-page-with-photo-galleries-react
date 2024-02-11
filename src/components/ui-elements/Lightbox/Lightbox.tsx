@@ -33,7 +33,23 @@ const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage })
 		}, 200);
 	};
 
-	const onCloseLightbox = (): void => {
+	const isButtonClicked = (className: string, clickedElement: HTMLElement): boolean | undefined => {
+		return clickedElement.parentElement?.classList.value.includes(className);
+	};
+
+	const isImageClicked = (clickedElement: HTMLElement): boolean => {
+		return clickedElement instanceof HTMLImageElement;
+	};
+
+	const onCloseLightbox = (event: React.MouseEvent<HTMLDivElement | HTMLButtonElement>): void => {
+		const clickedElement: HTMLElement = event.target as HTMLElement;
+		if (
+			isImageClicked(clickedElement) ||
+			isButtonClicked('lightbox__prevButton', clickedElement) ||
+			isButtonClicked('lightbox__nextButton', clickedElement)
+		) {
+			return;
+		}
 		setShowImage(false);
 		closeImage(false);
 	};
@@ -66,8 +82,8 @@ const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage })
 	});
 
 	return (
-		<div className={styles.lightbox}>
-			<button className={styles.lightbox__closeButton} onClick={onCloseLightbox}>
+		<div onClick={(e) => onCloseLightbox(e)} className={styles.lightbox}>
+			<button onClick={(e) => onCloseLightbox(e)} className={styles.lightbox__closeButton}>
 				<CloseIcon />
 			</button>
 			<div className={styles['lightbox__image-wrapper']}>
@@ -84,17 +100,17 @@ const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage })
 					unmountOnExit>
 					<div ref={imageRef}>
 						<LightboxImageComponent
+							onSwipe={(e) => handleSwipeEvent(e)}
 							src={imageCollection[index].src}
 							alt={imageCollection[index].alt}
-							onSwipe={(e) => handleSwipeEvent(e)}
 						/>
 					</div>
 				</CSSTransition>
 			</div>
-			<button className={styles.lightbox__prevButton} onClick={goToPreviousImage}>
+			<button onClick={goToPreviousImage} className={styles.lightbox__prevButton}>
 				<PrevIcon />
 			</button>
-			<button className={styles.lightbox__nextButton} onClick={goToNextImage}>
+			<button onClick={goToNextImage} className={styles.lightbox__nextButton}>
 				<NextIcon />
 			</button>
 		</div>
