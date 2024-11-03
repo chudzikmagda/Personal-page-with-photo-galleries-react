@@ -3,7 +3,7 @@ import React, { useMemo } from 'react';
 import { ButtonApperance, ButtonProps, ButtonType } from './models/Button.model';
 import styles from './Button.module.scss';
 
-const Button: React.FC<ButtonProps> = ({ apperance, cta, disabled, type, onClick }) => {
+const Button: React.FC<ButtonProps> = ({ apperance = ButtonApperance.PRIMARY_SOLID, cta, disabled = false, type = ButtonType.BUTTON, onClick }) => {
 	const classNames: string = useMemo(() => {
 		let classes = `${styles.btn} `;
 
@@ -28,12 +28,6 @@ const Button: React.FC<ButtonProps> = ({ apperance, cta, disabled, type, onClick
 			{cta}
 		</button>
 	);
-};
-
-Button.defaultProps = {
-	apperance: ButtonApperance.PRIMARY_SOLID,
-	disabled: false,
-	type: ButtonType.BUTTON
 };
 
 export default Button;

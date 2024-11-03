@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { SEOProps } from './models/SEOModels';
 
-const SEO: React.FC<SEOProps> = ({ description, keywords, type, title }) => {
+const SEO: React.FC<SEOProps> = ({ description, keywords, type = 'article', title }) => {
 	return (
 		<Helmet>
 			<title>{title}</title>
@@ -17,10 +17,6 @@ const SEO: React.FC<SEOProps> = ({ description, keywords, type, title }) => {
 			<meta name="twitter:description" content={description} />
 		</Helmet>
 	);
-};
-
-SEO.defaultProps = {
-	type: 'article'
 };
 
 export default SEO;
