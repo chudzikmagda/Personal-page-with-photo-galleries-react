@@ -12,7 +12,7 @@ const root: ReactDOM.Root = ReactDOM.createRoot(document.getElementById('root') 
 
 ReactGA.initialize(TRACKING_ID);
 
-hotjar.initialize(1141369, 6);
+hotjar.initialize({ id: 1141369, sv: 6 });
 
 root.render(
 	<React.StrictMode>
