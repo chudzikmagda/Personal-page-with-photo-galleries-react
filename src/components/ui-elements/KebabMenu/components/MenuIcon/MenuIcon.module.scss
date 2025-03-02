@@ -1,0 +1,34 @@
+@import '../../../../../assets/styles/colors.scss';
+@import '../../../../../assets/styles/mixins.scss';
+
+.menuIcon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	border-radius: 100%;
+	cursor: pointer;
+
+	@include breakpoint(large) {
+		flex-direction: column;
+	}
+
+	&__circle {
+		width: 6px;
+		height: 6px;
+		background-color: $primary-dark;
+		border-radius: 100%;
+	}
+
+	&:hover,
+	&--clicked {
+		background-color: $grey-light;
+	}
+
+	&:hover {
+		@include transition($element: background-color);
+	}
+}

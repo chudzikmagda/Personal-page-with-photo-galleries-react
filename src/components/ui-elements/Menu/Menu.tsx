@@ -1,10 +1,10 @@
 import React, { Dispatch, SetStateAction, useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import { MenuItem } from './models/MenuModels';
-import { Paths } from '../../../routing/models/RoutingModels';
-import styles from './Menu.module.scss';
 import { useTranslation } from 'react-i18next';
-import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
+import { NavLink } from 'react-router-dom';
+import { Paths } from '../../../routing/models/RoutingModels';
+import KebabMenu from '../KebabMenu/KebabMenu';
+import styles from './Menu.module.scss';
+import { MenuItem } from './models/MenuModels';
 
 const Menu: React.FC = () => {
 	const { t } = useTranslation();
@@ -46,8 +46,8 @@ const Menu: React.FC = () => {
 						</span>
 					);
 				})}
-				<div className={styles.menu__languageSwitcher}>
-					<LanguageSwitcher />
+				<div className={styles['menu__kebab-menu']}>
+					<KebabMenu />
 				</div>
 			</nav>
 		</>

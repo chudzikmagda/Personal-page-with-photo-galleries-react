@@ -12,7 +12,9 @@
 		overflow: hidden;
 	}
 
-	&__languageSwitcher {
+	&__kebab-menu {
+		margin-left: initial;
+
 		@include breakpoint(large) {
 			margin-left: auto;
 		}

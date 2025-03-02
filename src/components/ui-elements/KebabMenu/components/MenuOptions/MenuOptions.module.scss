@@ -1,0 +1,20 @@
+@import '../../../../../assets/styles/colors.scss';
+
+.menuOptions {
+	width: auto;
+	height: auto;
+	padding: 32px;
+	border-radius: 8px;
+	background-color: $grey-light;
+	z-index: 1000;
+
+	&:focus,
+	&:focus-visible {
+		outline: none;
+	}
+
+	&__label {
+		font-size: 0.75rem;
+		font-weight: 600;
+	}
+}
