@@ -19,6 +19,8 @@
 	&__element {
 		min-height: 160px;
 		padding: $padding-basic * 2;
+		background-color: var(--primary-light);
+		color: var(--secondary-color);
 		border: 2px solid $grey-medium;
 		border-radius: 25px;
 		font-family: $font-family;

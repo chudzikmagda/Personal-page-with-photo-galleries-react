@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import LanguageContext from '../../../../../contexts/LanguageContext';
-import { LanguageContextType, Languages } from '../../../../../contexts/models/languages.model';
+import { LanguageContextType, Languages } from '../../../../../contexts/models/Languages.model';
 import { AvailableLanguages, LANGUAGES_SWITCH_SIDES_MAP, SWITCH_SIDES_LANGUAGES_MAP } from '../../models/LanguageSwitch.model';
 import { SwitchSides } from '../../models/Switch.model';
 import MenuSwitch from '../MenuSwitch/MenuSwitch';

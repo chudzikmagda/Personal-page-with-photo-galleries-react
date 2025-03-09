@@ -10,7 +10,6 @@
 		gap: $padding-basic;
 		width: 70%;
 		padding: $padding-basic * 2 $padding-basic;
-		background-color: rgba($grey-medium, 0.2);
 		z-index: 1;
 
 		@include breakpoint(large) {

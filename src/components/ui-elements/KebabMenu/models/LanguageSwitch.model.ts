@@ -1,4 +1,4 @@
-import { Languages } from '../../../../contexts/models/languages.model';
+import { Languages } from '../../../../contexts/models/Languages.model';
 import { SwitchSides } from './Switch.model';
 
 export enum AvailableLanguages {

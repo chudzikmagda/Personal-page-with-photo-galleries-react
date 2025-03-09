@@ -1,5 +1,5 @@
 import React from 'react';
-import { LanguageContextType, Languages } from './models/languages.model';
+import { LanguageContextType, Languages } from './models/Languages.model';
 
 const InitialLanguageContext: LanguageContextType = {
 	state: Languages.PL,

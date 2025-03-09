@@ -20,7 +20,7 @@ body:has(.lightbox) {
 		'photo photo'
 		'prevButton nextButton';
 	gap: 8px;
-	background-color: rgba($primary-dark, 0.95);
+	background-color: $primary-dark-95;
 	z-index: 10000;
 
 	@include breakpoint(large) {
