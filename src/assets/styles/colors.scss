@@ -1,14 +1,19 @@
-$primary-color: #f24f4b;
-$primary-light: #fdfdfd;
-$primary-dark: #0f0f0f;
+$primary-color: var(--primary-color);
+$primary-color-20: var(--primary-color-20);
+$primary-light: var(--primary-light);
+$primary-dark: var(--primary-dark);
+$primary-dark-20: var(--primary-dark-20);
+$primary-dark-95: var(--primary-dark-95);
 
-$secondary-color: $primary-dark;
+$secondary-color: var(--primary-dark);
 
-$grey-light: #e2e2e2;
-$grey-medium: #999999;
+$grey-light: var(--grey-light);
+$grey-medium: var(--grey-medium);
+$grey-switch: var(--grey-switch);
+$grey-hover-switch: var(--grey-hover-switch);
 
-$text-dark: $primary-dark;
-$text-light: $primary-light;
+$text-dark: var(--primary-dark);
+$text-light: var(--primary-light);
 
-$success: #9bf24b;
-$danger: #ef201b;
+$success: var(--success);
+$danger: var(--danger);

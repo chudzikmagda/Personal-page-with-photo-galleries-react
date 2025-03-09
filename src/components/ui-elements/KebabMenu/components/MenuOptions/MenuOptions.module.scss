@@ -1,6 +1,10 @@
 @import '../../../../../assets/styles/colors.scss';
+@import '../../../../../assets/styles/variables.scss';
 
 .menuOptions {
+	display: flex;
+	flex-direction: column;
+	gap: $spacing-basic * 2;
 	width: auto;
 	height: auto;
 	padding: 32px;
