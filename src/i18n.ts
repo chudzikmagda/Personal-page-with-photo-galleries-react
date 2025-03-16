@@ -4,6 +4,14 @@ import { initReactI18next } from 'react-i18next';
 import * as enTranslations from './i18n/en/';
 import * as plTranslations from './i18n/pl/';
 
+const retrieveLanguageFromStorage = (): string | null => {
+	return localStorage.getItem('i18nextLng');
+};
+
+const retrieveLanguageFromBrowser = (): string | null => {
+	return navigator.language.substring(0, 2);
+};
+
 i18n.use(detector)
 	.use(initReactI18next)
 	.init({
@@ -11,7 +19,7 @@ i18n.use(detector)
 			en: { translation: enTranslations },
 			pl: { translation: plTranslations }
 		},
-		lng: navigator.language.substring(0, 2),
+		lng: retrieveLanguageFromStorage() || retrieveLanguageFromBrowser() || 'pl',
 		fallbackLng: 'en',
 		supportedLngs: ['en', 'pl'],
 		load: 'languageOnly',
