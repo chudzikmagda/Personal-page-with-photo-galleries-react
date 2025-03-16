@@ -18,8 +18,15 @@ const ThemeSwitch: React.FC = () => {
 		return THEMES_SWITCH_SIDES_MAP.get(themeContext.state) || SwitchSides.LEFT;
 	};
 
+	const saveToLocalStorage = (theme: Themes): void => {
+		localStorage.setItem('theme', theme);
+	};
+
 	const handleThemeChange = (switchSide: SwitchSides): void => {
-		themeContext.onChange(getTheme(switchSide));
+		const currentTheme: Themes = getTheme(switchSide);
+
+		themeContext.onChange(currentTheme);
+		saveToLocalStorage(currentTheme);
 	};
 
 	useEffect(() => {

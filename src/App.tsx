@@ -46,8 +46,19 @@ const App: React.FC = () => {
 		}
 	};
 
+	const retrieveThemeFromStorage = (): Themes | null => {
+		return localStorage.getItem('theme') as Themes;
+	};
+
+	const loadTheme = (): void => {
+		const currentTheme: Themes = retrieveThemeFromStorage() || theme;
+
+		setClassBasedOnTheme(currentTheme);
+		handleThemeChange(currentTheme);
+	};
+
 	useEffect(() => {
-		setClassBasedOnTheme(theme);
+		loadTheme();
 	}, [theme]);
 
 	return (
