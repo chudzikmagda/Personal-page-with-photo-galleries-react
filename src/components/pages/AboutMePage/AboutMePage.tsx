@@ -29,7 +29,7 @@ const AboutMePage: React.FC = () => {
 									i18nKey="AboutMePage.intro"
 									components={{
 										strong: <strong />,
-										a: <a href="https://frontend.magdachudzik.pl" target="_blank" rel="noopener noreferrer" />
+										a: <a href="https://dev.magdachudzik.pl" target="_blank" rel="noopener noreferrer" />
 									}}
 								/>
 							</h4>

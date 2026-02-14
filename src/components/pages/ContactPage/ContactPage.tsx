@@ -116,7 +116,7 @@ const ContactPage: React.FC = () => {
 				content={
 					<div className={styles['wrapper-s']}>
 						<h1>{t('ContactPage.heading')}</h1>
-						<form onSubmit={sendMessage} className={styles['contact-form']}>
+						<form method="POST" onSubmit={sendMessage} className={styles['contact-form']}>
 							<span className={styles['contact-form__info']}>{t('ContactPage.form.info')}</span>
 							<Input
 								id="name"

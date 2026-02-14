@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
 			</div>
 			{
 				<a
-					href="https://frontend.magdachudzik.pl"
+					href="https://dev.magdachudzik.pl"
 					className={`${styles.footer__link} ${styles['footer__link--author']}`}
 					target="_blank"
 					rel="noreferrer">
