@@ -6,7 +6,7 @@ frontend development, UI/UX design.
 
 ## The technology stack:
 
-React 18, Typescript, SASS
+React 19, Typescript, SASS, PHP
 
 ## Check online
 
@@ -27,4 +27,4 @@ https://www.magdachudzik.pl
 2. Install all depedencies:
    `npm i`
 3. Run local server:
-   `npm run start`
+   `npm run dev`

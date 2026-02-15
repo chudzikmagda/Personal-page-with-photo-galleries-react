@@ -1,5 +1,5 @@
-@import '../../../../../assets/styles/colors.scss';
-@import '../../../../../assets/styles/variables.scss';
+@use '../../../../../assets/styles/colors.scss' as *;
+@use '../../../../../assets/styles/variables.scss' as *;
 
 .menuOptions {
 	display: flex;

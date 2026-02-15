@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
-@import 'colors.scss';
-@import 'variables.scss';
-@import 'mixins.scss';
+@use 'colors.scss' as *;
+@use 'variables.scss' as *;
+@use 'mixins.scss' as *;
 
 html {
 	font-size: 112.5%;

@@ -1,5 +1,5 @@
-@import '../../../assets/styles/mixins.scss';
-@import '../../../assets/styles/wrappers.scss';
+@use '../../../assets/styles/mixins.scss' as *;
+@use '../../../assets/styles/wrappers.scss' as *;
 
 .about-me {
 	&__heroImage {

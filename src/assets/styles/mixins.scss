@@ -1,5 +1,6 @@
-@import './variables.scss';
-@import './colors.scss';
+@use './variables' as *;
+@use './colors' as *;
+@use 'sass:map';
 
 @mixin flex($direction: column, $justify-content: center, $align-items: center) {
 	display: flex;
@@ -30,6 +31,7 @@
 		@include transition($element: color);
 	}
 }
+
 @mixin visited {
 	&:hover {
 		color: $text-dark;
@@ -37,7 +39,7 @@
 }
 
 @mixin breakpoint($deviceSize) {
-	@media screen and (min-width: map-get($breakpoints, $deviceSize)) {
+	@media screen and (min-width: map.get($breakpoints, $deviceSize)) {
 		@content;
 	}
 }

@@ -1,7 +1,9 @@
-@import 'reset-css';
-@import 'assets/styles/colors.scss';
-@import 'assets/styles/variables.scss';
-@import 'assets/styles/typography.scss';
+@use 'reset-css' as *;
+@use 'assets/styles/colors.scss' as *;
+@use 'assets/styles/typography.scss' as *;
+@use 'assets/styles/variables.scss' as *;
+
+@use 'assets/styles/mixins.scss' as *;
 
 :root {
 	--primary-color: rgba(242, 79, 75, 1);

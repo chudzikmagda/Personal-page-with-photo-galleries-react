@@ -1,6 +1,5 @@
 /* eslint-disable indent */
 import React, { useEffect, useState } from 'react';
-import { HelmetProvider } from 'react-helmet-async';
 import { RouterProvider } from 'react-router-dom';
 import LanguageContext from './contexts/LanguageContext';
 import ThemeContext from './contexts/ThemeContext';
@@ -62,13 +61,11 @@ const App: React.FC = () => {
 	}, [theme]);
 
 	return (
-		<HelmetProvider>
-			<LanguageContext.Provider value={{ state: language as Languages, onChange: handleLanguageChange }}>
-				<ThemeContext.Provider value={{ state: theme, onChange: handleThemeChange }}>
-					<RouterProvider router={Router} />
-				</ThemeContext.Provider>
-			</LanguageContext.Provider>
-		</HelmetProvider>
+		<LanguageContext.Provider value={{ state: language as Languages, onChange: handleLanguageChange }}>
+			<ThemeContext.Provider value={{ state: theme, onChange: handleThemeChange }}>
+				<RouterProvider router={Router} />
+			</ThemeContext.Provider>
+		</LanguageContext.Provider>
 	);
 };
 

@@ -3,9 +3,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import LightboxImageComponent from './LightboxImage/LightboxImage';
 import { Image } from '../Gallery/models/GalleryModels';
 import { LightboxProps, SWIPE_DIRECTION } from './models/LightboxModels';
-import { ReactComponent as CloseIcon } from './../../../assets/images/template/lightbox/close-icon.svg';
-import { ReactComponent as NextIcon } from './../../../assets/images/template/lightbox/arrow-right.svg';
-import { ReactComponent as PrevIcon } from './../../../assets/images/template/lightbox/arrow-left.svg';
+import CloseIcon from './../../../assets/images/template/lightbox/close-icon.svg?react';
+import NextIcon from './../../../assets/images/template/lightbox/arrow-right.svg?react';
+import PrevIcon from './../../../assets/images/template/lightbox/arrow-left.svg?react';
 import { CSSTransition } from 'react-transition-group';
 import styles from './Lightbox.module.scss';
 

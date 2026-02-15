@@ -1,7 +1,7 @@
-import { ReactComponent as InstagramLogo } from './../../assets/images/template/social-media/instagram.svg';
-import { ReactComponent as FacebookIcon } from './../../assets/images/template/social-media/facebook.svg';
-import { ReactComponent as BehanceIcon } from './../../assets/images/template/social-media/behance.svg';
-import { ReactComponent as LinkedinIcon } from './../../assets/images/template/social-media/linkedin.svg';
+import InstagramLogo from './../../assets/images/template/social-media/instagram.svg?react';
+import FacebookIcon from './../../assets/images/template/social-media/facebook.svg?react';
+import BehanceIcon from './../../assets/images/template/social-media/behance.svg?react';
+import LinkedinIcon from './../../assets/images/template/social-media/linkedin.svg?react';
 import React, { ReactElement } from 'react';
 
 export enum SocialMediaNames {
