@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './PageNotFound.module.scss';
 import { t } from 'i18next';
 import Button from '../../ui-elements/Button/Button';
-import { ButtonApperance } from '../../ui-elements/Button/models/Button.model';
+import { ButtonApperance } from '../../ui-elements/Button/models/button.models';
 import { NavigateFunction, useNavigate } from 'react-router-dom';
 import heroImage from '../../../assets/images/template/page404-image-background.webp';
 import Layout from '../../layout-elements/Layout/Layout';

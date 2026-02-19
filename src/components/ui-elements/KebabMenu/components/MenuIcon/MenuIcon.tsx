@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { MenuIconProps } from '../../models/MenuIcon.model';
+import { MenuIconProps } from '../../models/menuIcon.models';
 import styles from './MenuIcon.module.scss';
 
 const MenuIcon = forwardRef<HTMLDivElement, MenuIconProps>(function menuIcon(props, ref) {

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { Paths } from '../../../routing/models/RoutingModels';
 import KebabMenu from '../KebabMenu/KebabMenu';
 import styles from './Menu.module.scss';
-import { MenuItem } from './models/MenuModels';
+import { MenuItem } from './models/menu.models';
 
 const Menu: React.FC = () => {
 	const { t } = useTranslation();

@@ -1,8 +1,8 @@
 import React from 'react';
 import Layout from '../../layout-elements/Layout/Layout';
-import CustomGallery from '../../ui-elements/Gallery/Gallery';
+import Gallery from '../../ui-elements/Gallery/Gallery';
 import SEO from '../../SEO/SEO';
-import { images } from './models/BwLandscapePageModels';
+import { images } from './models/bwLandscapePage.models';
 import { useTranslation } from 'react-i18next';
 import styles from './BwLandscapePage.module.scss';
 
@@ -20,7 +20,7 @@ const BwLandscapePage: React.FC = () => {
 			<Layout
 				content={
 					<div className={styles.wrapper}>
-						<CustomGallery heading={`${t('BwLandscapePage.heading')}`} images={images} />
+						<Gallery heading={`${t('BwLandscapePage.heading')}`} images={images} />
 					</div>
 				}
 			/>

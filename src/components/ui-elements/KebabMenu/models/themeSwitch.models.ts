@@ -1,5 +1,5 @@
-import { Themes } from '../../../../contexts/models/Theme.model';
-import { SwitchSides } from './Switch.model';
+import { Themes } from '../../../../contexts/models/theme.models';
+import { SwitchSides } from './switch.models';
 
 export const SWITCH_SIDES_THEMES_MAP: Map<SwitchSides, Themes> = new Map([
 	[SwitchSides.LEFT, Themes.LIGHT],

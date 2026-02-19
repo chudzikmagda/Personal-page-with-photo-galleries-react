@@ -338,9 +338,9 @@ import image61lowQuality from './../../../../assets/images/galleries/city/lowQua
 import image62lowQuality from './../../../../assets/images/galleries/city/lowQuality/magda-chudzik-street-photography-poland-krakow-096-lowQuality.webp';
 import image63lowQuality from './../../../../assets/images/galleries/city/lowQuality/magda-chudzik-street-photography-poland-krakow-097-lowQuality.webp';
 
-import { Image } from '../../../ui-elements/Gallery/models/GalleryModels';
+import { GalleryImageType } from '../../../ui-elements/Gallery/models/gallery.models';
 
-export const images: Image[] = [
+export const images: GalleryImageType[] = [
 	{
 		src: {
 			w480: twoWorldsw480,

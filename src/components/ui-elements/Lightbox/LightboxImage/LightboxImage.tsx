@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { ImageProps, SWIPE_DIRECTION } from '../models/LightboxModels';
+import Image from '../../Image/Image';
 import styles from './LightboxImage.module.scss';
+import { LightboxImageProps, SWIPE_DIRECTION } from './models/lightboxImage.models';
 
-const LightboxImageComponent: React.FC<ImageProps> = ({ src, alt, onSwipe }) => {
+const LightboxImageComponent: React.FC<LightboxImageProps> = ({ src, alt, onSwipe }) => {
 	const [startClientX, setStartClientX] = useState(0);
 	const handleTouchStart = (e: React.TouchEvent<HTMLImageElement>) => {
 		setStartClientX(e.touches[0].clientX);
@@ -23,12 +24,13 @@ const LightboxImageComponent: React.FC<ImageProps> = ({ src, alt, onSwipe }) => 
 	};
 
 	return (
-		<img
+		<Image
 			src={src.fullsize}
-			onTouchStart={(e) => handleTouchStart(e)}
-			onTouchEnd={(e) => handleTouchEnd(e)}
+			onTouchStart={handleTouchStart}
+			onTouchEnd={handleTouchEnd}
 			className={styles['lightbox-image']}
-			alt={alt}
+			style={{ width: 'auto', height: 'auto' }}
+			alt={alt ?? 'Lightbox image'}
 		/>
 	);
 };

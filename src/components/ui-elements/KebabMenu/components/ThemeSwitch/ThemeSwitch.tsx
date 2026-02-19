@@ -1,8 +1,8 @@
 import React, { useContext, useEffect } from 'react';
-import { ThemeContextType, Themes } from '../../../../../contexts/models/Theme.model';
+import { ThemeContextType, Themes } from '../../../../../contexts/models/theme.models';
 import ThemeContext from '../../../../../contexts/ThemeContext';
-import { SwitchSides } from '../../models/Switch.model';
-import { SWITCH_SIDES_THEMES_MAP, THEMES_SWITCH_SIDES_MAP } from '../../models/ThemeSwitch.model';
+import { SwitchSides } from '../../models/switch.models';
+import { SWITCH_SIDES_THEMES_MAP, THEMES_SWITCH_SIDES_MAP } from '../../models/themeSwitch.models';
 import MenuSwitch from '../MenuSwitch/MenuSwitch';
 import MoonIcon from '../SvgIcons/MoonIcon';
 import SunIcon from '../SvgIcons/SunIcon';

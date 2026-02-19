@@ -1,5 +1,5 @@
-import { Languages } from '../../../../contexts/models/Languages.model';
-import { SwitchSides } from './Switch.model';
+import { Languages } from '../../../../contexts/models/languages.models';
+import { SwitchSides } from './switch.models';
 
 export enum AvailableLanguages {
 	EN = 'English',

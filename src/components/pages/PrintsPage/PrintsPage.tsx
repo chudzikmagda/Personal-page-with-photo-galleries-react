@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './PrintsPage.module.scss';
 import PrintItem from './components/Print/Print';
-import { printCollection } from './components/Print/models/PrintModels';
-import { Print } from './components/Print/models/PrintModels';
+import { printCollection } from './components/Print/models/print.models';
+import { Print } from './components/Print/models/print.models';
 import { t } from 'i18next';
 import Layout from '../../layout-elements/Layout/Layout';
 import SEO from '../../SEO/SEO';

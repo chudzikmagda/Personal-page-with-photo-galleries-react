@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Textarea.module.scss';
-import { TextareaProps } from './models/TextareaModel';
+import { TextareaProps } from './models/textarea.models';
 
 const Textarea: React.FC<TextareaProps> = ({ error, id, label, name, placeholder, required, value, onValueChange }) => {
 	const onTextareaValueChange = (event: React.ChangeEvent<HTMLTextAreaElement>): void => {

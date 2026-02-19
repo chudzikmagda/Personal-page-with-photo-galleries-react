@@ -2,7 +2,7 @@
 import React, { useMemo } from 'react';
 import styles from './Alert.module.scss';
 import Button from '../Button/Button';
-import { AlertProps, AlertType } from './models/Alert.model';
+import { AlertProps, AlertType } from './models/alert.models';
 import { useTranslation } from 'react-i18next';
 
 const Alert: React.FC<AlertProps> = ({ content, header, type, closeAlert }) => {

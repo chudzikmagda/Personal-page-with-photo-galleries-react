@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './CityPage.module.scss';
-import CustomGallery from '../../ui-elements/Gallery/Gallery';
+import Gallery from '../../ui-elements/Gallery/Gallery';
 import SEO from '../../SEO/SEO';
-import { images } from './models/CityPageModels';
+import { images } from './models/cityPage.models';
 import Layout from '../../layout-elements/Layout/Layout';
 import { useTranslation } from 'react-i18next';
 
@@ -16,7 +16,7 @@ const CityPage: React.FC = () => {
 			<Layout
 				content={
 					<div className={styles.wrapper}>
-						<CustomGallery heading={`${t('CityPage.heading')} `} images={images} />
+						<Gallery heading={`${t('CityPage.heading')} `} images={images} />
 					</div>
 				}
 			/>

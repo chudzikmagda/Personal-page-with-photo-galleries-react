@@ -288,9 +288,9 @@ import image55lowQuality from './../../../../assets/images/galleries/landscapes/
 import image56lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-56-lowQuality.webp';
 import image57lowQuality from './../../../../assets/images/galleries/landscapes/color/lowQuality/magda-chudzik-color-landscape-photography-57-lowQuality.webp';
 
-import { Image } from '../../../ui-elements/Gallery/models/GalleryModels';
+import { GalleryImageType } from '../../../ui-elements/Gallery/models/gallery.models';
 
-export const images: Image[] = [
+export const images: GalleryImageType[] = [
 	{
 		src: {
 			w480: image1w480,

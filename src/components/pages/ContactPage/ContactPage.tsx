@@ -1,13 +1,13 @@
 /* eslint-disable indent */
 import React, { useRef, useState } from 'react';
 import Button from '../../ui-elements/Button/Button';
-import { ButtonApperance, ButtonType } from '../../ui-elements/Button/models/Button.model';
+import { ButtonApperance, ButtonType } from '../../ui-elements/Button/models/button.models';
 import Layout from '../../layout-elements/Layout/Layout';
 import Input from '../../ui-elements/form/Input/Input';
 import Textarea from '../../ui-elements/form/Textarea/Textarea';
-import { ContactForm, ContactFormFieldNames, ContactFormValidators, ContactFormValue } from './models/ContactPage.model';
+import { ContactForm, ContactFormFieldNames, ContactFormValidators, ContactFormValue } from './models/contactPage.models';
 import Alert from '../../ui-elements/Alert/Alert';
-import { AlertType } from '../../ui-elements/Alert/models/Alert.model';
+import { AlertType } from '../../ui-elements/Alert/models/alert.models';
 import { CSSTransition } from 'react-transition-group';
 import { useTranslation } from 'react-i18next';
 import styles from './ContactPage.module.scss';

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MenuSwitchProps, SwitchSides } from '../../models/Switch.model';
+import { MenuSwitchProps, SwitchSides } from '../../models/switch.models';
 import styles from './MenuSwitch.module.scss';
 
 const MenuSwitch: React.FC<MenuSwitchProps> = ({ iconLeft, labelLeft, iconRight, labelRight, initialActiveSide, handleClick }) => {

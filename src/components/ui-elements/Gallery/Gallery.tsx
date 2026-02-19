@@ -1,12 +1,13 @@
 import React, { useRef, useState } from 'react';
-import Lightbox from '../Lightbox/Lightbox';
-import { CustomGalleryProps, Image } from './models/GalleryModels';
 import { CSSTransition } from 'react-transition-group';
+import Lightbox from '../Lightbox/Lightbox';
 import styles from './Gallery.module.scss';
-import ImageComponent from '../Image/Image';
+import { GalleryProps } from './models/gallery.models';
+import { GalleryImageType } from './GalleryImage/models/galleryImage.models';
+import GalleryImage from './GalleryImage/GalleryImage';
 
-const CustomGallery: React.FC<CustomGalleryProps> = ({ heading, images }) => {
-	const imageCollection: Image[] = images;
+const Gallery: React.FC<GalleryProps> = ({ heading, images }) => {
+	const imageCollection: GalleryImageType[] = images;
 	const lightboxRef = useRef<HTMLDivElement | null>(null);
 	const [isImageOpen, setIsImageOpen] = useState<boolean>(false);
 	const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -24,10 +25,10 @@ const CustomGallery: React.FC<CustomGalleryProps> = ({ heading, images }) => {
 		<>
 			<h3 className={styles.gallery__heading}>{heading}</h3>
 			<div className={styles.gallery}>
-				{imageCollection.map((image: Image, index: number) => {
+				{imageCollection.map((image: GalleryImageType, index: number) => {
 					return (
 						<div key={index} className={styles.gallery__item}>
-							<ImageComponent src={image.src} onClick={() => openGallery(index)} />
+							<GalleryImage src={image.src} onClick={() => openGallery(index)} />
 						</div>
 					);
 				})}
@@ -52,4 +53,4 @@ const CustomGallery: React.FC<CustomGalleryProps> = ({ heading, images }) => {
 	);
 };
 
-export default CustomGallery;
+export default Gallery;

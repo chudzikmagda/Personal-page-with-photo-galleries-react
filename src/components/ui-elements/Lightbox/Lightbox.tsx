@@ -1,16 +1,17 @@
 /* eslint-disable indent */
 import React, { useEffect, useRef, useState } from 'react';
-import LightboxImageComponent from './LightboxImage/LightboxImage';
-import { Image } from '../Gallery/models/GalleryModels';
-import { LightboxProps, SWIPE_DIRECTION } from './models/LightboxModels';
-import CloseIcon from './../../../assets/images/template/lightbox/close-icon.svg?react';
-import NextIcon from './../../../assets/images/template/lightbox/arrow-right.svg?react';
-import PrevIcon from './../../../assets/images/template/lightbox/arrow-left.svg?react';
 import { CSSTransition } from 'react-transition-group';
+import { GalleryImageProps } from '../Gallery/GalleryImage/models/GalleryImageModels';
+import PrevIcon from './../../../assets/images/template/lightbox/arrow-left.svg?react';
+import NextIcon from './../../../assets/images/template/lightbox/arrow-right.svg?react';
+import CloseIcon from './../../../assets/images/template/lightbox/close-icon.svg?react';
 import styles from './Lightbox.module.scss';
+import LightboxImageComponent from './LightboxImage/LightboxImage';
+import { SWIPE_DIRECTION } from './LightboxImage/models/lightboxImage.models';
+import { LightboxProps } from './models/lightbox.models';
 
 const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage }) => {
-	const imageCollection: Image[] = images;
+	const imageCollection: GalleryImageProps[] = images;
 	const imageRef = useRef<HTMLDivElement | null>(null);
 	const [index, setIndex] = useState<number>(currentIndex);
 	const [showImage, setShowImage] = useState<boolean>(true);
@@ -82,8 +83,8 @@ const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage })
 	});
 
 	return (
-		<div onClick={(e) => onCloseLightbox(e)} className={styles.lightbox}>
-			<button onClick={(e) => onCloseLightbox(e)} className={styles.lightbox__closeButton}>
+		<div onClick={(e: React.MouseEvent<HTMLDivElement>) => onCloseLightbox(e)} className={styles.lightbox}>
+			<button onClick={(e: React.MouseEvent<HTMLButtonElement>) => onCloseLightbox(e)} className={styles.lightbox__closeButton}>
 				<CloseIcon />
 			</button>
 			<div className={styles['lightbox__image-wrapper']}>
@@ -100,7 +101,7 @@ const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage })
 					unmountOnExit>
 					<div ref={imageRef}>
 						<LightboxImageComponent
-							onSwipe={(e) => handleSwipeEvent(e)}
+							onSwipe={(direction: SWIPE_DIRECTION) => handleSwipeEvent(direction)}
 							src={imageCollection[index].src}
 							alt={imageCollection[index].alt}
 						/>

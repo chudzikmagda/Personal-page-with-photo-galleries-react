@@ -1,8 +1,8 @@
 import React, { useContext, useEffect } from 'react';
 import LanguageContext from '../../../../../contexts/LanguageContext';
-import { LanguageContextType, Languages } from '../../../../../contexts/models/Languages.model';
-import { AvailableLanguages, LANGUAGES_SWITCH_SIDES_MAP, SWITCH_SIDES_LANGUAGES_MAP } from '../../models/LanguageSwitch.model';
-import { SwitchSides } from '../../models/Switch.model';
+import { LanguageContextType, Languages } from '../../../../../contexts/models/languages.models';
+import { AvailableLanguages, LANGUAGES_SWITCH_SIDES_MAP, SWITCH_SIDES_LANGUAGES_MAP } from '../../models/languageSwitch.models';
+import { SwitchSides } from '../../models/switch.models';
 import MenuSwitch from '../MenuSwitch/MenuSwitch';
 import EnFlag from '../SvgIcons/EnFlag';
 import PlFlag from '../SvgIcons/PlFlag';

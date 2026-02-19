@@ -45,5 +45,5 @@
 }
 
 @mixin cursor() {
-	cursor: url($cursor-on-hover-path), auto;
+	cursor: pointer;
 }

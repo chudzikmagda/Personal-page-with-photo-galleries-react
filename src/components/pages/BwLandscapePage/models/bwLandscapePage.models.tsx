@@ -49,7 +49,6 @@ import image48 from './../../../../assets/images/galleries/landscapes/black-and-
 import image49 from './../../../../assets/images/galleries/landscapes/black-and-white/magda-chudzik-black-and-white-landscape-photography-49.webp';
 import image50 from './../../../../assets/images/galleries/landscapes/black-and-white/magda-chudzik-black-and-white-landscape-photography-50.webp';
 import image51 from './../../../../assets/images/galleries/landscapes/black-and-white/magda-chudzik-black-and-white-landscape-photography-51.webp';
-
 import image1w480 from './../../../../assets/images/galleries/landscapes/black-and-white/480/magda-chudzik-black-and-white-landscape-photography-01-480w.webp';
 import image2w480 from './../../../../assets/images/galleries/landscapes/black-and-white/480/magda-chudzik-black-and-white-landscape-photography-02-480w.webp';
 import image3w480 from './../../../../assets/images/galleries/landscapes/black-and-white/480/magda-chudzik-black-and-white-landscape-photography-03-480w.webp';
@@ -153,7 +152,6 @@ import image48w768 from './../../../../assets/images/galleries/landscapes/black-
 import image49w768 from './../../../../assets/images/galleries/landscapes/black-and-white/768/magda-chudzik-black-and-white-landscape-photography-49-768w.webp';
 import image50w768 from './../../../../assets/images/galleries/landscapes/black-and-white/768/magda-chudzik-black-and-white-landscape-photography-50-768w.webp';
 import image51w768 from './../../../../assets/images/galleries/landscapes/black-and-white/768/magda-chudzik-black-and-white-landscape-photography-51-768w.webp';
-
 import image1w1024 from './../../../../assets/images/galleries/landscapes/black-and-white/1024/magda-chudzik-black-and-white-landscape-photography-01-1024w.webp';
 import image2w1024 from './../../../../assets/images/galleries/landscapes/black-and-white/1024/magda-chudzik-black-and-white-landscape-photography-02-1024w.webp';
 import image3w1024 from './../../../../assets/images/galleries/landscapes/black-and-white/1024/magda-chudzik-black-and-white-landscape-photography-03-1024w.webp';
@@ -258,9 +256,9 @@ import image49lowQuality from './../../../../assets/images/galleries/landscapes/
 import image50lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-50-lowQuality.webp';
 import image51lowQuality from './../../../../assets/images/galleries/landscapes/black-and-white/lowQuality/magda-chudzik-black-and-white-landscape-photography-51-lowQuality.webp';
 
-import { Image } from '../../../ui-elements/Gallery/models/GalleryModels';
+import { GalleryImageType } from '../../../ui-elements/Gallery/models/gallery.models';
 
-export const images: Image[] = [
+export const images: GalleryImageType[] = [
 	{
 		src: {
 			fullsize: image1,

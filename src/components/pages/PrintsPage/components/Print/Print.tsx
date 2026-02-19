@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react';
 import styles from './Print.module.scss';
-import { PrintProps } from './models/PrintModels';
+import { PrintProps } from './models/print.models';
 import Button from '../../../../ui-elements/Button/Button';
-import { ButtonApperance } from '../../../../ui-elements/Button/models/Button.model';
+import { ButtonApperance } from '../../../../ui-elements/Button/models/button.models';
 import { t } from 'i18next';
 
 const PrintItem: React.FC<PrintProps> = ({ image, title, ctaUrl }): ReactElement => {

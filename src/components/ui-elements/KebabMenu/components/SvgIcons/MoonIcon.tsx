@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useContext } from 'react';
-import { ThemeContextType, Themes } from '../../../../../contexts/models/Theme.model';
+import { ThemeContextType, Themes } from '../../../../../contexts/models/theme.models';
 import ThemeContext from '../../../../../contexts/ThemeContext';
 
 const MoonIcon: React.FC = () => {

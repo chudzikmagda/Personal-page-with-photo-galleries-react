@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Layout.module.scss';
 import Content from '../Content/Content';
-import { LayoutProps } from './models/LayoutModels';
+import { LayoutProps } from './models/layout.models';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 

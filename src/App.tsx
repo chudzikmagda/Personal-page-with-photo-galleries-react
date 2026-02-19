@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react';
 import { RouterProvider } from 'react-router-dom';
 import LanguageContext from './contexts/LanguageContext';
 import ThemeContext from './contexts/ThemeContext';
-import { Languages } from './contexts/models/Languages.model';
-import { Themes } from './contexts/models/Theme.model';
+import { Languages } from './contexts/models/languages.models';
+import { Themes } from './contexts/models/theme.models';
 import i18n from './i18n';
 import Router from './routing/Routing';
 
