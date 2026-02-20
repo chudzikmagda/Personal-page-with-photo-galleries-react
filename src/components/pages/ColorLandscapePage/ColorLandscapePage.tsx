@@ -2,7 +2,7 @@ import React from 'react';
 import Gallery from '../../ui-elements/Gallery/Gallery';
 import Layout from '../../layout-elements/Layout/Layout';
 import SEO from '../../SEO/SEO';
-import { images } from './models/colorLandscapePage.models';
+import { colorImages } from './models/colorLandscapePage.models';
 import { useTranslation } from 'react-i18next';
 import styles from './ColorLandscapePage.module.scss';
 
@@ -20,7 +20,7 @@ const ColorLandscapePage: React.FC = () => {
 			<Layout
 				content={
 					<div className={styles.wrapper}>
-						<Gallery heading={`${t('ColorLandscapePage.heading')}`} images={images} />
+						<Gallery heading={`${t('ColorLandscapePage.heading')}`} images={colorImages} />
 					</div>
 				}
 			/>

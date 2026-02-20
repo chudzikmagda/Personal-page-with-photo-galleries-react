@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './CityPage.module.scss';
-import Gallery from '../../ui-elements/Gallery/Gallery';
-import SEO from '../../SEO/SEO';
-import { images } from './models/cityPage.models';
-import Layout from '../../layout-elements/Layout/Layout';
 import { useTranslation } from 'react-i18next';
+import Layout from '../../layout-elements/Layout/Layout';
+import SEO from '../../SEO/SEO';
+import Gallery from '../../ui-elements/Gallery/Gallery';
+import styles from './CityPage.module.scss';
+import { cityImages } from './models/cityPage.models';
 
 const CityPage: React.FC = () => {
 	const { t } = useTranslation();
@@ -16,7 +16,7 @@ const CityPage: React.FC = () => {
 			<Layout
 				content={
 					<div className={styles.wrapper}>
-						<Gallery heading={`${t('CityPage.heading')} `} images={images} />
+						<Gallery heading={`${t('CityPage.heading')} `} images={cityImages} />
 					</div>
 				}
 			/>
