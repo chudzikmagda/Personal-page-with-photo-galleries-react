@@ -38,24 +38,23 @@ export const galleryBuilder = (images: Record<string, string>, alt: string): Gal
 		const id: string | null = extractId(fileName);
 
 		if (!id) return;
-
-		if (!imagesMap[id]) {
-			imagesMap[id] = {};
-		}
+		if (!imagesMap[id]) imagesMap[id] = {};
 
 		assignUrlByVariant(fileName, url, id, imagesMap);
 	});
 
 	return Object.keys(imagesMap)
 		.sort((a, b) => Number(a) - Number(b))
-		.map((id) => ({
-			src: {
-				fullsize: imagesMap[id].fullsize ?? '',
-				w480: imagesMap[id].w480 ?? '',
-				w768: imagesMap[id].w768 ?? '',
-				w1024: imagesMap[id].w1024 ?? '',
-				lowQuality: imagesMap[id].lowQuality ?? ''
-			},
-			alt
-		}));
+		.map((id) => {
+			return {
+				src: {
+					fullsize: imagesMap[id].fullsize ?? '',
+					w480: imagesMap[id].w480 ?? '',
+					w768: imagesMap[id].w768 ?? '',
+					w1024: imagesMap[id].w1024 ?? '',
+					lowQuality: imagesMap[id].lowQuality ?? ''
+				},
+				alt
+			};
+		});
 };

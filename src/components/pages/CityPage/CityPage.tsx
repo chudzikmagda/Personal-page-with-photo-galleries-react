@@ -5,9 +5,11 @@ import SEO from '../../SEO/SEO';
 import Gallery from '../../ui-elements/Gallery/Gallery';
 import styles from './CityPage.module.scss';
 import { cityImages } from './models/cityPage.models';
+import { useGalleryDimensions } from '../../../hooks/useGalleryDimensions/useGalleryDimensions';
 
 const CityPage: React.FC = () => {
 	const { t } = useTranslation();
+	const enrichedImages = useGalleryDimensions(cityImages);
 
 	return (
 		<>
@@ -16,7 +18,7 @@ const CityPage: React.FC = () => {
 			<Layout
 				content={
 					<div className={styles.wrapper}>
-						<Gallery heading={`${t('CityPage.heading')} `} images={cityImages} />
+						<Gallery heading={`${t('CityPage.heading')} `} images={enrichedImages} />
 					</div>
 				}
 			/>

@@ -6,4 +6,8 @@ export type GalleryImageProps = {
 	onClick?: () => void;
 };
 
-export type GalleryImageType = GalleryImageProps;
+export type GalleryImageType = Omit<GalleryImageProps, 'onClick'> & {
+	width?: number;
+	height?: number;
+	aspectRatio?: number;
+};

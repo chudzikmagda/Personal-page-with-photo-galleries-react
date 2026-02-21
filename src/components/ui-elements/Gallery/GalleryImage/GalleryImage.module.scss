@@ -1,7 +1,15 @@
+@use '../../../../assets/styles/mixins.scss' as *;
+
 .gallery-image {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+	@include transition(transform);
+
 	&:hover {
-		transform: scale(1.1);
 		cursor: pointer;
+		transform: scale(1.16);
 	}
 
 	&__loading {
