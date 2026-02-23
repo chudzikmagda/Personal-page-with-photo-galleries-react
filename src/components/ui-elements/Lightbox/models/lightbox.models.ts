@@ -1,4 +1,4 @@
-import { GalleryImageType } from '../../Gallery/GalleryImage/models/GalleryImageModels';
+import { GalleryImageType } from '../../Gallery/GalleryImage/models/galleryImage.models';
 
 export type LightboxProps = {
 	currentIndex: number;

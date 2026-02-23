@@ -1,4 +1,4 @@
-import { ImageSrcSet } from '../../../../../shared/models/image.models';
+import { ImageVariants } from '../../../../../shared/models/image.models';
 
 export enum SWIPE_DIRECTION {
 	'LEFT' = 'left',
@@ -6,7 +6,8 @@ export enum SWIPE_DIRECTION {
 }
 
 export type LightboxImageProps = {
-	src: ImageSrcSet;
+	variants: ImageVariants;
+	srcSet?: string;
 	alt?: string;
 	onClick?: () => void;
 	onSwipe?: (direction: SWIPE_DIRECTION) => void;

@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import { createSrcSet } from '../../../../shared/utils/imageUtils';
 import Image from '../../Image/Image';
 import styles from './LightboxImage.module.scss';
 import { LightboxImageProps, SWIPE_DIRECTION } from './models/lightboxImage.models';
 
-const LightboxImageComponent: React.FC<LightboxImageProps> = ({ src, alt, onSwipe }) => {
+const LightboxImageComponent: React.FC<LightboxImageProps> = ({ variants, alt, onSwipe }) => {
 	const [startClientX, setStartClientX] = useState(0);
 	const handleTouchStart = (e: React.TouchEvent<HTMLImageElement>) => {
 		setStartClientX(e.touches[0].clientX);
@@ -25,12 +26,18 @@ const LightboxImageComponent: React.FC<LightboxImageProps> = ({ src, alt, onSwip
 
 	return (
 		<Image
-			src={src.fullsize}
+			src={variants.fullsize.src}
+			srcSet={createSrcSet(variants)}
+			className={styles['lightbox-image']}
+			style={{
+				width: 'auto',
+				height: 'auto',
+				maxWidth: `${variants.fullsize.width}px`,
+				maxHeight: `${variants.fullsize.height}px`
+			}}
+			alt={alt ?? 'Magda Chudzik image'}
 			onTouchStart={handleTouchStart}
 			onTouchEnd={handleTouchEnd}
-			className={styles['lightbox-image']}
-			style={{ width: 'auto', height: 'auto' }}
-			alt={alt ?? 'Lightbox image'}
 		/>
 	);
 };

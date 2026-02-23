@@ -1,7 +1,6 @@
 /* eslint-disable indent */
 import React, { useEffect, useRef, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import { GalleryImageProps } from '../Gallery/GalleryImage/models/GalleryImageModels';
 import PrevIcon from './../../../assets/images/template/lightbox/arrow-left.svg?react';
 import NextIcon from './../../../assets/images/template/lightbox/arrow-right.svg?react';
 import CloseIcon from './../../../assets/images/template/lightbox/close-icon.svg?react';
@@ -11,7 +10,6 @@ import { SWIPE_DIRECTION } from './LightboxImage/models/lightboxImage.models';
 import { LightboxProps } from './models/lightbox.models';
 
 const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage }) => {
-	const imageCollection: GalleryImageProps[] = images;
 	const imageRef = useRef<HTMLDivElement | null>(null);
 	const [index, setIndex] = useState<number>(currentIndex);
 	const [showImage, setShowImage] = useState<boolean>(true);
@@ -101,9 +99,9 @@ const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage })
 					unmountOnExit>
 					<div ref={imageRef}>
 						<LightboxImageComponent
+							variants={images[index].variants}
+							alt={images[index].alt}
 							onSwipe={(direction: SWIPE_DIRECTION) => handleSwipeEvent(direction)}
-							src={imageCollection[index].src}
-							alt={imageCollection[index].alt}
 						/>
 					</div>
 				</CSSTransition>

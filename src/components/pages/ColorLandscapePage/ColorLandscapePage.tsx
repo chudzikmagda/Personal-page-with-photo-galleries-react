@@ -1,10 +1,10 @@
 import React from 'react';
-import Gallery from '../../ui-elements/Gallery/Gallery';
+import { useTranslation } from 'react-i18next';
 import Layout from '../../layout-elements/Layout/Layout';
 import SEO from '../../SEO/SEO';
-import { colorImages } from './models/colorLandscapePage.models';
-import { useTranslation } from 'react-i18next';
+import Gallery from '../../ui-elements/Gallery/Gallery';
 import styles from './ColorLandscapePage.module.scss';
+import { galleryMetadata } from '../../../shared/metadata/galleryImageMetadata';
 
 const ColorLandscapePage: React.FC = () => {
 	const { t } = useTranslation();
@@ -20,7 +20,7 @@ const ColorLandscapePage: React.FC = () => {
 			<Layout
 				content={
 					<div className={styles.wrapper}>
-						<Gallery heading={`${t('ColorLandscapePage.heading')}`} images={colorImages} />
+						<Gallery heading={`${t('ColorLandscapePage.heading')}`} images={galleryMetadata.colorLandscapes} />
 					</div>
 				}
 			/>

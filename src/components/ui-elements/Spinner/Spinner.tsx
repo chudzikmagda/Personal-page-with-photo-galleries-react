@@ -15,7 +15,7 @@ const Spinner: React.FC = () => {
 				<div className={styles.spinner__item}></div>
 				<div className={styles.spinner__item}></div>
 			</div>
-			<h4>{`${t('Spinner.description')} `}</h4>
+			<h6>{`${t('Spinner.description')} `}</h6>
 		</div>
 	);
 };
