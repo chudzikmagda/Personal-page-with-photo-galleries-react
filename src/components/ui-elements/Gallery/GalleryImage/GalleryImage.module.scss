@@ -1,4 +1,5 @@
 @use '../../../../assets/styles/mixins.scss' as *;
+@use '../../../../assets/styles/colors.scss' as *;
 
 .gallery-image {
 	width: 100%;
@@ -12,12 +13,7 @@
 		transform: scale(1.16);
 	}
 
-	&__loading {
-		filter: blur(10px);
-		clip-path: inset(0);
-	}
-
-	&__loaded {
-		filter: blur(0);
+	&__lowquality {
+		background-color: $grey-light;
 	}
 }

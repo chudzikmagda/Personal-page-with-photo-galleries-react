@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { createSrcSet } from '../../../../shared/utils/imageUtils';
-import Image from '../../Image/Image';
 import styles from './LightboxImage.module.scss';
 import { LightboxImageProps, SWIPE_DIRECTION } from './models/lightboxImage.models';
+import ImageWithPlaceholder from '../../ImageWithPlaceholder/ImageWithPlaceholder';
+import { ImageDimension } from '../../../../shared/models/image.models';
 
 const LightboxImageComponent: React.FC<LightboxImageProps> = ({ variants, alt, onSwipe }) => {
 	const [startClientX, setStartClientX] = useState(0);
+
 	const handleTouchStart = (e: React.TouchEvent<HTMLImageElement>) => {
 		setStartClientX(e.touches[0].clientX);
 	};
@@ -25,20 +27,39 @@ const LightboxImageComponent: React.FC<LightboxImageProps> = ({ variants, alt, o
 	};
 
 	return (
-		<Image
-			src={variants.fullsize.src}
-			srcSet={createSrcSet(variants)}
-			className={styles['lightbox-image']}
+		<div
+			className={styles['lightbox-image-container']}
 			style={{
-				width: 'auto',
-				height: 'auto',
-				maxWidth: `${variants.fullsize.width}px`,
-				maxHeight: `${variants.fullsize.height}px`
-			}}
-			alt={alt ?? 'Magda Chudzik image'}
-			onTouchStart={handleTouchStart}
-			onTouchEnd={handleTouchEnd}
-		/>
+				display: 'flex',
+				alignItems: 'center',
+				justifyContent: 'center',
+				width: '100%',
+				height: '100%'
+			}}>
+			<ImageWithPlaceholder
+				imageSources={{
+					lowQualitySrc: variants[ImageDimension.LOW_QUALITY]?.src,
+					fullSizeSrc: variants[ImageDimension.FULLSIZE]?.src,
+					srcSet: createSrcSet(variants)
+				}}
+				alt={alt ?? 'Magda Chudzik photography'}
+				imageStyles={{
+					className: styles['lightbox-image'],
+					placeholderClassName: styles['lightbox-image__lowquality'],
+					style: {
+						top: '50%',
+						left: '50%',
+						transform: 'translate(-50%, -50%)',
+						width: 'auto',
+						height: 'auto',
+						maxWidth: variants.fullsize.width ? `${variants.fullsize.width}px` : '100%',
+						maxHeight: variants.fullsize.height ? `${variants.fullsize.height}px` : '100%'
+					}
+				}}
+				onTouchStart={handleTouchStart}
+				onTouchEnd={handleTouchEnd}
+			/>
+		</div>
 	);
 };
 

@@ -3,6 +3,9 @@
 @use '../../../assets/styles/variables.scss' as *;
 
 .gallery {
+	position: relative;
+	z-index: 1;
+
 	&__heading {
 		padding: 0 $padding-basic;
 
@@ -64,25 +67,7 @@
 		}
 	}
 
-	&__enter {
-		opacity: 0;
-
-		&--active {
-			opacity: 1;
-			transition: opacity 400ms ease-in;
-		}
-	}
-
-	&__exit {
-		opacity: 1;
-
-		&--active {
-			opacity: 0;
-			transition: opacity 400ms ease-out;
-		}
-	}
-
-	&__spinnerWrapper {
+	&__spinner-wrapper {
 		display: flex;
 		align-items: center;
 		justify-content: center;

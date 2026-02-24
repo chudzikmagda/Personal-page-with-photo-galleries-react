@@ -1,19 +1,17 @@
 import React, { JSX, useMemo, useRef, useState } from 'react';
-import { CSSTransition } from 'react-transition-group';
 import { useResizeObserver } from '../../../hooks/useResizeObserver/useResizeObserver';
+import { ImageDimension, ImageVariants } from '../../../shared/models/image.models';
 import Lightbox from '../Lightbox/Lightbox';
 import Spinner from '../Spinner/Spinner';
 import styles from './Gallery.module.scss';
 import GalleryImage from './GalleryImage/GalleryImage';
 import { GalleryImageType } from './GalleryImage/models/galleryImage.models';
 import { GALLERY_GAP, GALLERY_ROW_HEIGHT, GalleryCurrentRow, GalleryProps, GalleryRowParams, GalleryRows } from './models/gallery.models';
-import { ImageDimension, ImageVariants } from '../../../shared/models/image.models';
 
 const Gallery: React.FC<GalleryProps> = ({ heading, images }) => {
 	const [isImageOpen, setIsImageOpen] = useState(false);
 	const [currentIndex, setCurrentIndex] = useState(0);
 
-	const lightboxRef: React.RefObject<HTMLDivElement | null> = useRef<HTMLDivElement | null>(null);
 	const galleryContainerRef: React.RefObject<HTMLDivElement | null> = useRef<HTMLDivElement | null>(null);
 	const containerWidth: number = useResizeObserver(galleryContainerRef);
 
@@ -114,27 +112,13 @@ const Gallery: React.FC<GalleryProps> = ({ heading, images }) => {
 						return row;
 					})
 				) : (
-					<div className={styles.gallery__spinnerWrapper}>
+					<div className={styles['gallery__spinner-wrapper']}>
 						<Spinner />
 					</div>
 				)}
 			</div>
 
-			<CSSTransition
-				in={isImageOpen}
-				timeout={600}
-				classNames={{
-					enter: styles.gallery__enter,
-					enterActive: styles['gallery__enter--active'],
-					exit: styles.gallery__exit,
-					exitActive: styles['gallery__exit--active']
-				}}
-				nodeRef={lightboxRef}
-				unmountOnExit>
-				<div ref={lightboxRef}>
-					<Lightbox currentIndex={currentIndex} images={images} closeImage={() => setIsImageOpen(false)} />
-				</div>
-			</CSSTransition>
+			{isImageOpen && <Lightbox currentIndex={currentIndex} images={images} closeImage={() => setIsImageOpen(false)} />}
 		</>
 	);
 };

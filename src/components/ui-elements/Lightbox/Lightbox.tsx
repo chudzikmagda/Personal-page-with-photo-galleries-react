@@ -13,6 +13,11 @@ const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage })
 	const imageRef = useRef<HTMLDivElement | null>(null);
 	const [index, setIndex] = useState<number>(currentIndex);
 	const [showImage, setShowImage] = useState<boolean>(true);
+	const [isOpen, setIsOpen] = useState(false);
+
+	useEffect(() => {
+		setTimeout(() => setIsOpen(true), 10);
+	}, []);
 
 	const goToNextImage = (): void => {
 		setShowImage(false);
@@ -81,31 +86,33 @@ const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage })
 	});
 
 	return (
-		<div onClick={(e: React.MouseEvent<HTMLDivElement>) => onCloseLightbox(e)} className={styles.lightbox}>
+		<div
+			onClick={(e: React.MouseEvent<HTMLDivElement>) => onCloseLightbox(e)}
+			className={`${styles.lightbox} ${styles['lightbox-animation']} ${isOpen ? styles['lightbox-animation--open'] : ''}`}>
 			<button onClick={(e: React.MouseEvent<HTMLButtonElement>) => onCloseLightbox(e)} className={styles.lightbox__closeButton}>
 				<CloseIcon />
 			</button>
-			<div className={styles['lightbox__image-wrapper']}>
-				<CSSTransition
-					in={showImage}
-					timeout={200}
-					classNames={{
-						enter: styles['lightbox__image-enter'],
-						enterActive: styles['lightbox__image-enter--active'],
-						exit: styles['lightbox__image-exit'],
-						exitActive: styles['lightbox__image-exit--active']
-					}}
-					nodeRef={imageRef}
-					unmountOnExit>
-					<div ref={imageRef}>
+			<CSSTransition
+				in={showImage}
+				timeout={200}
+				classNames={{
+					enter: styles['lightbox__image-enter'],
+					enterActive: styles['lightbox__image-enter--active'],
+					exit: styles['lightbox__image-exit'],
+					exitActive: styles['lightbox__image-exit--active']
+				}}
+				nodeRef={imageRef}
+				unmountOnExit>
+				<div className={styles['lightbox__image-wrapper']}>
+					<div ref={imageRef} className={styles['lightbox__image-container']}>
 						<LightboxImageComponent
 							variants={images[index].variants}
 							alt={images[index].alt}
 							onSwipe={(direction: SWIPE_DIRECTION) => handleSwipeEvent(direction)}
 						/>
 					</div>
-				</CSSTransition>
-			</div>
+				</div>
+			</CSSTransition>
 			<button onClick={goToPreviousImage} className={styles.lightbox__prevButton}>
 				<PrevIcon />
 			</button>
