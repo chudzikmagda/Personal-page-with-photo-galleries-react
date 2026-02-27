@@ -16,7 +16,7 @@ const GalleryImage: React.FC<GalleryImageType> = ({ variants, alt }) => {
 			imageStyles={{
 				className: styles['gallery-image'],
 				placeholderClassName: styles['gallery-image__lowquality'],
-				style: { position: 'relative', zIndex: 2, width: '100%', height: '100%' }
+				style: { objectFit: 'cover', width: '100%', height: '100%' }
 			}}
 		/>
 	);

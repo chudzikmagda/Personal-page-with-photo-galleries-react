@@ -47,11 +47,6 @@ const LightboxImageComponent: React.FC<LightboxImageProps> = ({ variants, alt, o
 					className: styles['lightbox-image'],
 					placeholderClassName: styles['lightbox-image__lowquality'],
 					style: {
-						top: '50%',
-						left: '50%',
-						transform: 'translate(-50%, -50%)',
-						width: 'auto',
-						height: 'auto',
 						maxWidth: variants.fullsize.width ? `${variants.fullsize.width}px` : '100%',
 						maxHeight: variants.fullsize.height ? `${variants.fullsize.height}px` : '100%'
 					}
