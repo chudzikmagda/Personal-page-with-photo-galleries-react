@@ -10,6 +10,10 @@
 	white-space: nowrap;
 	z-index: 1001;
 
+	@include breakpoint(xlarge) {
+		padding-left: 0;
+	}
+
 	@include hover;
 
 	@include focus;

@@ -1,0 +1,43 @@
+@use './../../../assets/styles/colors.scss' as *;
+@use './../../../assets/styles/mixins.scss' as *;
+
+.breadcrumbs {
+	font-size: 12px;
+}
+
+.breadcrumbs-list {
+	display: flex;
+	list-style: none;
+	padding: 0;
+}
+
+.breadcrumbs-item {
+	display: flex;
+	align-items: center;
+
+	a {
+		text-decoration: none;
+		color: inherit;
+
+		&:link {
+			color: inherit;
+		}
+		&:visited {
+			@include visited;
+		}
+		&:hover {
+			@include hover;
+		}
+		&:focus {
+			@include focus;
+		}
+	}
+}
+
+.breadcrumbs-separator {
+	margin: 0 8px;
+}
+
+.breadcrumbs-current {
+	color: $grey-medium;
+}
