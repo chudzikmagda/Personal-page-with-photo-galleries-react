@@ -1,17 +1,18 @@
 /* eslint-disable indent */
 import React, { useRef, useState } from 'react';
-import Button from '../../ui-elements/Button/Button';
-import { ButtonApperance, ButtonType } from '../../ui-elements/Button/models/button.models';
+import { useTranslation } from 'react-i18next';
+import { CSSTransition } from 'react-transition-group';
+import SEO from '../../SEO/SEO';
+import { ContentType } from '../../layout-elements/Content/models/content.models';
 import Layout from '../../layout-elements/Layout/Layout';
-import Input from '../../ui-elements/form/Input/Input';
-import Textarea from '../../ui-elements/form/Textarea/Textarea';
-import { ContactForm, ContactFormFieldNames, ContactFormValidators, ContactFormValue } from './models/contactPage.models';
 import Alert from '../../ui-elements/Alert/Alert';
 import { AlertType } from '../../ui-elements/Alert/models/alert.models';
-import { CSSTransition } from 'react-transition-group';
-import { useTranslation } from 'react-i18next';
+import Button from '../../ui-elements/Button/Button';
+import { ButtonApperance, ButtonType } from '../../ui-elements/Button/models/button.models';
+import Input from '../../ui-elements/form/Input/Input';
+import Textarea from '../../ui-elements/form/Textarea/Textarea';
 import styles from './ContactPage.module.scss';
-import SEO from '../../SEO/SEO';
+import { ContactForm, ContactFormFieldNames, ContactFormValidators, ContactFormValue } from './models/contactPage.models';
 
 const ContactPage: React.FC = () => {
 	const { t } = useTranslation();
@@ -160,6 +161,7 @@ const ContactPage: React.FC = () => {
 						</form>
 					</div>
 				}
+				contentType={ContentType.GRID}
 			/>
 			<CSSTransition
 				in={isAlertVisible}

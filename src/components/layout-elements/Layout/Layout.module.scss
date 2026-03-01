@@ -4,5 +4,4 @@
 .layout {
 	@include flex($justify-content: center);
 	min-height: 100vh;
-	padding-left: calc(100vw - 100%);
 }

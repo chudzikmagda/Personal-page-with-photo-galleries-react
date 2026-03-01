@@ -61,8 +61,8 @@
 .hamburger {
 	@include flex($justify-content: space-between, $align-items: flex-end);
 	height: 40px;
-	width: 50px;
-	padding: $padding-basic;
+	width: 40px;
+	padding: $padding-basic 0;
 	background: none;
 	border: 0;
 	cursor: pointer;

@@ -1,11 +1,11 @@
+import { t } from 'i18next';
 import React from 'react';
+import SEO from '../../SEO/SEO';
+import { ContentType } from '../../layout-elements/Content/models/content.models';
+import Layout from '../../layout-elements/Layout/Layout';
 import styles from './PrintsPage.module.scss';
 import PrintItem from './components/Print/Print';
-import { printCollection } from './components/Print/models/print.models';
-import { Print } from './components/Print/models/print.models';
-import { t } from 'i18next';
-import Layout from '../../layout-elements/Layout/Layout';
-import SEO from '../../SEO/SEO';
+import { Print, printCollection } from './components/Print/models/print.models';
 
 const PrintsPage: React.FC = () => {
 	return (
@@ -31,6 +31,7 @@ const PrintsPage: React.FC = () => {
 						</div>
 					</>
 				}
+				contentType={ContentType.GRID}
 			/>
 		</>
 	);

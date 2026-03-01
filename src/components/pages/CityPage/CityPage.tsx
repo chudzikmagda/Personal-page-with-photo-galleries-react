@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { galleryMetadata } from '../../../shared/metadata/galleryImageMetadata';
+import { ContentType } from '../../layout-elements/Content/models/content.models';
 import Layout from '../../layout-elements/Layout/Layout';
 import SEO from '../../SEO/SEO';
 import Breadcrumbs from '../../ui-elements/Breadcrumbs/Breadcrumbs';
@@ -24,6 +25,7 @@ const CityPage: React.FC = () => {
 						<Gallery heading={`${t('CityPage.heading')} `} images={galleryMetadata.city} />
 					</div>
 				}
+				contentType={ContentType.GRID}
 			/>
 		</>
 	);

@@ -6,14 +6,6 @@
 	position: relative;
 	z-index: 1;
 
-	&__heading {
-		padding: 0 $padding-basic;
-
-		@include breakpoint(large) {
-			padding: initial;
-		}
-	}
-
 	&__item {
 		position: relative;
 		display: block;

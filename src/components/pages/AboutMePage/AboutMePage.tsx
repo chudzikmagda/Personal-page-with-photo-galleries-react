@@ -7,6 +7,7 @@ import { Trans } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { SocialMedia, SOCIAL_MEDIA } from '../../../shared/models/models';
 import SEO from '../../SEO/SEO';
+import { ContentType } from '../../layout-elements/Content/models/content.models';
 
 const AboutMePage: React.FC = () => {
 	const { t } = useTranslation();
@@ -98,6 +99,7 @@ const AboutMePage: React.FC = () => {
 						</div>
 					</>
 				}
+				contentType={ContentType.GRID}
 			/>
 		</>
 	);

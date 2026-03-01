@@ -6,9 +6,15 @@
 	height: $header-height-xs;
 	width: 100%;
 	max-width: $container-max-width;
+	padding: 0 $padding-basic;
+	box-sizing: border-box;
 
 	@include breakpoint(large) {
 		justify-content: flex-start;
 		height: $header-height;
+	}
+
+	@include breakpoint(xlarge) {
+		padding: 0;
 	}
 }

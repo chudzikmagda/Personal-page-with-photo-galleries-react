@@ -4,10 +4,6 @@
 .wrapper {
 	max-width: $container-max-width;
 	margin: 0 auto;
-
-	@include breakpoint(large) {
-		padding: 0 $padding-basic;
-	}
 }
 
 .wrapper-s {

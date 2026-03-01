@@ -1,11 +1,12 @@
 import React from 'react';
-import Card from '../../ui-elements/Card/Card';
+import { useTranslation } from 'react-i18next';
+import { Paths } from '../../../routing/models/RoutingModels';
+import { ContentType } from '../../layout-elements/Content/models/content.models';
 import Layout from '../../layout-elements/Layout/Layout';
+import SEO from '../../SEO/SEO';
+import Card from '../../ui-elements/Card/Card';
 import bwLandscapePhoto from './../../../assets/images/galleries/categories/magda-chudzik-bw-landscape-photography.webp';
 import colorLandscapePhoto from './../../../assets/images/galleries/categories/magda-chudzik-color-landscape-photography.webp';
-import SEO from '../../SEO/SEO';
-import { Paths } from '../../../routing/models/RoutingModels';
-import { useTranslation } from 'react-i18next';
 import styles from './LandscapePage.module.scss';
 
 const LandscapePage: React.FC = () => {
@@ -32,6 +33,7 @@ const LandscapePage: React.FC = () => {
 						/>
 					</div>
 				}
+				contentType={ContentType.FULLWIDTH}
 			/>
 		</>
 	);

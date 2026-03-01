@@ -1,12 +1,13 @@
 import React from 'react';
-import Card from '../../ui-elements/Card/Card';
-import styles from './HomePage.module.scss';
-import urbanPhoto from './../../../assets/images/galleries/categories/magda-chudzik-urban-photography.webp';
-import landscapePhoto from './../../../assets/images/galleries/categories/magda-chudzik-landscape-photography.webp';
-import { Paths } from '../../../routing/models/RoutingModels';
 import { useTranslation } from 'react-i18next';
+import { Paths } from '../../../routing/models/RoutingModels';
+import { ContentType } from '../../layout-elements/Content/models/content.models';
 import Layout from '../../layout-elements/Layout/Layout';
 import SEO from '../../SEO/SEO';
+import Card from '../../ui-elements/Card/Card';
+import landscapePhoto from './../../../assets/images/galleries/categories/magda-chudzik-landscape-photography.webp';
+import urbanPhoto from './../../../assets/images/galleries/categories/magda-chudzik-urban-photography.webp';
+import styles from './HomePage.module.scss';
 
 const HomePage: React.FC = () => {
 	const { t } = useTranslation();
@@ -27,6 +28,7 @@ const HomePage: React.FC = () => {
 						/>
 					</div>
 				}
+				contentType={ContentType.FULLWIDTH}
 			/>
 		</>
 	);

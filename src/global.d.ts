@@ -15,3 +15,8 @@ declare module '*.svg?react' {
 	export default ReactComponent;
 }
 declare module 'react-transition-group';
+
+declare module '*.webp' {
+	const src: string;
+	export default src;
+}
