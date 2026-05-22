@@ -35,7 +35,7 @@ const Menu: React.FC = () => {
 			<nav className={styles.menu}>
 				{menuItems.map((menuItem: MenuItem, index: number) => {
 					return (
-						<span key={index} className={styles['menu__item-wrapper']}>
+						<span key={menuItem.menuTitle + index} className={styles['menu__item-wrapper']}>
 							<NavLink
 								to={`/${menuItem.path}`}
 								className={({ isActive }) =>

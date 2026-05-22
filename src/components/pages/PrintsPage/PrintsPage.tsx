@@ -22,9 +22,9 @@ const PrintsPage: React.FC = () => {
 							<h3>{t('PrintsPage.shortDescription')}</h3>
 						</div>
 						<div className={`${styles.wrapper} ${styles.prints}`}>
-							{printCollection.map((print: Print, index: number) => {
+							{printCollection.map((print: Print) => {
 								return (
-									<div key={index} className={styles.prints__item}>
+									<div key={print.ctaUrl} className={styles.prints__item}>
 										<PrintItem title={print.title} image={print.image} ctaUrl={print.ctaUrl} />
 									</div>
 								);

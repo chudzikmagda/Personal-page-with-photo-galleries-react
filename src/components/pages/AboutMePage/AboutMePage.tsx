@@ -54,7 +54,6 @@ const AboutMePage: React.FC = () => {
 										strong: <strong />
 									}}
 								/>
-								socialMediaPath
 							</p>
 							<p>
 								<Trans

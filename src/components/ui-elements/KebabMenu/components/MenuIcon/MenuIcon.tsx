@@ -11,8 +11,8 @@ const MenuIcon = forwardRef<HTMLDivElement, MenuIconProps>(function menuIcon(pro
 			ref={ref as React.RefObject<HTMLDivElement>}
 			className={`${styles.menuIcon} ${isMenuOpen && styles['menuIcon--clicked']}`}
 			{...restProps}>
-			{Array.from({ length: 3 }).map((_, index) => {
-				return <span key={index} className={styles.menuIcon__circle}></span>;
+			{Array.from({ length: 3 }).map((_, index: number) => {
+				return <span key={`circle-${index}`} className={styles.menuIcon__circle}></span>;
 			})}
 		</div>
 	);
