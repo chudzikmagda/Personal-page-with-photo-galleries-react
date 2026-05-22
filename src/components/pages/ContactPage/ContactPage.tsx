@@ -1,18 +1,18 @@
-/* eslint-disable indent */
 import React, { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { CSSTransition } from 'react-transition-group';
-import SEO from '../../SEO/SEO';
-import { ContentType } from '../../layout-elements/Content/models/content.models';
+
+import { ContentType } from '../../layout-elements/Content/content.types';
 import Layout from '../../layout-elements/Layout/Layout';
+import SEO from '../../SEO/SEO';
 import Alert from '../../ui-elements/Alert/Alert';
-import { AlertType } from '../../ui-elements/Alert/models/alert.models';
+import { AlertType } from '../../ui-elements/Alert/alert.types';
 import Button from '../../ui-elements/Button/Button';
-import { ButtonApperance, ButtonType } from '../../ui-elements/Button/models/button.models';
+import { ButtonApperance, ButtonType } from '../../ui-elements/Button/button.types';
 import Input from '../../ui-elements/form/Input/Input';
 import Textarea from '../../ui-elements/form/Textarea/Textarea';
 import styles from './ContactPage.module.scss';
-import { ContactForm, ContactFormFieldNames, ContactFormValidators, ContactFormValue } from './models/contactPage.models';
+import { ContactForm, ContactFormFieldNames, ContactFormValidators, ContactFormValue } from './contactPage.types';
 
 const ContactPage: React.FC = () => {
 	const { t } = useTranslation();

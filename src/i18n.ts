@@ -1,6 +1,7 @@
 import i18n from 'i18next';
 import detector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
+
 import * as enTranslations from './i18n/en/';
 import * as plTranslations from './i18n/pl/';
 

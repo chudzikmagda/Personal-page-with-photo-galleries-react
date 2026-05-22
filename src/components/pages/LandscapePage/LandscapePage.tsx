@@ -1,7 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Paths } from '../../../routing/models/RoutingModels';
-import { ContentType } from '../../layout-elements/Content/models/content.models';
+
+import { Paths } from '../../../routing/types/routing.types';
+import { ContentType } from '../../layout-elements/Content/content.types';
 import Layout from '../../layout-elements/Layout/Layout';
 import SEO from '../../SEO/SEO';
 import Card from '../../ui-elements/Card/Card';

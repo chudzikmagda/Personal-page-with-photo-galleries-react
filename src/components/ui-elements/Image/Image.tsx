@@ -1,6 +1,7 @@
 import React, { forwardRef } from 'react';
+
 import styles from './Image.module.scss';
-import { ImageProps } from './models/image.models';
+import { ImageProps } from './image.types';
 
 const Image = forwardRef<HTMLImageElement, ImageProps>(
 	({ src, alt, srcSet, onClick, className, style, loading, onTouchStart, onTouchEnd, onLoad }, ref) => (

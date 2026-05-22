@@ -1,12 +1,13 @@
 import React, { JSX, useMemo, useRef, useState } from 'react';
+
 import { useResizeObserver } from '../../../hooks/useResizeObserver/useResizeObserver';
-import { ImageDimension, ImageVariants } from '../../../shared/models/image.models';
+import { ImageDimension, ImageVariants } from '../../../shared/types/image.types';
 import Lightbox from '../Lightbox/Lightbox';
 import Spinner from '../Spinner/Spinner';
+import GalleryImage from './components/GalleryImage/GalleryImage';
+import { GalleryImageType } from './components/GalleryImage/galleryImage.types';
 import styles from './Gallery.module.scss';
-import GalleryImage from './GalleryImage/GalleryImage';
-import { GalleryImageType } from './GalleryImage/models/galleryImage.models';
-import { GALLERY_GAP, GALLERY_ROW_HEIGHT, GalleryCurrentRow, GalleryProps, GalleryRowParams, GalleryRows } from './models/gallery.models';
+import { GALLERY_GAP, GALLERY_ROW_HEIGHT, GalleryCurrentRow, GalleryProps, GalleryRowParams, GalleryRows } from './gallery.types';
 
 const Gallery: React.FC<GalleryProps> = ({ heading, images }) => {
 	const [isImageOpen, setIsImageOpen] = useState(false);

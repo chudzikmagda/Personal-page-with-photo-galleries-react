@@ -18,14 +18,23 @@
 		},
 		"sourceType": "module"
 	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
 	"plugins": [
 		"react",
-		"@typescript-eslint"
+		"@typescript-eslint",
+		"simple-import-sort"
 	],
 	"rules": {
 		"indent": [
 			"error",
-			"tab"
+			"tab",
+			{
+				"SwitchCase": 1
+			}
 		],
 		"quotes": [
 			"error",
@@ -37,6 +46,8 @@
 		],
 		"@typescript-eslint/explicit-module-boundary-types": "error",
 		"@typescript-eslint/no-explicit-any": "error",
+		"simple-import-sort/imports": "error",
+		"simple-import-sort/exports": "error",
 		"react/jsx-uses-react": "error",
 		"react/jsx-uses-vars": "error"
 	}

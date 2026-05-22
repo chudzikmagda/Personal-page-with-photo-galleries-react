@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { useContext } from 'react';
-import { ThemeContextType, Themes } from '../../../../../contexts/models/theme.models';
+
 import ThemeContext from '../../../../../contexts/ThemeContext';
+import { ThemeContextType, Themes } from '../../../../../contexts/types/theme.types';
 
 const SunIcon: React.FC = () => {
 	const themeContext: ThemeContextType = useContext<ThemeContextType>(ThemeContext);

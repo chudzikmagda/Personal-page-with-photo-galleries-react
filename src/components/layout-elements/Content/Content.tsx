@@ -1,6 +1,7 @@
 import React from 'react';
+
 import styles from './Content.module.scss';
-import { ContentProps, ContentType } from './models/content.models';
+import { ContentProps, ContentType } from './content.types';
 
 const Content: React.FC<ContentProps> = ({ content, contentType }) => {
 	return (

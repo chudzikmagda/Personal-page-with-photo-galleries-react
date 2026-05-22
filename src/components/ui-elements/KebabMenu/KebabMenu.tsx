@@ -14,7 +14,8 @@ import {
 	useRole
 } from '@floating-ui/react';
 import React, { useState } from 'react';
-import { Breakpoints } from '../../../shared/models/models';
+
+import { Breakpoints } from '../../../shared/types/breakpoints.types';
 import MenuIcon from './components/MenuIcon/MenuIcon';
 import MenuOptions from './components/MenuOptions/MenuOptions';
 

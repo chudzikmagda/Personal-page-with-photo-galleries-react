@@ -1,13 +1,14 @@
 import React from 'react';
-import Layout from '../../layout-elements/Layout/Layout';
 import { useTranslation } from 'react-i18next';
-import heroImage from './../../../assets/images/template/photographer-magda-chudzik.webp';
-import styles from './AboutMePage.module.scss';
 import { Trans } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { SocialMedia, SOCIAL_MEDIA } from '../../../shared/models/models';
+
+import { SOCIAL_MEDIA, SocialMedia } from '../../../shared/types/socialMedia.types';
+import { ContentType } from '../../layout-elements/Content/content.types';
+import Layout from '../../layout-elements/Layout/Layout';
 import SEO from '../../SEO/SEO';
-import { ContentType } from '../../layout-elements/Content/models/content.models';
+import heroImage from './../../../assets/images/template/photographer-magda-chudzik.webp';
+import styles from './AboutMePage.module.scss';
 
 const AboutMePage: React.FC = () => {
 	const { t } = useTranslation();

@@ -1,11 +1,12 @@
 import React, { useContext, useEffect } from 'react';
+
 import LanguageContext from '../../../../../contexts/LanguageContext';
-import { LanguageContextType, Languages } from '../../../../../contexts/models/languages.models';
-import { AvailableLanguages, LANGUAGES_SWITCH_SIDES_MAP, SWITCH_SIDES_LANGUAGES_MAP } from '../../models/languageSwitch.models';
-import { SwitchSides } from '../../models/switch.models';
+import { LanguageContextType, Languages } from '../../../../../contexts/types/languages.types';
 import MenuSwitch from '../MenuSwitch/MenuSwitch';
+import { SwitchSides } from '../MenuSwitch/menuSwitch.types';
 import EnFlag from '../SvgIcons/EnFlag';
 import PlFlag from '../SvgIcons/PlFlag';
+import { AvailableLanguages, LANGUAGES_SWITCH_SIDES_MAP, SWITCH_SIDES_LANGUAGES_MAP } from './languageSwitch.types';
 
 const LanguageSwitch: React.FC = () => {
 	const languageContext: LanguageContextType = useContext<LanguageContextType>(LanguageContext);

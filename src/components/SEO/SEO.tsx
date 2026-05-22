@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { SEOProps } from './models/seo.models';
+
+import { SEOProps } from './seo.types';
 
 const SEO: React.FC<SEOProps> = ({ description, keywords, type = 'article', title }) => {
 	return (

@@ -1,5 +1,6 @@
 import React from 'react';
-import { ThemeContextType, Themes } from './models/theme.models';
+
+import { ThemeContextType, Themes } from './types/theme.types';
 
 const InitialThemeContext: ThemeContextType = {
 	state: Themes.LIGHT,

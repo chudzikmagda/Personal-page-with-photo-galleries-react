@@ -1,11 +1,12 @@
 import { t } from 'i18next';
 import React from 'react';
-import SEO from '../../SEO/SEO';
-import { ContentType } from '../../layout-elements/Content/models/content.models';
+
+import { ContentType } from '../../layout-elements/Content/content.types';
 import Layout from '../../layout-elements/Layout/Layout';
-import styles from './PrintsPage.module.scss';
+import SEO from '../../SEO/SEO';
 import PrintItem from './components/Print/Print';
-import { Print, printCollection } from './components/Print/models/print.models';
+import { Print, printCollection } from './components/Print/print.types';
+import styles from './PrintsPage.module.scss';
 
 const PrintsPage: React.FC = () => {
 	return (

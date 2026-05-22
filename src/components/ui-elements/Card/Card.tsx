@@ -1,7 +1,8 @@
 import React from 'react';
-import styles from './Card.module.scss';
-import { CardProps } from './models/card.models';
 import { Link } from 'react-router-dom';
+
+import styles from './Card.module.scss';
+import { CardProps } from './card.types';
 
 const Card: React.FC<CardProps> = ({ bgImage, description, path, title }) => {
 	return (

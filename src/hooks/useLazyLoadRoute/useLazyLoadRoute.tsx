@@ -1,4 +1,5 @@
 import React, { lazy, ReactElement, Suspense } from 'react';
+
 import Spinner from '../../components/ui-elements/Spinner/Spinner';
 
 const useLazyLoadRoute = (componentName: string): ReactElement => {

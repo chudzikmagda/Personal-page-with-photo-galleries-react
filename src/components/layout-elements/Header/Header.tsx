@@ -1,7 +1,8 @@
 import React from 'react';
-import styles from './Header.module.scss';
+
 import Logotype from '../../ui-elements/Logotype/Logotype';
 import Menu from '../../ui-elements/Menu/Menu';
+import styles from './Header.module.scss';
 
 const Header: React.FC = () => {
 	return (

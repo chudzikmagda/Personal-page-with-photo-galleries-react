@@ -1,10 +1,11 @@
 import React, { Dispatch, SetStateAction, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
-import { Paths } from '../../../routing/models/RoutingModels';
+
+import { Paths } from '../../../routing/types/routing.types';
 import KebabMenu from '../KebabMenu/KebabMenu';
 import styles from './Menu.module.scss';
-import { MenuItem } from './models/menu.models';
+import { MenuItem } from './menu.types';
 
 const Menu: React.FC = () => {
 	const { t } = useTranslation();
