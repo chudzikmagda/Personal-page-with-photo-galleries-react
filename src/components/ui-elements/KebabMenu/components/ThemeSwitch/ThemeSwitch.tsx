@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 
 import ThemeContext from '../../../../../contexts/ThemeContext';
 import { ThemeContextType, Themes } from '../../../../../contexts/types/theme.types';
@@ -19,20 +19,11 @@ const ThemeSwitch: React.FC = () => {
 		return THEMES_SWITCH_SIDES_MAP.get(themeContext.state) || SwitchSides.LEFT;
 	};
 
-	const saveToLocalStorage = (theme: Themes): void => {
-		localStorage.setItem('theme', theme);
-	};
-
 	const handleThemeChange = (switchSide: SwitchSides): void => {
 		const currentTheme: Themes = getTheme(switchSide);
 
 		themeContext.onChange(currentTheme);
-		saveToLocalStorage(currentTheme);
 	};
-
-	useEffect(() => {
-		handleThemeChange(getActiveSide());
-	}, [themeContext.state]);
 
 	return (
 		<MenuSwitch

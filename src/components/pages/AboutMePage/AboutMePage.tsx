@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom';
 
 import { SOCIAL_MEDIA, SocialMedia } from '../../../shared/types/socialMedia.types';
 import { ContentType } from '../../layout-elements/Content/content.types';
-import Layout from '../../layout-elements/Layout/Layout';
-import SEO from '../../SEO/SEO';
+import PageShell from '../../layout-elements/PageShell/PageShell';
 import heroImage from './../../../assets/images/template/photographer-magda-chudzik.webp';
 import styles from './AboutMePage.module.scss';
 
@@ -14,94 +13,93 @@ const AboutMePage: React.FC = () => {
 	const { t } = useTranslation();
 
 	return (
-		<>
-			<SEO description={t('AboutMePage.seo.description')} keywords={t('AboutMePage.seo.keywords')} title={t('AboutMePage.seo.title')} />
-
-			<Layout
-				content={
-					<>
-						<div className={styles.wrapper}>
-							<img src={heroImage} className={styles['about-me__heroImage']} alt="Magda Chudzik" />
-						</div>
-						<div className={styles['wrapper-s']}>
-							<h1>{t('AboutMePage.title')}</h1>
-							<h4>
-								<Trans
-									t={t}
-									i18nKey="AboutMePage.intro"
-									components={{
-										strong: <strong />,
-										a: <a href="https://dev.magdachudzik.pl" target="_blank" rel="noopener noreferrer" />
-									}}
-								/>
-							</h4>
-							<p>
-								<Trans
-									t={t}
-									i18nKey="AboutMePage.paragraph1"
-									components={{
-										strong: <strong />,
-										a: <Link to="/landscape" />,
-										a2: <Link to="/landscape/black-and-white-landscape" />
-									}}
-								/>
-							</p>
-							<p>
-								<Trans
-									t={t}
-									i18nKey="AboutMePage.paragraph2"
-									components={{
-										strong: <strong />
-									}}
-								/>
-							</p>
-							<p>
-								<Trans
-									t={t}
-									i18nKey="AboutMePage.paragraph3"
-									components={{
-										strong: <strong />,
-										italic: <i />
-									}}
-								/>
-							</p>
-							<p>
-								<Trans
-									t={t}
-									i18nKey="AboutMePage.paragraph4"
-									components={{
-										strong: <strong />
-									}}
-								/>
-							</p>
-							<p>
-								<Trans
-									t={t}
-									i18nKey="AboutMePage.paragraph5"
-									components={{
-										strong: <strong />
-									}}
-								/>
-							</p>
-							<p>
-								{`${t('AboutMePage.contact')} `}
-								{SOCIAL_MEDIA.map((socialMedia: SocialMedia) => {
-									return (
-										<span key={socialMedia.name}>
-											<a href={socialMedia.path} className={styles.footer__link} target="_blank" rel="noopener noreferrer">
-												{socialMedia.name}
-											</a>
-											{', '}
-										</span>
-									);
-								})}
-							</p>
-						</div>
-					</>
-				}
-				contentType={ContentType.GRID}
-			/>
-		</>
+		<PageShell
+			title={t('AboutMePage.seo.title')}
+			description={t('AboutMePage.seo.description')}
+			keywords={t('AboutMePage.seo.keywords')}
+			content={
+				<>
+					<div className={styles.wrapper}>
+						<img src={heroImage} className={styles['about-me__heroImage']} alt="Magda Chudzik" />
+					</div>
+					<div className={styles['wrapper-s']}>
+						<h1>{t('AboutMePage.title')}</h1>
+						<h4>
+							<Trans
+								t={t}
+								i18nKey="AboutMePage.intro"
+								components={{
+									strong: <strong />,
+									a: <a href="https://dev.magdachudzik.pl" target="_blank" rel="noopener noreferrer" />
+								}}
+							/>
+						</h4>
+						<p>
+							<Trans
+								t={t}
+								i18nKey="AboutMePage.paragraph1"
+								components={{
+									strong: <strong />,
+									a: <Link to="/landscape" />,
+									a2: <Link to="/landscape/black-and-white-landscape" />
+								}}
+							/>
+						</p>
+						<p>
+							<Trans
+								t={t}
+								i18nKey="AboutMePage.paragraph2"
+								components={{
+									strong: <strong />
+								}}
+							/>
+						</p>
+						<p>
+							<Trans
+								t={t}
+								i18nKey="AboutMePage.paragraph3"
+								components={{
+									strong: <strong />,
+									italic: <i />
+								}}
+							/>
+						</p>
+						<p>
+							<Trans
+								t={t}
+								i18nKey="AboutMePage.paragraph4"
+								components={{
+									strong: <strong />
+								}}
+							/>
+						</p>
+						<p>
+							<Trans
+								t={t}
+								i18nKey="AboutMePage.paragraph5"
+								components={{
+									strong: <strong />
+								}}
+							/>
+						</p>
+						<p>
+							{`${t('AboutMePage.contact')} `}
+							{SOCIAL_MEDIA.map((socialMedia: SocialMedia) => {
+								return (
+									<span key={socialMedia.name}>
+										<a href={socialMedia.path} className={styles.footer__link} target="_blank" rel="noopener noreferrer">
+											{socialMedia.name}
+										</a>
+										{', '}
+									</span>
+								);
+							})}
+						</p>
+					</div>
+				</>
+			}
+			contentType={ContentType.GRID}
+		/>
 	);
 };
 

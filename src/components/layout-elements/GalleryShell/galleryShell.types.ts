@@ -1,13 +1,13 @@
 import { GalleryItem } from '../../../shared/types/gallery.types';
 
-export enum GalleryPageBaseKey {
+export enum GalleryShellBaseKey {
 	CITY = 'CityPage',
 	BW_LANDSCAPE = 'BwLandscapePage',
 	COLOR_LANDSCAPE = 'ColorLandscapePage'
 }
 
-export type GalleryPageProps = {
-	baseKey: GalleryPageBaseKey;
+export type GalleryShellProps = {
+	baseKey: GalleryShellBaseKey;
 	images: GalleryItem[];
 	wrapperClassName: string;
 };

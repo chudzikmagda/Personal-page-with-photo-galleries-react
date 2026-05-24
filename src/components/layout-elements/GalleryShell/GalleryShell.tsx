@@ -2,15 +2,15 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { useBreadcrumbs } from '../../../hooks/useBreadcrumbs/useBreadcrumbs';
-import { ContentType } from '../../layout-elements/Content/content.types';
-import Layout from '../../layout-elements/Layout/Layout';
+import { ContentType } from '../Content/content.types';
+import Layout from '../Layout/Layout';
 import SEO from '../../SEO/SEO';
-import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
-import { BreadcrumbItem } from '../Breadcrumbs/breadcrumbs.types';
-import Gallery from '../Gallery/Gallery';
-import { GalleryPageProps } from './galleryPage.types';
+import Breadcrumbs from '../../ui-elements/Breadcrumbs/Breadcrumbs';
+import { BreadcrumbItem } from '../../ui-elements/Breadcrumbs/breadcrumbs.types';
+import Gallery from '../../ui-elements/Gallery/Gallery';
+import { GalleryShellProps } from './galleryShell.types';
 
-const GalleryPage: React.FC<GalleryPageProps> = ({ baseKey, images, wrapperClassName }) => {
+const GalleryShell: React.FC<GalleryShellProps> = ({ baseKey, images, wrapperClassName }) => {
 	const { t } = useTranslation();
 	const breadcrumbItems: BreadcrumbItem[] = useBreadcrumbs(baseKey);
 
@@ -31,4 +31,4 @@ const GalleryPage: React.FC<GalleryPageProps> = ({ baseKey, images, wrapperClass
 	);
 };
 
-export default GalleryPage;
+export default GalleryShell;
