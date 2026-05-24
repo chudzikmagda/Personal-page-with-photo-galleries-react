@@ -78,12 +78,12 @@ const Gallery: React.FC<GalleryProps> = ({ heading, images }) => {
 		const dynamicRowHeight = isLastRowFlag ? GALLERY_ROW_HEIGHT : (containerWidth - GALLERY_GAP * (row.length - 1)) / getTotalAspectRatio(row);
 
 		return (
-			<div key={`row-${rowIndex}`} className={`${styles.gallery__row} ${isLastRowFlag && styles['gallery__row--last']}`}>
+			<div key={`row-${rowIndex}`} className={`${styles.gallery__row} ${isLastRowFlag ? styles['gallery__row--last'] : ''}`}>
 				{row.map((image: GalleryImageType, index: number) => {
 					return (
 						<div
 							key={image.id}
-							className={`${styles.gallery__item} ${isLastRowFlag && styles['gallery__item--last']}`}
+							className={`${styles.gallery__item} ${isLastRowFlag ? styles['gallery__item--last'] : ''}`}
 							style={{
 								height: dynamicRowHeight,
 								width: dynamicRowHeight * getImageAspectRatio(image),

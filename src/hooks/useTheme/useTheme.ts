@@ -1,4 +1,4 @@
-import { useLayoutEffect, useState } from 'react';
+import { type Dispatch, type SetStateAction, useLayoutEffect, useState } from 'react';
 
 import { Themes } from '../../contexts/types/theme.types';
 
@@ -19,7 +19,7 @@ const applyThemeClass = (theme: Themes): void => {
 	body.classList.add(theme);
 };
 
-export const useTheme = (): [Themes, React.Dispatch<React.SetStateAction<Themes>>] => {
+export const useTheme = (): [Themes, Dispatch<SetStateAction<Themes>>] => {
 	const [theme, setTheme] = useState<Themes>(() => readThemeFromStorage() || Themes.LIGHT);
 
 	useLayoutEffect(() => {
