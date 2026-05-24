@@ -1,6 +1,7 @@
 import React, { forwardRef } from 'react';
-import { MenuIconProps } from '../../models/menuIcon.models';
+
 import styles from './MenuIcon.module.scss';
+import { MenuIconProps } from './menuIcon.types';
 
 const MenuIcon = forwardRef<HTMLDivElement, MenuIconProps>(function menuIcon(props, ref) {
 	const { isMenuOpen, ...restProps } = props;
@@ -8,10 +9,10 @@ const MenuIcon = forwardRef<HTMLDivElement, MenuIconProps>(function menuIcon(pro
 	return (
 		<div
 			ref={ref as React.RefObject<HTMLDivElement>}
-			className={`${styles.menuIcon} ${isMenuOpen && styles['menuIcon--clicked']}`}
+			className={`${styles.menuIcon} ${isMenuOpen ? styles['menuIcon--clicked'] : ''}`}
 			{...restProps}>
-			{Array.from({ length: 3 }).map((_, index) => {
-				return <span key={index} className={styles.menuIcon__circle}></span>;
+			{Array.from({ length: 3 }).map((_, index: number) => {
+				return <span key={`circle-${index}`} className={styles.menuIcon__circle}></span>;
 			})}
 		</div>
 	);

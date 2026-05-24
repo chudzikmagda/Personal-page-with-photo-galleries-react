@@ -1,10 +1,10 @@
 import React from 'react';
+
 import Content from '../Content/Content';
-import { ContentType } from '../Content/models/content.models';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import styles from './Layout.module.scss';
-import { LayoutProps } from './models/layout.models';
+import { LayoutProps } from './layout.types';
 
 const Layout: React.FC<LayoutProps> = ({ content, contentType }) => {
 	return (

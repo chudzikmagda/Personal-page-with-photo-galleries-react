@@ -1,0 +1,19 @@
+@use '../../../../../assets/styles/mixins.scss' as *;
+@use '../../../../../assets/styles/colors.scss' as *;
+
+.gallery-image {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+	@include transition(transform);
+
+	&:hover {
+		cursor: pointer;
+		transform: scale(1.16);
+	}
+
+	&__lowquality {
+		background-color: $grey-light;
+	}
+}

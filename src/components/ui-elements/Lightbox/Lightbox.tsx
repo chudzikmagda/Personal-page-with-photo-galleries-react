@@ -1,13 +1,13 @@
-/* eslint-disable indent */
 import React, { useEffect, useRef, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
+
 import PrevIcon from './../../../assets/images/template/lightbox/arrow-left.svg?react';
 import NextIcon from './../../../assets/images/template/lightbox/arrow-right.svg?react';
 import CloseIcon from './../../../assets/images/template/lightbox/close-icon.svg?react';
+import LightboxImageComponent from './components/LightboxImage/LightboxImage';
+import { SWIPE_DIRECTION } from './components/LightboxImage/lightboxImage.types';
 import styles from './Lightbox.module.scss';
-import LightboxImageComponent from './LightboxImage/LightboxImage';
-import { SWIPE_DIRECTION } from './LightboxImage/models/lightboxImage.models';
-import { LightboxProps } from './models/lightbox.models';
+import { LightboxProps } from './lightbox.types';
 
 const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage }) => {
 	const imageRef = useRef<HTMLDivElement | null>(null);

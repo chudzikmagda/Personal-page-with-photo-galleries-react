@@ -127,7 +127,7 @@ const generateGalleryMetadata = async () => {
 
 		if (!fs.existsSync(outputDirectory)) fs.mkdirSync(outputDirectory, { recursive: true });
 
-		const galleryMetadataTs = `// Auto-generated gallery image metadata\nimport { GalleryMetadata } from '../models/gallery.models';\n\nexport const galleryMetadata: GalleryMetadata = ${JSON.stringify(
+		const galleryMetadataTs = `// Auto-generated gallery image metadata\nimport { GalleryMetadata } from '../types/gallery.types';\n\nexport const galleryMetadata: GalleryMetadata = ${JSON.stringify(
 			outputData,
 			null,
 			2

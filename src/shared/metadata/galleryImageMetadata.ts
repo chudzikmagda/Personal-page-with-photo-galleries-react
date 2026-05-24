@@ -1,5 +1,5 @@
 // Auto-generated gallery image metadata
-import { GalleryMetadata } from '../models/gallery.models';
+import { GalleryMetadata } from '../types/gallery.types';
 
 export const galleryMetadata: GalleryMetadata = {
   "city": [

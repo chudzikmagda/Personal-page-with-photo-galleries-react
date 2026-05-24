@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+
 import Image from '../Image/Image';
 import styles from './ImageWithPlaceholder.module.scss';
-import { ImageWithPlaceholderProps } from './models/imageWithPlaceholder.models';
+import { ImageWithPlaceholderProps } from './imageWithPlaceholder.types';
 
 const ImageWithPlaceholder: React.FC<ImageWithPlaceholderProps> = ({ imageSources, imageStyles, alt, loading, onLoad, onTouchStart, onTouchEnd }) => {
 	const [showPlaceholder, setShowPlaceholder] = useState(true);

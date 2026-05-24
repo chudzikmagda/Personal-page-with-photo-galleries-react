@@ -1,6 +1,7 @@
-import React from 'react';
-import styles from './Spinner.module.scss';
 import { t } from 'i18next';
+import React from 'react';
+
+import styles from './Spinner.module.scss';
 
 const Spinner: React.FC = () => {
 	return (

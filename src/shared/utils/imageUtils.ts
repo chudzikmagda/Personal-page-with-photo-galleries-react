@@ -1,4 +1,4 @@
-import { Image, ImageDimension, ImageVariants } from '../models/image.models';
+import { Image, ImageDimension, ImageVariants } from '../types/image.types';
 
 const getSrcSetSize = (key: ImageDimension): string | undefined => {
 	if (key === ImageDimension.LOW_QUALITY) return undefined;
@@ -10,7 +10,9 @@ export const createSrcSet = (variants: ImageVariants): string => {
 	const srcSetParts: string[] = [];
 	Object.entries(variants).forEach(([key, value]: [key: string, value: Image]) => {
 		const size: string | undefined = getSrcSetSize(key as ImageDimension);
-		size && value && srcSetParts.push(`${value.src} ${size}`);
+		if (size && value) {
+			srcSetParts.push(`${value.src} ${size}`);
+		}
 	});
 	return srcSetParts.join(', ');
 };

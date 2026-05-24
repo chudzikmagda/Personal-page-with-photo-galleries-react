@@ -1,7 +1,7 @@
-/* eslint-disable indent */
 import React, { useMemo } from 'react';
-import { ButtonApperance, ButtonProps, ButtonType } from './models/button.models';
+
 import styles from './Button.module.scss';
+import { ButtonApperance, ButtonProps, ButtonType } from './button.types';
 
 const Button: React.FC<ButtonProps> = ({ apperance = ButtonApperance.PRIMARY_SOLID, cta, disabled = false, type = ButtonType.BUTTON, onClick }) => {
 	const classNames: string = useMemo(() => {

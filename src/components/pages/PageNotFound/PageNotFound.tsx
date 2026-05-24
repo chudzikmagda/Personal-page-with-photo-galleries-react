@@ -1,12 +1,13 @@
 import { t } from 'i18next';
 import React from 'react';
 import { NavigateFunction, useNavigate } from 'react-router-dom';
+
 import heroImage from '../../../assets/images/template/page404-image-background.webp';
-import { ContentType } from '../../layout-elements/Content/models/content.models';
+import { ContentType } from '../../layout-elements/Content/content.types';
 import Layout from '../../layout-elements/Layout/Layout';
 import SEO from '../../SEO/SEO';
 import Button from '../../ui-elements/Button/Button';
-import { ButtonApperance } from '../../ui-elements/Button/models/button.models';
+import { ButtonApperance } from '../../ui-elements/Button/button.types';
 import styles from './PageNotFound.module.scss';
 
 const PageNotFound: React.FunctionComponent = () => {

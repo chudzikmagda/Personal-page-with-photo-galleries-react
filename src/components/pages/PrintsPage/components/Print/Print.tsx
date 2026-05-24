@@ -1,9 +1,10 @@
-import React, { ReactElement } from 'react';
-import styles from './Print.module.scss';
-import { PrintProps } from './models/print.models';
-import Button from '../../../../ui-elements/Button/Button';
-import { ButtonApperance } from '../../../../ui-elements/Button/models/button.models';
 import { t } from 'i18next';
+import React, { ReactElement } from 'react';
+
+import Button from '../../../../ui-elements/Button/Button';
+import { ButtonApperance } from '../../../../ui-elements/Button/button.types';
+import styles from './Print.module.scss';
+import { PrintProps } from './print.types';
 
 const PrintItem: React.FC<PrintProps> = ({ image, title, ctaUrl }): ReactElement => {
 	const navigateToLink = (): void => {

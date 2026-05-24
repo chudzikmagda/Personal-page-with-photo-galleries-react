@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect, RefObject } from 'react';
+import { RefObject, useLayoutEffect, useState } from 'react';
 
 export const useResizeObserver = (elementRef: RefObject<HTMLElement | null>): number => {
 	const [width, setWidth] = useState<number>(0);

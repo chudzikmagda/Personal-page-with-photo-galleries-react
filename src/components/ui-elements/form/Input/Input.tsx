@@ -1,6 +1,7 @@
 import React from 'react';
+
 import styles from './Input.module.scss';
-import { InputProps } from './models/input.models';
+import { InputProps } from './input.types';
 
 const Input: React.FC<InputProps> = ({ error, id, label, name, placeholder, required, value, onValueChange }) => {
 	const onInputValueChange = (event: React.ChangeEvent<HTMLInputElement>): void => {

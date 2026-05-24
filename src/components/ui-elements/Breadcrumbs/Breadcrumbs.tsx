@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import styles from './Breadcrumbs.module.scss';
-import { BreadcrumbsProps } from './models/breadcrumbs.models';
+import { BreadcrumbsProps } from './breadcrumbs.types';
 
 const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
 	const isLastItem: (index: number) => boolean = (index: number) => index === items.length - 1;
