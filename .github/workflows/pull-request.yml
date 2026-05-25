@@ -1,0 +1,68 @@
+name: Pull Request Workflow
+
+on:
+    pull_request:
+        types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+    contents: read
+    security-events: write
+
+jobs:
+    lint:
+        runs-on: ubuntu-latest
+        if: github.event.pull_request.draft == false
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup Environment
+              uses: ./.github/actions/setup-environment
+
+            - name: Run lint
+              run: npm run lint
+
+    vulnerabilities:
+        runs-on: ubuntu-latest
+        if: github.event.pull_request.draft == false
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup Environment
+              uses: ./.github/actions/setup-environment
+
+            - name: Check package vulnerabilities
+              run: npm audit --audit-level=high
+
+    build:
+        runs-on: ubuntu-latest
+        if: github.event.pull_request.draft == false
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup Environment
+              uses: ./.github/actions/setup-environment
+
+            - name: Run build
+              run: npm run build
+
+    codeql:
+        runs-on: ubuntu-latest
+        if: github.event.pull_request.draft == false
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Initialize CodeQL
+              uses: github/codeql-action/init@v3
+              with:
+                  languages: javascript-typescript
+
+            - name: Perform CodeQL Analysis
+              uses: github/codeql-action/analyze@v3
