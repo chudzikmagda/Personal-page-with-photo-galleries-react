@@ -6,7 +6,6 @@ on:
 
 permissions:
     contents: read
-    security-events: write
 
 jobs:
     lint:
@@ -49,11 +48,14 @@ jobs:
               uses: ./.github/actions/setup-environment
 
             - name: Run build
-              run: npm run build
+              run: npm run build:ci
 
     codeql:
         runs-on: ubuntu-latest
         if: github.event.pull_request.draft == false
+      permissions:
+        contents: read
+        security-events: write
 
         steps:
             - name: Checkout repository
