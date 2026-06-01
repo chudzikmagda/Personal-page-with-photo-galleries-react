@@ -13,50 +13,58 @@
 		flex-direction: row;
 		justify-content: space-between;
 		height: $header-height;
-		padding: 0 $spacing-basic;
+		padding: 0 2 * $spacing-basic;
 	}
 
 	&__social-media {
 		@include flex($direction: row);
-		gap: 32px;
+		gap: $spacing-basic * 2;
+
+		span {
+			@include flex;
+			align-items: center;
+			justify-content: center;
+			width: 22px;
+			height: 22px;
+			color: currentColor;
+
+			svg {
+				fill: currentColor;
+			}
+		}
 	}
 
 	&__link {
 		@include flex($direction: row);
-		font-size: 0.875rem;
-		color: $text-dark;
+		font-size: 0.6875rem;
+		color: var(--text-dark);
 		text-decoration: none;
-		gap: $spacing-basic;
 
 		@include focus;
 		@include hover;
 
-		&--author {
-			font-size: 0.6875rem;
-
-			@include breakpoint(large) {
-				font-size: 0.75rem;
-			}
-		}
-
 		&-name {
 			display: none;
-
-			@include breakpoint(large) {
-				display: block;
-			}
 		}
 
 		&-icon {
 			@include flex;
+			align-items: center;
+			justify-content: center;
+			width: 22px;
+			height: 22px;
+			color: var(--primary-color);
 
-			@include breakpoint(large) {
-				display: none;
+			svg {
+				fill: currentColor;
 			}
 		}
 	}
 
 	&__author {
+		font-size: 0.875rem;
 		font-weight: $font-bold;
+		color: var(--primary-color);
+		margin-left: 0.25rem;
 	}
 }

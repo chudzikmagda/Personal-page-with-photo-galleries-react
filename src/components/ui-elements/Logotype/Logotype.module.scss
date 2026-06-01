@@ -3,13 +3,27 @@
 @use './../../../assets/styles/mixins.scss' as *;
 
 .link {
-	color: $text-dark;
-	font-weight: $font-bold;
+	display: flex;
+	flex-direction: column;
 	text-decoration: none;
-	white-space: nowrap;
 	z-index: 1001;
-
 	@include hover;
-
 	@include focus;
+}
+
+.primaryText {
+	color: var(--text-dark);
+	font-weight: 700;
+	font-size: 1rem;
+	white-space: nowrap;
+	line-height: 1;
+}
+
+.secondaryText {
+	color: var(--primary-color);
+	font-size: 0.6875rem;
+	font-weight: 600;
+	white-space: nowrap;
+	line-height: 1;
+	margin-top: 4px;
 }

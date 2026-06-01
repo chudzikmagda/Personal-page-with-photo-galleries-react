@@ -1,22 +1,46 @@
 @use '../../../assets/styles/colors.scss' as *;
-@use '../../../assets/styles/variables.scss' as *;
 @use '../../../assets/styles/mixins.scss' as *;
 
 .card {
 	position: relative;
 	flex-grow: 1;
-	@include flex();
+	@include flex($align-items: flex-end, $justify-content: flex-end);
+	padding: clamp(1rem, 1rem + 4vw, 6rem);
 	overflow: hidden;
 	background-color: $primary-dark-20;
+	min-height: 26rem;
 
-	&:hover {
-		background-color: none;
-
+	&:hover,
+	&:focus-within {
 		.card__bg {
-			transform: scale(1.15);
 			background-color: $primary-color;
 			background-blend-mode: multiply;
 		}
+
+		.card__ornament {
+			&::before {
+				background: currentColor;
+				box-shadow: 0 0 1rem rgba($primary-color-20, 0.45);
+			}
+
+			&::after {
+				width: 4rem;
+			}
+		}
+
+		.card__meta {
+			letter-spacing: 0.08em;
+			opacity: 1;
+		}
+	}
+
+	&::after {
+		position: absolute;
+		content: '';
+		inset: 0;
+		background: $gradient-primary, $gradient-secondary;
+		z-index: 1;
+		pointer-events: none;
 	}
 
 	&__bg {
@@ -26,20 +50,74 @@
 		width: 100%;
 		height: 100%;
 		background-size: cover;
-		background-position: center;
-		background-color: rgba($primary-color, 0);
-		@include transition();
-		z-index: -1;
+		background-position: center top;
+		background-color: transparent;
+		@include transition($time: 0.7s, $effect: cubic-bezier(0.22, 0.61, 0.36, 1));
+		z-index: 0;
 	}
 
 	&__details {
-		padding: $padding-basic;
-		color: rgba(253, 253, 253, 1);
-		text-align: center;
+		width: 100%;
+		color: $primary-light;
+		text-align: left;
+		z-index: 2;
+	}
+
+	&__ornament {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.75rem;
+		margin: 0 0 1rem;
+		color: $primary-color;
+
+		&::before {
+			content: '';
+			display: block;
+			width: 0.5rem;
+			height: 0.5rem;
+			border: 1px solid currentColor;
+			border-radius: 999px;
+			background: transparent;
+			flex-shrink: 0;
+			@include transition($element: background-color, $time: 0.35s);
+		}
+
+		&::after {
+			content: '';
+			display: block;
+			width: 3rem;
+			height: 1px;
+			background: currentColor;
+			box-shadow: 0 0 1rem rgba($primary-color-20, 0.35);
+			@include transition($element: width, $time: 0.35s);
+		}
+	}
+
+	&__meta {
+		margin: 0 0 0.95rem;
+		font-size: 0.72rem;
+		line-height: 1;
+		text-transform: uppercase;
+		color: $primary-color;
+		opacity: 0.85;
+		@include transition($element: letter-spacing, $time: 0.45s);
 	}
 
 	&__title {
-		margin-top: 0;
+		margin: 0;
+		font-weight: 400;
+		font-size: clamp(2rem, 5vw, 3rem);
+		line-height: 1.05;
+	}
+
+	&__cta {
+		display: inline-block;
+		margin: 1rem 0 0;
+		font-weight: 500;
+		font-size: 0.875rem;
+		letter-spacing: 1px;
+		color: $primary-color;
+		transition: color 0.35s ease;
 	}
 
 	&__link {
@@ -48,6 +126,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
+		z-index: 3;
 		@include focus($width: 4px);
 
 		&:hover {

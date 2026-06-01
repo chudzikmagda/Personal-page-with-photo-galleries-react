@@ -6,7 +6,8 @@ import styles from './Logotype.module.scss';
 const Logotype: React.FC = () => {
 	return (
 		<Link to="/" className={styles.link}>
-			{'Magda Chudzik'}
+			<span className={styles.primaryText}>Magda Chudzik</span>
+			<span className={styles.secondaryText}>Fine Art Photographer</span>
 		</Link>
 	);
 };

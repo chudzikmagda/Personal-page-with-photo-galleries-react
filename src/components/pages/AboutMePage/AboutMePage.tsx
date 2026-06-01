@@ -3,9 +3,9 @@ import { useTranslation } from 'react-i18next';
 import { Trans } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
-import { SOCIAL_MEDIA, SocialMedia } from '../../../shared/types/socialMedia.types';
 import { ContentType } from '../../layout-elements/Content/content.types';
 import PageShell from '../../layout-elements/PageShell/PageShell';
+import SocialMediaMenu from '../../ui-elements/SocialMediaMenu/SocialMediaMenu';
 import heroImage from './../../../assets/images/template/photographer-magda-chudzik.webp';
 import styles from './AboutMePage.module.scss';
 
@@ -84,16 +84,7 @@ const AboutMePage: React.FC = () => {
 						</p>
 						<p>
 							{`${t('AboutMePage.contact')} `}
-							{SOCIAL_MEDIA.map((socialMedia: SocialMedia) => {
-								return (
-									<span key={socialMedia.name}>
-										<a href={socialMedia.path} className={styles.footer__link} target="_blank" rel="noopener noreferrer">
-											{socialMedia.name}
-										</a>
-										{', '}
-									</span>
-								);
-							})}
+							<SocialMediaMenu />
 						</p>
 					</div>
 				</>
