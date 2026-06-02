@@ -66,5 +66,10 @@
 		font-weight: $font-bold;
 		color: var(--primary-color);
 		margin-left: 0.25rem;
+		@include transition($element: color);
+
+		&:hover {
+			color: var(--secondary-color);
+		}
 	}
 }

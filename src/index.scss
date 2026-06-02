@@ -97,6 +97,8 @@ h4 {
 				height: 2px;
 				width: 100%;
 				background-color: var(--primary-color);
+				transform: scaleX(1);
+				transform-origin: center;
 				@include transition;
 			}
 		}
@@ -105,7 +107,7 @@ h4 {
 			color: var(--primary-color);
 
 			&::after {
-				bottom: 100%;
+				transform: scaleX(0);
 			}
 		}
 

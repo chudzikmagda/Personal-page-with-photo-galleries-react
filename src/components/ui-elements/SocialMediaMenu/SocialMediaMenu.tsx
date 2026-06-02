@@ -2,7 +2,9 @@ import React from 'react';
 
 import { SOCIAL_MEDIA, SocialMedia } from '../../../shared/types/socialMedia.types';
 import styles from './SocialMediaMenu.module.scss';
-const SocialMediaMenu: React.FC = () => {
+import { SocialMediaMenuProps, SocialMediaMenuVariant } from './socialMediaMenu.types';
+
+const SocialMediaMenu: React.FC<SocialMediaMenuProps> = ({ variant }) => {
 	return (
 		<nav className={styles.menu} aria-label="Social media links">
 			{SOCIAL_MEDIA.map((socialMedia: SocialMedia) => {
@@ -16,9 +18,13 @@ const SocialMediaMenu: React.FC = () => {
 						rel="noopener noreferrer"
 						aria-label={socialMedia.name}
 						key={socialMedia.name}>
-						<span className={styles.menu__icon}>
-							<Icon />
-						</span>
+						{variant === SocialMediaMenuVariant.TEXT ? (
+							socialMedia.name
+						) : (
+							<span className={styles.menu__icon}>
+								<Icon />
+							</span>
+						)}
 					</a>
 				);
 			})}

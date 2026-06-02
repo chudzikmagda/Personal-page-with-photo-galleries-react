@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { ContentType } from '../../layout-elements/Content/content.types';
 import PageShell from '../../layout-elements/PageShell/PageShell';
 import SocialMediaMenu from '../../ui-elements/SocialMediaMenu/SocialMediaMenu';
+import { SocialMediaMenuVariant } from '../../ui-elements/SocialMediaMenu/socialMediaMenu.types';
 import heroImage from './../../../assets/images/template/photographer-magda-chudzik.webp';
 import styles from './AboutMePage.module.scss';
 
@@ -84,7 +85,7 @@ const AboutMePage: React.FC = () => {
 						</p>
 						<p>
 							{`${t('AboutMePage.contact')} `}
-							<SocialMediaMenu />
+							<SocialMediaMenu variant={SocialMediaMenuVariant.TEXT} />
 						</p>
 					</div>
 				</>
