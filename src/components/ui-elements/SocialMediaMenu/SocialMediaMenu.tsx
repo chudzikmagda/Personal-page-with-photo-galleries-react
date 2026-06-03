@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { SOCIAL_MEDIA, SocialMedia } from '../../../shared/types/socialMedia.types';
-import styles from './SocialMediaMenu.module.scss';
+import styles from './socialMediaMenu.module.scss';
 import { SocialMediaMenuProps, SocialMediaMenuVariant } from './socialMediaMenu.types';
 
 const SocialMediaMenu: React.FC<SocialMediaMenuProps> = ({ variant }) => {
