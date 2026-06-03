@@ -8,7 +8,7 @@ import PageShell from '../../layout-elements/PageShell/PageShell';
 import SocialMediaMenu from '../../ui-elements/SocialMediaMenu/SocialMediaMenu';
 import { SocialMediaMenuVariant } from '../../ui-elements/SocialMediaMenu/socialMediaMenu.types';
 import heroImage from './../../../assets/images/template/photographer-magda-chudzik.webp';
-import styles from './AboutMePage.module.scss';
+import styles from './aboutMePage.module.scss';
 
 const AboutMePage: React.FC = () => {
 	const { t } = useTranslation();

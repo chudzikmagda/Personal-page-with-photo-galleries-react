@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import SocialMediaMenu from '../../ui-elements/SocialMediaMenu/SocialMediaMenu';
 import { SocialMediaMenuVariant } from '../../ui-elements/SocialMediaMenu/socialMediaMenu.types';
-import styles from './Footer.module.scss';
+import styles from './footer.module.scss';
 
 const Footer: React.FC = () => {
 	const { t } = useTranslation();

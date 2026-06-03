@@ -11,7 +11,7 @@ import Button from '../../ui-elements/Button/Button';
 import { ButtonApperance, ButtonType } from '../../ui-elements/Button/button.types';
 import Input from '../../ui-elements/form/Input/Input';
 import Textarea from '../../ui-elements/form/Textarea/Textarea';
-import styles from './ContactPage.module.scss';
+import styles from './contactPage.module.scss';
 import { ContactForm, ContactFormFieldNames, ContactFormValidators, ContactFormValue } from './contactPage.types';
 
 const ContactPage: React.FC = () => {

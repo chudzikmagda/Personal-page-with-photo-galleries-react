@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 
-import styles from './Button.module.scss';
+import styles from './button.module.scss';
 import { ButtonApperance, ButtonProps, ButtonType } from './button.types';
 
 const Button: React.FC<ButtonProps> = ({ apperance = ButtonApperance.PRIMARY_SOLID, cta, disabled = false, type = ButtonType.BUTTON, onClick }) => {

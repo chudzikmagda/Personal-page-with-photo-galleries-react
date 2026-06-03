@@ -2,7 +2,7 @@ import React, { forwardRef, HTMLAttributes } from 'react';
 
 import LanguageSwitch from '../LanguageSwitch/LanguageSwitch';
 import ThemeSwitch from '../ThemeSwitch/ThemeSwitch';
-import styles from './MenuOptions.module.scss';
+import styles from './menuOptions.module.scss';
 
 const MenuOptions = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(function MenuOptions(props, ref) {
 	return (

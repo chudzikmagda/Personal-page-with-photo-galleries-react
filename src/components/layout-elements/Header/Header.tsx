@@ -3,7 +3,7 @@ import React from 'react';
 import KebabMenu from '../../ui-elements/KebabMenu/KebabMenu';
 import Logotype from '../../ui-elements/Logotype/Logotype';
 import Menu from '../../ui-elements/Menu/Menu';
-import styles from './Header.module.scss';
+import styles from './header.module.scss';
 
 const Header: React.FC = () => {
 	return (

@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 
 import { menuItems } from './menu.data';
-import styles from './Menu.module.scss';
+import styles from './menu.module.scss';
 import { MenuItem } from './menu.types';
 
 const Menu: React.FC = () => {
