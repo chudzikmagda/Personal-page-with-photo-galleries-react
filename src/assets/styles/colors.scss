@@ -17,3 +17,6 @@ $text-light: var(--primary-light);
 
 $success: var(--success);
 $danger: var(--danger);
+
+$gradient-primary: linear-gradient(to top, var(--primary-dark-95) 0%, var(--primary-dark-20) 38%, transparent 72%);
+$gradient-secondary: linear-gradient(to top, var(--primary-dark-20) 0%, transparent 52%);

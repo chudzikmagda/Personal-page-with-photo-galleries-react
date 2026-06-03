@@ -1,0 +1,36 @@
+@use '../../../assets/styles/colors.scss' as *;
+
+.menu {
+	display: inline-flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 16px;
+
+	&__link {
+		display: inline-flex;
+		align-items: center;
+		color: $primary-color;
+		text-decoration: none;
+		transition: color 0.8s ease;
+
+		&:focus {
+			outline: none;
+		}
+
+		&:hover,
+		&:focus-visible {
+			color: $secondary-color;
+		}
+	}
+
+	&__icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		color: currentColor;
+
+		svg {
+			fill: currentColor;
+		}
+	}
+}

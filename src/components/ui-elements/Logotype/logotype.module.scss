@@ -1,0 +1,50 @@
+@use './../../../assets/styles/colors.scss' as *;
+@use './../../../assets/styles/variables.scss' as *;
+@use './../../../assets/styles/mixins.scss' as *;
+
+.link {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 4px;
+	text-decoration: none;
+	z-index: 1001;
+	@include hover;
+	@include focus;
+}
+
+.primaryText {
+	color: var(--text-dark);
+	font-weight: 700;
+	font-size: 1rem;
+	white-space: nowrap;
+	line-height: 1;
+	letter-spacing: 0;
+	transition: color 260ms ease, letter-spacing 260ms ease;
+}
+
+.secondaryText {
+	color: var(--primary-color);
+	font-size: 0.6875rem;
+	font-weight: 600;
+	white-space: nowrap;
+	line-height: 1;
+	letter-spacing: 0;
+	transition: color 260ms ease, letter-spacing 260ms ease;
+}
+
+.link:hover,
+.link:focus-visible {
+	.primaryText {
+		letter-spacing: 1px;
+	}
+
+	.focalLine {
+		opacity: 1;
+		transform: scaleX(1);
+	}
+
+	.secondaryText {
+		letter-spacing: 1px;
+	}
+}

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { createSrcSet } from '../../../../../shared/utils/imageUtils';
 import ImageWithPlaceholder from '../../../ImageWithPlaceholder/ImageWithPlaceholder';
-import styles from './GalleryImage.module.scss';
+import styles from './galleryImage.module.scss';
 import { GalleryImageType } from './galleryImage.types';
 
 const GalleryImage: React.FC<GalleryImageType> = ({ variants, alt }) => {

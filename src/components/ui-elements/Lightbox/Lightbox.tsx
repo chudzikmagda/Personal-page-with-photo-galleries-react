@@ -6,7 +6,7 @@ import NextIcon from './../../../assets/images/template/lightbox/arrow-right.svg
 import CloseIcon from './../../../assets/images/template/lightbox/close-icon.svg?react';
 import LightboxImageComponent from './components/LightboxImage/LightboxImage';
 import { SWIPE_DIRECTION } from './components/LightboxImage/lightboxImage.types';
-import styles from './Lightbox.module.scss';
+import styles from './lightbox.module.scss';
 import { LightboxProps } from './lightbox.types';
 
 const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage }) => {

@@ -1,0 +1,50 @@
+@use './../../../assets/styles/variables.scss' as *;
+@use './../../../assets/styles/mixins.scss' as *;
+
+.header {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: center;
+	column-gap: $padding-basic;
+	height: $header-height-xs;
+	width: 100%;
+	max-width: $container-max-width;
+	padding: 0 2 * $padding-basic;
+	box-sizing: border-box;
+
+	&__logo {
+		justify-self: start;
+	}
+
+	&__menu {
+		justify-self: end;
+		width: auto;
+		@include flex($justify-content: flex-end);
+	}
+
+	&__kebab {
+		justify-self: end;
+		@include flex($justify-content: flex-end);
+		display: none;
+	}
+
+	@include breakpoint(large) {
+		grid-template-columns: repeat(3, 1fr);
+		height: $header-height;
+		padding: 0 4 * $padding-basic;
+
+		&__menu {
+			justify-self: center;
+			width: 100%;
+			@include flex($justify-content: center);
+		}
+
+		&__kebab {
+			display: flex;
+		}
+	}
+
+	@include breakpoint(xlarge) {
+		padding: 0;
+	}
+}

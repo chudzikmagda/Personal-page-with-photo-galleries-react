@@ -4,11 +4,20 @@
 .wrapper {
 	max-width: $container-max-width;
 	margin: 0 auto;
+	padding: 0;
+
+	@include breakpoint(large) {
+		padding: 0 2 * $padding-basic;
+	}
 }
 
 .wrapper-s {
 	max-width: $container-s-max-width;
 	margin: 0 auto;
 	text-align: left;
-	padding: 0 $padding-basic;
+	padding: 0;
+
+	@include breakpoint(small) {
+		padding: 0 2 * $padding-basic;
+	}
 }
