@@ -6,14 +6,18 @@
 	@include flex($justify-content: center);
 	width: 100%;
 	max-width: $container-max-width;
-	padding: $spacing-basic;
+	padding: $spacing-basic 2 * $padding-basic;
 	box-sizing: border-box;
 
 	@include breakpoint(large) {
 		flex-direction: row;
 		justify-content: space-between;
 		height: $header-height;
-		padding: 0 2 * $spacing-basic;
+		padding: 0 4 * $padding-basic;
+	}
+
+	@include breakpoint(xlarge) {
+		padding: 0;
 	}
 
 	&__social-media {

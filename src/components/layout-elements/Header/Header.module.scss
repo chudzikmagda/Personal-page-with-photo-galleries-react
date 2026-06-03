@@ -3,7 +3,7 @@
 
 .header {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 1fr auto;
 	align-items: center;
 	column-gap: $padding-basic;
 	height: $header-height-xs;
@@ -17,9 +17,9 @@
 	}
 
 	&__menu {
-		justify-self: center;
-		width: 100%;
-		@include flex($justify-content: center);
+		justify-self: end;
+		width: auto;
+		@include flex($justify-content: flex-end);
 	}
 
 	&__kebab {
@@ -29,7 +29,15 @@
 	}
 
 	@include breakpoint(large) {
+		grid-template-columns: repeat(3, 1fr);
 		height: $header-height;
+		padding: 0 4 * $padding-basic;
+
+		&__menu {
+			justify-self: center;
+			width: 100%;
+			@include flex($justify-content: center);
+		}
 
 		&__kebab {
 			display: flex;
