@@ -8,7 +8,7 @@ import { MenuItem } from './menu.types';
 
 const Menu: React.FC = () => {
 	const { t } = useTranslation();
-	const translatedMenuItems: MenuItem[] = menuItems.map((menuItem) => ({
+	const menu: MenuItem[] = menuItems.map((menuItem) => ({
 		menuTitle: t(menuItem.menuTitleKey),
 		path: menuItem.path
 	}));
@@ -28,7 +28,7 @@ const Menu: React.FC = () => {
 			</button>
 
 			<nav className={styles.menu}>
-				{translatedMenuItems.map((menuItem: MenuItem, index: number) => {
+				{menu.map((menuItem: MenuItem, index: number) => {
 					return (
 						<span key={menuItem.menuTitle + index} className={styles['menu__item-wrapper']}>
 							<NavLink
