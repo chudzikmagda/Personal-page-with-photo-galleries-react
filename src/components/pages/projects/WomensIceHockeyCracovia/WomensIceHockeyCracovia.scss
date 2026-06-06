@@ -1,0 +1,17 @@
+@use '../../../../assets/styles/variables.scss' as *;
+@use '../../../../assets/styles/mixins.scss' as *;
+
+.landscape {
+	flex-grow: 1;
+	@include flex($align-items: normal, $justify-content: normal);
+	height: 100%;
+
+	@include breakpoint(large) {
+		flex-direction: row;
+		justify-content: space-between;
+
+		div {
+			width: 100%;
+		}
+	}
+}

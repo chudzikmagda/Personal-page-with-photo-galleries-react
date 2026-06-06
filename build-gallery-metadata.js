@@ -9,7 +9,8 @@ const dirname = path.dirname(filename);
 const GALLERIES = [
 	{ key: 'city', path: 'city' },
 	{ key: 'colorLandscapes', path: 'landscapes/color' },
-	{ key: 'bwLandscapes', path: 'landscapes/black-and-white' }
+	{ key: 'bwLandscapes', path: 'landscapes/black-and-white' },
+	{ key: 'projectsWomensIceHockeyCracovia', path: 'projects/womens-ice-hockey-cracovia' }
 ];
 const GALLERY_IMAGES_DIR = path.join(dirname, 'public/images/galleries');
 const GALLERY_METADATA_OUTPUT_FILE = path.join(dirname, 'src/shared/metadata/galleryImageMetadata.ts');

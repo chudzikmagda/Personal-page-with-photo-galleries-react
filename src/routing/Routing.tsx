@@ -1,7 +1,9 @@
+import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
+import WomensIceHockeyCracoviaPage from '../components/pages/projects/WomensIceHockeyCracovia/WomensIceHockeyCracoviaPage';
 import useLazyLoadRoute from '../hooks/useLazyLoadRoute/useLazyLoadRoute';
-import { Paths } from './types/routing.types';
+import { Paths, ProjectPaths } from './types/routing.types';
 
 const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	{
@@ -27,6 +29,10 @@ const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	{
 		path: `${Paths.LANDSCAPE}/${Paths.COLOR_LANDSCAPE}`,
 		element: useLazyLoadRoute('ColorLandscapePage')
+	},
+	{
+		path: `${Paths.PROJECTS}/${ProjectPaths.WOMENS_ICE_HOCKEY_CRACOVIA}`,
+		element: <WomensIceHockeyCracoviaPage />
 	},
 	{
 		path: Paths.PRINTS,

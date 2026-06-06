@@ -11,6 +11,7 @@ import * as Menu from './Menu.json';
 import * as PageNotFound from './PageNotFound.json';
 import * as PrintsPage from './PrintsPage.json';
 import * as Spinner from './Spinner.json';
+import * as WomensIceHockeyCracoviaPage from './WomensIceHockeyCracoviaPage.json';
 
 export {
 	AboutMePage,
@@ -25,5 +26,6 @@ export {
 	Menu,
 	PageNotFound,
 	PrintsPage,
-	Spinner
+	Spinner,
+	WomensIceHockeyCracoviaPage
 };

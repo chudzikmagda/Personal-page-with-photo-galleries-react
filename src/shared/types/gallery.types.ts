@@ -10,4 +10,5 @@ export interface GalleryMetadata {
 	city: GalleryItem[];
 	colorLandscapes: GalleryItem[];
 	bwLandscapes: GalleryItem[];
+	projectsWomensIceHockeyCracovia: GalleryItem[];
 }
