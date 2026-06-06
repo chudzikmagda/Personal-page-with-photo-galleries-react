@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './Textarea.module.scss';
+import styles from './textarea.module.scss';
 import { TextareaProps } from './textarea.types';
 
 const Textarea: React.FC<TextareaProps> = ({ error, id, label, name, placeholder, required, value, onValueChange }) => {

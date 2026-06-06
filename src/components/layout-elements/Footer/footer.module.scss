@@ -1,0 +1,79 @@
+@use './../../../assets/styles/colors.scss' as *;
+@use './../../../assets/styles/variables.scss' as *;
+@use './../../../assets/styles/mixins.scss' as *;
+
+.footer {
+	@include flex($justify-content: center);
+	width: 100%;
+	max-width: $container-max-width;
+	padding: $spacing-basic 2 * $padding-basic;
+	box-sizing: border-box;
+
+	@include breakpoint(large) {
+		flex-direction: row;
+		justify-content: space-between;
+		height: $header-height;
+		padding: 0 4 * $padding-basic;
+	}
+
+	@include breakpoint(xlarge) {
+		padding: 0;
+	}
+
+	&__social-media {
+		@include flex($direction: row);
+		gap: $spacing-basic * 2;
+
+		span {
+			@include flex;
+			align-items: center;
+			justify-content: center;
+			width: 22px;
+			height: 22px;
+			color: currentColor;
+
+			svg {
+				fill: currentColor;
+			}
+		}
+	}
+
+	&__link {
+		@include flex($direction: row);
+		font-size: 0.6875rem;
+		color: var(--text-dark);
+		text-decoration: none;
+
+		@include focus;
+		@include hover;
+
+		&-name {
+			display: none;
+		}
+
+		&-icon {
+			@include flex;
+			align-items: center;
+			justify-content: center;
+			width: 22px;
+			height: 22px;
+			color: var(--primary-color);
+
+			svg {
+				fill: currentColor;
+			}
+		}
+	}
+
+	&__author {
+		font-size: 0.875rem;
+		font-weight: $font-bold;
+		color: var(--primary-color);
+		margin-left: 0.25rem;
+		@include transition($element: color);
+
+		&:hover {
+			color: var(--secondary-color);
+		}
+	}
+}

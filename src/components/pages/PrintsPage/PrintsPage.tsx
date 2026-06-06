@@ -5,7 +5,7 @@ import { ContentType } from '../../layout-elements/Content/content.types';
 import PageShell from '../../layout-elements/PageShell/PageShell';
 import PrintItem from './components/Print/Print';
 import { Print, printCollection } from './components/Print/print.types';
-import styles from './PrintsPage.module.scss';
+import styles from './printsPage.module.scss';
 
 const PrintsPage: React.FC = () => {
 	return (

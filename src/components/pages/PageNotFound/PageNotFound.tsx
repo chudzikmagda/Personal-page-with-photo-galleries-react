@@ -8,7 +8,7 @@ import Layout from '../../layout-elements/Layout/Layout';
 import SEO from '../../SEO/SEO';
 import Button from '../../ui-elements/Button/Button';
 import { ButtonApperance } from '../../ui-elements/Button/button.types';
-import styles from './PageNotFound.module.scss';
+import styles from './pageNotFound.module.scss';
 
 const PageNotFound: React.FunctionComponent = () => {
 	const navigate: NavigateFunction = useNavigate();

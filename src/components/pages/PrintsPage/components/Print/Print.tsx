@@ -3,7 +3,7 @@ import React, { ReactElement } from 'react';
 
 import Button from '../../../../ui-elements/Button/Button';
 import { ButtonApperance } from '../../../../ui-elements/Button/button.types';
-import styles from './Print.module.scss';
+import styles from './print.module.scss';
 import { PrintProps } from './print.types';
 
 const PrintItem: React.FC<PrintProps> = ({ image, title, ctaUrl }): ReactElement => {

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { ImageDimension } from '../../../../../shared/types/image.types';
 import { createSrcSet } from '../../../../../shared/utils/imageUtils';
 import ImageWithPlaceholder from '../../../ImageWithPlaceholder/ImageWithPlaceholder';
-import styles from './LightboxImage.module.scss';
+import styles from './lightboxImage.module.scss';
 import { LightboxImageProps, SWIPE_DIRECTION } from './lightboxImage.types';
 
 const LightboxImageComponent: React.FC<LightboxImageProps> = ({ variants, alt, onSwipe }) => {

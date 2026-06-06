@@ -6,7 +6,7 @@ import Lightbox from '../Lightbox/Lightbox';
 import Spinner from '../Spinner/Spinner';
 import GalleryImage from './components/GalleryImage/GalleryImage';
 import { GalleryImageType } from './components/GalleryImage/galleryImage.types';
-import styles from './Gallery.module.scss';
+import styles from './gallery.module.scss';
 import { GALLERY_GAP, GALLERY_ROW_HEIGHT, GalleryCurrentRow, GalleryProps, GalleryRowParams, GalleryRows } from './gallery.types';
 
 const Gallery: React.FC<GalleryProps> = ({ heading, images }) => {

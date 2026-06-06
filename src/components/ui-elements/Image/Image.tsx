@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 
-import styles from './Image.module.scss';
+import styles from './image.module.scss';
 import { ImageProps } from './image.types';
 
 const Image = forwardRef<HTMLImageElement, ImageProps>(

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import styles from './Breadcrumbs.module.scss';
+import styles from './breadcrumbs.module.scss';
 import { BreadcrumbsProps } from './breadcrumbs.types';
 
 const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {

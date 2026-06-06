@@ -2,21 +2,16 @@ import React, { Dispatch, SetStateAction, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 
-import { Paths } from '../../../routing/types/routing.types';
-import KebabMenu from '../KebabMenu/KebabMenu';
-import styles from './Menu.module.scss';
+import { menuItems } from './menu.data';
+import styles from './menu.module.scss';
 import { MenuItem } from './menu.types';
 
 const Menu: React.FC = () => {
 	const { t } = useTranslation();
-
-	const menuItems: MenuItem[] = [
-		{ menuTitle: t('Menu.about'), path: Paths.ABOUT },
-		{ menuTitle: t('Menu.city'), path: Paths.CITY },
-		{ menuTitle: t('Menu.landscape'), path: Paths.LANDSCAPE },
-		{ menuTitle: t('Menu.prints'), path: Paths.PRINTS },
-		{ menuTitle: t('Menu.contact'), path: Paths.CONTACT }
-	];
+	const menu: MenuItem[] = menuItems.map((menuItem) => ({
+		menuTitle: t(menuItem.menuTitleKey),
+		path: menuItem.path
+	}));
 
 	const [isOpen, setIsOpen]: [boolean, Dispatch<SetStateAction<boolean>>] = useState<boolean>(false);
 
@@ -33,7 +28,7 @@ const Menu: React.FC = () => {
 			</button>
 
 			<nav className={styles.menu}>
-				{menuItems.map((menuItem: MenuItem, index: number) => {
+				{menu.map((menuItem: MenuItem, index: number) => {
 					return (
 						<span key={menuItem.menuTitle + index} className={styles['menu__item-wrapper']}>
 							<NavLink
@@ -47,9 +42,6 @@ const Menu: React.FC = () => {
 						</span>
 					);
 				})}
-				<div className={styles['menu__kebab-menu']}>
-					<KebabMenu />
-				</div>
 			</nav>
 		</>
 	);

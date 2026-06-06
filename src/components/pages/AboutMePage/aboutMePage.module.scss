@@ -6,4 +6,10 @@
 		max-width: 100%;
 		height: auto;
 	}
+
+	&__social-link {
+		text-decoration: none;
+		@include focus;
+		@include hover;
+	}
 }
