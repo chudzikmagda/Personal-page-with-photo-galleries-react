@@ -6,9 +6,7 @@ import { ButtonApperance } from '../../../../ui-elements/Button/button.types';
 import styles from './print.module.scss';
 import { Print } from './print.types';
 
-type PrintItemProps = Omit<Print, 'id'>;
-
-const PrintItem: React.FC<PrintItemProps> = ({ image, titleKey, cta }): ReactElement => {
+const PrintItem: React.FC<Print> = ({ image, titleKey, cta }): ReactElement => {
 	const { t } = useTranslation();
 
 	const navigateToLink = (): void => {
