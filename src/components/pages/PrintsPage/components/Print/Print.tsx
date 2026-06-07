@@ -1,12 +1,19 @@
-import { t } from 'i18next';
 import React, { ReactElement } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import Button from '../../../../ui-elements/Button/Button';
 import { ButtonApperance } from '../../../../ui-elements/Button/button.types';
 import styles from './print.module.scss';
-import { PrintProps } from './print.types';
+
+type PrintProps = {
+	image: string;
+	title: string;
+	ctaUrl: string;
+};
 
 const PrintItem: React.FC<PrintProps> = ({ image, title, ctaUrl }): ReactElement => {
+	const { t } = useTranslation();
+
 	const navigateToLink = (): void => {
 		window.open(ctaUrl, '_blank');
 	};

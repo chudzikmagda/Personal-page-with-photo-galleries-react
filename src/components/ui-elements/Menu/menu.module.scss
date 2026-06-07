@@ -16,6 +16,7 @@
 	&__item {
 		position: relative;
 		display: inline-block;
+		white-space: nowrap;
 		padding: 2px;
 		font-size: 1rem;
 		font-weight: 500;

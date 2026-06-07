@@ -1,5 +1,5 @@
-import { t } from 'i18next';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { ContentType } from '../../layout-elements/Content/content.types';
 import PageShell from '../../layout-elements/PageShell/PageShell';
@@ -8,6 +8,8 @@ import { Print, printCollection } from './components/Print/print.types';
 import styles from './printsPage.module.scss';
 
 const PrintsPage: React.FC = () => {
+	const { t } = useTranslation();
+
 	return (
 		<PageShell
 			title={t('PrintsPage.seo.title')}
@@ -24,7 +26,7 @@ const PrintsPage: React.FC = () => {
 						{printCollection.map((print: Print) => {
 							return (
 								<div key={print.ctaUrl} className={styles.prints__item}>
-									<PrintItem title={print.title} image={print.image} ctaUrl={print.ctaUrl} />
+									<PrintItem title={t(print.titleKey)} image={print.image} ctaUrl={print.ctaUrl} />
 								</div>
 							);
 						})}
