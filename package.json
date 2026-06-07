@@ -9,6 +9,7 @@
 		"i18next": "^22.5.0",
 		"i18next-browser-languagedetector": "^7.0.2",
 		"justified-layout": "^4.1.0",
+		"nanoid": "^5.1.11",
 		"react": "^19.2.4",
 		"react-dom": "^19.2.4",
 		"react-ga4": "^2.1.0",
