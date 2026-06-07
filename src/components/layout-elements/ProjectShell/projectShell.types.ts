@@ -7,4 +7,6 @@ export enum ProjectShellBaseKey {
 export type ProjectShellProps = {
 	baseKey: ProjectShellBaseKey;
 	images: GalleryItem[];
+	title: string;
+	description?: string;
 };

@@ -1,5 +1,3 @@
-import './WomensIceHockeyCracovia.scss';
-
 import React from 'react';
 
 import { galleryMetadata } from '../../../../shared/metadata/galleryImageMetadata';
@@ -11,7 +9,8 @@ const WomensIceHockeyCracoviaPage: React.FC = () => {
 		<ProjectShell
 			baseKey={ProjectShellBaseKey.PROJECTWOMENSICEHOKEYCRACOVIA}
 			images={galleryMetadata.projectsWomensIceHockeyCracovia}
-			wrapperClassName="landscape"
+			title={`${ProjectShellBaseKey.PROJECTWOMENSICEHOKEYCRACOVIA}.title`}
+			description={`${ProjectShellBaseKey.PROJECTWOMENSICEHOKEYCRACOVIA}.description`}
 		/>
 	);
 };

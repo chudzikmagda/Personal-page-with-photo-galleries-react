@@ -11,7 +11,7 @@ import Layout from '../Layout/Layout';
 import styles from './ProjectShell.module.scss';
 import { ProjectShellProps } from './projectShell.types';
 
-const ProjectShell: React.FC<ProjectShellProps> = ({ baseKey, images }) => {
+const ProjectShell: React.FC<ProjectShellProps> = ({ baseKey, images, title, description }) => {
 	const { t } = useTranslation();
 	const breadcrumbItems: BreadcrumbItem[] = useBreadcrumbs(baseKey);
 
@@ -23,6 +23,8 @@ const ProjectShell: React.FC<ProjectShellProps> = ({ baseKey, images }) => {
 				content={
 					<div className={styles.wrapper}>
 						<Breadcrumbs items={breadcrumbItems} />
+						<h3 className={styles.title}>{t(title)}</h3>
+						{description && <p className={styles.description}>{t(description)}</p>}
 						<Slider images={images} />
 					</div>
 				}

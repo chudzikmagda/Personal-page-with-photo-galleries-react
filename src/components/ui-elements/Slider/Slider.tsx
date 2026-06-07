@@ -3,7 +3,8 @@ import React from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Keyboard, Mousewheel, Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css/scrollbar';
+import { Keyboard, Mousewheel, Navigation, Scrollbar } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { createSrcSet } from '../../../shared/utils/imageUtils';
@@ -16,12 +17,13 @@ const Slider: React.FC<SliderProps> = ({ images }) => {
 			<Swiper
 				slidesPerView={'auto'}
 				spaceBetween={16}
+				slideToClickedSlide
 				grabCursor
 				navigation
+				scrollbar={{ draggable: true, hide: false }}
 				keyboard={{ enabled: true, onlyInViewport: false }}
 				mousewheel={{ enabled: true, forceToAxis: false, releaseOnEdges: true }}
-				pagination={{ clickable: true }}
-				modules={[Navigation, Pagination, Keyboard, Mousewheel]}
+				modules={[Navigation, Keyboard, Mousewheel, Scrollbar]}
 				className={styles.flipbook__swiper}>
 				{images.map(({ id, alt, variants }) => (
 					<SwiperSlide key={id} className={styles.flipbook__slide}>
