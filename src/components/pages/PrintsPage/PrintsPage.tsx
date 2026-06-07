@@ -4,7 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { ContentType } from '../../layout-elements/Content/content.types';
 import PageShell from '../../layout-elements/PageShell/PageShell';
 import PrintItem from './components/Print/Print';
-import { Print, printCollection } from './components/Print/print.types';
+import { printCollection } from './components/Print/print.data';
+import { Print } from './components/Print/print.types';
 import styles from './printsPage.module.scss';
 
 const PrintsPage: React.FC = () => {
@@ -25,8 +26,8 @@ const PrintsPage: React.FC = () => {
 					<div className={`${styles.wrapper} ${styles.prints}`}>
 						{printCollection.map((print: Print) => {
 							return (
-								<div key={print.ctaUrl} className={styles.prints__item}>
-									<PrintItem title={t(print.titleKey)} image={print.image} ctaUrl={print.ctaUrl} />
+								<div key={print.id} className={styles.prints__item}>
+									<PrintItem titleKey={print.titleKey} image={print.image} cta={print.cta} />
 								</div>
 							);
 						})}
