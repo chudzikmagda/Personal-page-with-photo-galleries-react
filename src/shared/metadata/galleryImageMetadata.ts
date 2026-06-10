@@ -37,7 +37,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1066,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1066
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-002",
@@ -73,7 +75,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-003",
@@ -109,7 +113,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-004",
@@ -145,7 +151,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 1
         }
-      }
+      },
+      "width": 1000,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-005",
@@ -181,7 +189,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 1
         }
-      }
+      },
+      "width": 1000,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-006",
@@ -217,7 +227,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-007",
@@ -253,7 +265,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-008",
@@ -289,7 +303,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 1
         }
-      }
+      },
+      "width": 1000,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-009",
@@ -325,7 +341,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 0.67
         }
-      }
+      },
+      "width": 667,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-010",
@@ -361,7 +379,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-011",
@@ -397,7 +417,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-012",
@@ -433,7 +455,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-013",
@@ -469,7 +493,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1066,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1066
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-014",
@@ -505,7 +531,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1066,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1066
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-015",
@@ -541,7 +569,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 1
         }
-      }
+      },
+      "width": 1000,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-016",
@@ -577,7 +607,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 0.67
         }
-      }
+      },
+      "width": 667,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-017",
@@ -613,7 +645,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 0.67
         }
-      }
+      },
+      "width": 667,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-018",
@@ -649,7 +683,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 0.67
         }
-      }
+      },
+      "width": 667,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-019",
@@ -685,7 +721,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 0.67
         }
-      }
+      },
+      "width": 667,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-020",
@@ -721,7 +759,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 0.67
         }
-      }
+      },
+      "width": 667,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-021",
@@ -757,7 +797,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 0.67
         }
-      }
+      },
+      "width": 668,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-022",
@@ -793,7 +835,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-023",
@@ -829,7 +873,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-024",
@@ -865,7 +911,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 1
         }
-      }
+      },
+      "width": 1000,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-025",
@@ -901,7 +949,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-026",
@@ -937,7 +987,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-027",
@@ -973,7 +1025,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 0.67
         }
-      }
+      },
+      "width": 667,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-028",
@@ -1009,7 +1063,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 0.67
         }
-      }
+      },
+      "width": 667,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-029",
@@ -1045,7 +1101,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1034,
           "aspectRatio": 1.55
         }
-      }
+      },
+      "width": 1600,
+      "height": 1034
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-030",
@@ -1081,7 +1139,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-031",
@@ -1117,7 +1177,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 1
         }
-      }
+      },
+      "width": 1000,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-032",
@@ -1153,7 +1215,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1066,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1066
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-033",
@@ -1189,7 +1253,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-034",
@@ -1225,7 +1291,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 0.67
         }
-      }
+      },
+      "width": 667,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-035",
@@ -1261,7 +1329,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 0.67
         }
-      }
+      },
+      "width": 667,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-036",
@@ -1297,7 +1367,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 0.67
         }
-      }
+      },
+      "width": 667,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-037",
@@ -1333,7 +1405,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-038",
@@ -1369,7 +1443,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-039",
@@ -1405,7 +1481,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-040",
@@ -1441,7 +1519,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-041",
@@ -1477,7 +1557,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-042",
@@ -1513,7 +1595,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-043",
@@ -1549,7 +1633,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 0.67
         }
-      }
+      },
+      "width": 667,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-044",
@@ -1585,7 +1671,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-045",
@@ -1621,7 +1709,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-046",
@@ -1657,7 +1747,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-047",
@@ -1693,7 +1785,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-048",
@@ -1729,7 +1823,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-049",
@@ -1765,7 +1861,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-050",
@@ -1801,7 +1899,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-051",
@@ -1837,7 +1937,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 0.67
         }
-      }
+      },
+      "width": 667,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-052",
@@ -1873,7 +1975,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 0.67
         }
-      }
+      },
+      "width": 667,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-053",
@@ -1909,7 +2013,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-054",
@@ -1945,7 +2051,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-055",
@@ -1981,7 +2089,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 1
         }
-      }
+      },
+      "width": 1000,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-056",
@@ -2017,7 +2127,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-057",
@@ -2053,7 +2165,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-058",
@@ -2089,7 +2203,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-059",
@@ -2125,7 +2241,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-060",
@@ -2161,7 +2279,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 1
         }
-      }
+      },
+      "width": 1000,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-061",
@@ -2197,7 +2317,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1066,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1066
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-062",
@@ -2233,7 +2355,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 0.67
         }
-      }
+      },
+      "width": 667,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-063",
@@ -2269,7 +2393,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 0.67
         }
-      }
+      },
+      "width": 666,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-064",
@@ -2305,7 +2431,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 0.67
         }
-      }
+      },
+      "width": 667,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-065",
@@ -2341,7 +2469,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-street-photography-urban-photo-architecture-066",
@@ -2377,7 +2507,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     }
   ],
   "colorLandscapes": [
@@ -2415,7 +2547,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-02",
@@ -2451,7 +2585,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-03",
@@ -2487,7 +2623,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-04",
@@ -2523,7 +2661,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-05",
@@ -2559,7 +2699,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-06",
@@ -2595,7 +2737,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-07",
@@ -2631,7 +2775,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-08",
@@ -2667,7 +2813,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-09",
@@ -2703,7 +2851,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-10",
@@ -2739,7 +2889,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-11",
@@ -2775,7 +2927,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-12",
@@ -2811,7 +2965,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-13",
@@ -2847,7 +3003,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-14",
@@ -2883,7 +3041,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-15",
@@ -2919,7 +3079,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-16",
@@ -2955,7 +3117,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-17",
@@ -2991,7 +3155,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-18",
@@ -3027,7 +3193,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1066,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1066
     },
     {
       "id": "magda-chudzik-landscape-photography-19",
@@ -3063,7 +3231,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-20",
@@ -3099,7 +3269,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-21",
@@ -3135,7 +3307,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-22",
@@ -3171,7 +3345,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1066,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1066
     },
     {
       "id": "magda-chudzik-landscape-photography-23",
@@ -3207,7 +3383,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-24",
@@ -3243,7 +3421,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-25",
@@ -3279,7 +3459,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-26",
@@ -3315,7 +3497,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-27",
@@ -3351,7 +3535,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-28",
@@ -3387,7 +3573,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-29",
@@ -3423,7 +3611,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-30",
@@ -3459,7 +3649,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-31",
@@ -3495,7 +3687,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-32",
@@ -3531,7 +3725,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-33",
@@ -3567,7 +3763,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-34",
@@ -3603,7 +3801,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-35",
@@ -3639,7 +3839,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-36",
@@ -3675,7 +3877,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1066,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1066
     },
     {
       "id": "magda-chudzik-landscape-photography-37",
@@ -3711,7 +3915,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-38",
@@ -3747,7 +3953,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-39",
@@ -3783,7 +3991,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1066,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1066
     },
     {
       "id": "magda-chudzik-landscape-photography-40",
@@ -3819,7 +4029,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-41",
@@ -3855,7 +4067,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-42",
@@ -3891,7 +4105,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1066,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1066
     },
     {
       "id": "magda-chudzik-landscape-photography-43",
@@ -3927,7 +4143,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1066,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1066
     },
     {
       "id": "magda-chudzik-landscape-photography-44",
@@ -3963,7 +4181,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 1
         }
-      }
+      },
+      "width": 1000,
+      "height": 1000
     },
     {
       "id": "magda-chudzik-landscape-photography-45",
@@ -3999,7 +4219,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-46",
@@ -4035,7 +4257,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1063,
           "aspectRatio": 1.51
         }
-      }
+      },
+      "width": 1600,
+      "height": 1063
     },
     {
       "id": "magda-chudzik-landscape-photography-47",
@@ -4071,7 +4295,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-48",
@@ -4107,7 +4333,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-49",
@@ -4143,7 +4371,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-50",
@@ -4179,7 +4409,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1064,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1064
     },
     {
       "id": "magda-chudzik-landscape-photography-51",
@@ -4215,7 +4447,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-52",
@@ -4251,7 +4485,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-53",
@@ -4287,7 +4523,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-54",
@@ -4323,7 +4561,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-55",
@@ -4359,7 +4599,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-56",
@@ -4395,7 +4637,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-57",
@@ -4431,7 +4675,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-58",
@@ -4467,7 +4713,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-59",
@@ -4503,7 +4751,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1066,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1066
     },
     {
       "id": "magda-chudzik-landscape-photography-60",
@@ -4539,7 +4789,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magda-chudzik-landscape-photography-61",
@@ -4575,7 +4827,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1066,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1066
     },
     {
       "id": "magda-chudzik-landscape-photography-62",
@@ -4611,7 +4865,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     }
   ],
   "bwLandscapes": [
@@ -4649,7 +4905,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-02",
@@ -4685,7 +4943,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-03",
@@ -4721,7 +4981,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-04",
@@ -4757,7 +5019,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-05",
@@ -4793,7 +5057,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 1
         }
-      }
+      },
+      "width": 1000,
+      "height": 1000
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-06",
@@ -4829,7 +5095,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-07",
@@ -4865,7 +5133,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-08",
@@ -4901,7 +5171,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-09",
@@ -4937,7 +5209,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-10",
@@ -4973,7 +5247,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-11",
@@ -5009,7 +5285,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-12",
@@ -5045,7 +5323,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-13",
@@ -5081,7 +5361,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-14",
@@ -5117,7 +5399,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-15",
@@ -5153,7 +5437,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-16",
@@ -5189,7 +5475,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-17",
@@ -5225,7 +5513,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-18",
@@ -5261,7 +5551,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-19",
@@ -5297,7 +5589,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 0.69
         }
-      }
+      },
+      "width": 691,
+      "height": 1000
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-20",
@@ -5333,7 +5627,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-21",
@@ -5369,7 +5665,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-22",
@@ -5405,7 +5703,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-23",
@@ -5441,7 +5741,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-24",
@@ -5477,7 +5779,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-25",
@@ -5513,7 +5817,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-26",
@@ -5549,7 +5855,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-27",
@@ -5585,7 +5893,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-28",
@@ -5621,7 +5931,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-29",
@@ -5657,7 +5969,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-30",
@@ -5693,7 +6007,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-31",
@@ -5729,7 +6045,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-32",
@@ -5765,7 +6083,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 1
         }
-      }
+      },
+      "width": 1000,
+      "height": 1000
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-33",
@@ -5801,7 +6121,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 1
         }
-      }
+      },
+      "width": 1000,
+      "height": 1000
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-34",
@@ -5837,7 +6159,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-35",
@@ -5873,7 +6197,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-36",
@@ -5909,7 +6235,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-37",
@@ -5945,7 +6273,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-38",
@@ -5981,7 +6311,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-39",
@@ -6017,7 +6349,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1068,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1068
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-40",
@@ -6053,7 +6387,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1000,
           "aspectRatio": 1
         }
-      }
+      },
+      "width": 1000,
+      "height": 1000
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-41",
@@ -6089,7 +6425,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-42",
@@ -6125,7 +6463,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-43",
@@ -6161,7 +6501,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-44",
@@ -6197,7 +6539,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-45",
@@ -6233,7 +6577,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-46",
@@ -6269,7 +6615,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-47",
@@ -6305,7 +6653,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     },
     {
       "id": "magdalena-chudzik-landscape-photography-black-and-white-48",
@@ -6341,7 +6691,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1067,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1600,
+      "height": 1067
     }
   ],
   "projectsWomensIceHockeyCracovia": [
@@ -6355,7 +6707,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1200,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1200
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-002",
@@ -6367,7 +6721,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-003",
@@ -6379,7 +6735,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1200,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1200
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-004",
@@ -6391,7 +6749,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-005",
@@ -6403,7 +6763,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1200,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1200
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-006",
@@ -6415,7 +6777,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-007",
@@ -6427,7 +6791,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-008",
@@ -6439,7 +6805,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-009",
@@ -6451,7 +6819,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-010",
@@ -6463,7 +6833,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-011",
@@ -6475,7 +6847,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-012",
@@ -6487,7 +6861,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-013",
@@ -6499,7 +6875,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-014",
@@ -6511,7 +6889,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-015",
@@ -6523,7 +6903,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-016",
@@ -6535,7 +6917,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-017",
@@ -6547,7 +6931,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-018",
@@ -6559,7 +6945,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-019",
@@ -6571,7 +6959,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-020",
@@ -6583,7 +6973,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-021",
@@ -6595,7 +6987,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-022",
@@ -6607,7 +7001,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-023",
@@ -6619,7 +7015,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-024",
@@ -6631,7 +7029,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-025",
@@ -6643,7 +7043,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-026",
@@ -6655,7 +7057,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-027",
@@ -6667,7 +7071,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-028",
@@ -6679,7 +7085,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1800,
           "aspectRatio": 0.67
         }
-      }
+      },
+      "width": 1201,
+      "height": 1800
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-029",
@@ -6691,7 +7099,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-030",
@@ -6703,7 +7113,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-031",
@@ -6715,7 +7127,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1200,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1200
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-032",
@@ -6727,7 +7141,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-033",
@@ -6739,7 +7155,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-034",
@@ -6751,7 +7169,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-035",
@@ -6763,7 +7183,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-036",
@@ -6775,7 +7197,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-037",
@@ -6787,7 +7211,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-038",
@@ -6799,7 +7225,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1800,
           "aspectRatio": 0.67
         }
-      }
+      },
+      "width": 1201,
+      "height": 1800
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-039",
@@ -6811,7 +7239,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-040",
@@ -6823,7 +7253,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-041",
@@ -6835,7 +7267,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-042",
@@ -6847,7 +7281,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-043",
@@ -6859,7 +7295,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-044",
@@ -6871,7 +7309,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-045",
@@ -6883,7 +7323,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-046",
@@ -6895,7 +7337,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-047",
@@ -6907,7 +7351,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-048",
@@ -6919,7 +7365,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-049",
@@ -6931,7 +7379,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-050",
@@ -6943,7 +7393,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-051",
@@ -6955,7 +7407,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-052",
@@ -6967,7 +7421,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-053",
@@ -6979,7 +7435,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-054",
@@ -6991,7 +7449,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-055",
@@ -7003,7 +7463,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-056",
@@ -7015,7 +7477,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-057",
@@ -7027,7 +7491,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-058",
@@ -7039,7 +7505,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-059",
@@ -7051,7 +7519,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-060",
@@ -7063,7 +7533,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-061",
@@ -7075,7 +7547,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-062",
@@ -7087,7 +7561,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-063",
@@ -7099,7 +7575,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-064",
@@ -7111,7 +7589,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-065",
@@ -7123,7 +7603,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-066",
@@ -7135,7 +7617,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-067",
@@ -7147,7 +7631,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-068",
@@ -7159,7 +7645,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-069",
@@ -7171,7 +7659,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-070",
@@ -7183,7 +7673,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-071",
@@ -7195,7 +7687,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-072",
@@ -7207,7 +7701,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-073",
@@ -7219,7 +7715,9 @@ export const galleryMetadata: GalleryMetadata = {
           "height": 1201,
           "aspectRatio": 1.5
         }
-      }
+      },
+      "width": 1800,
+      "height": 1201
     }
   ]
 };

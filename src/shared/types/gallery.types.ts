@@ -4,6 +4,8 @@ export interface GalleryItem {
 	id: string;
 	alt: string;
 	variants: ImageVariants;
+	width: number;
+	height: number;
 }
 
 export interface GalleryMetadata {

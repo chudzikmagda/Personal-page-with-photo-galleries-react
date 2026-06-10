@@ -1,93 +1,67 @@
 @use '../../../assets/styles/colors.scss' as *;
+@use '../../../assets/styles/mixins.scss' as *;
 @use '../../../assets/styles/variables.scss' as *;
 
-.flipbook {
-	width: 100%;
-	padding: 1rem 0 3rem;
-
-	:global(.swiper-button-prev),
-	:global(.swiper-button-next) {
-		width: 2.75rem;
-		height: 2.75rem;
-		color: $primary-color;
-		border-radius: 50%;
+.slider {
+	:global(.swiper) {
+		padding-right: clamp(24px, 6vw, 96px);
 	}
 
-	:global(.swiper-button-disabled) {
-		opacity: 0.3;
-		pointer-events: none;
+	:global(.swiper-scrollbar) {
+		position: static;
+		margin-top: 1rem;
+		height: 12px;
+		width: 100%;
+		border-radius: 999px;
+		background-color: $grey-light;
+	}
+
+	:global(.swiper-scrollbar-drag) {
+		background: $primary-color;
+		min-width: 36px;
 	}
 
 	:global(.swiper-slide:not(.swiper-slide-active)) {
 		opacity: 0.3;
 		filter: blur(2px);
 	}
-
-	:global(.swiper-scrollbar) {
-		position: static;
-		margin-top: 0.9rem;
-		height: 0.4rem;
-		border-radius: 999px;
-		background-color: var(--grey-light);
-	}
-
-	:global(.swiper-scrollbar-drag) {
-		background: $primary-color;
-	}
 }
 
-.flipbook__swiper {
+.slider__swiper {
 	overflow: visible;
 }
 
-.flipbook__slide {
-	width: auto;
-	height: auto;
-	border-radius: 0.5rem;
-	overflow: hidden;
+.slider__mobileList {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }
 
-.flipbook__image {
+.slider__mobileImage {
 	display: block;
-	width: auto;
-	max-width: min(82vw, 1020px);
-	height: clamp(260px, 62vh, 700px);
+	width: 100%;
+	height: auto;
+	border-radius: 4px;
 	object-fit: contain;
 }
 
-@media (max-width: 767px) {
-	.flipbook {
-		padding-bottom: 2.5rem;
+.slider__slide {
+	width: auto;
+	border-radius: 4px;
+	overflow: hidden;
+	display: flex;
+	height: 40vh;
+	max-height: 340px;
 
-		:global(.swiper-button-prev),
-		:global(.swiper-button-next) {
-			width: 2.25rem;
-			height: 2.25rem;
-		}
-
-		:global(.swiper-button-prev::after),
-		:global(.swiper-button-next::after) {
-			font-size: 0.85rem;
-		}
-
-		:global(.swiper-scrollbar) {
-			margin-top: 0.7rem;
-			height: 0.35rem;
-		}
+	@include breakpoint(medium) {
+		height: 68vh;
+		max-height: 760px;
 	}
+}
 
-	.flipbook__slide {
-		width: auto;
-		height: auto;
-		border-radius: 4px;
-	}
-
-	.flipbook__image {
-		max-width: 82vw;
-		height: clamp(220px, 52vh, 460px);
-	}
-
-	:global(.swiper) {
-		padding-right: 18vw;
-	}
+.slider__image {
+	display: block;
+	width: auto;
+	max-width: 100%;
+	height: 100%;
 }

@@ -44,6 +44,10 @@ const logMessage = (type, message) => {
 
 const sort = (items) => items.sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true }));
 
+const getPreferredVariant = (variants) => {
+	return variants.fullsize || variants['1024w'] || variants['768w'] || variants['480w'] || variants.lowQuality || Object.values(variants)[0];
+};
+
 const assignVariant = (file, id, imageData, groupedFiles) => {
 	switch (true) {
 		case file.includes('-480w'):
@@ -108,7 +112,17 @@ const scanFolder = async (relativeFolderPath) => {
 			}
 		}
 	}
-	return sort(Object.values(groupedFiles));
+	const galleryItems = Object.values(groupedFiles).map((item) => {
+		const preferredVariant = getPreferredVariant(item.variants);
+
+		return {
+			...item,
+			width: preferredVariant?.width ?? 0,
+			height: preferredVariant?.height ?? 0
+		};
+	});
+
+	return sort(galleryItems);
 };
 
 const getGalleryMetadata = async () => {
