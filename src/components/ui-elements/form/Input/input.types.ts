@@ -1,10 +1,19 @@
+export enum InputType {
+	TEXT = 'text',
+	PASSWORD = 'password',
+	EMAIL = 'email',
+	TEL = 'tel'
+}
+
 export type InputProps = {
-	error?: string;
 	id: string;
 	label: string;
 	name: string;
-	placeholder: string;
-	required?: boolean;
 	value: string;
 	onValueChange: (value: string) => void;
+	autoComplete?: string;
+	error?: string;
+	placeholder?: string;
+	required?: boolean;
+	type?: InputType;
 };

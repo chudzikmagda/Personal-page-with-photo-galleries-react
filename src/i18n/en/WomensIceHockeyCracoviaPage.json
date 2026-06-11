@@ -1,14 +1,20 @@
 {
-	"title": "Women's Ice Hockey - KS Cracovia 1906",
-	"description": "A documentary gallery from women's ice hockey matches of KS Cracovia 1906.",
+	"title": "Fighting for Every Puck",
+	"description": "A photo reportage on the life and play of the KS Cracovia 1906 women’s ice hockey team",
+	"passwordForm": {
+		"title": "This gallery is password protected.",
+		"description": "Enter the access password to view the Fighting for Every Puck project.",
+		"label": "Password:",
+		"submitCta": "Unlock project"
+	},
 	"breadcrumbs": {
 		"start": "Home",
 		"projects": "Projects",
-		"womens-ice-hockey-cracovia": "Women's Ice Hockey - KS Cracovia 1906"
+		"womens-ice-hockey-cracovia": "Fighting for Every Puck"
 	},
 	"seo": {
-		"description": "A documentary gallery from women's ice hockey matches of KS Cracovia 1906.",
+		"description": "A photo reportage on the life and play of the KS Cracovia 1906 women’s ice hockey team",
 		"keywords": "women's ice hockey, KS Cracovia 1906, sports photography, hockey photography",
-		"title": "Magda Chudzik | Photography - Women's Ice Hockey"
+		"title": "Magda Chudzik | Photography - Fighting for Every Puck"
 	}
 }

@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 export enum Paths {
 	ABOUT = 'about',
 	CITY = 'city',
@@ -12,3 +14,13 @@ export enum Paths {
 export enum ProjectPaths {
 	WOMENS_ICE_HOCKEY_CRACOVIA = 'womens-ice-hockey-cracovia'
 }
+
+export type PasswordProtectedRouteProps = {
+	children: ReactNode;
+};
+
+export type ViteImportMeta = ImportMeta & {
+	env: {
+		VITE_WOMENS_ICE_HOCKEY_CRACOVIA_PASSWORD?: string;
+	};
+};

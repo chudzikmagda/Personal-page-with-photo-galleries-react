@@ -4,6 +4,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import WomensIceHockeyCracoviaPage from '../components/pages/projects/WomensIceHockeyCracovia/WomensIceHockeyCracoviaPage';
 import useLazyLoadRoute from '../hooks/useLazyLoadRoute/useLazyLoadRoute';
 import { Paths, ProjectPaths } from './types/routing.types';
+import WomensIceHockeyCracoviaPagePasswordProtectedRoute from './WomenIceHockeyCracoviaPagePasswordProtectedRoute';
 
 const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	{
@@ -32,7 +33,11 @@ const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	},
 	{
 		path: `${Paths.PROJECTS}/${ProjectPaths.WOMENS_ICE_HOCKEY_CRACOVIA}`,
-		element: <WomensIceHockeyCracoviaPage />
+		element: (
+			<WomensIceHockeyCracoviaPagePasswordProtectedRoute>
+				<WomensIceHockeyCracoviaPage />
+			</WomensIceHockeyCracoviaPagePasswordProtectedRoute>
+		)
 	},
 	{
 		path: Paths.PRINTS,
