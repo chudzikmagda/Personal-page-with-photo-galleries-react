@@ -1,13 +1,7 @@
-export enum Projects {
-	WOMENSICEHOKEYCRACOVIA = 'WomensIceHockeyCracoviaPage'
-}
-
-export enum ProjectBaseKey {
-	PROJECTWOMENSICEHOKEYCRACOVIA = 'WomensIceHockeyCracoviaPage'
-}
+import { Projects } from '../../../shared/types/projects.types';
 
 export interface ProjectData {
-	baseKey: string;
+	baseKey: Projects;
 	image: string;
 	cta: string;
 }

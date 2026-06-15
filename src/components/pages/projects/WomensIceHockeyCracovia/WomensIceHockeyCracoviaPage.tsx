@@ -1,16 +1,16 @@
 import React from 'react';
 
 import { galleryMetadata } from '../../../../shared/metadata/galleryImageMetadata';
+import { Projects } from '../../../../shared/types/projects.types';
 import ProjectShell from '../../../layout-elements/ProjectShell/ProjectShell';
-import { ProjectBaseKey } from '../../../layout-elements/ProjectShell/projectShell.types';
 
 const WomensIceHockeyCracoviaPage: React.FC = () => {
 	return (
 		<ProjectShell
-			baseKey={ProjectBaseKey.PROJECTWOMENSICEHOKEYCRACOVIA}
+			baseKey={Projects.WOMENSICEHOKEYCRACOVIA}
 			images={galleryMetadata.projectsWomensIceHockeyCracovia}
-			title={`${ProjectBaseKey.PROJECTWOMENSICEHOKEYCRACOVIA}.title`}
-			description={`${ProjectBaseKey.PROJECTWOMENSICEHOKEYCRACOVIA}.description`}
+			title={`${Projects.WOMENSICEHOKEYCRACOVIA}.title`}
+			description={`${Projects.WOMENSICEHOKEYCRACOVIA}.description`}
 		/>
 	);
 };

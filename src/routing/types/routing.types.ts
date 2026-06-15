@@ -11,10 +11,6 @@ export enum Paths {
 	CONTACT = 'contact'
 }
 
-export enum ProjectPaths {
-	WOMENS_ICE_HOCKEY_CRACOVIA = 'womens-ice-hockey-cracovia'
-}
-
 export type PasswordProtectedRouteProps = {
 	children: ReactNode;
 };

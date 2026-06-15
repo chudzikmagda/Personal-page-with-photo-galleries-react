@@ -3,7 +3,8 @@ import { createBrowserRouter } from 'react-router-dom';
 
 import Spinner from '../components/ui-elements/Spinner/Spinner';
 import useLazyLoadRoute from '../hooks/useLazyLoadRoute/useLazyLoadRoute';
-import { Paths, ProjectPaths } from './types/routing.types';
+import { ProjectPaths } from '../shared/types/projects.types';
+import { Paths } from './types/routing.types';
 import WomensIceHockeyCracoviaPagePasswordProtectedRoute from './WomenIceHockeyCracoviaPagePasswordProtectedRoute';
 
 const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([

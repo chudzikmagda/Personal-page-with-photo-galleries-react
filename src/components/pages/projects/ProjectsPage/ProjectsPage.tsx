@@ -39,7 +39,12 @@ const ProjectsPage: React.FunctionComponent = () => {
 											/>
 										</Link>
 									</div>
-									<h6 className={styles['projects__title']}>{t(`${project.baseKey}.title`)}</h6>
+									<div>
+										<Link to={project.cta} className={styles['projects__link']}>
+											<h6 className={styles['projects__title']}>{t(`${project.baseKey}.title`)}</h6>
+											<p className={styles['projects__description']}>{t(`${project.baseKey}.description`)}</p>
+										</Link>
+									</div>
 								</div>
 							))}
 						</div>
