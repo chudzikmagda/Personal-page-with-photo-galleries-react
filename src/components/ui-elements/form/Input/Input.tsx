@@ -38,6 +38,7 @@ const Input: React.FC<InputProps> = ({
 					className={styles.input__element}
 					placeholder={placeholder}
 					autoComplete={autoComplete}
+					required={required}
 					onChange={onInputValueChange}
 				/>
 				<span className={styles.input__error}>{error}</span>

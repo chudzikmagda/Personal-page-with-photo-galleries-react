@@ -7,10 +7,10 @@ import ProjectShell from '../../../layout-elements/ProjectShell/ProjectShell';
 const WomensIceHockeyCracoviaPage: React.FC = () => {
 	return (
 		<ProjectShell
-			baseKey={Projects.WOMENSICEHOKEYCRACOVIA}
+			baseKey={Projects.WOMENSICEHOCKEYCRACOVIA}
 			images={galleryMetadata.projectsWomensIceHockeyCracovia}
-			title={`${Projects.WOMENSICEHOKEYCRACOVIA}.title`}
-			description={`${Projects.WOMENSICEHOKEYCRACOVIA}.description`}
+			title={`${Projects.WOMENSICEHOCKEYCRACOVIA}.title`}
+			description={`${Projects.WOMENSICEHOCKEYCRACOVIA}.description`}
 		/>
 	);
 };
