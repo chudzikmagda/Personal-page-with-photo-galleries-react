@@ -5,7 +5,7 @@ export enum InputType {
 	TEL = 'tel'
 }
 
-export type InputProps = {
+export interface InputProps {
 	id: string;
 	label: string;
 	name: string;
@@ -16,4 +16,4 @@ export type InputProps = {
 	placeholder?: string;
 	required?: boolean;
 	type?: InputType;
-};
+}
