@@ -7110,12 +7110,12 @@ export const galleryMetadata: GalleryMetadata = {
         "fullsize": {
           "src": "/images/galleries/projects/womens-ice-hockey-cracovia/magda-chudzik-documentary-photography-womens-ice-hockey-030.webp",
           "width": 1800,
-          "height": 1201,
+          "height": 1200,
           "aspectRatio": 1.5
         }
       },
       "width": 1800,
-      "height": 1201
+      "height": 1200
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-031",
@@ -7124,12 +7124,12 @@ export const galleryMetadata: GalleryMetadata = {
         "fullsize": {
           "src": "/images/galleries/projects/womens-ice-hockey-cracovia/magda-chudzik-documentary-photography-womens-ice-hockey-031.webp",
           "width": 1800,
-          "height": 1200,
+          "height": 1201,
           "aspectRatio": 1.5
         }
       },
       "width": 1800,
-      "height": 1200
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-032",
@@ -7207,20 +7207,6 @@ export const galleryMetadata: GalleryMetadata = {
       "variants": {
         "fullsize": {
           "src": "/images/galleries/projects/womens-ice-hockey-cracovia/magda-chudzik-documentary-photography-womens-ice-hockey-037.webp",
-          "width": 1800,
-          "height": 1201,
-          "aspectRatio": 1.5
-        }
-      },
-      "width": 1800,
-      "height": 1201
-    },
-    {
-      "id": "magda-chudzik-documentary-photography-womens-ice-hockey-038",
-      "alt": "magda chudzik documentary photography womens ice hockey",
-      "variants": {
-        "fullsize": {
-          "src": "/images/galleries/projects/womens-ice-hockey-cracovia/magda-chudzik-documentary-photography-womens-ice-hockey-038.webp",
           "width": 1201,
           "height": 1800,
           "aspectRatio": 0.67
@@ -7228,6 +7214,20 @@ export const galleryMetadata: GalleryMetadata = {
       },
       "width": 1201,
       "height": 1800
+    },
+    {
+      "id": "magda-chudzik-documentary-photography-womens-ice-hockey-038",
+      "alt": "magda chudzik documentary photography womens ice hockey",
+      "variants": {
+        "fullsize": {
+          "src": "/images/galleries/projects/womens-ice-hockey-cracovia/magda-chudzik-documentary-photography-womens-ice-hockey-038.webp",
+          "width": 1800,
+          "height": 1201,
+          "aspectRatio": 1.5
+        }
+      },
+      "width": 1800,
+      "height": 1201
     },
     {
       "id": "magda-chudzik-documentary-photography-womens-ice-hockey-039",
@@ -7697,20 +7697,6 @@ export const galleryMetadata: GalleryMetadata = {
       "variants": {
         "fullsize": {
           "src": "/images/galleries/projects/womens-ice-hockey-cracovia/magda-chudzik-documentary-photography-womens-ice-hockey-072.webp",
-          "width": 1800,
-          "height": 1201,
-          "aspectRatio": 1.5
-        }
-      },
-      "width": 1800,
-      "height": 1201
-    },
-    {
-      "id": "magda-chudzik-documentary-photography-womens-ice-hockey-073",
-      "alt": "magda chudzik documentary photography womens ice hockey",
-      "variants": {
-        "fullsize": {
-          "src": "/images/galleries/projects/womens-ice-hockey-cracovia/magda-chudzik-documentary-photography-womens-ice-hockey-073.webp",
           "width": 1800,
           "height": 1201,
           "aspectRatio": 1.5
