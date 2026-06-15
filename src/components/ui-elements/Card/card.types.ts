@@ -1,8 +1,8 @@
 import { Paths } from '../../../routing/types/routing.types';
 
-export type CardProps = {
+export interface CardProps {
 	bgImage: string;
 	cta: string;
 	path: Paths;
 	title: string;
-};
+}

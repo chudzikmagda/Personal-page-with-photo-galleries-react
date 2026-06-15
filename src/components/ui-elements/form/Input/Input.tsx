@@ -1,9 +1,20 @@
 import React from 'react';
 
 import styles from './input.module.scss';
-import { InputProps } from './input.types';
+import { InputProps, InputType } from './input.types';
 
-const Input: React.FC<InputProps> = ({ error, id, label, name, placeholder, required, value, onValueChange }) => {
+const Input: React.FC<InputProps> = ({
+	autoComplete,
+	error,
+	id,
+	label,
+	name,
+	placeholder,
+	required,
+	type = InputType.TEXT,
+	value,
+	onValueChange
+}) => {
 	const onInputValueChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
 		onValueChange(event.target.value);
 	};
@@ -20,12 +31,14 @@ const Input: React.FC<InputProps> = ({ error, id, label, name, placeholder, requ
 			</label>
 			<div className={styles.input__wrapper}>
 				<input
-					type="text"
+					type={type}
 					id={id}
 					name={name}
 					value={value}
 					className={styles.input__element}
 					placeholder={placeholder}
+					autoComplete={autoComplete}
+					required={required}
 					onChange={onInputValueChange}
 				/>
 				<span className={styles.input__error}>{error}</span>

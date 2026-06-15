@@ -9,7 +9,8 @@ const dirname = path.dirname(filename);
 const GALLERIES = [
 	{ key: 'city', path: 'city' },
 	{ key: 'colorLandscapes', path: 'landscapes/color' },
-	{ key: 'bwLandscapes', path: 'landscapes/black-and-white' }
+	{ key: 'bwLandscapes', path: 'landscapes/black-and-white' },
+	{ key: 'projectsWomensIceHockeyCracovia', path: 'projects/womens-ice-hockey-cracovia' }
 ];
 const GALLERY_IMAGES_DIR = path.join(dirname, 'public/images/galleries');
 const GALLERY_METADATA_OUTPUT_FILE = path.join(dirname, 'src/shared/metadata/galleryImageMetadata.ts');
@@ -42,6 +43,10 @@ const logMessage = (type, message) => {
 };
 
 const sort = (items) => items.sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true }));
+
+const getPreferredVariant = (variants) => {
+	return variants.fullsize || variants['1024w'] || variants['768w'] || variants['480w'] || variants.lowQuality || Object.values(variants)[0];
+};
 
 const assignVariant = (file, id, imageData, groupedFiles) => {
 	switch (true) {
@@ -107,7 +112,17 @@ const scanFolder = async (relativeFolderPath) => {
 			}
 		}
 	}
-	return sort(Object.values(groupedFiles));
+	const galleryItems = Object.values(groupedFiles).map((item) => {
+		const preferredVariant = getPreferredVariant(item.variants);
+
+		return {
+			...item,
+			width: preferredVariant?.width ?? 0,
+			height: preferredVariant?.height ?? 0
+		};
+	});
+
+	return sort(galleryItems);
 };
 
 const getGalleryMetadata = async () => {

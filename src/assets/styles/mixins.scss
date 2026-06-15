@@ -47,3 +47,18 @@
 @mixin cursor() {
 	cursor: pointer;
 }
+
+/* Truncate text to a given number of lines with ellipsis */
+@mixin line-clamp($lines: 2) {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $lines;
+	text-overflow: ellipsis;
+	white-space: normal;
+
+	@supports (line-clamp: 2) {
+		line-clamp: $lines;
+		display: block;
+	}
+}
