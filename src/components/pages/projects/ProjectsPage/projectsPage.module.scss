@@ -1,0 +1,69 @@
+@use '../../../../assets/styles/variables.scss' as *;
+@use '../../../../assets/styles/colors.scss' as *;
+@use '../../../../assets/styles/mixins.scss' as *;
+@use '../../../../assets/styles/wrappers.scss' as *;
+
+.projects {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+	width: 100%;
+	height: 100%;
+
+	@include breakpoint(large) {
+		grid-template-columns: repeat(3, minmax(250px, 1fr));
+	}
+
+	&__wrapper {
+		@include flex($align-items: flex-start, $justify-content: flex-start);
+		gap: 8px;
+	}
+
+	&__image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 8px;
+		transform: scale(1);
+		@include transition(transform);
+		position: relative;
+		z-index: 1;
+	}
+
+	&__title {
+		line-height: 1.1;
+	}
+
+	& > .projects__wrapper > .projects__image-container {
+		position: relative;
+		overflow: hidden;
+		border-radius: 8px;
+		background-color: transparent;
+		z-index: 1;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: $primary-color;
+			opacity: 0;
+			mix-blend-mode: multiply;
+			pointer-events: none;
+			border-radius: inherit;
+			z-index: 1;
+			@include transition(opacity);
+		}
+
+		&:hover .projects__image {
+			transform: scale(1.06);
+		}
+
+		&:hover::after {
+			opacity: 1;
+			background-color: $primary-color;
+		}
+	}
+}

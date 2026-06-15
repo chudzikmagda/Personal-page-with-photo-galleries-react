@@ -10,6 +10,7 @@ import * as LandscapePage from './LandscapePage.json';
 import * as Menu from './Menu.json';
 import * as PageNotFound from './PageNotFound.json';
 import * as PrintsPage from './PrintsPage.json';
+import * as ProjectsPage from './ProjectsPage.json';
 import * as Spinner from './Spinner.json';
 import * as WomensIceHockeyCracoviaPage from './WomensIceHockeyCracoviaPage.json';
 
@@ -26,6 +27,7 @@ export {
 	Menu,
 	PageNotFound,
 	PrintsPage,
+	ProjectsPage,
 	Spinner,
 	WomensIceHockeyCracoviaPage
 };

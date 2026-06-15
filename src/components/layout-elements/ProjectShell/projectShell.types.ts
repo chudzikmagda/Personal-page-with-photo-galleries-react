@@ -1,11 +1,9 @@
 import { GalleryItem } from '../../../shared/types/gallery.types';
-
-export enum ProjectShellBaseKey {
-	PROJECTWOMENSICEHOKEYCRACOVIA = 'WomensIceHockeyCracoviaPage'
-}
+import { ProjectBaseKey } from '../../pages/projects/projects.types';
+export { ProjectBaseKey } from '../../pages/projects/projects.types';
 
 export type ProjectShellProps = {
-	baseKey: ProjectShellBaseKey;
+	baseKey: ProjectBaseKey;
 	images: GalleryItem[];
 	title: string;
 	description?: string;
