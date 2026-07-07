@@ -9,31 +9,35 @@ import { Paths } from './types/routing.types';
 const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	{
 		path: Paths.ABOUT,
-		element: lazyLoadRoute('AboutMePage/AboutMePage') // Assumes folder/file structure matches
+		element: lazyLoadRoute('AboutMePage')
 	},
 	{
 		path: Paths.CITY,
-		element: lazyLoadRoute('CityPage/CityPage')
+		element: lazyLoadRoute('CityPage')
 	},
 	{
 		path: Paths.CONTACT,
-		element: lazyLoadRoute('ContactPage/ContactPage')
+		element: lazyLoadRoute('ContactPage')
 	},
 	{
 		path: Paths.LANDSCAPE,
-		element: lazyLoadRoute('LandscapePage/LandscapePage')
+		element: lazyLoadRoute('LandscapePage')
 	},
 	{
 		path: `${Paths.LANDSCAPE}/${Paths.BW_LANDSCAPE}`,
-		element: lazyLoadRoute('BwLandscapePage/BwLandscapePage')
+		element: lazyLoadRoute('BwLandscapePage')
 	},
 	{
 		path: `${Paths.LANDSCAPE}/${Paths.COLOR_LANDSCAPE}`,
-		element: lazyLoadRoute('ColorLandscapePage/ColorLandscapePage')
+		element: lazyLoadRoute('ColorLandscapePage')
 	},
 	{
 		path: `${Paths.PROJECTS}`,
-		element: lazyLoadRoute('projects/ProjectsPage/ProjectsPage')
+		element: (
+			<Suspense fallback={<Spinner />}>
+				{React.createElement(lazy(() => import('../components/pages/projects/ProjectsPage/ProjectsPage')))}
+			</Suspense>
+		)
 	},
 	{
 		path: `${Paths.PROJECTS}/${ProjectPaths.WOMENS_ICE_HOCKEY_CRACOVIA}`,
@@ -45,15 +49,15 @@ const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	},
 	{
 		path: Paths.PRINTS,
-		element: lazyLoadRoute('PrintsPage/PrintsPage')
+		element: lazyLoadRoute('PrintsPage')
 	},
 	{
 		path: '/',
-		element: lazyLoadRoute('HomePage/HomePage')
+		element: lazyLoadRoute('HomePage')
 	},
 	{
 		path: '*',
-		element: lazyLoadRoute('PageNotFound/PageNotFound')
+		element: lazyLoadRoute('PageNotFound')
 	}
 ]);
 
