@@ -5,7 +5,6 @@ import Spinner from '../components/ui-elements/Spinner/Spinner';
 import useLazyLoadRoute from '../hooks/useLazyLoadRoute/useLazyLoadRoute';
 import { ProjectPaths } from '../shared/types/projects.types';
 import { Paths } from './types/routing.types';
-import WomensIceHockeyCracoviaPagePasswordProtectedRoute from './WomenIceHockeyCracoviaPagePasswordProtectedRoute';
 
 const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	{
@@ -43,11 +42,9 @@ const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	{
 		path: `${Paths.PROJECTS}/${ProjectPaths.WOMENS_ICE_HOCKEY_CRACOVIA}`,
 		element: (
-			<WomensIceHockeyCracoviaPagePasswordProtectedRoute>
-				<Suspense fallback={<Spinner />}>
-					{React.createElement(lazy(() => import('./../components/pages/projects/WomensIceHockeyCracovia/WomensIceHockeyCracoviaPage')))}
-				</Suspense>
-			</WomensIceHockeyCracoviaPagePasswordProtectedRoute>
+			<Suspense fallback={<Spinner />}>
+				{React.createElement(lazy(() => import('./../components/pages/projects/WomensIceHockeyCracovia/WomensIceHockeyCracoviaPage')))}
+			</Suspense>
 		)
 	},
 	{
