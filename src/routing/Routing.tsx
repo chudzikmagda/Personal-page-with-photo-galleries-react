@@ -43,7 +43,7 @@ const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 		path: `${Paths.PROJECTS}/${ProjectPaths.WOMENS_ICE_HOCKEY_CRACOVIA}`,
 		element: (
 			<Suspense fallback={<Spinner />}>
-				{React.createElement(lazy(() => import('./../components/pages/projects/WomensIceHockeyCracovia/WomensIceHockeyCracoviaPage')))}
+				{React.createElement(lazy(() => import('../components/pages/projects/WomensIceHockeyCracovia/WomensIceHockeyCracoviaPage')))}
 			</Suspense>
 		)
 	},
