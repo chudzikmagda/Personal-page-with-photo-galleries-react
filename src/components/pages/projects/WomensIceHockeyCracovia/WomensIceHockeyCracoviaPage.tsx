@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { galleryMetadata } from '../../../../shared/metadata/galleryImageMetadata';
+import { galleryMetadataProjectsWomensIceHockeyCracovia } from '../../../../shared/metadata/galleryMetadata.projectsWomensIceHockeyCracovia';
 import { Projects } from '../../../../shared/types/projects.types';
 import ProjectShell from '../../../layout-elements/ProjectShell/ProjectShell';
 
@@ -8,7 +8,7 @@ const WomensIceHockeyCracoviaPage: React.FC = () => {
 	return (
 		<ProjectShell
 			baseKey={Projects.WOMENSICEHOCKEYCRACOVIA}
-			images={galleryMetadata.projectsWomensIceHockeyCracovia}
+			images={galleryMetadataProjectsWomensIceHockeyCracovia}
 			title={`${Projects.WOMENSICEHOCKEYCRACOVIA}.title`}
 			description={`${Projects.WOMENSICEHOCKEYCRACOVIA}.description`}
 		/>

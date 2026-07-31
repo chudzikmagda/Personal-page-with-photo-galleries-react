@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
 import PrevIcon from './../../../assets/images/template/lightbox/arrow-left.svg?react';
@@ -10,32 +10,49 @@ import styles from './lightbox.module.scss';
 import { LightboxProps } from './lightbox.types';
 
 const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage }) => {
+	const OPEN_DELAY_MS = 10;
+	const IMAGE_TRANSITION_MS = 200;
+
 	const imageRef = useRef<HTMLDivElement | null>(null);
+	const openTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+	const transitionTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 	const [index, setIndex] = useState<number>(currentIndex);
 	const [showImage, setShowImage] = useState<boolean>(true);
 	const [isOpen, setIsOpen] = useState(false);
 
 	useEffect(() => {
-		setTimeout(() => setIsOpen(true), 10);
+		openTimeoutRef.current = setTimeout(() => setIsOpen(true), OPEN_DELAY_MS);
+
+		return () => {
+			if (openTimeoutRef.current) {
+				clearTimeout(openTimeoutRef.current);
+			}
+			if (transitionTimeoutRef.current) {
+				clearTimeout(transitionTimeoutRef.current);
+			}
+		};
 	}, []);
 
-	const goToNextImage = (): void => {
+	const scheduleTransition = useCallback((getNextIndex: (prevIndex: number) => number): void => {
 		setShowImage(false);
+		if (transitionTimeoutRef.current) {
+			clearTimeout(transitionTimeoutRef.current);
+		}
 
-		setTimeout(() => {
-			setIndex((prevIndex) => (prevIndex + 1) % images.length);
+		transitionTimeoutRef.current = setTimeout(() => {
+			setIndex((prevIndex) => getNextIndex(prevIndex));
 			setShowImage(true);
-		}, 200);
-	};
+			transitionTimeoutRef.current = null;
+		}, IMAGE_TRANSITION_MS);
+	}, []);
 
-	const goToPreviousImage = (): void => {
-		setShowImage(false);
+	const goToNextImage = useCallback((): void => {
+		scheduleTransition((prevIndex) => (prevIndex + 1) % images.length);
+	}, [images.length, scheduleTransition]);
 
-		setTimeout(() => {
-			setIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-			setShowImage(true);
-		}, 200);
-	};
+	const goToPreviousImage = useCallback((): void => {
+		scheduleTransition((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+	}, [images.length, scheduleTransition]);
 
 	const isButtonClicked = (className: string, clickedElement: HTMLElement): boolean | undefined => {
 		return clickedElement.parentElement?.classList.value.includes(className);
@@ -45,27 +62,33 @@ const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage })
 		return clickedElement instanceof HTMLImageElement;
 	};
 
-	const onCloseLightbox = (event: React.MouseEvent<HTMLDivElement | HTMLButtonElement>): void => {
-		const clickedElement: HTMLElement = event.target as HTMLElement;
-		if (
-			isImageClicked(clickedElement) ||
-			isButtonClicked('lightbox__prevButton', clickedElement) ||
-			isButtonClicked('lightbox__nextButton', clickedElement)
-		) {
-			return;
-		}
-		setShowImage(false);
-		closeImage(false);
-	};
+	const onCloseLightbox = useCallback(
+		(event: React.MouseEvent<HTMLDivElement | HTMLButtonElement>): void => {
+			const clickedElement: HTMLElement = event.target as HTMLElement;
+			if (
+				isImageClicked(clickedElement) ||
+				isButtonClicked('lightbox__prevButton', clickedElement) ||
+				isButtonClicked('lightbox__nextButton', clickedElement)
+			) {
+				return;
+			}
+			setShowImage(false);
+			closeImage(false);
+		},
+		[closeImage]
+	);
 
-	const handleSwipeEvent = (direction: SWIPE_DIRECTION) => {
-		switch (direction) {
-			case SWIPE_DIRECTION.RIGHT:
-				return goToPreviousImage();
-			case SWIPE_DIRECTION.LEFT:
-				return goToNextImage();
-		}
-	};
+	const handleSwipeEvent = useCallback(
+		(direction: SWIPE_DIRECTION) => {
+			switch (direction) {
+				case SWIPE_DIRECTION.RIGHT:
+					return goToPreviousImage();
+				case SWIPE_DIRECTION.LEFT:
+					return goToNextImage();
+			}
+		},
+		[goToNextImage, goToPreviousImage]
+	);
 
 	useEffect((): (() => void) => {
 		const onKeyDownClick = (event: KeyboardEvent): void => {
@@ -83,7 +106,7 @@ const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage })
 		return () => {
 			document.removeEventListener('keydown', onKeyDownClick);
 		};
-	});
+	}, [closeImage, goToNextImage, goToPreviousImage]);
 
 	return (
 		<div
@@ -105,11 +128,7 @@ const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage })
 				unmountOnExit>
 				<div className={styles['lightbox__image-wrapper']}>
 					<div ref={imageRef} className={styles['lightbox__image-container']}>
-						<LightboxImageComponent
-							variants={images[index].variants}
-							alt={images[index].alt}
-							onSwipe={(direction: SWIPE_DIRECTION) => handleSwipeEvent(direction)}
-						/>
+						<LightboxImageComponent variants={images[index].variants} alt={images[index].alt} onSwipe={handleSwipeEvent} />
 					</div>
 				</div>
 			</CSSTransition>

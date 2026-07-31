@@ -4,6 +4,7 @@ export interface ImageSources {
 	lowQualitySrc: string;
 	fullSizeSrc: string;
 	srcSet?: string;
+	sizes?: string;
 }
 
 export interface ImageStyles {

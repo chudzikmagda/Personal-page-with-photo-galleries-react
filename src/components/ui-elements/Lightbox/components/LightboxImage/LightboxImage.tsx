@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import { ImageDimension } from '../../../../../shared/types/image.types';
 import { createSrcSet } from '../../../../../shared/utils/imageUtils';
+import { ImageLoading } from '../../../Image/image.types';
 import ImageWithPlaceholder from '../../../ImageWithPlaceholder/ImageWithPlaceholder';
 import styles from './lightboxImage.module.scss';
 import { LightboxImageProps, SWIPE_DIRECTION } from './lightboxImage.types';
@@ -41,9 +42,11 @@ const LightboxImageComponent: React.FC<LightboxImageProps> = ({ variants, alt, o
 				imageSources={{
 					lowQualitySrc: variants[ImageDimension.LOW_QUALITY]?.src,
 					fullSizeSrc: variants[ImageDimension.FULLSIZE]?.src,
-					srcSet: createSrcSet(variants)
+					srcSet: createSrcSet(variants),
+					sizes: '100vw'
 				}}
 				alt={alt ?? 'Magda Chudzik photography'}
+				loading={ImageLoading.Eager}
 				imageStyles={{
 					className: styles['lightbox-image'],
 					placeholderClassName: styles['lightbox-image__lowquality'],

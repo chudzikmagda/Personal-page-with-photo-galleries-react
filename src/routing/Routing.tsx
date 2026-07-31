@@ -1,63 +1,53 @@
-import React, { lazy, Suspense } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
-import Spinner from '../components/ui-elements/Spinner/Spinner';
 import { ProjectPaths } from '../shared/types/projects.types';
-import lazyLoadRoute from '../shared/utils/lazyLoadRouteUtils';
+import lazyRouteElement from '../shared/utils/lazyLoadRouteUtils';
 import { Paths } from './types/routing.types';
 
 const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 	{
 		path: Paths.ABOUT,
-		element: lazyLoadRoute('AboutMePage')
+		element: lazyRouteElement(() => import('../components/pages/AboutMePage/AboutMePage'))
 	},
 	{
 		path: Paths.CITY,
-		element: lazyLoadRoute('CityPage')
+		element: lazyRouteElement(() => import('../components/pages/CityPage/CityPage'))
 	},
 	{
 		path: Paths.CONTACT,
-		element: lazyLoadRoute('ContactPage')
+		element: lazyRouteElement(() => import('../components/pages/ContactPage/ContactPage'))
 	},
 	{
 		path: Paths.LANDSCAPE,
-		element: lazyLoadRoute('LandscapePage')
+		element: lazyRouteElement(() => import('../components/pages/LandscapePage/LandscapePage'))
 	},
 	{
 		path: `${Paths.LANDSCAPE}/${Paths.BW_LANDSCAPE}`,
-		element: lazyLoadRoute('BwLandscapePage')
+		element: lazyRouteElement(() => import('../components/pages/BwLandscapePage/BwLandscapePage'))
 	},
 	{
 		path: `${Paths.LANDSCAPE}/${Paths.COLOR_LANDSCAPE}`,
-		element: lazyLoadRoute('ColorLandscapePage')
+		element: lazyRouteElement(() => import('../components/pages/ColorLandscapePage/ColorLandscapePage'))
 	},
 	{
 		path: `${Paths.PROJECTS}`,
-		element: (
-			<Suspense fallback={<Spinner />}>
-				{React.createElement(lazy(() => import('../components/pages/projects/ProjectsPage/ProjectsPage')))}
-			</Suspense>
-		)
+		element: lazyRouteElement(() => import('../components/pages/projects/ProjectsPage/ProjectsPage'))
 	},
 	{
 		path: `${Paths.PROJECTS}/${ProjectPaths.WOMENS_ICE_HOCKEY_CRACOVIA}`,
-		element: (
-			<Suspense fallback={<Spinner />}>
-				{React.createElement(lazy(() => import('../components/pages/projects/WomensIceHockeyCracovia/WomensIceHockeyCracoviaPage')))}
-			</Suspense>
-		)
+		element: lazyRouteElement(() => import('../components/pages/projects/WomensIceHockeyCracovia/WomensIceHockeyCracoviaPage'))
 	},
 	{
 		path: Paths.PRINTS,
-		element: lazyLoadRoute('PrintsPage')
+		element: lazyRouteElement(() => import('../components/pages/PrintsPage/PrintsPage'))
 	},
 	{
 		path: '/',
-		element: lazyLoadRoute('HomePage')
+		element: lazyRouteElement(() => import('../components/pages/HomePage/HomePage'))
 	},
 	{
 		path: '*',
-		element: lazyLoadRoute('PageNotFound')
+		element: lazyRouteElement(() => import('../components/pages/PageNotFound/PageNotFound'))
 	}
 ]);
 
