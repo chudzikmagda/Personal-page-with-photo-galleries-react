@@ -1,6 +1,6 @@
 import React from 'react';
 
-import KebabMenu from '../../ui-elements/KebabMenu/KebabMenu';
+import IconMenu from '../../ui-elements/IconMenu/IconMenu';
 import Logotype from '../../ui-elements/Logotype/Logotype';
 import Menu from '../../ui-elements/Menu/Menu';
 import styles from './header.module.scss';
@@ -14,8 +14,8 @@ const Header: React.FC = () => {
 			<div className={styles.header__menu}>
 				<Menu />
 			</div>
-			<div className={styles.header__kebab}>
-				<KebabMenu />
+			<div className={styles['header__icon-menu']}>
+				<IconMenu />
 			</div>
 		</header>
 	);

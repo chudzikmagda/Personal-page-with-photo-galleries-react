@@ -59,6 +59,10 @@
 			overflow: visible;
 		}
 	}
+
+	&__icons {
+		display: none;
+	}
 }
 
 .hamburger {
@@ -122,7 +126,7 @@
 			left: 0;
 			right: 0;
 			bottom: 0;
-			@include flex();
+			@include flex($justify-content: center);
 			gap: 16px;
 			background-color: $primary-light;
 			animation: menuAnimation 0.5s ease-in-out;
@@ -133,6 +137,14 @@
 					opacity: 0;
 					animation: menuItemAnimation 0.5s ease-in-out forwards;
 				}
+			}
+
+			.menu__icons {
+				display: flex;
+				gap: 12px;
+				margin-top: 48px;
+				justify-content: center;
+				align-items: center;
 			}
 		}
 	}

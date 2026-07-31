@@ -2,6 +2,7 @@ import React, { Dispatch, SetStateAction, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 
+import IconMenu from '../IconMenu/IconMenu';
 import { menuItems } from './menu.data';
 import styles from './menu.module.scss';
 import { MenuItem } from './menu.types';
@@ -42,6 +43,9 @@ const Menu: React.FC = () => {
 						</span>
 					);
 				})}
+				<div className={styles['menu__icons']}>
+					<IconMenu />
+				</div>
 			</nav>
 		</>
 	);

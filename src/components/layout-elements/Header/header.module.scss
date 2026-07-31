@@ -1,4 +1,6 @@
 @use './../../../assets/styles/variables.scss' as *;
+@use './../../../assets/styles/colors.scss' as *;
+
 @use './../../../assets/styles/mixins.scss' as *;
 
 .header {
@@ -22,10 +24,9 @@
 		@include flex($justify-content: flex-end);
 	}
 
-	&__kebab {
-		justify-self: end;
-		@include flex($justify-content: flex-end);
+	&__icon-menu {
 		display: none;
+		justify-self: end;
 	}
 
 	@include breakpoint(large) {
@@ -33,14 +34,14 @@
 		height: $header-height;
 		padding: 0 4 * $padding-basic;
 
+		&__icon-menu {
+			display: flex;
+		}
+
 		&__menu {
 			justify-self: center;
 			width: 100%;
 			@include flex($justify-content: center);
-		}
-
-		&__kebab {
-			display: flex;
 		}
 	}
 

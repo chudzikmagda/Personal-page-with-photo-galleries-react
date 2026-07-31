@@ -1,0 +1,24 @@
+@use './../../../assets/styles/colors.scss' as *;
+
+.tooltip {
+	background: var(--primary-dark);
+	color: var(--primary-light);
+	padding: 6px 8px;
+	border-radius: 4px;
+	font-size: 0.75rem;
+	line-height: 1.35;
+	max-width: min(280px, calc(100vw - 16px));
+	white-space: normal;
+	overflow-wrap: break-word;
+	word-break: normal;
+	text-align: center;
+	pointer-events: none;
+	z-index: 1000;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.reference {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}

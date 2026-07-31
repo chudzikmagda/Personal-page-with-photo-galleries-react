@@ -15,8 +15,7 @@
 	--secondary-color: var(--primary-dark);
 	--grey-light: rgba(226, 226, 226, 1);
 	--grey-medium: rgba(153, 153, 153, 1);
-	--grey-switch: rgba(217, 217, 217, 1);
-	--grey-hover-switch: rgba(195, 193, 193, 1);
+	--grey-dark: rgba(13, 15, 18, 0.92);
 	--text-dark: var(--primary-dark);
 	--text-light: var(--primary-light);
 	--success: rgba(155, 242, 75, 1);
@@ -47,8 +46,7 @@ body.dark {
 	--secondary-color: var(--primary-dark);
 	--grey-light: rgba(53, 52, 52, 1);
 	--grey-medium: rgba(153, 153, 153, 1);
-	--grey-switch: rgba(82, 82, 82, 1);
-	--grey-hover-switch: rgba(195, 193, 193, 1);
+	--grey-dark: rgba(55, 57, 60, 0.96);
 	--text-dark: var(--primary-dark);
 	--text-light: var(--primary-light);
 }
