@@ -11,9 +11,12 @@ import { LightboxProps } from './lightbox.types';
 
 const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage }) => {
 	const OPEN_DELAY_MS = 10;
-	const IMAGE_TRANSITION_MS = 200;
+	const IMAGE_TRANSITION_MS = {
+		enter: 800,
+		exit: 400
+	};
 
-	const imageRef = useRef<HTMLDivElement | null>(null);
+	const imageTransitionRef = useRef<HTMLDivElement | null>(null);
 	const openTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 	const transitionTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 	const [index, setIndex] = useState<number>(currentIndex);
@@ -43,7 +46,7 @@ const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage })
 			setIndex((prevIndex) => getNextIndex(prevIndex));
 			setShowImage(true);
 			transitionTimeoutRef.current = null;
-		}, IMAGE_TRANSITION_MS);
+		}, IMAGE_TRANSITION_MS.exit);
 	}, []);
 
 	const goToNextImage = useCallback((): void => {
@@ -54,22 +57,10 @@ const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage })
 		scheduleTransition((prevIndex) => (prevIndex - 1 + images.length) % images.length);
 	}, [images.length, scheduleTransition]);
 
-	const isButtonClicked = (className: string, clickedElement: HTMLElement): boolean | undefined => {
-		return clickedElement.parentElement?.classList.value.includes(className);
-	};
-
-	const isImageClicked = (clickedElement: HTMLElement): boolean => {
-		return clickedElement instanceof HTMLImageElement;
-	};
-
 	const onCloseLightbox = useCallback(
 		(event: React.MouseEvent<HTMLDivElement | HTMLButtonElement>): void => {
 			const clickedElement: HTMLElement = event.target as HTMLElement;
-			if (
-				isImageClicked(clickedElement) ||
-				isButtonClicked('lightbox__prevButton', clickedElement) ||
-				isButtonClicked('lightbox__nextButton', clickedElement)
-			) {
+			if (clickedElement.closest('img') || clickedElement.closest('button')) {
 				return;
 			}
 			setShowImage(false);
@@ -111,31 +102,38 @@ const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage })
 	return (
 		<div
 			onClick={(e: React.MouseEvent<HTMLDivElement>) => onCloseLightbox(e)}
+			role="dialog"
+			aria-modal="true"
+			aria-label="Image lightbox"
 			className={`${styles.lightbox} ${styles['lightbox-animation']} ${isOpen ? styles['lightbox-animation--open'] : ''}`}>
-			<button onClick={(e: React.MouseEvent<HTMLButtonElement>) => onCloseLightbox(e)} className={styles.lightbox__closeButton}>
+			<button
+				type="button"
+				aria-label="Close lightbox"
+				onClick={(e: React.MouseEvent<HTMLButtonElement>) => onCloseLightbox(e)}
+				className={styles.lightbox__closeButton}>
 				<CloseIcon />
 			</button>
 			<CSSTransition
 				in={showImage}
-				timeout={200}
+				timeout={IMAGE_TRANSITION_MS}
 				classNames={{
 					enter: styles['lightbox__image-enter'],
 					enterActive: styles['lightbox__image-enter--active'],
 					exit: styles['lightbox__image-exit'],
 					exitActive: styles['lightbox__image-exit--active']
 				}}
-				nodeRef={imageRef}
+				nodeRef={imageTransitionRef}
 				unmountOnExit>
-				<div className={styles['lightbox__image-wrapper']}>
-					<div ref={imageRef} className={styles['lightbox__image-container']}>
+				<div ref={imageTransitionRef} className={styles['lightbox__image-wrapper']}>
+					<div className={styles['lightbox__image-container']}>
 						<LightboxImageComponent variants={images[index].variants} alt={images[index].alt} onSwipe={handleSwipeEvent} />
 					</div>
 				</div>
 			</CSSTransition>
-			<button onClick={goToPreviousImage} className={styles.lightbox__prevButton}>
+			<button type="button" aria-label="Previous image" onClick={goToPreviousImage} className={styles.lightbox__prevButton}>
 				<PrevIcon />
 			</button>
-			<button onClick={goToNextImage} className={styles.lightbox__nextButton}>
+			<button type="button" aria-label="Next image" onClick={goToNextImage} className={styles.lightbox__nextButton}>
 				<NextIcon />
 			</button>
 		</div>

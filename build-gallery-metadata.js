@@ -54,6 +54,24 @@ const getPreferredVariant = (variants) => {
 	return variants.fullsize || variants['1024w'] || variants['768w'] || variants['480w'] || variants.lowQuality || Object.values(variants)[0];
 };
 
+const REQUIRED_VARIANT_KEYS = ['480w', '768w', '1024w', 'lowQuality', 'fullsize'];
+
+const ensureRequiredVariants = (variants) => {
+	const fallbackVariant = getPreferredVariant(variants);
+	if (!fallbackVariant) {
+		return variants;
+	}
+
+	const normalizedVariants = { ...variants };
+	REQUIRED_VARIANT_KEYS.forEach((variantKey) => {
+		if (!normalizedVariants[variantKey]) {
+			normalizedVariants[variantKey] = fallbackVariant;
+		}
+	});
+
+	return normalizedVariants;
+};
+
 const assignVariant = (file, id, imageData, groupedFiles) => {
 	switch (true) {
 		case file.includes('-480w'):
@@ -119,10 +137,12 @@ const scanFolder = async (relativeFolderPath) => {
 		}
 	}
 	const galleryItems = Object.values(groupedFiles).map((item) => {
-		const preferredVariant = getPreferredVariant(item.variants);
+		const variants = ensureRequiredVariants(item.variants);
+		const preferredVariant = getPreferredVariant(variants);
 
 		return {
 			...item,
+			variants,
 			width: preferredVariant?.width ?? 0,
 			height: preferredVariant?.height ?? 0
 		};

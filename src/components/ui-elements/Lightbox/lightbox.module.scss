@@ -121,3 +121,15 @@ body:has(.lightbox) {
 		transform: scale(1);
 	}
 }
+
+@media (prefers-reduced-motion: reduce) {
+	.lightbox,
+	.lightbox__image-wrapper,
+	.lightbox__image-enter--active,
+	.lightbox__image-exit--active,
+	.lightbox-animation,
+	.lightbox-animation--open {
+		transition: none;
+		transform: none;
+	}
+}
