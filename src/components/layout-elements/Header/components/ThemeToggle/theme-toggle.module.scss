@@ -1,0 +1,29 @@
+@use './../../../../../assets/styles/variables.scss' as *;
+@use './../../../../../assets/styles/colors.scss' as *;
+@use './../../../../../assets/styles/mixins.scss' as *;
+
+.control {
+	background: transparent;
+	position: relative;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: $border-radius;
+	width: $icon-size;
+	height: $icon-size;
+	padding: 0;
+	cursor: pointer;
+	color: #d4af37;
+	transition: background-color 0.15s ease, transform 0.08s ease, color 0.15s ease;
+
+	svg {
+		width: $icon-size;
+		height: $icon-size;
+	}
+
+	&:hover {
+		background-color: transparent;
+		color: $primary-dark;
+	}
+}

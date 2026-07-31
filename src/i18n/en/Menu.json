@@ -4,5 +4,7 @@
 	"landscape": "Landscape",
 	"prints": "Prints",
 	"contact": "Contact",
-	"projects": "Projects"
+	"projects": "Projects",
+	"changeLanguage": "Change language",
+	"changeMode": "Change mode"
 }
