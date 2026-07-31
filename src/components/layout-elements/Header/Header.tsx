@@ -1,8 +1,8 @@
 import React from 'react';
 
+import IconMenu from '../../ui-elements/IconMenu/IconMenu';
 import Logotype from '../../ui-elements/Logotype/Logotype';
 import Menu from '../../ui-elements/Menu/Menu';
-import IconMenu from './components/IconMenu/IconMenu';
 import styles from './header.module.scss';
 
 const Header: React.FC = () => {

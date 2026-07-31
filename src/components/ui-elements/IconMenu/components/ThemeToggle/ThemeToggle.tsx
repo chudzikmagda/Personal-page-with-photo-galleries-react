@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import ThemeContext from '../../../../../contexts/ThemeContext';
 import { Themes } from '../../../../../contexts/types/theme.types';
-import Tooltip from '../../../../ui-elements/Tooltip/Tooltip';
+import Tooltip from '../../../Tooltip/Tooltip';
 import MoonIcon from '../SvgIcons/MoonIcon';
 import SunIcon from '../SvgIcons/SunIcon';
 import styles from './theme-toggle.module.scss';
@@ -17,17 +17,12 @@ const ThemeToggle: React.FC = () => {
 		themeContext.onChange(newTheme);
 	};
 
-	const iconColor = themeContext.state === Themes.DARK ? 'rgb(253, 253, 253)' : 'rgb(15, 15, 15)';
-
 	return (
-		<button
-			type="button"
-			aria-label="Toggle theme"
-			className={`${styles.control}`}
-			onClick={toggleTheme}
-			style={{ '--icon-color': iconColor } as React.CSSProperties}>
-			<Tooltip text={t('Menu.changeMode')}>{themeContext.state === Themes.DARK ? <MoonIcon /> : <SunIcon />}</Tooltip>
-		</button>
+		<Tooltip text={t('Menu.changeMode')}>
+			<button type="button" aria-label={t('Menu.changeMode')} className={`${styles.control}`} onClick={toggleTheme}>
+				{themeContext.state === Themes.DARK ? <MoonIcon /> : <SunIcon />}
+			</button>
+		</Tooltip>
 	);
 };
 

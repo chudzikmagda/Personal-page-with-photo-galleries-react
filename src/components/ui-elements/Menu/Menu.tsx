@@ -2,7 +2,7 @@ import React, { Dispatch, SetStateAction, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 
-import IconMenu from '../../layout-elements/Header/components/IconMenu/IconMenu';
+import IconMenu from '../IconMenu/IconMenu';
 import { menuItems } from './menu.data';
 import styles from './menu.module.scss';
 import { MenuItem } from './menu.types';
