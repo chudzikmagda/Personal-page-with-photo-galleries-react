@@ -13,7 +13,7 @@ const GALLERIES = [
 	{ key: 'projectsWomensIceHockeyCracovia', path: 'projects/womens-ice-hockey-cracovia' }
 ];
 const GALLERY_IMAGES_DIR = path.join(dirname, 'public/images/galleries');
-const GALLERY_METADATA_OUTPUT_FILE = path.join(dirname, 'src/shared/metadata/galleryImageMetadata.ts');
+const GALLERY_METADATA_OUTPUT_DIR = path.join(dirname, 'src/shared/metadata');
 
 const getRelativePath = (fullPath) => {
 	const normalized = fullPath.replace(/\\/g, '/');
@@ -44,8 +44,32 @@ const logMessage = (type, message) => {
 
 const sort = (items) => items.sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true }));
 
+const toPascalCase = (value) => value.charAt(0).toUpperCase() + value.slice(1);
+
+const getMetadataVarName = (galleryKey) => `galleryMetadata${toPascalCase(galleryKey)}`;
+
+const getMetadataFileName = (galleryKey) => `galleryMetadata.${galleryKey}.ts`;
+
 const getPreferredVariant = (variants) => {
 	return variants.fullsize || variants['1024w'] || variants['768w'] || variants['480w'] || variants.lowQuality || Object.values(variants)[0];
+};
+
+const REQUIRED_VARIANT_KEYS = ['480w', '768w', '1024w', 'lowQuality', 'fullsize'];
+
+const ensureRequiredVariants = (variants) => {
+	const fallbackVariant = getPreferredVariant(variants);
+	if (!fallbackVariant) {
+		return variants;
+	}
+
+	const normalizedVariants = { ...variants };
+	REQUIRED_VARIANT_KEYS.forEach((variantKey) => {
+		if (!normalizedVariants[variantKey]) {
+			normalizedVariants[variantKey] = fallbackVariant;
+		}
+	});
+
+	return normalizedVariants;
 };
 
 const assignVariant = (file, id, imageData, groupedFiles) => {
@@ -113,10 +137,12 @@ const scanFolder = async (relativeFolderPath) => {
 		}
 	}
 	const galleryItems = Object.values(groupedFiles).map((item) => {
-		const preferredVariant = getPreferredVariant(item.variants);
+		const variants = ensureRequiredVariants(item.variants);
+		const preferredVariant = getPreferredVariant(variants);
 
 		return {
 			...item,
+			variants,
 			width: preferredVariant?.width ?? 0,
 			height: preferredVariant?.height ?? 0
 		};
@@ -133,24 +159,56 @@ const getGalleryMetadata = async () => {
 	return outputData;
 };
 
+const writeGalleryMetadataFile = (galleryKey, galleryItems) => {
+	const varName = getMetadataVarName(galleryKey);
+	const outputPath = path.join(GALLERY_METADATA_OUTPUT_DIR, getMetadataFileName(galleryKey));
+	const outputContent = `// Auto-generated gallery image metadata\nimport { GalleryItem } from '../types/gallery.types';\n\nexport const ${varName}: GalleryItem[] = ${JSON.stringify(
+		galleryItems,
+		null,
+		2
+	)};\n`;
+
+	fs.writeFileSync(outputPath, outputContent);
+};
+
+const writeMetadataIndexFile = () => {
+	const imports = GALLERIES.map((gallery) => {
+		const varName = getMetadataVarName(gallery.key);
+		const fileName = getMetadataFileName(gallery.key).replace('.ts', '');
+		return `import { ${varName} } from './${fileName}';`;
+	}).join('\n');
+
+	const exports = `export {\n${GALLERIES.map((gallery) => `\t${getMetadataVarName(gallery.key)}`).join(',\n')}\n};`;
+
+	const indexContent = `// Auto-generated gallery metadata index\n${imports}\n\n${exports}\n`;
+
+	fs.writeFileSync(path.join(GALLERY_METADATA_OUTPUT_DIR, 'index.ts'), indexContent);
+};
+
+const removeLegacyCombinedFile = () => {
+	const legacyFilePath = path.join(GALLERY_METADATA_OUTPUT_DIR, 'galleryImageMetadata.ts');
+	if (fs.existsSync(legacyFilePath)) {
+		fs.unlinkSync(legacyFilePath);
+	}
+};
+
 const generateGalleryMetadata = async () => {
 	try {
 		logMessage('log', '🚀 Starting metadata generation...');
 
 		const outputData = await getGalleryMetadata();
-		const outputDirectory = path.dirname(GALLERY_METADATA_OUTPUT_FILE);
+		const outputDirectory = GALLERY_METADATA_OUTPUT_DIR;
 
 		if (!fs.existsSync(outputDirectory)) fs.mkdirSync(outputDirectory, { recursive: true });
 
-		const galleryMetadataTs = `// Auto-generated gallery image metadata\nimport { GalleryMetadata } from '../types/gallery.types';\n\nexport const galleryMetadata: GalleryMetadata = ${JSON.stringify(
-			outputData,
-			null,
-			2
-		)};\n`;
+		GALLERIES.forEach((gallery) => {
+			writeGalleryMetadataFile(gallery.key, outputData[gallery.key]);
+		});
 
-		fs.writeFileSync(GALLERY_METADATA_OUTPUT_FILE, galleryMetadataTs);
+		writeMetadataIndexFile();
+		removeLegacyCombinedFile();
 
-		logMessage('log', '✅ Done! Metadata saved');
+		logMessage('log', '✅ Done! Metadata saved as per-gallery files');
 	} catch (err) {
 		logMessage('error', `Critical error: ${err}`);
 	}

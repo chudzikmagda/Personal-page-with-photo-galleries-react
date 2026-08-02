@@ -5,15 +5,17 @@ import ImageWithPlaceholder from '../../../ImageWithPlaceholder/ImageWithPlaceho
 import styles from './galleryImage.module.scss';
 import { GalleryImageType } from './galleryImage.types';
 
-const GalleryImage: React.FC<GalleryImageType> = ({ variants, alt }) => {
+const GalleryImage: React.FC<GalleryImageType> = ({ variants, alt, loading, sizes }) => {
 	return (
 		<ImageWithPlaceholder
 			imageSources={{
 				lowQualitySrc: variants.lowQuality.src,
 				fullSizeSrc: variants.fullsize.src,
-				srcSet: createSrcSet(variants)
+				srcSet: createSrcSet(variants),
+				sizes
 			}}
 			alt={alt}
+			loading={loading}
 			imageStyles={{
 				className: styles['gallery-image'],
 				placeholderClassName: styles['gallery-image__lowquality'],

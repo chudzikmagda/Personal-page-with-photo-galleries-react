@@ -17,3 +17,13 @@
 		background-color: $grey-light;
 	}
 }
+
+@media (prefers-reduced-motion: reduce) {
+	.gallery-image {
+		transition: none;
+
+		&:hover {
+			transform: none;
+		}
+	}
+}

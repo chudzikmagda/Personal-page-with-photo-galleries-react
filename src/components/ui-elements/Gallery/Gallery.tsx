@@ -2,6 +2,7 @@ import React, { JSX, useMemo, useRef, useState } from 'react';
 
 import { useResizeObserver } from '../../../hooks/useResizeObserver/useResizeObserver';
 import { ImageDimension, ImageVariants } from '../../../shared/types/image.types';
+import { ImageLoading } from '../Image/image.types';
 import Lightbox from '../Lightbox/Lightbox';
 import Spinner from '../Spinner/Spinner';
 import GalleryImage from './components/GalleryImage/GalleryImage';
@@ -72,6 +73,7 @@ const Gallery: React.FC<GalleryProps> = ({ heading, images }) => {
 
 	const getTotalAspectRatio = (row: GalleryImageType[]): number => row.reduce((sum, img) => sum + getImageAspectRatio(img), 0);
 	const isLastRow = (rowIndex: number): boolean => rowIndex === galleryRows.length - 1;
+	const eagerImagesCount = 4;
 
 	const renderRow = (row: GalleryImageType[], rowIndex: number, globalStartIndex: number) => {
 		const isLastRowFlag = isLastRow(rowIndex);
@@ -80,17 +82,23 @@ const Gallery: React.FC<GalleryProps> = ({ heading, images }) => {
 		return (
 			<div key={`row-${rowIndex}`} className={`${styles.gallery__row} ${isLastRowFlag ? styles['gallery__row--last'] : ''}`}>
 				{row.map((image: GalleryImageType, index: number) => {
+					const currentImageIndex = globalStartIndex + index;
+					const imageWidth = dynamicRowHeight * getImageAspectRatio(image);
 					return (
 						<div
 							key={image.id}
 							className={`${styles.gallery__item} ${isLastRowFlag ? styles['gallery__item--last'] : ''}`}
 							style={{
 								height: dynamicRowHeight,
-								width: dynamicRowHeight * getImageAspectRatio(image),
+								width: imageWidth,
 								marginRight: isLastRowFlag && index < row.length - 1 ? `${GALLERY_GAP}px` : 0
 							}}>
 							<div onClick={() => openGallery(globalStartIndex + index)} style={{ width: '100%', height: '100%' }}>
-								<GalleryImage {...image} />
+								<GalleryImage
+									{...image}
+									loading={currentImageIndex < eagerImagesCount ? ImageLoading.Eager : ImageLoading.Lazy}
+									sizes={`${Math.ceil(imageWidth)}px`}
+								/>
 							</div>
 						</div>
 					);
