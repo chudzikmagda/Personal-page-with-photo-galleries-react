@@ -4,7 +4,7 @@ import { LanguageContextType, Languages } from './types/languages.types';
 
 const InitialLanguageContext: LanguageContextType = {
 	state: Languages.PL,
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-empty-function
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	onChange: (lang: Languages): void => {}
 };
 
