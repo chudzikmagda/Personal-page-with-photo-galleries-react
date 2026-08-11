@@ -1,7 +1,7 @@
 {
 	"type": "module",
 	"name": "photography",
-	"version": "0.2.0",
+	"version": "1.0.0",
 	"homepage": "https://magdachudzik.pl/",
 	"private": true,
 	"dependencies": {
@@ -43,7 +43,7 @@
 		"@testing-library/react": "^16.3.2",
 		"@testing-library/user-event": "^14.6.0",
 		"@types/jest": "^30.0.0",
-		"@types/node": "^26.2.0",
+		"@types/node": "^20.19.43",
 		"@types/react": "^19.2.18",
 		"@types/react-dom": "^19.2.4",
 		"@typescript-eslint/eslint-plugin": "^8.67.0",
