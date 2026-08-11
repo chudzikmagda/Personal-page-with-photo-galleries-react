@@ -14,7 +14,7 @@ import styles from './ProjectShell.module.scss';
 import { ProjectShellProps } from './projectShell.types';
 
 const ProjectShell: React.FC<ProjectShellProps> = ({ baseKey, images, title, description }) => {
-	const DESCRIPTION_PREVIEW_LIMIT = 256;
+	const DESCRIPTION_PREVIEW_LIMIT = 200;
 	const { t } = useTranslation();
 	const breadcrumbItems: BreadcrumbItem[] = useBreadcrumbs(baseKey);
 	const [isDescriptionExpanded, setIsDescriptionExpanded] = useState(false);

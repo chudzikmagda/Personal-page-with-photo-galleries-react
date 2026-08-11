@@ -7,27 +7,56 @@
 		padding-right: clamp(24px, 6vw, 96px);
 	}
 
-	:global(.swiper-scrollbar) {
-		position: static;
-		margin-top: 1rem;
-		height: 12px;
-		width: 100%;
-		border-radius: 999px;
-		background-color: $grey-light;
-	}
-
-	:global(.swiper-scrollbar-drag) {
-		background: $primary-color;
-		min-width: 36px;
-	}
-
 	:global(.swiper-slide:not(.swiper-slide-active)) {
 		opacity: 0.3;
 		filter: blur(2px);
 	}
 
+	:global(.swiper-button-next),
+	:global(.swiper-button-prev) {
+		color: $primary-color;
+		width: 44px;
+		height: 44px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	:global(.swiper-button-next::after),
+	:global(.swiper-button-prev::after) {
+		color: $primary-color;
+		font-size: 18px;
+	}
+
+	:global(.swiper-pagination) {
+		margin-top: 1rem;
+	}
+
+	:global(.swiper-pagination-bullet) {
+		background: $grey-light;
+		opacity: 0.8;
+	}
+
+	:global(.swiper-pagination-bullet-active) {
+		background: $primary-color;
+		opacity: 1;
+	}
+
 	&__swiper {
 		overflow: visible;
+		order: 1;
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__pagination {
+		width: 100%;
+		margin-top: 1rem;
+		text-align: center;
+		order: 2;
 	}
 
 	&__mobileList {
@@ -64,4 +93,8 @@
 		max-width: 100%;
 		height: 100%;
 	}
+}
+
+:global(.swiper-pagination-bullet) {
+	margin: 0 2px;
 }

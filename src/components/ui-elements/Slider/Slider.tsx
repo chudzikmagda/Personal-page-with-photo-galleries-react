@@ -1,8 +1,9 @@
 /* eslint-disable simple-import-sort/imports */
 import React from 'react';
 import 'swiper/css';
-import 'swiper/css/scrollbar';
-import { Keyboard, Scrollbar } from 'swiper/modules';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Keyboard, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { useIsMobile } from '../../../hooks/useIsMobile/useIsMobile';
@@ -41,29 +42,39 @@ const Slider: React.FC<SliderProps> = ({ images }) => {
 					})}
 				</div>
 			) : (
-				<Swiper
-					slidesPerView="auto"
-					spaceBetween={16}
-					slideToClickedSlide
-					watchSlidesProgress
-					scrollbar={{ draggable: true, hide: false }}
-					keyboard={{ enabled: true, onlyInViewport: false }}
-					modules={[Keyboard, Scrollbar]}
-					className={styles.slider__swiper}>
-					{images.map(({ id, alt, variants }) => {
-						return (
-							<SwiperSlide key={id} className={styles.slider__slide}>
-								<img
-									className={styles.slider__image}
-									{...getImageProps(
-										{ alt, variants },
-										`(max-width: ${Breakpoints.MEDIUM}px) 82vw, (max-width: ${Breakpoints.XLARGE}px) 56vw, 720px`
-									)}
-								/>
-							</SwiperSlide>
-						);
-					})}
-				</Swiper>
+				<div className={styles.slider__inner}>
+					<Swiper
+						loop
+						slidesPerView="auto"
+						spaceBetween={16}
+						slideToClickedSlide
+						watchSlidesProgress
+						pagination={{
+							clickable: true,
+							el: '.' + styles.slider__pagination
+						}}
+						navigation={true}
+						keyboard={{ enabled: true, onlyInViewport: false }}
+						modules={[Keyboard, Navigation, Pagination]}
+						className={styles.slider__swiper}>
+						{images.map(({ id, alt, variants }) => {
+							return (
+								<SwiperSlide key={id} className={styles.slider__slide}>
+									<img
+										className={styles.slider__image}
+										src={variants.fullsize.src}
+										srcSet={createSrcSet(variants)}
+										sizes={`(max-width: ${Breakpoints.MEDIUM}px) 82vw, (max-width: ${Breakpoints.XLARGE}px) 56vw, 720px`}
+										alt={alt}
+										loading={'lazy'}
+									/>
+									<div className="swiper-preloader" />
+								</SwiperSlide>
+							);
+						})}
+					</Swiper>
+					<div className={styles.slider__pagination} />
+				</div>
 			)}
 		</div>
 	);
