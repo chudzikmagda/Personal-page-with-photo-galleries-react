@@ -4,8 +4,9 @@ import { LanguageContextType, Languages } from './types/languages.types';
 
 const InitialLanguageContext: LanguageContextType = {
 	state: Languages.PL,
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-empty-function
-	onChange: (lang: Languages): void => {}
+	onChange: (lang: Languages): void => {
+		void lang;
+	}
 };
 
 const LanguageContext: React.Context<LanguageContextType> = React.createContext(InitialLanguageContext);

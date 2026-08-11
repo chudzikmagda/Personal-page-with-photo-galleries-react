@@ -4,8 +4,9 @@ import { ThemeContextType, Themes } from './types/theme.types';
 
 const InitialThemeContext: ThemeContextType = {
 	state: Themes.LIGHT,
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-empty-function
-	onChange: (theme: Themes): void => {}
+	onChange: (theme: Themes): void => {
+		void theme;
+	}
 };
 
 const ThemeContext: React.Context<ThemeContextType> = React.createContext(InitialThemeContext);
