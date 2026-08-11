@@ -38,6 +38,10 @@ const Router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
 		element: lazyRouteElement(() => import('../components/pages/projects/WomensIceHockeyCracovia/WomensIceHockeyCracoviaPage'))
 	},
 	{
+		path: `${Paths.PROJECTS}/${ProjectPaths.KING_OF_BIEBRZA}`,
+		element: lazyRouteElement(() => import('../components/pages/projects/KingOfBiebrzaRiver/KingOfBiebrzaRiverPage'))
+	},
+	{
 		path: Paths.PRINTS,
 		element: lazyRouteElement(() => import('../components/pages/PrintsPage/PrintsPage'))
 	},

@@ -13,7 +13,7 @@
 
 	&__buttons {
 		@include flex($direction: row, $justify-content: flex-end);
-		gap: $padding-basic;
+		gap: calc($padding-basic * 2);
 	}
 
 	&__enter {

@@ -1,12 +1,6 @@
 {
 	"title": "Walka o każdy krążek",
 	"description": "Fotoreportaż z życia i rozgrywek krakowskiej drużyny hokeistek KS Cracovia 1906",
-	"passwordForm": {
-		"title": "Ta galeria jest zabezpieczona hasłem.",
-		"description": "Wpisz hasło dostępu, aby zobaczyć projekt - Walka o każdy krążek.",
-		"label": "Hasło:",
-		"submitCta": "Odblokuj projekt"
-	},
 	"breadcrumbs": {
 		"start": "Start",
 		"projects": "Projekty",
