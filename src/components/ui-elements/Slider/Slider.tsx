@@ -68,7 +68,6 @@ const Slider: React.FC<SliderProps> = ({ images }) => {
 										alt={alt}
 										loading={'lazy'}
 									/>
-									<div className="swiper-preloader" />
 								</SwiperSlide>
 							);
 						})}

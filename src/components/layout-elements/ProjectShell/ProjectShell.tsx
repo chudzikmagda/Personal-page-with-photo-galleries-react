@@ -28,6 +28,8 @@ const ProjectShell: React.FC<ProjectShellProps> = ({ baseKey, images, title, des
 
 	const isDescriptionLong = descriptionParagraphs.join(' ').length > DESCRIPTION_PREVIEW_LIMIT;
 
+	const leadText = t(`${baseKey}.leadText`);
+
 	return (
 		<>
 			<SEO title={t(`${baseKey}.seo.title`)} description={t(`${baseKey}.seo.description`)} keywords={t(`${baseKey}.seo.keywords`)} />
@@ -38,7 +40,7 @@ const ProjectShell: React.FC<ProjectShellProps> = ({ baseKey, images, title, des
 						<Breadcrumbs items={breadcrumbItems} />
 						<h3 className={styles.title}>{t(title)}</h3>
 						<div className={styles.intro}>
-							{t(`${baseKey}.leadText`) !== `${baseKey}.leadText` && <p className={styles.leadText}>{t(`${baseKey}.leadText`)}</p>}
+							{leadText !== `${baseKey}.leadText` && <p className={styles.leadText}>{leadText}</p>}
 							{description && (
 								<div className={styles.description}>
 									<div className={styles.descriptionContent}>
