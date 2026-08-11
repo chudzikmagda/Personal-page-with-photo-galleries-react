@@ -1,37 +1,26 @@
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
-
-import { FlatCompat } from '@eslint/eslintrc';
 import js from '@eslint/js';
 import typescriptEslint from '@typescript-eslint/eslint-plugin';
 import tsParser from '@typescript-eslint/parser';
 import { defineConfig, globalIgnores } from 'eslint/config';
+import eslintConfigPrettier from 'eslint-config-prettier';
+import eslintPluginPrettier from 'eslint-plugin-prettier';
 import react from 'eslint-plugin-react';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import globals from 'globals';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({
-	baseDirectory: __dirname,
-	recommendedConfig: js.configs.recommended,
-	allConfig: js.configs.all
-});
-
 export default defineConfig([
 	globalIgnores(['**/dist/', 'src/shared/metadata/galleryImageMetadata.ts']),
+	js.configs.recommended,
+	react.configs.flat.recommended,
+	react.configs.flat['jsx-runtime'],
+	...typescriptEslint.configs['flat/recommended'],
+	eslintConfigPrettier,
 	{
-		extends: compat.extends(
-			'eslint:recommended',
-			'plugin:react/recommended',
-			'plugin:@typescript-eslint/recommended',
-			'plugin:prettier/recommended'
-		),
-
 		plugins: {
 			react,
 			'@typescript-eslint': typescriptEslint,
-			'simple-import-sort': simpleImportSort
+			'simple-import-sort': simpleImportSort,
+			prettier: eslintPluginPrettier
 		},
 
 		languageOptions: {
@@ -67,6 +56,9 @@ export default defineConfig([
 
 			quotes: ['error', 'single'],
 			semi: ['error', 'always'],
+			'prettier/prettier': 'error',
+			'arrow-body-style': 'off',
+			'prefer-arrow-callback': 'off',
 			'@typescript-eslint/explicit-module-boundary-types': 'error',
 			'@typescript-eslint/no-explicit-any': 'error',
 			'simple-import-sort/imports': 'error',
