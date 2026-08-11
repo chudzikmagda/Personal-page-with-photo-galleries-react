@@ -45,7 +45,7 @@ const ProjectShell: React.FC<ProjectShellProps> = ({ baseKey, images, title, des
 								<div className={styles.description}>
 									<div className={styles.descriptionContent}>
 										<p
-											className={`${styles.descriptionText} ${!isDescriptionExpanded ? styles['descriptionText--clamped'] : ''}`}>
+											className={`${styles.descriptionText} ${!isDescriptionExpanded && isDescriptionLong ? styles['descriptionText--clamped'] : ''}`}>
 											{descriptionText}
 										</p>
 									</div>

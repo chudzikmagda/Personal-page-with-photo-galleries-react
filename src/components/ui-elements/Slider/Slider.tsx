@@ -62,11 +62,10 @@ const Slider: React.FC<SliderProps> = ({ images }) => {
 								<SwiperSlide key={id} className={styles.slider__slide}>
 									<img
 										className={styles.slider__image}
-										src={variants.fullsize.src}
-										srcSet={createSrcSet(variants)}
-										sizes={`(max-width: ${Breakpoints.MEDIUM}px) 82vw, (max-width: ${Breakpoints.XLARGE}px) 56vw, 720px`}
-										alt={alt}
-										loading={'lazy'}
+										{...getImageProps(
+											{ alt, variants },
+											`(max-width: ${Breakpoints.MEDIUM}px) 82vw, (max-width: ${Breakpoints.XLARGE}px) 56vw, 720px`
+										)}
 									/>
 								</SwiperSlide>
 							);
