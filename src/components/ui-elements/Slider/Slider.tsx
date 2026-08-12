@@ -35,7 +35,7 @@ const Slider: React.FC<SliderProps> = ({ images }) => {
 								className={styles.slider__mobileImage}
 								{...getImageProps(
 									{ alt, variants },
-									`(max-width: ${Breakpoints.MEDIUM}px) 100vw, (max-width: ${Breakpoints.XLARGE}px) 56vw, 720px`
+									`(max-width: ${Breakpoints.MEDIUM}px) 100vw, (max-width: ${Breakpoints.XLARGE}px) 70vw, 1024px`
 								)}
 							/>
 						);
@@ -64,7 +64,7 @@ const Slider: React.FC<SliderProps> = ({ images }) => {
 										className={styles.slider__image}
 										{...getImageProps(
 											{ alt, variants },
-											`(max-width: ${Breakpoints.MEDIUM}px) 82vw, (max-width: ${Breakpoints.XLARGE}px) 56vw, 720px`
+											`(max-width: ${Breakpoints.MEDIUM}px) 82vw, (max-width: ${Breakpoints.XLARGE}px) 70vw, 1024px`
 										)}
 									/>
 								</SwiperSlide>
