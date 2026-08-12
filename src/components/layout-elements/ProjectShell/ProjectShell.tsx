@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { useBreadcrumbs } from '../../../hooks/useBreadcrumbs/useBreadcrumbs';
 import SEO from '../../SEO/SEO';
 import Breadcrumbs from '../../ui-elements/Breadcrumbs/Breadcrumbs';
 import { BreadcrumbItem } from '../../ui-elements/Breadcrumbs/breadcrumbs.types';
+import Button from '../../ui-elements/Button/Button';
+import { ButtonApperance } from '../../ui-elements/Button/button.types';
 import Slider from '../../ui-elements/Slider/Slider';
 import { ContentType } from '../Content/content.types';
 import Layout from '../Layout/Layout';
@@ -12,8 +14,21 @@ import styles from './ProjectShell.module.scss';
 import { ProjectShellProps } from './projectShell.types';
 
 const ProjectShell: React.FC<ProjectShellProps> = ({ baseKey, images, title, description }) => {
+	const DESCRIPTION_PREVIEW_LIMIT = 200;
 	const { t } = useTranslation();
 	const breadcrumbItems: BreadcrumbItem[] = useBreadcrumbs(baseKey);
+	const [isDescriptionExpanded, setIsDescriptionExpanded] = useState(false);
+
+	const descriptionParagraphs = (description ? t(description) : '')
+		.split(/\n\s*\n/)
+		.map((paragraph) => paragraph.replace(/\s+/g, ' ').trim())
+		.filter(Boolean);
+
+	const descriptionText = descriptionParagraphs.join('\n\n');
+
+	const isDescriptionLong = descriptionParagraphs.join(' ').length > DESCRIPTION_PREVIEW_LIMIT;
+
+	const leadText = t(`${baseKey}.leadText`);
 
 	return (
 		<>
@@ -24,7 +39,26 @@ const ProjectShell: React.FC<ProjectShellProps> = ({ baseKey, images, title, des
 					<div className={styles.wrapper}>
 						<Breadcrumbs items={breadcrumbItems} />
 						<h3 className={styles.title}>{t(title)}</h3>
-						{description && <p className={styles.description}>{t(description)}</p>}
+						<div className={styles.intro}>
+							{leadText !== `${baseKey}.leadText` && <p className={styles.leadText}>{leadText}</p>}
+							{description && (
+								<div className={styles.description}>
+									<div className={styles.descriptionContent}>
+										<p
+											className={`${styles.descriptionText} ${!isDescriptionExpanded && isDescriptionLong ? styles['descriptionText--clamped'] : ''}`}>
+											{descriptionText}
+										</p>
+									</div>
+									{isDescriptionLong && (
+										<Button
+											apperance={ButtonApperance.TEXT}
+											cta={isDescriptionExpanded ? t(`${baseKey}.readLess`) : t(`${baseKey}.readMore`)}
+											onClick={() => setIsDescriptionExpanded((prev) => !prev)}
+										/>
+									)}
+								</div>
+							)}
+						</div>
 						<Slider images={images} />
 					</div>
 				}

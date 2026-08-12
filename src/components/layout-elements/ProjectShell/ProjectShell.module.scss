@@ -5,9 +5,52 @@ body {
 }
 
 .title {
-	margin-bottom: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.intro {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+	margin-bottom: 1.5rem;
+
+	@media screen and (min-width: 992px) {
+		grid-template-columns: auto 1fr;
+		gap: 4rem;
+	}
+}
+
+.leadText {
+	margin: 0;
+	max-width: 20ch;
+	font-size: clamp(1rem, 4vw, 1.325rem);
+	line-height: 1.2;
+	font-weight: 600;
 }
 
 .description {
-	max-width: 60ch;
+	max-width: 62ch;
+
+	p {
+		margin: 0;
+		line-height: 1.6;
+	}
+}
+
+.descriptionText {
+	margin: 0;
+	line-height: 1.6;
+	white-space: pre-line;
+
+	&--clamped {
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 3;
+		line-clamp: 3;
+	}
+}
+
+.descriptionContent {
+	overflow: hidden;
 }

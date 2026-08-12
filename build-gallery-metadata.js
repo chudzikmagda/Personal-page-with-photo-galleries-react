@@ -10,7 +10,8 @@ const GALLERIES = [
 	{ key: 'city', path: 'city' },
 	{ key: 'colorLandscapes', path: 'landscapes/color' },
 	{ key: 'bwLandscapes', path: 'landscapes/black-and-white' },
-	{ key: 'projectsWomensIceHockeyCracovia', path: 'projects/womens-ice-hockey-cracovia' }
+	{ key: 'projectsWomensIceHockeyCracovia', path: 'projects/womens-ice-hockey-cracovia' },
+	{ key: 'projectsKingOfBiebrzaRiver', path: 'projects/king-of-biebrza-river' }
 ];
 const GALLERY_IMAGES_DIR = path.join(dirname, 'public/images/galleries');
 const GALLERY_METADATA_OUTPUT_DIR = path.join(dirname, 'src/shared/metadata');

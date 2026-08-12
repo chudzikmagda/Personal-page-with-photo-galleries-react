@@ -6,6 +6,7 @@ import * as ColorLandscapePage from './ColorLandscapePage.json';
 import * as ContactPage from './ContactPage.json';
 import * as Footer from './Footer.json';
 import * as HomePage from './HomePage.json';
+import * as KingOfBiebrzaRiverPage from './KingOfBiebrzaRiverPage.json';
 import * as LandscapePage from './LandscapePage.json';
 import * as Menu from './Menu.json';
 import * as PageNotFound from './PageNotFound.json';
@@ -23,6 +24,7 @@ export {
 	ContactPage,
 	Footer,
 	HomePage,
+	KingOfBiebrzaRiverPage,
 	LandscapePage,
 	Menu,
 	PageNotFound,

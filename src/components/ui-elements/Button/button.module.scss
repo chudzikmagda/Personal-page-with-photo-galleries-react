@@ -120,10 +120,17 @@
 
 	&--text {
 		border: 0;
+		padding: 0;
+		color: $primary-color;
+		font-weight: 600;
+
+		&:hover {
+			color: $text-dark;
+		}
 
 		&:focus,
 		&:focus-visible,
-		&:hover {
+		&:active {
 			color: $primary-color;
 		}
 
