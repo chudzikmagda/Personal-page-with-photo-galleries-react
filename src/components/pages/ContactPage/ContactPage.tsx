@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { CSSTransition } from 'react-transition-group';
 
+import { Paths } from '../../../routing/types/routing.types';
 import { ContentType } from '../../layout-elements/Content/content.types';
 import Layout from '../../layout-elements/Layout/Layout';
 import SEO from '../../SEO/SEO';
@@ -11,6 +12,7 @@ import Button from '../../ui-elements/Button/Button';
 import { ButtonApperance, ButtonType } from '../../ui-elements/Button/button.types';
 import Input from '../../ui-elements/form/Input/Input';
 import Textarea from '../../ui-elements/form/Textarea/Textarea';
+import heroImage from './../../../assets/images/template/photographer-magda-chudzik.webp';
 import styles from './contactPage.module.scss';
 import { ContactForm, ContactFormFieldNames, ContactFormValidators, ContactFormValue } from './contactPage.types';
 
@@ -111,7 +113,13 @@ const ContactPage: React.FC = () => {
 
 	return (
 		<>
-			<SEO title={t('ContactPage.seo.title')} description={t('ContactPage.seo.description')} keywords={t('ContactPage.seo.keywords')} />
+			<SEO
+				title={t('ContactPage.seo.title')}
+				description={t('ContactPage.seo.description')}
+				keywords={t('ContactPage.seo.keywords')}
+				image={heroImage}
+				url={`${window.location.origin}/${Paths.CONTACT}`}
+			/>
 
 			<Layout
 				content={

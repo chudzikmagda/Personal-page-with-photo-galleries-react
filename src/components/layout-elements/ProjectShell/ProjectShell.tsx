@@ -13,7 +13,7 @@ import Layout from '../Layout/Layout';
 import styles from './ProjectShell.module.scss';
 import { ProjectShellProps } from './projectShell.types';
 
-const ProjectShell: React.FC<ProjectShellProps> = ({ baseKey, images, title, description }) => {
+const ProjectShell: React.FC<ProjectShellProps> = ({ baseKey, image, images, title, description, url }) => {
 	const DESCRIPTION_PREVIEW_LIMIT = 200;
 	const { t } = useTranslation();
 	const breadcrumbItems: BreadcrumbItem[] = useBreadcrumbs(baseKey);
@@ -32,7 +32,14 @@ const ProjectShell: React.FC<ProjectShellProps> = ({ baseKey, images, title, des
 
 	return (
 		<>
-			<SEO title={t(`${baseKey}.seo.title`)} description={t(`${baseKey}.seo.description`)} keywords={t(`${baseKey}.seo.keywords`)} />
+			<SEO
+				title={t(`${baseKey}.seo.title`)}
+				description={t(`${baseKey}.seo.description`)}
+				keywords={t(`${baseKey}.seo.keywords`)}
+				type="article"
+				image={image}
+				url={url}
+			/>
 
 			<Layout
 				content={

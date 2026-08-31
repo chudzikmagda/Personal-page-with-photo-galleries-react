@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { Paths } from '../../../routing/types/routing.types';
 import { ContentType } from '../../layout-elements/Content/content.types';
 import PageShell from '../../layout-elements/PageShell/PageShell';
 import PrintItem from './components/Print/Print';
@@ -15,7 +16,9 @@ const PrintsPage: React.FC = () => {
 		<PageShell
 			title={t('PrintsPage.seo.title')}
 			description={t('PrintsPage.seo.description')}
+			image={printCollection[0].image}
 			keywords={t('PrintsPage.seo.keywords')}
+			url={`${window.location.origin}/${Paths.PRINTS}`}
 			content={
 				<>
 					<div className={styles['wrapper-s']}>

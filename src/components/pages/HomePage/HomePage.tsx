@@ -16,7 +16,9 @@ const HomePage: React.FC = () => {
 		<PageShell
 			title={t('HomePage.seo.title')}
 			description={t('HomePage.seo.description')}
+			image={landscapePhoto}
 			keywords={t('HomePage.seo.keywords')}
+			url={`${window.location.origin}/`}
 			content={
 				<AccordionCards>
 					<Card bgImage={urbanPhoto} title={t('HomePage.cityTitle')} cta={t('HomePage.viewTheGallery')} path={Paths.CITY} />

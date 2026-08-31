@@ -16,7 +16,9 @@ const LandscapePage: React.FC = () => {
 		<PageShell
 			title={t('LandscapePage.seo.title')}
 			description={t('LandscapePage.seo.description')}
+			image={colorLandscapePhoto}
 			keywords={t('LandscapePage.seo.keywords')}
+			url={`${window.location.origin}/${Paths.LANDSCAPE}`}
 			content={
 				<AccordionCards>
 					<Card

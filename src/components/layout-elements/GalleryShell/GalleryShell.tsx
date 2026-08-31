@@ -10,13 +10,19 @@ import { ContentType } from '../Content/content.types';
 import Layout from '../Layout/Layout';
 import { GalleryShellProps } from './galleryShell.types';
 
-const GalleryShell: React.FC<GalleryShellProps> = ({ baseKey, images, wrapperClassName }) => {
+const GalleryShell: React.FC<GalleryShellProps> = ({ baseKey, image, images, url, wrapperClassName }) => {
 	const { t } = useTranslation();
 	const breadcrumbItems: BreadcrumbItem[] = useBreadcrumbs(baseKey);
 
 	return (
 		<>
-			<SEO title={t(`${baseKey}.seo.title`)} description={t(`${baseKey}.seo.description`)} keywords={t(`${baseKey}.seo.keywords`)} />
+			<SEO
+				title={t(`${baseKey}.seo.title`)}
+				description={t(`${baseKey}.seo.description`)}
+				keywords={t(`${baseKey}.seo.keywords`)}
+				image={image}
+				url={url}
+			/>
 
 			<Layout
 				content={

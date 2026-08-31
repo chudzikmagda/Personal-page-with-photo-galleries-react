@@ -15,7 +15,13 @@ const PageNotFound: React.FunctionComponent = () => {
 
 	return (
 		<>
-			<SEO title={t('PageNotFound.seo.title')} description={t('PageNotFound.seo.description')} keywords={t('PageNotFound.seo.keywords')} />
+			<SEO
+				title={t('PageNotFound.seo.title')}
+				description={t('PageNotFound.seo.description')}
+				keywords={t('PageNotFound.seo.keywords')}
+				image={heroImage}
+				url={window.location.href}
+			/>
 
 			<Layout
 				content={

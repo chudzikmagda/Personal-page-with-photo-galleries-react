@@ -8,6 +8,8 @@ export enum GalleryShellBaseKey {
 
 export type GalleryShellProps = {
 	baseKey: GalleryShellBaseKey;
+	image: string;
 	images: GalleryItem[];
+	url: string;
 	wrapperClassName: string;
 };

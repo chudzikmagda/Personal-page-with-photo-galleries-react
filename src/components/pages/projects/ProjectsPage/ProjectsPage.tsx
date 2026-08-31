@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 import { useBreadcrumbs } from '../../../../hooks/useBreadcrumbs/useBreadcrumbs';
+import { Paths } from '../../../../routing/types/routing.types';
 import { ContentType } from '../../../layout-elements/Content/content.types';
 import Layout from '../../../layout-elements/Layout/Layout';
 import SEO from '../../../SEO/SEO';
@@ -19,7 +20,13 @@ const ProjectsPage: React.FunctionComponent = () => {
 
 	return (
 		<>
-			<SEO title={t(`${baseKey}.seo.title`)} description={t(`${baseKey}.seo.description`)} keywords={t(`${baseKey}.seo.keywords`)} />
+			<SEO
+				title={t(`${baseKey}.seo.title`)}
+				description={t(`${baseKey}.seo.description`)}
+				keywords={t(`${baseKey}.seo.keywords`)}
+				image={`${window.location.origin}${projects[0].image}`}
+				url={`${window.location.origin}/${Paths.PROJECTS}`}
+			/>
 
 			<Layout
 				content={

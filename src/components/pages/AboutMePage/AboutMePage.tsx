@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Trans } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
+import { Paths } from '../../../routing/types/routing.types';
 import { ContentType } from '../../layout-elements/Content/content.types';
 import PageShell from '../../layout-elements/PageShell/PageShell';
 import SocialMediaMenu from '../../ui-elements/SocialMediaMenu/SocialMediaMenu';
@@ -17,7 +18,9 @@ const AboutMePage: React.FC = () => {
 		<PageShell
 			title={t('AboutMePage.seo.title')}
 			description={t('AboutMePage.seo.description')}
+			image={heroImage}
 			keywords={t('AboutMePage.seo.keywords')}
+			url={`${window.location.origin}/${Paths.ABOUT}`}
 			content={
 				<>
 					<div className={styles.wrapper}>
