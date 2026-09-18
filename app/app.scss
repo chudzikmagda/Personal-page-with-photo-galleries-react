@@ -11,6 +11,7 @@
   --primary-light: rgba(250, 249, 245, 1);
   --primary-dark: rgba(13, 15, 18, 1);
   --primary-dark-20: rgba(13, 15, 18, 0.2);
+  --primary-dark-70: rgba(13, 15, 18, 0.7);
   --primary-dark-95: rgba(13, 15, 18, 0.95);
   --secondary-color: var(--primary-dark);
   --grey-light: rgba(226, 226, 226, 1);
@@ -43,6 +44,7 @@ body,
 body.dark {
   --primary-light: rgba(17, 17, 17, 1);
   --primary-dark: rgba(242, 241, 241, 1);
+  --primary-dark-70: rgba(242, 241, 241, 0.7);
   --secondary-color: var(--primary-dark);
   --grey-light: rgba(53, 52, 52, 1);
   --grey-medium: rgba(153, 153, 153, 1);
@@ -122,4 +124,13 @@ button {
   &:hover {
     cursor: pointer;
   }
+}
+
+.navigation-loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  inset: 0;
+  background: $primary-dark-70;
+  z-index: 1000;
 }

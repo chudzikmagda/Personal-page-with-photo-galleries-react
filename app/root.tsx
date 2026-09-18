@@ -7,12 +7,14 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useNavigation,
 } from 'react-router';
 
 import type { Route } from './+types/root';
 import './app.scss';
 import LanguageContext from './contexts/LanguageContext';
 import ThemeContext from './contexts/ThemeContext';
+import Spinner from './components/ui-elements/spinner/Spinner';
 import { useLanguage } from './hooks/useLanguage/useLanguage';
 import { useTheme } from './hooks/useTheme/useTheme';
 import './i18n';
@@ -68,7 +70,19 @@ export function Layout({ children }: { children: ReactNode }) {
   );
 }
 export default function App() {
-  return <Outlet />;
+  const navigation = useNavigation();
+  const isNavigating = navigation.state !== 'idle';
+
+  return (
+    <>
+      {isNavigating && (
+        <div className="navigation-loader" role="status" aria-live="polite">
+          <Spinner />
+        </div>
+      )}
+      <Outlet />
+    </>
+  );
 }
 
 const AppProviders: React.FC<{ children?: React.ReactNode }> = ({ children }) => {

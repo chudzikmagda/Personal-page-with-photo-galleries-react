@@ -1,4 +1,4 @@
-// Auto-generated gallery image metadata — 2026-09-17 19:14:19
+// Auto-generated gallery image metadata — 2026-09-18 11:50:50
 import type { GalleryItem } from '../types/gallery.types';
 
 export const galleryMetadataProjectsWomensIceHockeyCracovia: GalleryItem[] = [
