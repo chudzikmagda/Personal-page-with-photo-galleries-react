@@ -1,0 +1,155 @@
+@use '~/assets/styles/colors.scss' as *;
+@use '~/assets/styles/variables.scss' as *;
+@use '~/assets/styles/mixins.scss' as *;
+
+.btn {
+  outline: none;
+  background: none;
+  border: 2px solid;
+  border-radius: $border-radius;
+  padding: $padding-basic $padding-basic * 2;
+  @include transition;
+
+  &--primary-solid {
+    background: $primary-color;
+    border-color: $primary-color;
+    color: $text-light;
+
+    &:focus,
+    &:focus-visible,
+    &:hover {
+      color: $primary-color;
+    }
+
+    &[disabled] {
+      &:focus,
+      &:focus-visible,
+      &:hover {
+        background: $primary-color;
+        border-color: $primary-color;
+        color: $text-light;
+      }
+    }
+  }
+
+  &--secondary-solid {
+    background: $secondary-color;
+    border-color: $secondary-color;
+    color: $text-light;
+
+    &:focus,
+    &:focus-visible,
+    &:hover {
+      color: $secondary-color;
+    }
+
+    &[disabled] {
+      &:focus,
+      &:focus-visible,
+      &:hover {
+        background: $secondary-color;
+        border-color: $secondary-color;
+        color: $text-light;
+      }
+    }
+  }
+
+  &--primary-solid,
+  &--secondary-solid {
+    &:focus,
+    &:focus-visible,
+    &:hover {
+      outline: none;
+      background: none;
+    }
+  }
+
+  &--primary-outline {
+    background: none;
+    border-color: $primary-color;
+    color: $primary-color;
+
+    &:focus,
+    &:focus-visible,
+    &:hover {
+      background-color: $primary-color;
+    }
+
+    &[disabled] {
+      &:focus,
+      &:focus-visible,
+      &:hover {
+        background: none;
+        border-color: $primary-color;
+        color: $primary-color;
+      }
+    }
+  }
+
+  &--secondary-outline {
+    background: none;
+    border-color: $secondary-color;
+    color: $secondary-color;
+
+    &:focus,
+    &:focus-visible,
+    &:hover {
+      background-color: $secondary-color;
+    }
+
+    &[disabled] {
+      &:focus,
+      &:focus-visible,
+      &:hover {
+        background: none;
+        border-color: $secondary-color;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  &--primary-outline,
+  &--secondary-outline {
+    &:focus,
+    &:focus-visible,
+    &:hover {
+      outline: none;
+      color: $text-light;
+    }
+  }
+
+  &--text {
+    border: 0;
+    padding: 0;
+    color: $primary-color;
+    font-weight: 600;
+
+    &:hover {
+      color: $text-dark;
+    }
+
+    &:focus,
+    &:focus-visible,
+    &:active {
+      color: $primary-color;
+    }
+
+    &[disabled] {
+      &:focus,
+      &:focus-visible,
+      &:hover {
+        color: $text-dark;
+      }
+    }
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+
+    &:focus,
+    &:focus-visible,
+    &:hover {
+      cursor: default;
+    }
+  }
+}

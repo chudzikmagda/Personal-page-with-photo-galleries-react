@@ -1,0 +1,173 @@
+@use '~/assets/styles/colors.scss' as *;
+@use '~/assets/styles/variables.scss' as *;
+@use '~/assets/styles/mixins.scss' as *;
+
+.menu {
+  display: none;
+
+  @include breakpoint(large) {
+    @include flex($direction: row, $justify-content: center, $align-items: center);
+    gap: 12px;
+    width: 100%;
+    padding: 0 $padding-basic;
+    overflow: hidden;
+  }
+
+  &__item {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    padding: 2px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $text-dark;
+    text-decoration: none;
+    @include transition($element: opacity, $time: 300ms, $effect: ease-in-out);
+    transition:
+      opacity 300ms ease-in-out,
+      color 300ms ease-in-out;
+    @include focus;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $primary-color;
+      transform: scaleX(0);
+      transform-origin: center;
+      @include transition($element: transform, $time: 300ms, $effect: ease-in-out);
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: $primary-color;
+
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+
+    &--active {
+      color: $grey-medium;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    &-wrapper {
+      padding: 0 $padding-basic;
+      overflow: visible;
+    }
+  }
+
+  &__icons {
+    display: none;
+  }
+}
+
+.hamburger {
+  @include flex($justify-content: space-between, $align-items: flex-end);
+  height: 40px;
+  width: 40px;
+  padding: $padding-basic 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  z-index: 1001;
+
+  @include breakpoint(large) {
+    display: none;
+  }
+
+  @include focus;
+
+  &:hover {
+    .hamburger__item {
+      @include transition($element: background-color);
+    }
+  }
+
+  &__item {
+    height: 2px;
+    width: 100%;
+    background-color: $primary-dark;
+
+    &:nth-child(2) {
+      width: 70%;
+    }
+
+    &:focus,
+    &:focus-visible {
+      background-color: $primary-color;
+    }
+  }
+
+  &--isOpen {
+    justify-content: center;
+    align-items: center;
+
+    .hamburger__item {
+      &:nth-child(1) {
+        transform: rotate(45deg) translateY(3px);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg) translateY(-3px);
+      }
+    }
+
+    & ~ .menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      @include flex($justify-content: center);
+      gap: 16px;
+      background-color: $primary-light;
+      animation: menuAnimation 0.5s ease-in-out;
+      z-index: 1000;
+
+      & > .menu__item-wrapper {
+        & > .menu__item {
+          opacity: 0;
+          animation: menuItemAnimation 0.5s ease-in-out forwards;
+        }
+      }
+
+      .menu__icons {
+        display: flex;
+        gap: 12px;
+        margin-top: 48px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@keyframes menuAnimation {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes menuItemAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

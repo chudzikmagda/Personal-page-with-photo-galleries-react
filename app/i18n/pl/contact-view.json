@@ -1,0 +1,40 @@
+{
+  "heading": "Kontakt",
+  "form": {
+    "info": "Pola oznaczone znakiem * są wymagane",
+    "nameInput": {
+      "label": "Imię i nazwisko",
+      "placeholder": "Twoje imię i nazwisko"
+    },
+    "emailInput": {
+      "label": "E-mail",
+      "placeholder": "Twój adres e-mail"
+    },
+    "textarea": {
+      "label": "Wiadomość",
+      "placeholder": "Tutaj wpisz swoją wiadomość..."
+    },
+    "resetButton": "Reset",
+    "submitButton": "Wyślij wiadomość",
+    "error": {
+      "email": "Wpisany email nie jest poprawny.",
+      "minLength": "Minimalna długość tektu to 2 znaki.",
+      "required": "To pole jest wymagane."
+    }
+  },
+  "seo": {
+    "description": "Galeria wyjątkowych i nagradzanych fotografii miejskich i krajobrazowych. W swoich pracach operuję światłem i czystą formą, nadając fotografiom nostalgicznego wyrazu.",
+    "keywords": "fotografia, fotografia krajobrazowa, fotografia miejska, street photo, polska fotografia, fine art, fotografia czarno-biała",
+    "title": "Magda Chudzik | Fotografia"
+  },
+  "alert": {
+    "success": {
+      "header": "Poszło...",
+      "content": "Twoja wiadomość została do mnie wysłana. Postaram się na nią odpisać jak najszybciej."
+    },
+    "error": {
+      "header": "Coś poszło nie tak...",
+      "content": "Twoja wiadomość nie została do mnie wysłana. Zamknij to okno, sprawdź poprawność swojej wiadomości i spróbuj wysłać ją jeszcze raz."
+    }
+  }
+}

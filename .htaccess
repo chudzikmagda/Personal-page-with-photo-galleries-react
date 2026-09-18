@@ -1,0 +1,15 @@
+# Enable the RewriteEngine
+RewriteEngine On
+
+# If the request is for a file or directory that exists, do not rewrite
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# For all other requests, rewrite to the main index.html file
+RewriteRule ^ index.html [L]
+
+<FilesMatch "^\.env">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
