@@ -1,4 +1,4 @@
-import React from 'react';
+import type React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { ContentType } from '~/components/layout-elements/content/content.types';

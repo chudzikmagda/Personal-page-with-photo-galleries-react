@@ -1,4 +1,4 @@
-import { ImageDimension, type Image, type ImageVariants } from '~/shared/types/image.types';
+import { type Image, ImageDimension, type ImageVariants } from '~/shared/types/image.types';
 
 const getSrcSetSize = (key: ImageDimension, value: Image): string | undefined => {
   if (key === ImageDimension.LOW_QUALITY) return undefined;

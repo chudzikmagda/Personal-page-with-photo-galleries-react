@@ -1,4 +1,5 @@
 import { createContext } from 'react';
+
 import type { ThemeContextType } from '~/contexts/types/theme.types';
 import { Themes } from '~/contexts/types/theme.types';
 

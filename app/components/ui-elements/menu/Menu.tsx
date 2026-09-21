@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router';
 
 import IconMenu from '~/components/ui-elements/icon-menu/IconMenu';
+
 import { menuItems } from './menu.data';
 import styles from './menu.module.scss';
 import type { MenuItem } from './menu.types';

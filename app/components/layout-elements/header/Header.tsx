@@ -1,9 +1,10 @@
-import React from 'react';
+import type React from 'react';
 
+import IconMenu from '~/components/ui-elements/icon-menu/IconMenu';
 import Logotype from '~/components/ui-elements/logotype/Logotype';
 import Menu from '~/components/ui-elements/menu/Menu';
+
 import styles from './header.module.scss';
-import IconMenu from '~/components/ui-elements/icon-menu/IconMenu';
 
 const Header: React.FC = () => {
   return (

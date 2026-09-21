@@ -1,9 +1,9 @@
 export enum Themes {
-	DARK = 'dark',
-	LIGHT = 'light'
+  DARK = 'dark',
+  LIGHT = 'light',
 }
 
 export interface ThemeContextType {
-	state: Themes;
-	onChange: (theme: Themes) => void;
+  state: Themes;
+  onChange: (theme: Themes) => void;
 }

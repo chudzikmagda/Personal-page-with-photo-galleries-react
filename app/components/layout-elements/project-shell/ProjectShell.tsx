@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import type React from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { useBreadcrumbs } from '~/hooks/useBreadcrumbs/useBreadcrumbs';
+import { ContentType } from '~/components/layout-elements/content/content.types';
+import Layout from '~/components/layout-elements/layout/Layout';
 import Breadcrumbs from '~/components/ui-elements/breadcrumbs/Breadcrumbs';
 import type { BreadcrumbItem } from '~/components/ui-elements/breadcrumbs/breadcrumbs.types';
 import Button from '~/components/ui-elements/button/Button';
 import { ButtonApperance } from '~/components/ui-elements/button/button.types';
 import Slider from '~/components/ui-elements/slider/Slider';
-import { ContentType } from '~/components/layout-elements/content/content.types';
-import Layout from '~/components/layout-elements/layout/Layout';
+import { useBreadcrumbs } from '~/hooks/useBreadcrumbs/useBreadcrumbs';
+
 import styles from './project-shell.module.scss';
 import type { ProjectShellProps } from './project-shell.types';
 

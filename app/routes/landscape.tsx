@@ -1,8 +1,8 @@
 import i18n from '~/i18n';
-import seoMeta from '~/shared/utils/seoUtils';
-import LandscapeView from '~/views/landscape-view/LandscapeView';
 import { SITE_URL } from '~/shared/types/site.types';
 import { getLanguageLocale } from '~/shared/utils/getLanguage.utils';
+import seoMeta from '~/shared/utils/seoUtils';
+import LandscapeView from '~/views/landscape-view/LandscapeView';
 
 export const meta = () => {
   return seoMeta({

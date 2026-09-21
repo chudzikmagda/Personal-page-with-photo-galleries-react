@@ -1,4 +1,5 @@
 import path from 'node:path';
+
 import { reactRouter } from '@react-router/dev/vite';
 import babel from '@rolldown/plugin-babel';
 import reactCompiler from 'babel-plugin-react-compiler';

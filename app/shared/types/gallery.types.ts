@@ -1,4 +1,4 @@
-import type { ImageVariants } from "./image.types";
+import type { ImageVariants } from './image.types';
 
 export interface GalleryItem {
   id: string;

@@ -1,6 +1,6 @@
-import { galleryMetadataBwLandscapes } from '~/shared/metadata/bw-landscapes';
-import GalleryShell from '~/components/layout-elements/gallery-shell/GalleryShell';
 import { GalleryShellBaseKey } from '~/components/layout-elements/gallery-shell/gallery-shell.types';
+import GalleryShell from '~/components/layout-elements/gallery-shell/GalleryShell';
+import { galleryMetadataBwLandscapes } from '~/shared/metadata/bw-landscapes';
 import styles from '~/views/bw-landscape-view/bw-landscape-view.module.scss';
 
 const BwLandscapeView: React.FC = () => {

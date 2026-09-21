@@ -1,5 +1,5 @@
-import { galleryMetadataProjectsKingOfBiebrzaRiver } from '~/shared/metadata/projects-king-of-biebrza-river';
 import ProjectShell from '~/components/layout-elements/project-shell/ProjectShell';
+import { galleryMetadataProjectsKingOfBiebrzaRiver } from '~/shared/metadata/projects-king-of-biebrza-river';
 import { Projects } from '~/shared/types/projects.types';
 
 const KingOfBiebrzaRiverView: React.FC = () => {

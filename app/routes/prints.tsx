@@ -1,8 +1,8 @@
-import PrintsView from '~/views/prints-view/PrintsView';
 import i18n from '~/i18n';
 import { SITE_URL } from '~/shared/types/site.types';
 import { getLanguageLocale } from '~/shared/utils/getLanguage.utils';
 import seoMeta from '~/shared/utils/seoUtils';
+import PrintsView from '~/views/prints-view/PrintsView';
 
 export const meta = () => {
   return seoMeta({

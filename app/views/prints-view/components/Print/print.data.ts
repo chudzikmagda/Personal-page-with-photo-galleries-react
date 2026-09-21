@@ -14,6 +14,7 @@ import forest from '~/assets/images/prints/magda-chudzik-fine-arts-art-prints-fo
 import squareMarket from '~/assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-27.webp';
 import foggyForest from '~/assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-28.webp';
 import mitoraj from '~/assets/images/prints/magda-chudzik-fine-arts-art-prints-fotoplakaty-29.webp';
+
 import type { Print } from './print.types';
 import { createPrint } from './print.utils';
 

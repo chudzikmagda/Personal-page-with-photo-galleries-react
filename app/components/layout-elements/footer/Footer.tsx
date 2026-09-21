@@ -1,8 +1,9 @@
-import React from 'react';
+import type React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import SocialMediaMenu from '~/components/ui-elements/social-media-menu/SocialMediaMenu';
 import { SocialMediaMenuVariant } from '~/components/ui-elements/social-media-menu/social-media-menu.types';
+import SocialMediaMenu from '~/components/ui-elements/social-media-menu/SocialMediaMenu';
+
 import styles from './footer.module.scss';
 
 const Footer: React.FC = () => {

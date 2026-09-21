@@ -1,7 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react';
+import type React from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import Image from '~/components/ui-elements/image/Image';
 import { ImageLoading } from '~/components/ui-elements/image/image.types';
+
 import styles from './image-with-placeholder.module.scss';
 import type { ImageWithPlaceholderProps } from './image-with-placeholder.types';
 

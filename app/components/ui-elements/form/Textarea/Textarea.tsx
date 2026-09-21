@@ -1,5 +1,5 @@
-import styles from "./textarea.module.scss";
-import type { TextareaProps } from "./textarea.types";
+import styles from './textarea.module.scss';
+import type { TextareaProps } from './textarea.types';
 
 const Textarea: React.FC<TextareaProps> = ({
   error,
@@ -11,9 +11,7 @@ const Textarea: React.FC<TextareaProps> = ({
   value,
   onValueChange,
 }) => {
-  const onTextareaValueChange = (
-    event: React.ChangeEvent<HTMLTextAreaElement>,
-  ): void => {
+  const onTextareaValueChange = (event: React.ChangeEvent<HTMLTextAreaElement>): void => {
     onValueChange(event.target.value);
   };
 

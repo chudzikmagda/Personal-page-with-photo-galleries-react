@@ -1,5 +1,6 @@
 import ReactGA from 'react-ga4';
 import hotjarPkg from 'react-hotjar';
+
 import { initCookieYes } from './cookies.utils';
 
 const { hotjar } = hotjarPkg;

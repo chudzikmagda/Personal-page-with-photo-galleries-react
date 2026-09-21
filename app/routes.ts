@@ -1,4 +1,5 @@
-import { type RouteConfig, route, index } from '@react-router/dev/routes';
+import { index, route, type RouteConfig } from '@react-router/dev/routes';
+
 import { Paths } from './routes.types';
 
 export default [

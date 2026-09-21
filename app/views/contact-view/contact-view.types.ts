@@ -11,13 +11,13 @@ export type ContactForm = {
 };
 
 export enum ContactFormFieldNames {
-  EMAIL = "email",
-  NAME = "name",
-  MESSAGE = "message",
+  EMAIL = 'email',
+  NAME = 'name',
+  MESSAGE = 'message',
 }
 
 export enum ContactFormValidators {
-  EMAIL = "email",
-  MIN_LENGTH = "minLength",
-  REQUIRED = "required",
+  EMAIL = 'email',
+  MIN_LENGTH = 'minLength',
+  REQUIRED = 'required',
 }

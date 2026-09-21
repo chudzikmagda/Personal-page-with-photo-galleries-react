@@ -1,4 +1,4 @@
-import { Projects } from '~/shared/types/projects.types';
+import type { Projects } from '~/shared/types/projects.types';
 
 export interface ProjectData {
   baseKey: Projects;

@@ -1,6 +1,7 @@
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+
 import { Keyboard, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -8,6 +9,7 @@ import { useIsMobile } from '~/hooks/useIsMobile/useIsMobile';
 import { Breakpoints } from '~/shared/types/breakpoints.types';
 import type { GalleryItem } from '~/shared/types/gallery.types';
 import { createSrcSet } from '~/shared/utils/image.utils';
+
 import styles from './slider.module.scss';
 import type { SliderProps } from './slider.types';
 

@@ -1,5 +1,4 @@
 import { t } from 'i18next';
-
 import { useNavigate } from 'react-router';
 
 import heroImage from '~/assets/images/template/page404-image-background.webp';

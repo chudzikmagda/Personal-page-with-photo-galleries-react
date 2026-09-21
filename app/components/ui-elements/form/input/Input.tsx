@@ -1,6 +1,6 @@
-import styles from "./input.module.scss";
-import { InputType } from "./input.types";
-import type { InputProps } from "./input.types";
+import styles from './input.module.scss';
+import type { InputProps } from './input.types';
+import { InputType } from './input.types';
 
 const Input: React.FC<InputProps> = ({
   autoComplete,
@@ -14,9 +14,7 @@ const Input: React.FC<InputProps> = ({
   value,
   onValueChange,
 }) => {
-  const onInputValueChange = (
-    event: React.ChangeEvent<HTMLInputElement>,
-  ): void => {
+  const onInputValueChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
     onValueChange(event.target.value);
   };
 

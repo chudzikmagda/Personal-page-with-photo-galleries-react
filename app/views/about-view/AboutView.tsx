@@ -2,12 +2,12 @@ import { useTranslation } from 'react-i18next';
 import { Trans } from 'react-i18next';
 import { Link } from 'react-router';
 
+import heroImage from '~/assets/images/template/photographer-magda-chudzik.webp';
 import { ContentType } from '~/components/layout-elements/content/content.types';
 import PageShell from '~/components/layout-elements/page-shell/PageShell';
-import heroImage from '~/assets/images/template/photographer-magda-chudzik.webp';
-import styles from '~/views/about-view/about-view.module.scss';
-import SocialMediaMenu from '~/components/ui-elements/social-media-menu/SocialMediaMenu';
 import { SocialMediaMenuVariant } from '~/components/ui-elements/social-media-menu/social-media-menu.types';
+import SocialMediaMenu from '~/components/ui-elements/social-media-menu/SocialMediaMenu';
+import styles from '~/views/about-view/about-view.module.scss';
 
 const AboutView: React.FC = () => {
   const { t } = useTranslation();

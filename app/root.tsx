@@ -1,4 +1,7 @@
-import { useEffect, type ReactNode } from 'react';
+import './app.scss';
+import './i18n';
+
+import { type ReactNode, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
   isRouteErrorResponse,
@@ -11,14 +14,12 @@ import {
 } from 'react-router';
 
 import type { Route } from './+types/root';
-import './app.scss';
+import Spinner from './components/ui-elements/spinner/Spinner';
 import LanguageContext from './contexts/LanguageContext';
 import ThemeContext from './contexts/ThemeContext';
-import Spinner from './components/ui-elements/spinner/Spinner';
 import { useLanguage } from './hooks/useLanguage/useLanguage';
 import { useTheme } from './hooks/useTheme/useTheme';
 import { initAnalytics } from './shared/utils/analytics.utils';
-import './i18n';
 
 export const meta: Route.MetaFunction = () => [
   { charSet: 'utf-8' },

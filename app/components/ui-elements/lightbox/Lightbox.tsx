@@ -4,6 +4,7 @@ import YetAnotherLightbox from 'yet-another-react-lightbox';
 import Fullscreen from 'yet-another-react-lightbox/plugins/fullscreen';
 
 import { ImageDimension } from '~/shared/types/image.types';
+
 import type { LightboxProps } from './lightbox.types';
 
 const Lightbox: React.FC<LightboxProps> = ({ currentIndex, images, closeImage }) => {

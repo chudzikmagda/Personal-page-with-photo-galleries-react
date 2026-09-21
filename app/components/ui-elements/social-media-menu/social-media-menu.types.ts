@@ -1,8 +1,8 @@
 export enum SocialMediaMenuVariant {
-	ICONS = 'Icons',
-	TEXT = 'Text'
+  ICONS = 'Icons',
+  TEXT = 'Text',
 }
 
 export type SocialMediaMenuProps = {
-	variant: SocialMediaMenuVariant;
+  variant: SocialMediaMenuVariant;
 };

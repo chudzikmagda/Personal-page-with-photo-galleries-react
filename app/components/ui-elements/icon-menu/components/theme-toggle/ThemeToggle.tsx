@@ -1,11 +1,13 @@
-import React, { useContext } from 'react';
+import type React from 'react';
+import { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import ThemeContext from '~/contexts/ThemeContext';
-import { Themes } from '~/contexts/types/theme.types';
-import Tooltip from '~/components/ui-elements/tooltip/Tooltip';
 import MoonIcon from '~/components/ui-elements/icon-menu/components/svg-icons/MoonIcon';
 import SunIcon from '~/components/ui-elements/icon-menu/components/svg-icons/SunIcon';
+import Tooltip from '~/components/ui-elements/tooltip/Tooltip';
+import ThemeContext from '~/contexts/ThemeContext';
+import { Themes } from '~/contexts/types/theme.types';
+
 import styles from './theme-toggle.module.scss';
 
 const ThemeToggle: React.FC = () => {

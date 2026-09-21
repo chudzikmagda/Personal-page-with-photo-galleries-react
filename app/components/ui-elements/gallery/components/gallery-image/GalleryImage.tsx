@@ -1,5 +1,6 @@
-import { createSrcSet } from '~/shared/utils/image.utils';
 import ImageWithPlaceholder from '~/components/ui-elements/image-with-placeholder/ImageWithPlaceholder';
+import { createSrcSet } from '~/shared/utils/image.utils';
+
 import styles from './gallery-image.module.scss';
 import type { GalleryImageType } from './gallery-image.types';
 

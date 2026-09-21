@@ -1,5 +1,5 @@
-import { galleryMetadataProjectsWomensIceHockeyCracovia } from '~/shared/metadata/projects-womens-ice-hockey-cracovia';
 import ProjectShell from '~/components/layout-elements/project-shell/ProjectShell';
+import { galleryMetadataProjectsWomensIceHockeyCracovia } from '~/shared/metadata/projects-womens-ice-hockey-cracovia';
 import { Projects } from '~/shared/types/projects.types';
 
 const WomensIceHockeyCracoviaView = () => {

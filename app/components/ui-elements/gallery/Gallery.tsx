@@ -1,12 +1,14 @@
-import React, { useRef, useState, type JSX } from 'react';
+import type React from 'react';
+import { type JSX, useRef, useState } from 'react';
 
-import { useResizeObserver } from '~/hooks/useResizeObserver/useResizeObserver';
-import { ImageDimension, type ImageVariants } from '~/shared/types/image.types';
 import { ImageLoading } from '~/components/ui-elements/image/image.types';
 import Lightbox from '~/components/ui-elements/lightbox/Lightbox';
 import Spinner from '~/components/ui-elements/spinner/Spinner';
-import GalleryImage from './components/gallery-image/GalleryImage';
+import { useResizeObserver } from '~/hooks/useResizeObserver/useResizeObserver';
+import { ImageDimension, type ImageVariants } from '~/shared/types/image.types';
+
 import type { GalleryImageType } from './components/gallery-image/gallery-image.types';
+import GalleryImage from './components/gallery-image/GalleryImage';
 import styles from './gallery.module.scss';
 import {
   GALLERY_FALLBACK_WIDTH,

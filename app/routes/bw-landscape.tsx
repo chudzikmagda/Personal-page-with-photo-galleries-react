@@ -1,8 +1,8 @@
-import BwLandscapeView from '~/views/bw-landscape-view/BwLandscapeView';
 import i18n from '~/i18n';
 import { SITE_URL } from '~/shared/types/site.types';
 import { getLanguageLocale } from '~/shared/utils/getLanguage.utils';
 import seoMeta from '~/shared/utils/seoUtils';
+import BwLandscapeView from '~/views/bw-landscape-view/BwLandscapeView';
 
 export const meta = () => {
   return seoMeta({

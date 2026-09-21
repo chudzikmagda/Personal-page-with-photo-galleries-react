@@ -1,4 +1,4 @@
-import React from 'react';
+import type React from 'react';
 
 import LanguageToggle from './components/language-toggle/LanguageToggle';
 import ThemeToggle from './components/theme-toggle/ThemeToggle';

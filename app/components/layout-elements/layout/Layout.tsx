@@ -1,6 +1,7 @@
 import Content from '~/components/layout-elements/content/Content';
 import Footer from '~/components/layout-elements/footer/Footer';
 import Header from '~/components/layout-elements/header/Header';
+
 import styles from './layout.module.scss';
 import type { LayoutProps } from './layout.types';
 

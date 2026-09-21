@@ -1,8 +1,8 @@
-import type { ReactNode } from "react";
+import type { ReactNode } from 'react';
 
 export enum ContentType {
-  FULLWIDTH = "fullwidth",
-  GRID = "grid",
+  FULLWIDTH = 'fullwidth',
+  GRID = 'grid',
 }
 
 export interface ContentProps {

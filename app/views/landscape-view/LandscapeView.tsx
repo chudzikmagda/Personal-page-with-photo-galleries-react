@@ -1,13 +1,13 @@
-import React from 'react';
+import type React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import AccordionCards from '~/components/layout-elements/accordion-cards/AccordionCards';
-import Card from '~/components/ui-elements/card/Card';
-import { Paths } from '~/routes.types';
-import { ContentType } from '~/components/layout-elements/content/content.types';
-import PageShell from '~/components/layout-elements/page-shell/PageShell';
 import bwLandscapePhoto from '~/assets/images/galleries/categories/magda-chudzik-bw-landscape-photography.webp';
 import colorLandscapePhoto from '~/assets/images/galleries/categories/magda-chudzik-color-landscape-photography.webp';
+import AccordionCards from '~/components/layout-elements/accordion-cards/AccordionCards';
+import { ContentType } from '~/components/layout-elements/content/content.types';
+import PageShell from '~/components/layout-elements/page-shell/PageShell';
+import Card from '~/components/ui-elements/card/Card';
+import { Paths } from '~/routes.types';
 
 const LandscapeView: React.FC = () => {
   const { t } = useTranslation();

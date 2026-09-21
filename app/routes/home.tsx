@@ -1,8 +1,8 @@
-import HomeView from '~/views/home/HomeView';
 import i18n from '~/i18n';
 import { SITE_URL } from '~/shared/types/site.types';
 import { getLanguageLocale } from '~/shared/utils/getLanguage.utils';
 import seoMeta from '~/shared/utils/seoUtils';
+import HomeView from '~/views/home/HomeView';
 
 export const meta = () => {
   return seoMeta({

@@ -1,6 +1,6 @@
-import styles from "./content.module.scss";
-import { ContentType } from "./content.types";
-import type { ContentProps } from "./content.types";
+import styles from './content.module.scss';
+import type { ContentProps } from './content.types';
+import { ContentType } from './content.types';
 
 const Content: React.FC<ContentProps> = ({ content, contentType }) => {
   return (

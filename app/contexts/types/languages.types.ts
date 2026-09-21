@@ -1,9 +1,9 @@
 export enum Languages {
-	EN = 'en',
-	PL = 'pl'
+  EN = 'en',
+  PL = 'pl',
 }
 
 export interface LanguageContextType {
-	state: Languages;
-	onChange: (lang: Languages) => void;
+  state: Languages;
+  onChange: (lang: Languages) => void;
 }

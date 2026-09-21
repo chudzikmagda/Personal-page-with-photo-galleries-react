@@ -1,6 +1,7 @@
-import styles from './social-media-menu.module.scss';
-import { SocialMediaMenuVariant, type SocialMediaMenuProps } from './social-media-menu.types';
 import { SOCIAL_MEDIA, type SocialMedia } from '~/shared/types/social-media.types';
+
+import styles from './social-media-menu.module.scss';
+import { type SocialMediaMenuProps, SocialMediaMenuVariant } from './social-media-menu.types';
 
 const SocialMediaMenu: React.FC<SocialMediaMenuProps> = ({ variant }) => {
   return (

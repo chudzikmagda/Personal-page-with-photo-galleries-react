@@ -1,8 +1,8 @@
-import React from 'react';
+import type React from 'react';
 
 import styles from './button.module.scss';
-import { ButtonApperance, ButtonType } from './button.types';
 import type { ButtonProps } from './button.types';
+import { ButtonApperance, ButtonType } from './button.types';
 
 const Button: React.FC<ButtonProps> = ({
   apperance = ButtonApperance.PRIMARY_SOLID,

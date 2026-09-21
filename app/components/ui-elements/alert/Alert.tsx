@@ -1,7 +1,8 @@
-import React from 'react';
+import type React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import Button from '~/components/ui-elements/button/Button';
+
 import styles from './alert.module.scss';
 import type { AlertProps } from './alert.types';
 import { AlertType } from './alert.types';

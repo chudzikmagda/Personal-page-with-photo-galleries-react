@@ -11,7 +11,8 @@ import {
   useInteractions,
   useRole,
 } from '@floating-ui/react';
-import React, { useState } from 'react';
+import type React from 'react';
+import { useState } from 'react';
 
 import styles from './tooltip.module.scss';
 import type { TooltipProps } from './tooltip.types';

@@ -1,11 +1,13 @@
-import React, { useContext } from 'react';
+import type React from 'react';
+import { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import LanguageContext from '~/contexts/LanguageContext';
-import { Languages } from '~/contexts/types/languages.types';
-import Tooltip from '~/components/ui-elements/tooltip/Tooltip';
 import EnFlag from '~/components/ui-elements/icon-menu/components/svg-icons/EnFlag';
 import PlFlag from '~/components/ui-elements/icon-menu/components/svg-icons/PlFlag';
+import Tooltip from '~/components/ui-elements/tooltip/Tooltip';
+import LanguageContext from '~/contexts/LanguageContext';
+import { Languages } from '~/contexts/types/languages.types';
+
 import styles from './language-toggle.module.scss';
 
 const LanguageToggle: React.FC = () => {
