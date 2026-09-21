@@ -26,6 +26,7 @@ const Tooltip: React.FC<TooltipProps> = ({ text, children }) => {
     middleware: [offset(8), flip({ padding: 8 }), shift({ padding: 8 })],
     whileElementsMounted: autoUpdate,
   });
+  const { setReference, setFloating } = refs;
 
   const hover = useHover(context, { move: false });
   const focus = useFocus(context);
@@ -36,13 +37,13 @@ const Tooltip: React.FC<TooltipProps> = ({ text, children }) => {
 
   return (
     <>
-      <span ref={refs.setReference} className={styles.reference} {...getReferenceProps()}>
+      <span ref={setReference} className={styles.reference} {...getReferenceProps()}>
         {children}
       </span>
       {open ? (
         <FloatingPortal>
           <span
-            ref={refs.setFloating}
+            ref={setFloating}
             className={styles.tooltip}
             style={floatingStyles}
             {...getFloatingProps()}
