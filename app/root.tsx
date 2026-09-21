@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { useEffect, type ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
   isRouteErrorResponse,
@@ -17,6 +17,7 @@ import ThemeContext from './contexts/ThemeContext';
 import Spinner from './components/ui-elements/spinner/Spinner';
 import { useLanguage } from './hooks/useLanguage/useLanguage';
 import { useTheme } from './hooks/useTheme/useTheme';
+import { initAnalytics } from './shared/utils/analytics.utils';
 import './i18n';
 
 export const meta: Route.MetaFunction = () => [
@@ -69,6 +70,10 @@ export function Layout({ children }: { children: ReactNode }) {
 export default function App() {
   const navigation = useNavigation();
   const isNavigating = navigation.state !== 'idle';
+
+  useEffect(() => {
+    initAnalytics();
+  }, []);
 
   return (
     <AppProviders>
