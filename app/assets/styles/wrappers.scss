@@ -6,6 +6,7 @@
   max-width: $container-max-width;
   margin: 0 auto;
   padding: 0;
+  box-sizing: border-box;
 
   @include breakpoint(large) {
     padding: 0 2 * $padding-basic;
@@ -18,6 +19,7 @@
   margin: 0 auto;
   text-align: left;
   padding: 0;
+  box-sizing: border-box;
 
   @include breakpoint(small) {
     padding: 0 2 * $padding-basic;
