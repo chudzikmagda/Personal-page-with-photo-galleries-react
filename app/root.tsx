@@ -19,6 +19,12 @@ import { useLanguage } from './hooks/useLanguage/useLanguage';
 import { useTheme } from './hooks/useTheme/useTheme';
 import './i18n';
 
+export const meta: Route.MetaFunction = () => [
+  { charSet: 'utf-8' },
+  { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  { title: 'Aplikacja' },
+];
+
 export const links: Route.LinksFunction = () => [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
   {
@@ -27,17 +33,8 @@ export const links: Route.LinksFunction = () => [
     crossOrigin: 'anonymous',
   },
   {
-    rel: 'preload',
-    href: 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap',
-    as: 'style',
-  },
-  {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap',
-    media: 'print',
-    onLoad: (event: React.SyntheticEvent<HTMLLinkElement>) => {
-      event.currentTarget.media = 'all';
-    },
   },
   { rel: 'icon', href: '/favicon.png' },
   { rel: 'shortcut icon', href: '/favicon.ico' },
@@ -62,7 +59,7 @@ export function Layout({ children }: { children: ReactNode }) {
         </noscript>
       </head>
       <body>
-        <AppProviders>{children}</AppProviders>
+        {children}
         <ScrollRestoration />
         <Scripts />
       </body>
@@ -74,14 +71,14 @@ export default function App() {
   const isNavigating = navigation.state !== 'idle';
 
   return (
-    <>
+    <AppProviders>
       {isNavigating && (
         <div className="navigation-loader" role="status" aria-live="polite">
           <Spinner />
         </div>
       )}
       <Outlet />
-    </>
+    </AppProviders>
   );
 }
 
@@ -99,6 +96,7 @@ const AppProviders: React.FC<{ children?: React.ReactNode }> = ({ children }) =>
 };
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
+  const { t } = useTranslation();
   let message = 'Oops!';
   let details = 'An unexpected error occurred.';
   let stack: string | undefined;
@@ -106,18 +104,18 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   if (isRouteErrorResponse(error)) {
     message = error.status === 404 ? '404' : 'Error';
     details =
-      error.status === 404 ? 'The requested page could not be found.' : error.statusText || details;
+      error.status === 404 ? t('PageNotFoundView.description') : error.statusText || details;
   } else if (import.meta.env.DEV && error && error instanceof Error) {
     details = error.message;
     stack = error.stack;
   }
 
   return (
-    <main className="pt-16 p-4 container mx-auto">
+    <main>
       <h1>{message}</h1>
       <p>{details}</p>
       {stack && (
-        <pre className="w-full p-4 overflow-x-auto">
+        <pre>
           <code>{stack}</code>
         </pre>
       )}

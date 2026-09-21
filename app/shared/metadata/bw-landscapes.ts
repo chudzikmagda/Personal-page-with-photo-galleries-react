@@ -1,4 +1,4 @@
-// Auto-generated gallery image metadata — 2026-09-18 11:50:50
+// Auto-generated gallery image metadata — 2026-09-21 12:30:02
 import type { GalleryItem } from '../types/gallery.types';
 
 export const galleryMetadataBwLandscapes: GalleryItem[] = [

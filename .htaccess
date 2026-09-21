@@ -1,6 +1,8 @@
 # Enable the RewriteEngine
 RewriteEngine On
 
+AddDefaultCharset UTF-8
+
 # If the request is for a file or directory that exists, do not rewrite
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
