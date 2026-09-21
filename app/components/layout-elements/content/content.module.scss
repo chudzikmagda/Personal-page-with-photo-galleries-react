@@ -9,4 +9,8 @@
   width: 100%;
   padding: 0 2 * $padding-basic;
   box-sizing: border-box;
+
+  @include breakpoint(xlarge) {
+    padding: 0;
+  }
 }

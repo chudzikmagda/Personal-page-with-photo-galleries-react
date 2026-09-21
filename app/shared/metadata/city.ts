@@ -1,4 +1,4 @@
-// Auto-generated gallery image metadata — 2026-09-21 19:14:20
+// Auto-generated gallery image metadata — 2026-09-21 19:27:48
 import type { GalleryItem } from '../types/gallery.types';
 
 export const galleryMetadataCity: GalleryItem[] = [

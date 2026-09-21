@@ -1,4 +1,4 @@
-// Auto-generated gallery metadata index — 2026-09-21 19:14:20
+// Auto-generated gallery metadata index — 2026-09-21 19:27:48
 import { galleryMetadataCity } from './city';
 import { galleryMetadataColorLandscapes } from './color-landscapes';
 import { galleryMetadataBwLandscapes } from './bw-landscapes';
