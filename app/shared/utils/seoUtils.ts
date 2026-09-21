@@ -1,4 +1,4 @@
-import type { SEOProps } from '../types/seo.types';
+import type { SEOProps } from '~/shared/types/seo.types';
 
 export const seoMeta = ({
   title,

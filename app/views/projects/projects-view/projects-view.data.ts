@@ -1,6 +1,6 @@
-import { Paths } from '../../../routes.types';
-import { ProjectPaths, Projects } from '../../../shared/types/projects.types';
-import type { ProjectData } from '../projects.types';
+import { Paths } from '~/routes.types';
+import { ProjectPaths, Projects } from '~/shared/types/projects.types';
+import type { ProjectData } from '~/views/projects/projects.types';
 
 export const projects: ProjectData[] = [
   {

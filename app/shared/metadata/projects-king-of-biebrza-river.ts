@@ -1,4 +1,4 @@
-// Auto-generated gallery image metadata — 2026-09-21 19:41:55
+// Auto-generated gallery image metadata — 2026-09-21 19:50:33
 import type { GalleryItem } from '../types/gallery.types';
 
 export const galleryMetadataProjectsKingOfBiebrzaRiver: GalleryItem[] = [
