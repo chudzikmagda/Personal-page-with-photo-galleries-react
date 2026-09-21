@@ -18,6 +18,7 @@ export const meta = () => {
     type: 'website',
     siteName: i18n.t('PageNotFoundView.seo.title'),
     locale: getLanguageLocale(),
+    noIndex: true,
   });
 };
 

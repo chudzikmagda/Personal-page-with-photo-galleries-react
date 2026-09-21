@@ -9,6 +9,7 @@ import GalleryImage from './components/gallery-image/GalleryImage';
 import type { GalleryImageType } from './components/gallery-image/gallery-image.types';
 import styles from './gallery.module.scss';
 import {
+  GALLERY_FALLBACK_WIDTH,
   GALLERY_GAP,
   GALLERY_ROW_HEIGHT,
   type GalleryCurrentRow,
@@ -58,7 +59,9 @@ const Gallery: React.FC<GalleryProps> = ({ heading, images }) => {
   const galleryContainerRef: React.RefObject<HTMLDivElement | null> = useRef<HTMLDivElement | null>(
     null
   );
-  const { width: containerWidth, height: containerHeight } = useResizeObserver(galleryContainerRef);
+  const { width: measuredWidth, height: containerHeight } = useResizeObserver(galleryContainerRef);
+
+  const containerWidth = measuredWidth || GALLERY_FALLBACK_WIDTH;
 
   const openGallery = (index: number): void => {
     setCurrentIndex(index);
@@ -105,8 +108,6 @@ const Gallery: React.FC<GalleryProps> = ({ heading, images }) => {
     rows.reduce((sum, row, index) => sum + getRowHeight(row, index, rows, targetRowHeight), 0) +
     GALLERY_GAP * Math.max(rows.length - 1, 0);
 
-  // scale rows up when the gallery is shorter than the available space so tiles reach the footer,
-  // iterating (and clamping) so the result never overshoots and causes a scrollbar
   const computeFilledGalleryRows = (): { rows: GalleryRows; targetRowHeight: number } => {
     let targetHeight = GALLERY_ROW_HEIGHT;
     let rows = buildGalleryRows(targetHeight);

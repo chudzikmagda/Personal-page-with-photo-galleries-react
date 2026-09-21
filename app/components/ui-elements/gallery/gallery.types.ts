@@ -20,3 +20,4 @@ export type GalleryProps = {
 
 export const GALLERY_ROW_HEIGHT = 250;
 export const GALLERY_GAP = 16;
+export const GALLERY_FALLBACK_WIDTH = 1600;

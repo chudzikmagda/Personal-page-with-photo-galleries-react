@@ -1,4 +1,4 @@
-// Auto-generated gallery image metadata — 2026-09-21 16:40:32
+// Auto-generated gallery image metadata — 2026-09-21 17:18:17
 import type { GalleryItem } from '../types/gallery.types';
 
 export const galleryMetadataColorLandscapes: GalleryItem[] = [

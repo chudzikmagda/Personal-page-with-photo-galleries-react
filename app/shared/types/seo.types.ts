@@ -11,4 +11,5 @@ export type SEOProps = {
   type: string;
   siteName: string;
   locale: string;
+  noIndex?: boolean;
 };

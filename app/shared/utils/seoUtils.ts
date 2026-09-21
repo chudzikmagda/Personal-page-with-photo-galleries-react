@@ -13,12 +13,13 @@ export const seoMeta = ({
   type,
   siteName,
   locale,
+  noIndex,
 }: SEOProps) => {
   return [
     { title },
     { name: 'description', content: description },
     { name: 'keywords', content: keywords },
-    { name: 'robots', content: 'index, follow' },
+    { name: 'robots', content: noIndex ? 'noindex, nofollow' : 'index, follow' },
     { property: 'og:type', content: type },
     { property: 'og:title', content: title },
     { property: 'og:description', content: description },
@@ -30,7 +31,7 @@ export const seoMeta = ({
     { property: 'og:image:type', content: imageType },
     { property: 'og:site_name', content: siteName },
     { property: 'og:locale', content: locale },
-    { tagName: 'link', rel: 'canonical', href: url },
+    ...(noIndex ? [] : [{ tagName: 'link', rel: 'canonical', href: url }]),
     { name: 'twitter:creator', content: 'Magda Chudzik' },
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: title },
