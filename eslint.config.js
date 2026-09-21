@@ -1,11 +1,13 @@
 import js from '@eslint/js';
-import ts from 'typescript-eslint';
+import { defineConfig } from 'eslint/config';
+import prettier from 'eslint-config-prettier';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
-import prettier from 'eslint-config-prettier';
+import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import globals from 'globals';
+import ts from 'typescript-eslint';
 
-export default ts.config(
+export default defineConfig(
   {
     ignores: [
       'node_modules/**',
@@ -26,6 +28,7 @@ export default ts.config(
   {
     plugins: {
       'react-hooks': reactHooks,
+      'simple-import-sort': simpleImportSort,
     },
     rules: reactHooks.configs.recommended.rules,
   },
@@ -41,6 +44,9 @@ export default ts.config(
     rules: {
       'react/prop-types': 'off',
       '@typescript-eslint/explicit-function-return-type': 'off',
+      '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
+      'simple-import-sort/imports': 'error',
+      'simple-import-sort/exports': 'error',
     },
   }
 );
