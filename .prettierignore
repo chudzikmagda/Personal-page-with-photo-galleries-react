@@ -1,2 +1,6 @@
-dist/
-src/shared/metadata/galleryImageMetadata.ts
+node_modules
+dist
+build
+.vite
+.cache
+public

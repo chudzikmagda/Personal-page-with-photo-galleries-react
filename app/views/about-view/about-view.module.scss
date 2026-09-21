@@ -1,0 +1,15 @@
+@use '~/assets/styles/mixins.scss' as *;
+@use '~/assets/styles/wrappers.scss' as *;
+
+.about-me {
+  &__heroImage {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__social-link {
+    text-decoration: none;
+    @include focus;
+    @include hover;
+  }
+}

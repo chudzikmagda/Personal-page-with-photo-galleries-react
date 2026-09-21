@@ -2,11 +2,11 @@ Photographer's portfolio The website shows the pictures in an attractive way and
 
 ## The project range:
 
-frontend development, UI/UX design.
+Front-end development, UI/UX design.
 
 ## The technology stack:
 
-React 19, Typescript, SASS, PHP
+React, React Router, Vite, Typescript, SASS, PHP, sharp.
 
 ## Check online
 
@@ -20,11 +20,30 @@ https://www.magdachudzik.pl
 
 [![Photography](/src/assets/images/github/portfolio-mch-mockup-3.jpg)]()
 
-## How run the project?
+## Getting Started
 
-1. Clone this repository:
-   `git clone <url>`
-2. Install all depedencies:
-   `npm i`
-3. Run local server:
-   `npm run dev`
+### Installation
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+### Development
+
+Start the development server with HMR:
+
+```bash
+npm run dev
+```
+
+Your application will be available at `http://localhost:5173`.
+
+## Building for Production
+
+Create a production build:
+
+```bash
+npm run build
+```

@@ -1,0 +1,100 @@
+@use '~/assets/styles/colors.scss' as *;
+@use '~/assets/styles/mixins.scss' as *;
+@use '~/assets/styles/variables.scss' as *;
+
+.slider {
+  :global(.swiper) {
+    padding-right: clamp(24px, 6vw, 96px);
+  }
+
+  :global(.swiper-slide:not(.swiper-slide-active)) {
+    opacity: 0.3;
+    filter: blur(2px);
+  }
+
+  :global(.swiper-button-next),
+  :global(.swiper-button-prev) {
+    color: $primary-color;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  :global(.swiper-button-next::after),
+  :global(.swiper-button-prev::after) {
+    color: $primary-color;
+    font-size: 18px;
+  }
+
+  :global(.swiper-pagination) {
+    margin-top: 1rem;
+  }
+
+  :global(.swiper-pagination-bullet) {
+    background: $grey-light;
+    opacity: 0.8;
+  }
+
+  :global(.swiper-pagination-bullet-active) {
+    background: $primary-color;
+    opacity: 1;
+  }
+
+  &__swiper {
+    overflow: visible;
+    order: 1;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__pagination {
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+    order: 2;
+  }
+
+  &__mobileList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__mobileImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: contain;
+  }
+
+  &__slide {
+    width: auto;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    height: 40vh;
+    max-height: 340px;
+
+    @include breakpoint(medium) {
+      height: 68vh;
+      max-height: 760px;
+    }
+  }
+
+  &__image {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+  }
+}
+
+:global(.swiper-pagination-bullet) {
+  margin: 0 2px;
+}

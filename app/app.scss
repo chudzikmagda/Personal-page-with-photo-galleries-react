@@ -1,0 +1,136 @@
+@use 'reset-css' as *;
+@use 'assets/styles/colors.scss' as *;
+@use 'assets/styles/typography.scss' as *;
+@use 'assets/styles/variables.scss' as *;
+
+@use 'assets/styles/mixins.scss' as *;
+
+:root {
+  --primary-color: rgba(191, 160, 115, 1);
+  --primary-color-20: rgba(191, 160, 115, 0.2);
+  --primary-light: rgba(250, 249, 245, 1);
+  --primary-dark: rgba(13, 15, 18, 1);
+  --primary-dark-20: rgba(13, 15, 18, 0.2);
+  --primary-dark-70: rgba(13, 15, 18, 0.7);
+  --primary-dark-95: rgba(13, 15, 18, 0.95);
+  --secondary-color: var(--primary-dark);
+  --grey-light: rgba(226, 226, 226, 1);
+  --grey-medium: rgba(153, 153, 153, 1);
+  --grey-dark: rgba(13, 15, 18, 0.92);
+  --text-dark: var(--primary-dark);
+  --text-light: var(--primary-light);
+  --success: rgba(155, 242, 75, 1);
+  --danger: rgba(239, 32, 27, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+html,
+body,
+#root {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body.dark {
+  --primary-light: rgba(17, 17, 17, 1);
+  --primary-dark: rgba(242, 241, 241, 1);
+  --primary-dark-70: rgba(242, 241, 241, 0.7);
+  --secondary-color: var(--primary-dark);
+  --grey-light: rgba(53, 52, 52, 1);
+  --grey-medium: rgba(153, 153, 153, 1);
+  --grey-dark: rgba(55, 57, 60, 0.96);
+  --text-dark: var(--primary-dark);
+  --text-light: var(--primary-light);
+}
+
+body {
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--grey-light);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--grey-medium);
+    border-radius: 5px;
+  }
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+p,
+h3,
+h4 {
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: var(--text-dark);
+    }
+
+    &:link {
+      position: relative;
+      @include transition;
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: '';
+        height: 2px;
+        width: 100%;
+        background-color: var(--primary-color);
+        transform: scaleX(1);
+        transform-origin: center;
+        @include transition;
+      }
+    }
+
+    &:hover {
+      color: var(--primary-color);
+
+      &::after {
+        transform: scaleX(0);
+      }
+    }
+
+    @include focus;
+  }
+}
+
+strong {
+  font-weight: $font-bold;
+}
+
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.navigation-loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  inset: 0;
+  background: $primary-dark-70;
+  z-index: 1000;
+}
