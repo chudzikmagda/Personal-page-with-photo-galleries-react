@@ -59,7 +59,7 @@ const Gallery: React.FC<GalleryProps> = ({ heading, images }) => {
   const galleryContainerRef: React.RefObject<HTMLDivElement | null> = useRef<HTMLDivElement | null>(
     null
   );
-  const { width: measuredWidth, height: containerHeight } = useResizeObserver(galleryContainerRef);
+  const { width: measuredWidth } = useResizeObserver(galleryContainerRef);
 
   const containerWidth = measuredWidth || GALLERY_FALLBACK_WIDTH;
 
@@ -94,45 +94,8 @@ const Gallery: React.FC<GalleryProps> = ({ heading, images }) => {
     return rows;
   };
 
-  const getRowHeight = (
-    row: GalleryImageType[],
-    rowIndex: number,
-    rows: GalleryRows,
-    targetRowHeight: number
-  ): number =>
-    rowIndex === rows.length - 1
-      ? targetRowHeight
-      : (containerWidth - GALLERY_GAP * (row.length - 1)) / getTotalAspectRatio(row);
-
-  const getRowsTotalHeight = (rows: GalleryRows, targetRowHeight: number): number =>
-    rows.reduce((sum, row, index) => sum + getRowHeight(row, index, rows, targetRowHeight), 0) +
-    GALLERY_GAP * Math.max(rows.length - 1, 0);
-
-  const computeFilledGalleryRows = (): { rows: GalleryRows; targetRowHeight: number } => {
-    let targetHeight = GALLERY_ROW_HEIGHT;
-    let rows = buildGalleryRows(targetHeight);
-    let rowsHeight = getRowsTotalHeight(rows, targetHeight);
-
-    if (!containerHeight || rowsHeight <= 0 || rowsHeight >= containerHeight) {
-      return { rows, targetRowHeight: targetHeight };
-    }
-
-    const maxIterations = 4;
-    for (let i = 0; i < maxIterations && rowsHeight < containerHeight; i++) {
-      targetHeight *= containerHeight / rowsHeight;
-      rows = buildGalleryRows(targetHeight);
-      rowsHeight = getRowsTotalHeight(rows, targetHeight);
-    }
-
-    if (rowsHeight > containerHeight) {
-      targetHeight *= containerHeight / rowsHeight;
-      rows = buildGalleryRows(targetHeight);
-    }
-
-    return { rows, targetRowHeight: targetHeight };
-  };
-
-  const { rows: galleryRows, targetRowHeight } = computeFilledGalleryRows();
+  const targetRowHeight = GALLERY_ROW_HEIGHT;
+  const galleryRows = buildGalleryRows(targetRowHeight);
 
   const isLastRow = (rowIndex: number): boolean => rowIndex === galleryRows.length - 1;
   const eagerImagesCount = 4;

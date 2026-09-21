@@ -16,10 +16,16 @@ export const useResizeObserver = (elementRef: RefObject<HTMLElement | null>): El
 
     const observer: ResizeObserver = new ResizeObserver((entries: ResizeObserverEntry[]) => {
       if (entries[0]) {
-        setSize({
+        const nextSize: ElementSize = {
           width: entries[0].contentRect.width,
           height: entries[0].contentRect.height,
-        });
+        };
+
+        setSize((currentSize: ElementSize) =>
+          currentSize.width === nextSize.width && currentSize.height === nextSize.height
+            ? currentSize
+            : nextSize
+        );
       }
     });
     observer.observe(element);
