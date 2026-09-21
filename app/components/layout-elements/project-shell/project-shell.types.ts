@@ -1,5 +1,5 @@
 import type { GalleryItem } from '~/shared/types/gallery.types';
-import { Projects } from '~/shared/types/projects.types';
+import type { Projects } from '~/shared/types/projects.types';
 
 export type ProjectShellProps = {
   baseKey: Projects;

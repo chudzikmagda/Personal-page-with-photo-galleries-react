@@ -191,10 +191,10 @@ const writeMetadataIndexFile = () => {
   const imports = GALLERIES.map((gallery) => {
     const varName = getMetadataVarName(gallery.key);
     const fileName = getMetadataFileName(gallery.key).replace('.ts', '');
-    return `import type { ${varName} } from './${fileName}';`;
+    return `import { ${varName} } from './${fileName}';`;
   }).join('\n');
 
-  const exports = `export type {\n${GALLERIES.map((gallery) => `\t${getMetadataVarName(gallery.key)}`).join(',\n')}\n};`;
+  const exports = `export {\n${GALLERIES.map((gallery) => `\t${getMetadataVarName(gallery.key)}`).join(',\n')}\n};`;
   const generatedAt = getGeneratedTimestamp();
 
   const indexContent = `// Auto-generated gallery metadata index — ${generatedAt}\n${imports}\n\n${exports}\n`;

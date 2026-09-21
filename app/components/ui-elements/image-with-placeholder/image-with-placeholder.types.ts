@@ -1,4 +1,4 @@
-import { ImageLoading } from '~/components/ui-elements/image/image.types';
+import type { ImageLoading } from '~/components/ui-elements/image/image.types';
 
 export interface ImageSources {
   lowQualitySrc: string;

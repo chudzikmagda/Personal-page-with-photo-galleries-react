@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { CSSTransition } from 'react-transition-group';
 
+import { ContentType } from '~/components/layout-elements/content/content.types';
 import Layout from '~/components/layout-elements/layout/Layout';
 import Alert from '~/components/ui-elements/alert/Alert';
 import { AlertType } from '~/components/ui-elements/alert/alert.types';
@@ -9,7 +10,6 @@ import Button from '~/components/ui-elements/button/Button';
 import { ButtonApperance, ButtonType } from '~/components/ui-elements/button/button.types';
 import Input from '~/components/ui-elements/form/input/Input';
 import Textarea from '~/components/ui-elements/form/Textarea/Textarea';
-import { ContentType } from '~/components/layout-elements/content/content.types';
 import styles from '~/views/contact-view/contact-view.module.scss';
 import {
   type ContactForm,
@@ -106,7 +106,7 @@ const ContactView: React.FC = () => {
   const sendMessage = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
 
-    fetch('./php/mail.php', {
+    fetch('/php/mail.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',

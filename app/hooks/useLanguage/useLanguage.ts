@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Languages } from '~/contexts/types/languages.types';
+import type { Languages } from '~/contexts/types/languages.types';
 import i18n from '~/i18n';
 
 export const useLanguage = (): [Languages, (lang: Languages) => void] => {

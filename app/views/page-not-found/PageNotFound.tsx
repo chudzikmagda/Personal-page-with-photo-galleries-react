@@ -2,11 +2,11 @@ import { t } from 'i18next';
 
 import { useNavigate } from 'react-router';
 
-import Button from '~/components/ui-elements/button/Button';
-import { ButtonApperance } from '~/components/ui-elements/button/button.types';
 import heroImage from '~/assets/images/template/page404-image-background.webp';
 import { ContentType } from '~/components/layout-elements/content/content.types';
 import Layout from '~/components/layout-elements/layout/Layout';
+import Button from '~/components/ui-elements/button/Button';
+import { ButtonApperance } from '~/components/ui-elements/button/button.types';
 import styles from '~/views/page-not-found/page-not-found.module.scss';
 
 const PageNotFoundView = () => {
@@ -27,7 +27,7 @@ const PageNotFoundView = () => {
               />
             </div>
             <div className={styles['pageNotFound__hero']}>
-              <img src={heroImage} className={styles['pageNotFound__hero-image']} />
+              <img src={heroImage} className={styles['pageNotFound__hero-image']} alt="404" />
             </div>
           </div>
         }
